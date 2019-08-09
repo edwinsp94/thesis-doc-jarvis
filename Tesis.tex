@@ -1,0 +1,67 @@
+\documentclass[12pt]{report}
+\usepackage{vmargin}
+\setpapersize{A4}
+\setmargins{2.5cm}       % margen izquierdo
+{2.5cm}                  % margen superior
+{16.5cm}                 % anchura del texto
+{23.42cm}                % altura del texto
+{10pt}                   % altura de los encabezados
+{1cm}                    % espacio entre el texto y los encabezados
+{0pt}                    % altura del pie de página
+{2cm}                    % espacio entre el texto y el pie de página
+
+\usepackage[spanish,es-tabla]{babel} % Idioma español con tablas
+\usepackage{longtable}     			 % Usado para diseñar grandes tablas.
+\usepackage{multirow} 				 % para las tablas
+
+\usepackage{amsmath, amssymb, amsfonts, latexsym, anyfontsize}
+\usepackage{color, alltt, times}
+\setcounter{secnumdepth}{3} % Para que ponga 1.1.1.1 en subsubsecciones
+\setcounter{tocdepth}{3}    % Para que ponga subsubsecciones en el indice
+\usepackage{setspace}       % Usado para %\onehalfspace  \doublespacing  \singlespace
+\usepackage{booktabs}       % Para formar tablas
+\usepackage{appendix}       % Para los anexos
+\usepackage{url}            % Para citar las urls
+\usepackage{pdfpages}       % Para insertar documentos de tipo PDF
+\usepackage{epstopdf}       % Para insertar imagenes en formato eps obtenidas en Matlab
+\usepackage{graphicx}       % Para las imagenes y gráficos
+\usepackage{subfigure}      % Para subfiguras
+
+\usepackage[utf8]{inputenc} % Para escribir en castellano
+\usepackage[T1]{fontenc}
+
+\usepackage{algorithmic}
+\usepackage{algorithm}
+
+\usepackage[x11names,table]{xcolor}
+\usepackage{caption}
+\usepackage[round]{natbib}
+ 
+\begin{document}
+\baselineskip 1cm
+\pagestyle{plain}
+\include{Cap0}                % Datos de la tesis
+\listoffigures                % Índice de figuras
+\addcontentsline{toc}{chapter}{Índice de figuras}
+\listoftables                 % Índice de tablas
+\addcontentsline{toc}{chapter}{Índice de tablas}
+\tableofcontents              % Índice de materias
+\include{Cap1}                % Introducción
+\include{Cap2}                % Marco teórico
+\include{Cap3}				  % Propuesta o tema central
+\include{Cap4}				  % Resultados y discusión de la tesis
+\include{Cap5}				  % Consideraciones finales
+
+\renewcommand\bibname{Referencias bibliográficas}
+\addcontentsline{toc}{chapter}{ Referencias bibliográfícas}
+\bibliographystyle{apalike}   % estilo de la bibliografía APA.
+\bibliography{Bibliografia}   % Archivo de Bibliografia.bib.
+
+\include{Apendice}            % Apéndice
+
+\setboolean{@twoside}{false}
+\includepdf[pages=-, offset=75 -75]{Documentos/DECLARACION_JURADA.pdf}
+\setboolean{@twoside}{false}
+\includepdf[pages=-, offset=75 -75]{Documentos/CARTA_AUTORIZACION.pdf}
+
+\end{document}

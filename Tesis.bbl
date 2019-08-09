@@ -1,0 +1,211 @@
+\begin{thebibliography}{}
+
+\bibitem[Becchetti and Prina, 1999]{claudio}
+Becchetti, C. and Prina, L. (1999).
+\newblock {\em Speech Recognition: Theory and C++ Implementation}.
+\newblock Wiley, Canada.
+
+\bibitem[Cook, 2002]{stephen}
+Cook, S. (2002).
+\newblock Speech recognition howto.
+\newblock \url{http://www.tldp.org/HOWTO/Speech-Recognition-HOWTO/inside.html}.
+
+\bibitem[Cruz, 2009]{luis}
+Cruz, L. (2009).
+\newblock Aplicación del reconocimiento de voz de un hablante mediante una red
+  neuronal artificial backpropagation y coeficientes lpc sobre un canal
+  telefónico.
+\newblock 1:111--129.
+
+\bibitem[De~Luna et~al., 2006]{luna}
+De~Luna, O., Martínez, R., and G., M. (2006).
+\newblock {\em Reconocimiento de Voz con Redes Neuronales, DTW y Modelos
+  Ocultos de Markov}.
+\newblock redalyc.org, México.
+
+\bibitem[Ebla and Inca, 2016]{henry}
+Ebla, H. and Inca, P. (2016).
+\newblock {\em Diseño e implementación de un filtro adaptativo mediante
+  filtros Wiener para la cancelación de ruido en señales de audio}.
+\newblock Facultad de Ingeniería, Universidad Nacional de Chimborazo, Ecuador.
+
+\bibitem[Franco, 2010]{franco}
+Franco, J. (2010).
+\newblock {\em Reconocimiento de Voz para Niños con Discapacidad en el Habla}.
+\newblock Ingeniería en Electrónica y Computadoras, Universidad de las
+  Américas Puebla, México.
+
+\bibitem[Furui, 1981]{furui}
+Furui, S. (1981).
+\newblock Cepstral analysis technique for automatic speaker verification.
+\newblock 1:254--272.
+
+\bibitem[Guevara and Salazar, 2007]{orlando}
+Guevara, J. and Salazar, J. (2007).
+\newblock {\em Extracción de Características en el Procesamiento Digital de
+  una Señal para el Mejoramiento del Reconocimiento Automatico del Habla
+  usando Wavelets.}
+\newblock Escuela de Informática, Facultad de Ciencias Físicas Y
+  Matemáticas, Universidad Nacional de Trujillo, Perú.
+
+\bibitem[Harrington, 1999]{harrington}
+Harrington, J. (1999).
+\newblock {\em Techniques in Speech Acoustics}.
+\newblock Kluwer Academic Publishers, Canada.
+
+\bibitem[Huang et~al., 2001]{xuedong}
+Huang, X., Acero, A., and Hon, H. (2001).
+\newblock {\em Spoken Language Processing: A Guide to Theory, Algorithm, and
+  System Development}.
+\newblock Carnegie Mellon University, EE.UU.
+
+\bibitem[Jelinek, 2004]{frederick}
+Jelinek, F. (2004).
+\newblock {\em Computer Speech: Recognition, Compression, Synthesis}.
+\newblock Springer Science \& Business Media, Germany.
+
+\bibitem[L., 2016]{cosentino}
+L., C. (2016).
+\newblock Control de accesos. negocios de seguridad.
+\newblock 49:172--184.
+
+\bibitem[Lee, 1989]{kaifu}
+Lee, K. (1989).
+\newblock {\em Automatic Speech Recognition}.
+\newblock Springer, New York.
+
+\bibitem[Llisterri, 2018]{joaquim}
+Llisterri, J. (2018).
+\newblock Las características acústicas de los sonidos del habla.
+\newblock
+  \url{http://liceu.uab.es/~joaquim/phonetics/fon_anal_acus/fon_acust.html}.
+
+\bibitem[Mathematics, 2015]{mathematics}
+Mathematics (2015).
+\newblock Normalisation of a range of numbers to another range.
+\newblock
+  \url{https://math.stackexchange.com/questions/1554078/normalisation-of-a-range-of-numbers-to-another-range}.
+
+\bibitem[Myers et~al., 1980]{rabiner3}
+Myers, C., Rabiner, L., and Rosenberg, A. (1980).
+\newblock Performance tradeoffs in dynamic time warping algorithms for isolated
+  word recognition.
+\newblock 1:623--635.
+
+\bibitem[Navarrete, 2013]{navarrete}
+Navarrete, O. (2013).
+\newblock {\em Sistema Automatizado de Iluminación de una Casa mediante
+  Comandos de Voz}.
+\newblock Universidad Nacional Autónoma de México, México.
+
+\bibitem[Noergaard, 2012]{tammy}
+Noergaard, T. (2012).
+\newblock {\em Embedded Systems Architecture}.
+\newblock Newnes, EE.UU.
+
+\bibitem[Owens, 1993]{owens}
+Owens, F. (1993).
+\newblock {\em Signal processing of speech}.
+\newblock McGraw-Hill, New York.
+
+\bibitem[Perez and Villalobos, 2013]{perez}
+Perez, E. and Villalobos, J. (2013).
+\newblock {\em Sistema de Seguridad Por Reconocimiento de Voz}.
+\newblock Instituto Politécnico Nacional, México.
+
+\bibitem[Pérez et~al., 2013]{eyra}
+Pérez, E., Poceros, F., and Villalobos, J. (2013).
+\newblock {\em Sistema de Seguridad por Reconocimiento de Voz}.
+\newblock Escuela Superior de Ingeniería Mecánica y Eléctrica: Instituto
+  Politécnico, México.
+
+\bibitem[Rabiner et~al., 1978]{rabiner2}
+Rabiner, L., Rosenberg, A., and Levinson, S. (1978).
+\newblock Considerations in dynamic time warping algorithms for discrete word
+  recognition.
+\newblock 1:575--582.
+
+\bibitem[Rabiner and Sambur, 1975]{rabiner}
+Rabiner, L. and Sambur, M. (1975).
+\newblock An algorithm for determining the endpoints of isolated utterances.
+\newblock 54:297--315.
+
+\bibitem[Rama, 2007]{rama}
+Rama, A. (2007).
+\newblock {\em Procesamiento Digital de la Señal Sonora Utilizando Matlab}.
+\newblock Lulu.com, México.
+
+\bibitem[Rowden, 1992]{rowden}
+Rowden, C. (1992).
+\newblock {\em Speech Processing}.
+\newblock Mcgraw-Hill, EE.UU.
+
+\bibitem[Sakoe and Chiba, 1978]{sakoe}
+Sakoe, H. and Chiba, S. (1978).
+\newblock Dynamic programming algorithm optimization for spoken word
+  recognition.
+\newblock 1:43--49.
+
+\bibitem[Sanchez, 2015]{hugo}
+Sanchez, H. (2015).
+\newblock Ventajas y desventajas de los controles biométricos.
+\newblock
+  \url{http://controlbiometricodigital.blogspot.com/2015/07/ventajas-y-desventajas-de-los-controles.html}.
+
+\bibitem[Schroeder, 1998]{manfred}
+Schroeder, M. (1998).
+\newblock {\em Statistical Methods for Speech Recognition (Language, Speech,
+  and Communication)}.
+\newblock University Press Group Ltd, EE.UU.
+
+\bibitem[Shubhra, 2017]{shubhra}
+Shubhra, D. (2017).
+\newblock Lms adaptive filters for noise cancellation.
+\newblock 7:2520--2529.
+
+\bibitem[Simón, 2011]{simon}
+Simón, G. (2011).
+\newblock {\em Filtro adaptivo LMS y su aplicación en el reconocimiento de
+  palabras aisladas para el control de un equipo de sonido por medio de la
+  voz}.
+\newblock Facultad de Ciencias e Ingeniería, Universidad Pontificia Católica
+  del Perú, Perú.
+
+\bibitem[Toast, 2018]{timetoast2010}
+Toast, T. (2018).
+\newblock La historia de los sistemas de reconocimiento de voz.
+\newblock
+  \url{https://www.timetoast.com/timelines/la-historia-de-los-sistemas-de-reconocimiento-de-voz}.
+
+\bibitem[UNAM, 2015]{unam}
+UNAM (2015).
+\newblock Laboratorio de procesamiento digital de voz, detección de inicio y
+  fin de palabra.
+\newblock
+  \url{http://profesores.fi-b.unam.mx/procvoz/Practicas/Practica03.pdf}.
+
+\bibitem[Varela, 2011]{varela}
+Varela, O. (2011).
+\newblock {\em Técnicas de análisis, caracterización y detección de
+  señales de voz en entornos acústicos adversos}.
+\newblock Telecomunicación UPM, Archivo Digital UPM.
+
+\bibitem[Velásquez, 2008]{genoveva}
+Velásquez, G. (2008).
+\newblock {\em Sistema de Reconocimiento de Voz en Matlab}.
+\newblock Escuela de Ingeniería Mecánica Eléctrica, Facultad de Ingeniería,
+  Universidad de San Carlos de Guatemala, Guatemala.
+
+\bibitem[Wikipedia, 2016]{wikipedia1}
+Wikipedia (2016).
+\newblock Formante.
+\newblock \url{https://es.wikipedia.org/wiki/Formante}.
+
+\bibitem[Zelaya, 2004]{walter}
+Zelaya, W. (2004).
+\newblock {\em Diseño de un filtro digital adaptativo como cancelador de ruido
+  basado en el algoritmo LMS}.
+\newblock Facultad de Ingeniería y Arquitectura, Universidad del Salvador, El
+  Salvador.
+
+\end{thebibliography}
