@@ -46,64 +46,64 @@
 \contentsline {subsection}{\numberline {3.2.2}Desarrollo del software del sistema}{195}% 
 \contentsline {subsection}{\numberline {3.2.3}Construcci\IeC {\'o}n del hardware}{203}% 
 \contentsline {subsubsection}{\numberline {3.2.3.1}Dise\IeC {\~n}o del hardware del sistema}{203}% 
-\contentsline {subsubsection}{\numberline {3.2.3.2}Implementaci\IeC {\'o}n del hardware del sistema}{203}% 
-\contentsline {section}{\numberline {3.3}Fase 3. Testeo del sistema}{204}% 
-\contentsline {subsection}{\numberline {3.3.1}Hallar BC y M}{204}% 
-\contentsline {subsection}{\numberline {3.3.2}Hallar V}{209}% 
-\contentsline {subsection}{\numberline {3.3.3}Hallar P}{212}% 
-\contentsline {subsection}{\numberline {3.3.4}Hallar S}{215}% 
-\contentsline {subsection}{\numberline {3.3.5}Hallar S}{217}% 
-\contentsline {subsection}{\numberline {3.3.6}Hallar r}{218}% 
-\contentsline {subsection}{\numberline {3.3.7}Hallar T}{220}% 
-\contentsline {subsection}{\numberline {3.3.8}Hallar V y S}{222}% 
-\contentsline {subsection}{\numberline {3.3.9}Hallar V, S, y T}{226}% 
-\contentsline {subsection}{\numberline {3.3.10}Hallar d}{230}% 
-\contentsline {subsection}{\numberline {3.3.11}Hallar el algoritmo para la detecci\IeC {\'o}n de inicio y fin de la se\IeC {\~n}al de voz}{232}% 
-\contentsline {subsection}{\numberline {3.3.12}Hallar el algoritmo para la eliminaci\IeC {\'o}n de ruido aditivo}{236}% 
-\contentsline {section}{\numberline {3.4}Fase 4. Mantenimiento del sistema}{243}% 
-\contentsline {chapter}{\numberline {4}Resultados y discusi\IeC {\'o}n de la tesis}{248}% 
-\contentsline {section}{\numberline {4.1}Pruebas para obtener los umbrales de decisi\IeC {\'o}n}{252}% 
-\contentsline {subsection}{\numberline {4.1.1}Prueba para obtener U2}{252}% 
-\contentsline {subsubsection}{\numberline {4.1.1.1}Caso 1}{252}% 
-\contentsline {subsubsection}{\numberline {4.1.1.2}Caso 2}{253}% 
-\contentsline {subsubsection}{\numberline {4.1.1.3}Caso 3}{254}% 
-\contentsline {subsubsection}{\numberline {4.1.1.4}Caso 4}{255}% 
-\contentsline {subsubsection}{\numberline {4.1.1.5}Caso 5}{256}% 
-\contentsline {subsubsection}{\numberline {4.1.1.6}Caso 6}{257}% 
-\contentsline {subsubsection}{\numberline {4.1.1.7}Caso 7}{258}% 
-\contentsline {subsubsection}{\numberline {4.1.1.8}Caso 8}{259}% 
-\contentsline {subsection}{\numberline {4.1.2}Prueba para obtener U1}{262}% 
-\contentsline {subsubsection}{\numberline {4.1.2.1}Caso 1}{262}% 
-\contentsline {subsubsection}{\numberline {4.1.2.2}Caso 2}{263}% 
-\contentsline {subsubsection}{\numberline {4.1.2.3}Caso 3}{264}% 
-\contentsline {subsubsection}{\numberline {4.1.2.4}Caso 4}{265}% 
-\contentsline {subsubsection}{\numberline {4.1.2.5}Caso 5}{266}% 
-\contentsline {subsubsection}{\numberline {4.1.2.6}Caso 6}{267}% 
-\contentsline {subsubsection}{\numberline {4.1.2.7}Caso 7}{268}% 
-\contentsline {subsubsection}{\numberline {4.1.2.8}Caso 8}{269}% 
-\contentsline {section}{\numberline {4.2}Pruebas para la construcci\IeC {\'o}n del patr\IeC {\'o}n de referencia}{275}% 
-\contentsline {subsection}{\numberline {4.2.1}Prueba con U1 din\IeC {\'a}mico}{275}% 
-\contentsline {subsubsection}{\numberline {4.2.1.1}Caso 1}{275}% 
-\contentsline {subsubsection}{\numberline {4.2.1.2}Caso 2}{276}% 
-\contentsline {subsubsection}{\numberline {4.2.1.3}Caso 3}{277}% 
-\contentsline {subsubsection}{\numberline {4.2.1.4}Caso 4}{278}% 
-\contentsline {subsubsection}{\numberline {4.2.1.5}Caso 5}{278}% 
-\contentsline {subsubsection}{\numberline {4.2.1.6}Caso 6}{279}% 
-\contentsline {subsubsection}{\numberline {4.2.1.7}Caso 7}{280}% 
-\contentsline {subsubsection}{\numberline {4.2.1.8}Caso 8}{281}% 
-\contentsline {subsection}{\numberline {4.2.2}Prueba con U1 est\IeC {\'a}tico}{283}% 
-\contentsline {subsubsection}{\numberline {4.2.2.1}Caso 1}{283}% 
-\contentsline {subsubsection}{\numberline {4.2.2.2}Caso 2}{284}% 
-\contentsline {subsubsection}{\numberline {4.2.2.3}Caso 3}{284}% 
-\contentsline {subsubsection}{\numberline {4.2.2.4}Caso 4}{285}% 
-\contentsline {subsubsection}{\numberline {4.2.2.5}Caso 5}{286}% 
-\contentsline {subsubsection}{\numberline {4.2.2.6}Caso 6}{286}% 
-\contentsline {subsubsection}{\numberline {4.2.2.7}Caso 7}{287}% 
-\contentsline {subsubsection}{\numberline {4.2.2.8}Caso 8}{288}% 
-\contentsline {subsection}{\numberline {4.2.3}Prueba de hip\IeC {\'o}tesis o de significaci\IeC {\'o}n}{292}% 
-\contentsline {chapter}{\numberline {5}Consideraciones finales}{295}% 
-\contentsline {section}{\numberline {5.1}Conclusiones}{295}% 
-\contentsline {section}{\numberline {5.2}Trabajos futuros}{299}% 
-\contentsline {chapter}{ Referencias bibliogr\IeC {\'a}f\IeC {\'\i }cas}{302}% 
-\contentsline {chapter}{\numberline {A}Primer ap\IeC {\'e}ndice}{307}% 
-\contentsline {section}{\numberline {A.1}Prueba de independencia Chi-Cuadrado de Pearson}{307}% 
+\contentsline {subsubsection}{\numberline {3.2.3.2}Implementaci\IeC {\'o}n del hardware del sistema}{204}% 
+\contentsline {section}{\numberline {3.3}Fase 3. Testeo del sistema}{205}% 
+\contentsline {subsection}{\numberline {3.3.1}Hallar BC y M}{205}% 
+\contentsline {subsection}{\numberline {3.3.2}Hallar V}{210}% 
+\contentsline {subsection}{\numberline {3.3.3}Hallar P}{213}% 
+\contentsline {subsection}{\numberline {3.3.4}Hallar S}{216}% 
+\contentsline {subsection}{\numberline {3.3.5}Hallar S}{218}% 
+\contentsline {subsection}{\numberline {3.3.6}Hallar r}{219}% 
+\contentsline {subsection}{\numberline {3.3.7}Hallar T}{221}% 
+\contentsline {subsection}{\numberline {3.3.8}Hallar V y S}{223}% 
+\contentsline {subsection}{\numberline {3.3.9}Hallar V, S, y T}{227}% 
+\contentsline {subsection}{\numberline {3.3.10}Hallar d}{231}% 
+\contentsline {subsection}{\numberline {3.3.11}Hallar el algoritmo para la detecci\IeC {\'o}n de inicio y fin de la se\IeC {\~n}al de voz}{233}% 
+\contentsline {subsection}{\numberline {3.3.12}Hallar el algoritmo para la eliminaci\IeC {\'o}n de ruido aditivo}{237}% 
+\contentsline {section}{\numberline {3.4}Fase 4. Mantenimiento del sistema}{244}% 
+\contentsline {chapter}{\numberline {4}Resultados y discusi\IeC {\'o}n de la tesis}{249}% 
+\contentsline {section}{\numberline {4.1}Pruebas para obtener los umbrales de decisi\IeC {\'o}n}{253}% 
+\contentsline {subsection}{\numberline {4.1.1}Prueba para obtener U2}{253}% 
+\contentsline {subsubsection}{\numberline {4.1.1.1}Caso 1}{253}% 
+\contentsline {subsubsection}{\numberline {4.1.1.2}Caso 2}{254}% 
+\contentsline {subsubsection}{\numberline {4.1.1.3}Caso 3}{255}% 
+\contentsline {subsubsection}{\numberline {4.1.1.4}Caso 4}{256}% 
+\contentsline {subsubsection}{\numberline {4.1.1.5}Caso 5}{257}% 
+\contentsline {subsubsection}{\numberline {4.1.1.6}Caso 6}{258}% 
+\contentsline {subsubsection}{\numberline {4.1.1.7}Caso 7}{259}% 
+\contentsline {subsubsection}{\numberline {4.1.1.8}Caso 8}{260}% 
+\contentsline {subsection}{\numberline {4.1.2}Prueba para obtener U1}{263}% 
+\contentsline {subsubsection}{\numberline {4.1.2.1}Caso 1}{263}% 
+\contentsline {subsubsection}{\numberline {4.1.2.2}Caso 2}{264}% 
+\contentsline {subsubsection}{\numberline {4.1.2.3}Caso 3}{265}% 
+\contentsline {subsubsection}{\numberline {4.1.2.4}Caso 4}{266}% 
+\contentsline {subsubsection}{\numberline {4.1.2.5}Caso 5}{267}% 
+\contentsline {subsubsection}{\numberline {4.1.2.6}Caso 6}{268}% 
+\contentsline {subsubsection}{\numberline {4.1.2.7}Caso 7}{269}% 
+\contentsline {subsubsection}{\numberline {4.1.2.8}Caso 8}{270}% 
+\contentsline {section}{\numberline {4.2}Pruebas para la construcci\IeC {\'o}n del patr\IeC {\'o}n de referencia}{276}% 
+\contentsline {subsection}{\numberline {4.2.1}Prueba con U1 din\IeC {\'a}mico}{276}% 
+\contentsline {subsubsection}{\numberline {4.2.1.1}Caso 1}{276}% 
+\contentsline {subsubsection}{\numberline {4.2.1.2}Caso 2}{277}% 
+\contentsline {subsubsection}{\numberline {4.2.1.3}Caso 3}{278}% 
+\contentsline {subsubsection}{\numberline {4.2.1.4}Caso 4}{279}% 
+\contentsline {subsubsection}{\numberline {4.2.1.5}Caso 5}{279}% 
+\contentsline {subsubsection}{\numberline {4.2.1.6}Caso 6}{280}% 
+\contentsline {subsubsection}{\numberline {4.2.1.7}Caso 7}{281}% 
+\contentsline {subsubsection}{\numberline {4.2.1.8}Caso 8}{282}% 
+\contentsline {subsection}{\numberline {4.2.2}Prueba con U1 est\IeC {\'a}tico}{284}% 
+\contentsline {subsubsection}{\numberline {4.2.2.1}Caso 1}{284}% 
+\contentsline {subsubsection}{\numberline {4.2.2.2}Caso 2}{285}% 
+\contentsline {subsubsection}{\numberline {4.2.2.3}Caso 3}{285}% 
+\contentsline {subsubsection}{\numberline {4.2.2.4}Caso 4}{286}% 
+\contentsline {subsubsection}{\numberline {4.2.2.5}Caso 5}{287}% 
+\contentsline {subsubsection}{\numberline {4.2.2.6}Caso 6}{287}% 
+\contentsline {subsubsection}{\numberline {4.2.2.7}Caso 7}{288}% 
+\contentsline {subsubsection}{\numberline {4.2.2.8}Caso 8}{289}% 
+\contentsline {subsection}{\numberline {4.2.3}Prueba de hip\IeC {\'o}tesis o de significaci\IeC {\'o}n}{293}% 
+\contentsline {chapter}{\numberline {5}Consideraciones finales}{296}% 
+\contentsline {section}{\numberline {5.1}Conclusiones}{296}% 
+\contentsline {section}{\numberline {5.2}Trabajos futuros}{300}% 
+\contentsline {chapter}{ Referencias bibliogr\IeC {\'a}f\IeC {\'\i }cas}{303}% 
+\contentsline {chapter}{\numberline {A}Primer ap\IeC {\'e}ndice}{308}% 
+\contentsline {section}{\numberline {A.1}Prueba de independencia Chi-Cuadrado de Pearson}{308}% 

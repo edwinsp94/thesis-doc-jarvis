@@ -1039,7 +1039,7 @@ $N^\circ$ & U2 & U1=U & U1=0.51 \\
 
 En la Tabla \ref{table:tabla4.17} se puede ver que para $U1 = 0.51$ se obtuvo una menor cantidad de número de errores en la respuesta del sistema de reconocimiento de voz, debido a esto se escogerá este valor.
 \vskip 0.5cm
-Ahora evaluaremos el tiempo de ejecución que toma el sistema para realizar el reconocimiento de voz y el reajuste de los umbrales, si bien este último no es necesario evaluar ya que el valor de $U1$ es 0.51 un valor estático y no dinámico (calculado por la Ecuación \eqref{eq:equacion105}), lo haremos igual como información complementaria para la investigación.
+Ahora evaluaremos el tiempo de ejecución que toma el sistema para realizar el reconocimiento de voz y el reajuste de los umbrales, si bien este último no es necesario evaluar ya que el valor de $U1$ es 0.51 un valor estático y no dinámico (calculado por la Ecuación \eqref{eq:ecuacion105}), lo haremos igual como información complementaria para la investigación.
 
 \begin{figure}[H]
 \captionsetup{justification=centering}
@@ -1090,7 +1090,7 @@ El tiempo de respuesta del sistema para el reconocimiento de voz no debe ser may
 Por ello, se planteó utilizar la técnica para la construcción del patrón de referencia definida por la Ecuación \eqref{eq:ecuacion101} que consistía en agrupar un número de audios y dar como resultado un patrón promedio que los represente, así podremos disminuir el tiempo de respuesta del sistema al tener un número menor de patrones en la base de datos.
 
 \section{Pruebas para la construcción del patrón de referencia}
-En esta segunda parte al igual que la primera consta de 2 etapas, en la primera el umbral $U1$ se considerará con valor dinámico es decir el valor definido por la Ecuación \eqref{eq:equacion106} y para la segunda etapa el umbral $U1$ tendrá un valor estático que será 0.51, valor que fue escogido como el mejor en la primera parte. De esta manera procederemos a evaluar el algoritmo de construcción del patrón de referencia en estos dos escenarios.
+En esta segunda parte al igual que la primera consta de 2 etapas, en la primera el umbral $U1$ se considerará con valor dinámico es decir el valor definido por la Ecuación \eqref{eq:ecuacion105} y para la segunda etapa el umbral $U1$ tendrá un valor estático que será 0.51, valor que fue escogido como el mejor en la primera parte. De esta manera procederemos a evaluar el algoritmo de construcción del patrón de referencia en estos dos escenarios.
 \vskip 0.5cm
 A continuación, veremos los resultados que se obtuvieron en la realización de las pruebas para los 8 escenarios o casos definidos anteriormente, donde $N$ representa el número de patrones o audios que se emplearán para la construcción del patrón de referencia.
 

@@ -1,5 +1,10 @@
 \begin{thebibliography}{}
 
+\bibitem[ALTUMTEC, 2018]{altumtec}
+ALTUMTEC (2018).
+\newblock ¿qué es un sistema de control de acceso?
+\newblock \url{https://altumtec.com/que-es-un-sistema-control-de-acceso/}.
+
 \bibitem[Becchetti and Prina, 1999]{claudio}
 Becchetti, C. and Prina, L. (1999).
 \newblock {\em Speech Recognition: Theory and C++ Implementation}.
@@ -10,6 +15,11 @@ Cook, S. (2002).
 \newblock Speech recognition howto.
 \newblock \url{http://www.tldp.org/HOWTO/Speech-Recognition-HOWTO/inside.html}.
 
+\bibitem[Cosentino, 2016]{cosentino}
+Cosentino, L. (2016).
+\newblock Control de accesos. negocios de seguridad.
+\newblock 49:172--184.
+
 \bibitem[Cruz, 2009]{luis}
 Cruz, L. (2009).
 \newblock Aplicación del reconocimiento de voz de un hablante mediante una red
@@ -18,7 +28,7 @@ Cruz, L. (2009).
 \newblock 1:111--129.
 
 \bibitem[De~Luna et~al., 2006]{luna}
-De~Luna, O., Martínez, R., and G., M. (2006).
+De~Luna, O., Martínez, R., and Mora, G. (2006).
 \newblock {\em Reconocimiento de Voz con Redes Neuronales, DTW y Modelos
   Ocultos de Markov}.
 \newblock redalyc.org, México.
@@ -28,6 +38,12 @@ Ebla, H. and Inca, P. (2016).
 \newblock {\em Diseño e implementación de un filtro adaptativo mediante
   filtros Wiener para la cancelación de ruido en señales de audio}.
 \newblock Facultad de Ingeniería, Universidad Nacional de Chimborazo, Ecuador.
+
+\bibitem[Fermax, 2016]{fermax}
+Fermax (2016).
+\newblock Sistemas de identificación en el control de accesos: ¿cuál elegir?
+\newblock
+  \url{https://blog.fermax.com/esp/sistemas-de-identificación-en-el-control-de-accesos-cuál-elegir}.
 
 \bibitem[Franco, 2010]{franco}
 Franco, J. (2010).
@@ -63,11 +79,6 @@ Huang, X., Acero, A., and Hon, H. (2001).
 Jelinek, F. (2004).
 \newblock {\em Computer Speech: Recognition, Compression, Synthesis}.
 \newblock Springer Science \& Business Media, Germany.
-
-\bibitem[L., 2016]{cosentino}
-L., C. (2016).
-\newblock Control de accesos. negocios de seguridad.
-\newblock 49:172--184.
 
 \bibitem[Lee, 1989]{kaifu}
 Lee, K. (1989).

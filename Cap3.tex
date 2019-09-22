@@ -1064,6 +1064,11 @@ En la Figura \ref{fig:figura3.68} se muestra la función para enviar informació
 \newpage
 \subsection{Construcción del hardware}
 \subsubsection{Diseño del hardware del sistema}
+En la Figura \ref{fig:figura3.69} se muestra el diseño del hardware para nuestro sistema de seguridad por reconocimiento de voz, en dicho diagrama se indica la conexión e integración de cada componente que conforman el hardware del sistema.
+\vskip 0.5cm
+A continuación, explicaremos el rol que cumple cada componente en el funcionamiento del sistema. El arduino mega, este microcontrolador almacena el código fuente que nos permitirá controlar la activación o desactivación de la cerradura eléctrica y el foco, a través de un dispositivo movil android, para ello se nececita establecer una comunicación inalámbrica con este, es por eso que se utiliza el componente ethernet shield, el cuál nos permite conectar el arduino mega a una red por medio de un cable UTP con entradas RJ45, y este es conectado a un router o móden.
+\vskip 0.5cm
+En cuanto al módulo relé, este componente su función es transformar el voltaje de la corriente eléctrica de 0V a 5V proveniente del arduino mega a 220V, que es usada para la activación del foco y la cerradura eléctrica, pero para este último se requiere para su funcionamiento 12V, por lo que se usa un tranformador reductor de potencial.
 \begin{figure}[H]
 \captionsetup{justification=centering}
 \begin{center}
@@ -1078,10 +1083,11 @@ En la Figura \ref{fig:figura3.68} se muestra la función para enviar informació
 \end{figure}
 
 \subsubsection{Implementación del hardware del sistema}
+En la Figura \ref{fig:figura3.70} se muestra la implementación del hardware de nuestro sistema de seguridad por reconocimiento de voz.
 \begin{figure}[H]
 \captionsetup{justification=centering}
 \begin{center}
-\includegraphics[width=0.45\textwidth]{Imagenes/Cap3/image070}
+\includegraphics[width=0.42\textwidth]{Imagenes/Cap3/image070}
 \end{center}
 \begin{center}
 \vskip -0.5cm
@@ -1090,7 +1096,7 @@ En la Figura \ref{fig:figura3.68} se muestra la función para enviar informació
 {\small{Fuente: Elaboración propia}}
 \end{center}
 \end{figure}
-
+\vskip -0.5cm
 \newpage
 \section{Fase 3. Testeo del sistema}
 En esta etapa del desarrollo utilizaremos a 5 personas del sexo masculino con edades entre 20 y 22 años, donde cada una de ellos dirá los números del 1 al 10, repitiendo así este proceso 5 veces, el entorno de grabación será en un ambiente controlado sin ruido.

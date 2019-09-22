@@ -18,7 +18,7 @@ En 1940’s y 1950’s, la mayoría de los investigadores reconocen que era un p
 \end{enumerate}
 
 \par
-Estos sistemas empiezan a incorporar técnicas de normalización del tiempo (minimizar diferencia en velocidad del habla). Además, ya no buscaban una exactitud perfecta en el reconocimiento \citep{manfred}. Después IBM y CMV trabajan en reconocimiento de voz continuo, pero no se ven resultados hasta los 1970’s.
+Estos sistemas empiezan a incorporar técnicas de normalización del tiempo (minimizar diferencia en velocidad del habla). Además, ya no buscaban una exactitud perfecta en el reconocimiento, \citep{manfred}. Después IBM y CMV trabajan en reconocimiento de voz continuo, pero no se ven resultados hasta los 1970’s.
 \vskip 0.5cm
 En 1970’s, un ambicioso proyecto para construir un sistema informático que entienda y procese el habla fue iniciado por DARPA \citep{frederick}, la meta era integrar conocimiento acerca del habla, lingüística e inteligencia artificial para desarrollar un \textit{Sistema Informático del Lenguaje Hablado}. Se desarrolló un sistema informático llamado \textit{Harpy} que integraba todas las fuentes de conocimiento en redes de estado finito, que eran entrenadas estadísticamente. En estos años crecen notoriamente métodos que hacen uso de la probabilidad y se entiende por \textit{Reconocimiento Automático del Habla} como buscar la palabra más probable en una señal de audio, dada alguna información de su distribución de probabilidad.
 \vskip 0.5cm
@@ -26,7 +26,7 @@ En 1980’s, modernos reconocedores son lanzados al mercado, los algoritmos desa
 \vskip 0.5cm
 En 1990’s, con el aumento del poder de cómputo y capacidad de memoria de las computadoras existen avances en algoritmos de adaptación y entrenamiento discriminativo, a la vez se desarrollan sistemas informáticos que reconocían palabras independientemente quien fuera el hablante, algunas de estas aplicaciones fueron implantadas en empresas telefónicas. En 1995, Dragon IBM lanza su producto que reconocía palabras aisladas dependiente del hablante, era un sistema que permitía un dictado de un gran número de palabras. En 1997, Dragon IBM lanza su sistema para dictado continuo. En 2000’s, teléfonos celulares ya ofrecían servicios de marcado activado por voz.
 \vskip 0.5cm
-En 2010’s, \cite{timetoast2010} salió a la luz el asistente de voz Siri, realizando funciones de asistente personal a veces con su propia personalidad para iOS, macOS, tvOS y watchOS. Esta aplicación utiliza procesamiento del lenguaje natural para responder preguntas, hacer recomendaciones y realizar acciones mediante la delegación de solicitudes hacia un conjunto de servicios web que ha ido aumentando con el tiempo. También han aparecido asistentes de voz como Cortana de Microsoft y Bixby para dispositivos Android.
+En 2010’s, salió a la luz el asistente de voz Siri, realizando funciones de asistente personal a veces con su propia personalidad para iOS, macOS, tvOS y watchOS. Esta aplicación utiliza procesamiento del lenguaje natural para responder preguntas, hacer recomendaciones y realizar acciones mediante la delegación de solicitudes hacia un conjunto de servicios web que ha ido aumentando con el tiempo. También han aparecido asistentes de voz como Cortana de Microsoft y Bixby para dispositivos Android, \citep{timetoast2010}.
 \vskip 0.5cm
 En la actualidad, se espera que con el poder de cómputo actual de las máquinas y las diversas investigaciones en el tema, se logre aumentar el desempeño. Aplicaciones actuales van desde software para celulares, robótica hasta interfaces de voz para personas discapacitadas; desafortunadamente las comparaciones de error entre humanos y máquinas todavía dan un amplio margen de diferencia, por lo que se espera lograr que éste margen disminuya en los próximos años.
 
@@ -174,7 +174,7 @@ No todos los sonidos se componen de formantes definidos. Solamente aparecen en s
 \newpage
 \item[b)]Señal acústica
 \par
-\cite{luis}, un reconocedor no puede analizar los movimientos en la boca. En su lugar, la fuente de información es la señal de voz misma. El habla es una señal analógica, es decir, un flujo continuo de ondas sonoras y silencios. El conocimiento de la ciencia de la acústica se utiliza para identificar y describir los atributos del habla que son necesarios para un reconocimiento de voz efectivo.
+Un reconocedor no puede analizar los movimientos en la boca. En su lugar, la fuente de información es la señal de voz misma. El habla es una señal analógica, es decir, un flujo continuo de ondas sonoras y silencios. El conocimiento de la ciencia de la acústica se utiliza para identificar y describir los atributos del habla que son necesarios para un reconocimiento de voz efectivo, \cite{luis}.
 \vskip 0.5cm
 Algunas características importantes del análisis acústico son:
 \begin{enumerate}
@@ -215,11 +215,11 @@ La facilidad del humano en superar estas dificultades sugiere que un sistema bas
 \vskip 0.5cm
 El oído humano detecta frecuencias de 20 a 20000 Hz, pero es más sensible al rango entre 1000 y 6000 Hz, además de los pequeños cambios en la frecuencia en el ancho de banda, crítico para el habla. El patrón de sensibilidad a cambios en el tono no corresponde a la escala lineal de frecuencias de ciclos por segundo de la acústica. Para representar mejor al patrón de percepción acústica, se tiene una escala llamada \textit{Escala de Mel}, la cual es una escala logarítmica que representa los niveles de la señal.
 \vskip 0.5cm
-En \cite{eyra} se dice que, el humano no procesa frecuencias individuales independientemente, como lo sugiere el análisis acústico. En su lugar escucha grupos de frecuencias por lo cual es capaz de distinguirlas de ruidos alrededor.
+El humano no procesa frecuencias individuales independientemente, como lo sugiere el análisis acústico. En su lugar escucha grupos de frecuencias por lo cual es capaz de distinguirlas de ruidos alrededor, \cite{eyra}.
 \end{enumerate}
 
 \subsubsection{Modelo digital para la voz (Fuente-Filtro)}
-\cite{rowden}, una forma bastante simplificada pero efectiva para comprender el mecanismo para la producción de la voz es mediante el modelo fuente-filtro, propuesto originalmente por Muller en 1848. En dicho modelo, se supone que la fuente o señal de excitación es linealmente separable de las características del tracto vocal, que se representan por medio de un filtro. Por lo tanto, la señal de voz es la salida de este filtro en respuesta a la fuente de excitación, la cual puede representarse como un generador de un tren de impulsos cuasiperiódicos para los sonidos sonoros, o como un generador de ruido aleatorio (ruido blanco) para los sonidos sordos.
+Una forma bastante simplificada pero efectiva para comprender el mecanismo para la producción de la voz es mediante el modelo fuente-filtro, propuesto originalmente por Muller en 1848. En dicho modelo, se supone que la fuente o señal de excitación es linealmente separable de las características del tracto vocal, que se representan por medio de un filtro. Por lo tanto, la señal de voz es la salida de este filtro en respuesta a la fuente de excitación, la cual puede representarse como un generador de un tren de impulsos cuasiperiódicos para los sonidos sonoros, o como un generador de ruido aleatorio (ruido blanco) para los sonidos sordos, \cite{rowden}.
 \vskip 0.5cm
 Puesto que el filtro debe tener las mismas características que el tracto vocal, no es posible mantener constantes los parámetros del filtro, los cuales tienen que ser modificados para que correspondan a las variaciones que suceden al hablar. Por lo tanto, el filtro tiene parámetros variantes en el tiempo. No obstante, en la práctica, esta tasa de cambio varía lentamente en el tiempo, por lo que los parámetros tienen que ser actualizados en intervalos de 5 a 30 ms.
 \vskip 0.5cm
@@ -300,7 +300,7 @@ En la Figura \ref{fig:figura2.5}, durante la etapa de entrenamiento se capturan 
 Como se observa en la Figura \ref{fig:figura2.6}, en la etapa de reconocimiento se captura la palabra que se desea reconocer. A esta palabra, también se le aplica preprocesamiento, para recortarla. Utilizando los centroides, calculados durante el entrenamiento y almacenados en la memoria, se realizan las comparaciones necesarias, para efectuar el reconocimiento. El éxito del evento dependerá de ciertos parámetros estadísticos obtenidos mediante el análisis de una población de resultados.
 
 \subsection{Procesamiento o análisis de la señal de voz}
-\cite{rowden}, la finalidad del procesamiento de la señal de voz es obtener una representación más útil o conveniente de la información contenida en esta. Como se mostró anteriormente, la señal de voz es una composición compleja de sonidos, pero mediante un análisis, se puede mostrar que está formada por la combinación de componentes a diferentes frecuencias, producidas por la excitación periódica o aperiódica de las resonancias en el tracto vocal, principalmente entre 80 y 8000 Hz.
+La finalidad del procesamiento de la señal de voz es obtener una representación más útil o conveniente de la información contenida en esta. Como se mostró anteriormente, la señal de voz es una composición compleja de sonidos, pero mediante un análisis, se puede mostrar que está formada por la combinación de componentes a diferentes frecuencias, producidas por la excitación periódica o aperiódica de las resonancias en el tracto vocal, principalmente entre 80 y 8000 Hz, \cite{rowden}.
 \vskip 0.5cm
 Las técnicas de análisis se pueden clasificar en dos categorías: en el dominio del tiempo o en el dominio de la frecuencia. Los procedimientos en el dominio del tiempo, se denominan así, porque éstos tienen que ver directamente con la señal de voz. El atractivo de estas representaciones es la facilidad con la que se pueden implementar, no obstante, estas suministran un medio útil para estimar otras características importantes de la señal. En contraste, los métodos en el dominio de la frecuencia involucran, ya sea de manera explícita o implícita, alguna forma de representación del espectro en frecuencia. 
 \vskip 0.5cm
@@ -372,7 +372,7 @@ Hay dos factores importantes durante este proceso. Primero está la taza de mues
 
 \item[•]Ancho de banda y muestreo
 \par
-En \cite{claudio}, se dice que el ancho de banda para las señales de voz es de aproximadamente unos 16000 Hz, pero la mayor parte de la energía se concentra en las frecuencias menores a 7000 Hz. No obstante, un ancho de banda de 3500 Hz es suficiente para poder entender el mensaje contenido en la señal de voz.
+Según \cite{claudio}, el ancho de banda para las señales de voz es de aproximadamente unos 16000 Hz, pero la mayor parte de la energía se concentra en las frecuencias menores a 7000 Hz. No obstante, un ancho de banda de 3500 Hz es suficiente para poder entender el mensaje contenido en la señal de voz.
 \vskip 0.5cm
 El valor para la frecuencia de muestreo se determina mediante el teorema del muestreo de Nyquist, que establece que, si la componente en frecuencia más alta presente en la señal de voz es \textit{$f_{max}$}, entonces para poder reconstruir apropiadamente la señal a partir de las muestras obtenidas, la frecuencia de muestreo \textit{$f_{s}$} debe satisfacer la siguiente condición:
 \begin{center}
@@ -384,7 +384,7 @@ $T_{s} \doteq \frac{1}{f_{s}}$
 \end{center}
 Si se emplea una frecuencia de muestreo menor que el doble de la frecuencia de Nyquist, entonces sucede un fenómeno conocido como \textit{aliasing}, para el cual una señal senoidal a cierta frecuencia pudiera parecer otra señal de menor frecuencia, como si esta fuera un alias de la original. Si ocurriera un aliasing en la señal de voz, se insertarían algunas componentes en frecuencia no deseadas que la distorsionarían.
 \newpage
-\cite{claudio}, puesto que el ancho de banda de una señal de voz se reduce durante la conversión A/D (analógico/digital), para su procesamiento se suelen utilizar básicamente dos frecuencias de muestreo, la primera de \textit{$f_{s}$ = 16000 Hz} para obtener un ancho de banda o una frecuencia de Nyquist de \textit{$f_{N}$ = 8000 Hz}, y la segunda de \textit{$f_{s}$ = 8000 Hz} que corresponde a un ancho de banda o una frecuencia de Nyquist de \textit{$f_{N}$ = 4000 Hz}.
+Puesto que el ancho de banda de una señal de voz se reduce durante la conversión A/D (analógico/digital), para su procesamiento se suelen utilizar básicamente dos frecuencias de muestreo, la primera de \textit{$f_{s}$ = 16000 Hz} para obtener un ancho de banda o una frecuencia de Nyquist de \textit{$f_{N}$ = 8000 Hz}, y la segunda de \textit{$f_{s}$ = 8000 Hz} que corresponde a un ancho de banda o una frecuencia de Nyquist de \textit{$f_{N}$ = 4000 Hz}, \cite{claudio}.
 \vskip 0.5cm
 En cualquier caso, el muestreo periódico de una señal analógica de voz \textit{x(t)}, proporciona una representación de esa señal mediante una secuencia de muestras \textit{x(n)}, que se pueden obtener mediante la siguiente relación:
 \begin{center}
@@ -408,7 +408,7 @@ La señal discreta de voz \textit{x(n)} esta indizada por la variable \textit{n}
 
 \item[•]Resolución o cuantificación
 \par
-\cite{manfred}, el proceso de cuantificación es uno de los pasos que se siguen para lograr la digitalización de una señal analógica. Este proceso convierte una sucesión de muestras de amplitud continua en una sucesión de valores discretos preestablecidos según el código utilizado.
+El proceso de cuantificación es uno de los pasos que se siguen para lograr la digitalización de una señal analógica. Este proceso convierte una sucesión de muestras de amplitud continua en una sucesión de valores discretos preestablecidos según el código utilizado, \cite{manfred}.
 \vskip 0.5cm
 Durante el proceso de cuantificación se mide el nivel de tensión de cada una de las muestras, obtenidas en el proceso de muestreo, y se les atribuye un valor finito de amplitud, seleccionado por aproximación dentro de un margen de niveles previamente fijado.
 \vskip 0.5cm
@@ -482,7 +482,7 @@ La cuantificación más usada, es de 8 bits, mínimo requerido para una calidad 
 
 \item[b)]Eliminación de ruido y normalización
 \par
-En \cite{henry}, define al ruido como una señal no deseada, es un elemento independiente de la señal, pero como consecuencia puede afectar la calidad de la misma. Para cancelar el ruido y mejorar la calidad se han desarrollado diversas técnicas de procesamiento de señal, dentro de los cuales se puede mencionar los filtros adaptativos, que es una técnica de las varias que existen hoy en día y es importante considerar los tipos de ruidos existentes en los canales de comunicación.
+El ruido es como una señal no deseada, es un elemento independiente de la señal, pero como consecuencia puede afectar la calidad de la misma. Para cancelar el ruido y mejorar la calidad se han desarrollado diversas técnicas de procesamiento de señal, dentro de los cuales se puede mencionar los filtros adaptativos, que es una técnica de las varias que existen hoy en día y es importante considerar los tipos de ruidos existentes en los canales de comunicación, \cite{henry}.
 
 \begin{enumerate}
 \item[-]Ruido aditivo: Se puede considerar todo aquel ruido procedente de distintas fuentes que coexistan en el mismo entorno acústico.
@@ -497,7 +497,7 @@ En \cite{henry}, define al ruido como una señal no deseada, es un elemento inde
 \par
 En los sistemas de cancelación de ruido podemos encontrar dos tipos de filtros, los filtros digitales y los filtros adaptativos. Los filtros digitales solo pueden ser usados en ambientes de ruido estacionario, ya que es necesario conocer a priori las estadísticas del ruido, una solución a esto son los filtros adaptativos.
 \vskip 0.5cm
-\cite{shubhra}, el propósito de los filtros digitales es separar señales que se han combinado y restaurar señales que se han distorsionado de alguna manera. La separación de señales se requiere cuando una señal se ha contaminado con una interferencia, ruido, u otras señales. Los filtros Weiner y filtros Kalman son ejemplos de filtros digitales, ver la Figura \ref{fig:figura2.14}.
+El propósito de los filtros digitales es separar señales que se han combinado y restaurar señales que se han distorsionado de alguna manera. La separación de señales se requiere cuando una señal se ha contaminado con una interferencia, ruido, u otras señales. Los filtros Weiner y filtros Kalman son ejemplos de filtros digitales, ver la Figura \ref{fig:figura2.14}, \cite{shubhra}.
 
 \newpage
 \vskip 0.5cm
@@ -627,21 +627,33 @@ La estructura transversal es la más sencilla de implementar, conduciendo a algo
 \par
 La habilidad de un filtro adaptativo es de operar de manera satisfactoria en un ambiente desconocido rastreando las variaciones estadísticas en el tiempo de una entrada, esto hace que los filtros adaptativos sean poderosos dispositivos para aplicaciones de procesado de señales y control. Es por eso que los filtros adaptativos han sido abundantemente aplicados en campos diversos tales como las comunicaciones, radar, sonar, sismología y la ingeniería biomédica. Aunque estas aplicaciones son de hecho bastante diferentes en naturaleza, no obstante, tienen un rasgo común básico: un vector de entrada y una respuesta deseada que se usan para calcular el error de estimación, que a su vez se usa para controlar los valores de un conjunto de coeficientes ajustables. 
 \newpage
-Los coeficientes ajustables pueden tomar la forma de pesos regulables, coeficientes de reflexión, parámetros de rotación o pesos sinápticos, dependiendo de la estructura del filtro empleada. Sin embargo, la diferencia esencial entre las varias aplicaciones de filtrado adaptativo comienza con la manera como se extrae la respuesta deseada. 
-\vskip 0.5cm
-En este contexto, podemos distinguir cuatro clases básicas de aplicaciones de filtros adaptativos que ascienden a doce, como se describen en la Figura \ref{fig:figura2.17}. En la sección anterior se describió el caso particular del cancelador de ruido, que es la que usaremos en esta tesis.
+Los coeficientes ajustables pueden tomar la forma de pesos regulables, coeficientes de reflexión, parámetros de rotación o pesos sinápticos, dependiendo de la estructura del filtro empleada. Sin embargo, la diferencia esencial entre las varias aplicaciones de filtrado adaptativo comienza con la manera como se extrae la respuesta deseada. En este contexto, podemos distinguir cuatro clases básicas de aplicaciones de filtros adaptativos que ascienden a doce, como se describen en la Tabla \ref{table:tabla23}. En la sección anterior se describió el caso particular del cancelador de ruido, que es la que usaremos en esta tesis.
 
-\begin{figure}[ht]
 \begin{center}
-\includegraphics[width=0.6\textwidth]{Imagenes/Cap2/image017}
-\end{center}
-\begin{center}
-\vskip -0.5cm
+\begin{table}[h!]
+\centering
+\vskip -0.2cm
 \caption{\small{Aplicaciones de filtros adaptativos.}}
-\label{fig:figura2.17}
+\label{table:tabla23}
+\begin{tabular}{|c|c|}
+\hline
+{\small Clase de filtro adaptativo} & {\small Aplicación}\\
+\hline
+\multirow{2}{*}{\small I. Identificación}&{\small Identificación de Sistemas}\\&{\small Modelado de Capas Subterráneas}\\
+\hline
+\multirow{2}{*}{\small II. Modelado Inverso}&{\small Deconvolución Predictiva}\\&{\small Ecualización Adaptativa}\\& {\small Ecualización Ciega}\\
+\hline
+\multirow{2}{*}{\small III. Predicción}&{\small Codificación por Predicción Lineal (LPC)}\\&{\small Codificación Diferencial	Adaptativa (ADPCM)}\\&{\small Análisis Espectral Autorregresivo}\\&{\small Detección de Señal}\\
+\hline
+\multirow{2}{*}{\small IV. Cancelación de Interferencias}&{\small Cancelación Adaptativa de Ruido}\\&{\small Cancelación de Eco}\\&{\small Formas de haz Adaptativas}\\
+\hline
+\end{tabular}
+\begin{center}
+\vskip 0.2cm
 {\small{Fuente: \cite{walter}}}
 \end{center}
-\end{figure}
+\end{table}
+\end{center}
 
 \item[•]Filtros adaptativos
 \par
@@ -714,22 +726,31 @@ Dónde $\beta$ es la constante de adaptación del NLMS, que optimiza el rango de
 w(n+1) = w(n) + \frac{\beta }{c+\left \| x(n) \right \|^{2}}e(n)x(n)
 \end{equation}
 
-En comparación al LMS, el NLMS tiene tamaño de paso variante que hace al NLMS para converger más rápidamente. Para sacar mejores aplicaciones se han desarrollado varias variantes del LMS, ver la Figura \ref{fig:figura2.19}.
+En comparación al LMS, el NLMS tiene tamaño de paso variante que hace al NLMS para converger más rápidamente. Para sacar mejores aplicaciones se han desarrollado varias variantes del LMS, ver la Tabla \ref{table:tabla24}.
 
-\begin{figure}[ht]
+\begin{center}
+\begin{table}[h!]
+\centering
+\vskip -0.2cm
+\caption{\small{Variantes del algoritmo LMS.}}
+\label{table:tabla24}
+\begin{tabular}{c}
+\begin{minipage}{.9\textwidth}
 \begin{center}
 \includegraphics[width=0.7\textwidth]{Imagenes/Cap2/image019}
 \end{center}
+\end{minipage}
+\end{tabular}
 \begin{center}
-\vskip -0.5cm
-\caption{\small{Variantes del algoritmo LMS.}}
-\label{fig:figura2.19}
+\vskip 0.2cm
 {\small{Fuente: \cite{shubhra}}}
 \end{center}
-\end{figure}
+\end{table}
+\end{center}
+
 \end{enumerate}
 
-Además del LMS, NLMS y sus variantes, existen otros algoritmos adaptivos como el algoritmo RLS (Mínimo Error Cuadrado Recursivo), el algoritmo CMA (Adaptivo de Módulo Constante), el algoritmo DMI (Adaptivo de Inversión de Matriz Directa), los cuales pueden verse en \cite{shubhra}.
+Además del LMS, NLMS y sus variantes, existen otros algoritmos adaptivos como el algoritmo RLS (Mínimo Error Cuadrado Recursivo), el algoritmo CMA (Adaptivo de Módulo Constante), el algoritmo DMI (Adaptivo de Inversión de Matriz Directa), los cuales pueden verse en \citep{shubhra}.
 \vskip 0.5cm
 \item[•]Convergencia
 \par
@@ -851,12 +872,12 @@ Algunos de los problemas que se presentan en la detección son:
 \item[-]Los niveles de ruido pueden confundirse con la señal de voz.
 \end{enumerate}
 
-En este trabajo de tesis se evaluará el algoritmo por función de energía y los algoritmos propuestos por Rabiner y Sambur, la expuesta en \cite{unam} la denominaremos \textit{Tipo 1} y la de \cite{rabiner} la denominaremos \textit{Tipo 2}, para la localización de los puntos de inicio y final de grabación de voz. Dicho algoritmo es muy útil y funciona muy bien en ambientes con una relación señal a ruido de al menos 30 dBC y está basado en dos mediciones de la voz, la energía de tiempo corto y la tasa de cruces por cero. Por último, se escogerá el que tenga mejor desempeño.
+En este trabajo de tesis se evaluará el algoritmo por función de energía y los algoritmos propuestos por Rabiner y Sambur, la expuesta en \citep{unam} la denominaremos \textit{Tipo 1} y la de \citep{rabiner} la denominaremos \textit{Tipo 2}, para la localización de los puntos de inicio y final de grabación de voz. Dicho algoritmo es muy útil y funciona muy bien en ambientes con una relación señal a ruido de al menos 30 dBC y está basado en dos mediciones de la voz, la energía de tiempo corto y la tasa de cruces por cero. Por último, se escogerá el que tenga mejor desempeño.
 
 \begin{enumerate}
 \item[•]Algoritmo por función de energía
 \par
-\cite{genoveva}, la señal digitalizada es escaneada y las zonas de silencio son removidas por medio del cálculo de energía en corto tiempo. En segmentos de 10 ms si la energía promedio es menor que un valor umbral, generalmente de valor 0.2 (proporcional a la energía promedio de la señal entera) es descartado. A continuación, se muestran las fórmulas que se utilizarán:
+La señal digitalizada es escaneada y las zonas de silencio son removidas por medio del cálculo de energía en corto tiempo. En segmentos de 10 ms si la energía promedio es menor que un valor umbral, generalmente de valor 0.2 (proporcional a la energía promedio de la señal entera) es descartado, \cite{genoveva}. A continuación, se muestran las fórmulas que se utilizarán:
 
 \begin{equation}
 \label{eq:ecuacion17}
@@ -1091,7 +1112,7 @@ De igual manera se opera en el intervalo comprendido entre $N_{2}$ y $N_{2} + 25
 \newpage
 \item[d)]Filtro de preénfasis
 \par
-\cite{stephen}, consiste en aplicar un filtro digital pasa altas de primer orden a la señal. Las frecuencias altas de los formantes se enfatizan por dos razones, primero para que no se pierda información durante la segmentación, ya que la mayoría de la información está contenida en las frecuencias bajas, y segundo para remover la componente DC de la señal, aplanándola espectralmente.
+Consiste en aplicar un filtro digital pasa altas de primer orden a la señal. Las frecuencias altas de los formantes se enfatizan por dos razones, primero para que no se pierda información durante la segmentación, ya que la mayoría de la información está contenida en las frecuencias bajas, y segundo para remover la componente DC de la señal, aplanándola espectralmente, \cite{stephen}.
 
 \begin{figure}[ht]
 \begin{center}
@@ -1277,7 +1298,7 @@ Para el entrenamiento se deben capturar diversas palabras recortadas por medio d
 \begin{enumerate}
 \item[a)]Extracción de características
 \par
-En \cite{claudio}, define a la extracción de características como el proceso mediante el cual, dado un conjunto de datos se desea obtener otro conjunto de datos resumidos, pero que contengan solo la información necesaria de los datos de entrada. Una buena técnica de extracción de características garantiza que dichos datos obtenidos son únicos para una determinada entrada, es decir que para dos señales de entrada diferentes, se obtiene dos conjuntos de características diferentes.
+Es el proceso mediante el cual, dado un conjunto de datos se desea obtener otro conjunto de datos resumidos, pero que contengan solo la información necesaria de los datos de entrada. Una buena técnica de extracción de características garantiza que dichos datos obtenidos son únicos para una determinada entrada, es decir que para dos señales de entrada diferentes, se obtiene dos conjuntos de características diferentes, \cite{claudio}.
 \vskip 0.5cm
 Sin embargo, obtener características plenamente diferentes involucra que todas las señales sean diferentes, así se traten de dos palabras iguales, pero con diversas tonalidades y velocidades. Por lo tanto, la obtención de características debe de asegurarme, que en ambas señales existen características que son propias para ambas. De esta manera podemos obtener un grado de similaridad adecuado para el reconocimiento de la señal de voz.
 \vskip 0.5cm
@@ -1323,7 +1344,7 @@ Para este trabajo de Tesis teniendo lo anterior como antecedentes, hemos optado 
 \newpage
 \item[b)]Codificación o análisis Mel cepstral
 \par
-En 1980 Davis y Mermelstein propusieron un nuevo tipo de representación del cepstrum, en el cual combinaron sus ventajas con los conocimientos de la percepción no lineal de la frecuencia en el sistema auditivo humano, tomando como base los estudios realizados por Zwicker en 1961. En este método de análisis, se utiliza la parte real del cepstrum, pero con una transformación no lineal de la frecuencia, pasando de la escala en Hertz a la escala de frecuencia Mel. Por eso, a estos coeficientes se les ha denominado como los Coeficientes Cepstral en la Frecuencia Mel o MFCC (Mel Frequency Cepstral Coefficients).
+En 1980 Davis y Mermelstein propusieron un nuevo tipo de representación del cepstrum, en el cual combinaron sus ventajas con los conocimientos de la percepción no lineal de la frecuencia en el sistema auditivo humano, tomando como base los estudios realizados por Zwicker en 1961. En este método de análisis, se utiliza la parte real del cepstrum, pero con una transformación no lineal de la frecuencia, pasando de la escala en Hertz a la escala de frecuencia Mel. Por eso, a estos coeficientes se les ha denominado como los Coeficientes Cepstral en la Frecuencia Mel o MFCC, \cite{eyra}.
 \vskip 0.5cm
 La mayor parte de los sistemas han estado convergiendo hacia el uso de estos vectores, que se obtienen a partir de un procesamiento de la señal de voz empleando un banco de filtros que ha sido diseñado tomando en cuenta algunas propiedades de la percepción del sonido en el sistema auditivo humano, con lo que se busca imitar su comportamiento.
 \vskip 0.5cm
@@ -1338,7 +1359,7 @@ A continuación, se describe un procedimiento para obtener los coeficientes MFCC
 \vskip -0.5cm
 \caption{\small{Procedimiento para la obtención de los coeficientes MFCC.}}
 \label{fig:figura2.38}
-{\small{Fuente: \cite{unam}}}
+{\small{Fuente: \cite{eyra}}}
 \end{center}
 \end{figure}
 
@@ -2050,7 +2071,7 @@ En \cite{rabiner2} se muestran comparaciones de estas tres variantes aplicadas e
 \item[-]El algoritmo UELM se usa para aplicaciones en las cuales solamente se conoce el inicio de la palabra, por ejemplo, reconocimiento utilizando palabras concatenadas.
 \end{enumerate}
 
-En \citep{rabiner3} se concluye que se generan pequeñas pero consistentes mejoras en la exactitud de reconocimiento cuando el patrón de prueba está sobre la abscisa.
+Según \cite{rabiner3} se generan pequeñas pero consistentes mejoras en la exactitud de reconocimiento cuando el patrón de prueba está sobre la abscisa.
 
 \vskip 0.5cm
 En \citep{furui} se muestra que se produce menor tasa de error en la verificación de locutor cuando la palabra de menor duración se utiliza sobre la abscisa, independientemente que esta sea una palabra de prueba o de referencia.
@@ -2183,7 +2204,7 @@ w(k) = j(k) - j(k - 1)
 entonces $N = J$.
 \end{enumerate}
 
-La forma simétrica significa que, si los ejes del tiempo $i$ y $j$ son continuos, entonces existirá un eje temporal: $l = i + j$ ; en la forma asimétrica se refiere a la integración a través del eje $i$ o $j$ según sea el caso. Según \cite{sakoe}, se espera que trabaje mejor la forma simétrica que la asimétrica, pues trata las partes del vector de características de igual manera, y la forma asimétrica hace alguna exclusión cuando la función warping está en dirección del eje $i$ o $j$ según sea el caso, pues $w(k)$ se reduce a cero: $c(k) = c(k-1)+(0,1)$, esto significa que algunos vectores pueden ser excluidos del análisis, pero por suerte la condición de slope constraint reduce esta situación, la diferencia de desempeño entre la forma simétrica y asimétrica puede ser gradualmente atenuada, del mismo modo que la condición de slope constraint es intensificada.
+La forma simétrica significa que, si los ejes del tiempo $i$ y $j$ son continuos, entonces existirá un eje temporal: $l = i + j$ ; en la forma asimétrica se refiere a la integración a través del eje $i$ o $j$ según sea el caso. Según \citep{sakoe}, se espera que trabaje mejor la forma simétrica que la asimétrica, pues trata las partes del vector de características de igual manera, y la forma asimétrica hace alguna exclusión cuando la función warping está en dirección del eje $i$ o $j$ según sea el caso, pues $w(k)$ se reduce a cero: $c(k) = c(k-1)+(0,1)$, esto significa que algunos vectores pueden ser excluidos del análisis, pero por suerte la condición de slope constraint reduce esta situación, la diferencia de desempeño entre la forma simétrica y asimétrica puede ser gradualmente atenuada, del mismo modo que la condición de slope constraint es intensificada.
 
 \begin{figure}[H]
 \begin{center}
@@ -2261,23 +2282,32 @@ Las ecuaciones de PD $(g(i, j))$ se calculan en orden ascendente con respecto a 
 \end{center}
 \end{figure}
 
-En experimentos realizados por \citep{sakoe} muestran que el desempeño de la forma simétrica es superior al de la forma asimétrica, pero esta diferencia disminuye a medida que la condición de slope constraint es intensificada, se puede notar también que el desempeño de la forma simétrica no es afectado por un slope constraint superior a $P = 1$, por otro lado, la forma asimétrica es visiblemente mejorada por la condición de slope constraint. 
+Experimentos realizados en \citep{sakoe} muestran que el desempeño de la forma simétrica es superior al de la forma asimétrica, pero esta diferencia disminuye a medida que la condición de slope constraint es intensificada, se puede notar también que el desempeño de la forma simétrica no es afectado por un slope constraint superior a $P = 1$, por otro lado, la forma asimétrica es visiblemente mejorada por la condición de slope constraint. 
 \vskip 0.5cm
-Otro experimento hecho también por \citep{sakoe} evalúa el efecto de la condición de slope constraint en la forma simétrica del algoritmo PD-matching, y llega al resultado de que cuando $P = 1$ se obtiene el mejor desempeño, y en otro experimento evalúa este algoritmo con otros varios algoritmos PD propuestos por otros autores, y muestra la superioridad del algoritmo PD-matching con slope constraint $P = 1$. 
+Otro experimento hecho también en \citep{sakoe} evalúa el efecto de la condición de slope constraint en la forma simétrica del algoritmo PD-matching, y llega al resultado de que cuando $P = 1$ se obtiene el mejor desempeño, y en otro experimento evalúa este algoritmo con otros varios algoritmos PD propuestos por otros autores, y muestra la superioridad del algoritmo PD-matching con slope constraint $P = 1$. 
 \vskip 0.5cm
 En conclusión, se tiene que los mejores resultados se obtienen con la forma simétrica del algoritmo PD-matching y con una condición de slope constraint $P = 1$.
 
-\begin{figure}[H]
 \begin{center}
-\includegraphics[width=0.8\textwidth]{Imagenes/Cap2/image057}
-\end{center}
-\begin{center}
-\vskip -0.5cm
+\begin{table}[h!]
+\centering
+\vskip -0.2cm
 \caption{\small{Algoritmos simétricos y asimétricos con condición de Slope Constraint P = 0, 1/2, 1, 2.}}
-\label{fig:figura2.56}
+\label{table:tabla2}
+\begin{tabular}{c}
+\begin{minipage}{.9\textwidth}
+\begin{center}
+\includegraphics[width=0.85\textwidth]{Imagenes/Cap2/image057}
+\end{center}
+\end{minipage}
+\end{tabular}
+\begin{center}
+\vskip 0.2cm
 {\small{Fuente: \cite{sakoe}}}
 \end{center}
-\end{figure}
+\end{table}
+\end{center}
+
 \end{enumerate}
 
 \item[b)]Distancias o medidas de distorsión
@@ -2305,7 +2335,7 @@ Por otra parte, se hablará de \textit{medidas de distorsión} en vez de \textit
 \vskip 0.5cm
 Existen varios tipos de medidas de distorsión, cada una con sus características especiales, entre ellas tenemos: \textit{Distancia Euclidiana Cuadrática, Distorsión del Error Cuadrático Medio, Distorsión del Error Cuadrático Ponderado, Distancia de Itakura, Distancia de Mahalanosis}, etc., ver en \citep{navarrete}.
 \vskip 0.5cm
-Para este trabajo de tesis veremos solo la \textit{Distancia Euclidiana Cuadrática} y la \textit{Distancia del Error Cuadrático Medio}, debido a su sencillez y poca complejidad, además de complementarse muy bien con el algoritmo DTW.
+Para este trabajo de tesis veremos solo la Distancia Euclidiana Cuadrática y la Distancia del Error Cuadrático Medio, debido a su sencillez y poca complejidad, además de complementarse muy bien con el algoritmo DTW.
 
 \begin{enumerate}
 \item[-]Distancia Euclidiana Cuadrática
