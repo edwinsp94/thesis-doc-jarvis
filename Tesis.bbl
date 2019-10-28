@@ -119,16 +119,11 @@ Owens, F. (1993).
 \newblock {\em Signal processing of speech}.
 \newblock McGraw-Hill, New York.
 
-\bibitem[Perez and Villalobos, 2013]{perez}
-Perez, E. and Villalobos, J. (2013).
-\newblock {\em Sistema de Seguridad Por Reconocimiento de Voz}.
-\newblock Instituto Politécnico Nacional, México.
-
 \bibitem[Pérez et~al., 2013]{eyra}
 Pérez, E., Poceros, F., and Villalobos, J. (2013).
 \newblock {\em Sistema de Seguridad por Reconocimiento de Voz}.
-\newblock Escuela Superior de Ingeniería Mecánica y Eléctrica: Instituto
-  Politécnico, México.
+\newblock Escuela Superior de Ingeniería Mecánica y Eléctrica, Instituto
+  Politécnico Nacional, México.
 
 \bibitem[Rabiner et~al., 1978]{rabiner2}
 Rabiner, L., Rosenberg, A., and Levinson, S. (1978).
@@ -195,11 +190,11 @@ UNAM (2015).
 \newblock
   \url{http://profesores.fi-b.unam.mx/procvoz/Practicas/Practica03.pdf}.
 
-\bibitem[Varela, 2011]{varela}
-Varela, O. (2011).
-\newblock {\em Técnicas de análisis, caracterización y detección de
-  señales de voz en entornos acústicos adversos}.
-\newblock Telecomunicación UPM, Archivo Digital UPM.
+\bibitem[Varela, 1994]{varela}
+Varela, H. (1994).
+\newblock {\em Reconocimiento Automático de Locutor y Realización de un
+  Sistema Experimental}.
+\newblock CICESE, Tesis de Maestría.
 
 \bibitem[Velásquez, 2008]{genoveva}
 Velásquez, G. (2008).

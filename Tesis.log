@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.6.17)  10 SEP 2019 09:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.6.17)  27 OCT 2019 10:55
 entering extended mode
 **./Tesis.tex
 (Tesis.tex
@@ -638,13 +638,13 @@ Cap\'{\i }tulo 1.
 
 ] [2] [3] [4] [5] [6]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 53.
- [7] [8]) [9]
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 52.
+ [7] [8] [9]) [10]
 \openout2 = `Cap2.aux'.
 
  (Cap2.tex
 Cap\'{\i }tulo 2.
-[10
+[11
 
 
 
@@ -656,19 +656,19 @@ File: omsptm.fd
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 15.
-[11] [12] [13]
-<Imagenes/Cap2/image001.jpg, id=152, 398.23781pt x 416.30531pt>
+[12] [13] [14]
+<Imagenes/Cap2/image001.jpg, id=155, 398.23781pt x 416.30531pt>
 File: Imagenes/Cap2/image001.jpg Graphic file (type jpg)
 <use Imagenes/Cap2/image001.jpg>
 Package pdftex.def Info: Imagenes/Cap2/image001.jpg  used on input line 54.
 (pdftex.def)             Requested size: 187.78531pt x 196.3051pt.
- [14 <./Imagenes/Cap2/image001.jpg>]
-<Imagenes/Cap2/image002.jpg, id=156, 320.69812pt x 198.7425pt>
+ [15 <./Imagenes/Cap2/image001.jpg>]
+<Imagenes/Cap2/image002.jpg, id=159, 320.69812pt x 198.7425pt>
 File: Imagenes/Cap2/image002.jpg Graphic file (type jpg)
 <use Imagenes/Cap2/image002.jpg>
 Package pdftex.def Info: Imagenes/Cap2/image002.jpg  used on input line 75.
 (pdftex.def)             Requested size: 140.84256pt x 87.2832pt.
- [15 <./Imagenes/Cap2/image002.jpg>] [16] [17] [18]
+ [16 <./Imagenes/Cap2/image002.jpg>] [17] [18] [19]
 Underfull \hbox (badness 10000) in paragraph at lines 128--129
 []|\T1/ptm/m/n/10.95 Vocales, na-sa-les,
  []
@@ -678,460 +678,477 @@ Underfull \hbox (badness 1122) in paragraph at lines 130--130
 []|\T1/ptm/m/n/10.95 Sonidos ape-rió-di-cos im-
  []
 
-[19] [20] [21] [22] [23] [24]
-<Imagenes/Cap2/image003.jpg, id=189, 673.01437pt x 360.59718pt>
+[20] [21] [22] [23] [24] [25]
+<Imagenes/Cap2/image003.jpg, id=192, 673.01437pt x 360.59718pt>
 File: Imagenes/Cap2/image003.jpg Graphic file (type jpg)
 <use Imagenes/Cap2/image003.jpg>
 Package pdftex.def Info: Imagenes/Cap2/image003.jpg  used on input line 230.
 (pdftex.def)             Requested size: 234.73523pt x 125.77072pt.
- [25] [26 <./Imagenes/Cap2/image003.jpg>]
-<Imagenes/Cap2/image004.jpg, id=196, 231.86626pt x 293.59688pt>
+ [26] [27 <./Imagenes/Cap2/image003.jpg>]
+<Imagenes/Cap2/image004.jpg, id=199, 231.86626pt x 293.59688pt>
 File: Imagenes/Cap2/image004.jpg Graphic file (type jpg)
 <use Imagenes/Cap2/image004.jpg>
 Package pdftex.def Info: Imagenes/Cap2/image004.jpg  used on input line 254.
 (pdftex.def)             Requested size: 117.36761pt x 148.61691pt.
- [27 <./Imagenes/Cap2/image004.jpg>]
-<Imagenes/Cap2/image005.jpg, id=200, 318.43968pt x 79.04532pt>
+ [28 <./Imagenes/Cap2/image004.jpg>]
+<Imagenes/Cap2/image005.jpg, id=203, 318.43968pt x 79.04532pt>
 File: Imagenes/Cap2/image005.jpg Graphic file (type jpg)
 <use Imagenes/Cap2/image005.jpg>
 Package pdftex.def Info: Imagenes/Cap2/image005.jpg  used on input line 274.
 (pdftex.def)             Requested size: 258.21017pt x 64.09387pt.
-<Imagenes/Cap2/image006.jpg, id=201, 246.1697pt x 112.92188pt>
+<Imagenes/Cap2/image006.jpg, id=204, 246.1697pt x 112.92188pt>
 File: Imagenes/Cap2/image006.jpg Graphic file (type jpg)
 <use Imagenes/Cap2/image006.jpg>
 Package pdftex.def Info: Imagenes/Cap2/image006.jpg  used on input line 286.
 (pdftex.def)             Requested size: 234.73523pt x 107.6818pt.
- [28 <./Imagenes/Cap2/image005.jpg> <./Imagenes/Cap2/image006.jpg>] [29] [30]
-<Imagenes/Cap2/image007.jpg, id=212, 404.26031pt x 201.00093pt>
+ [29 <./Imagenes/Cap2/image005.jpg> <./Imagenes/Cap2/image006.jpg>] [30] [31]
+<Imagenes/Cap2/image007.jpg, id=215, 404.26031pt x 201.00093pt>
 File: Imagenes/Cap2/image007.jpg Graphic file (type jpg)
 <use Imagenes/Cap2/image007.jpg>
 Package pdftex.def Info: Imagenes/Cap2/image007.jpg  used on input line 320.
 (pdftex.def)             Requested size: 389.66133pt x 193.74384pt.
- [31 <./Imagenes/Cap2/image007.jpg>]
-<Imagenes/Cap2/image008.jpg, id=216, 637.63219pt x 84.315pt>
+ [32 <./Imagenes/Cap2/image007.jpg>]
+<Imagenes/Cap2/image008.jpg, id=219, 637.63219pt x 84.315pt>
 File: Imagenes/Cap2/image008.jpg Graphic file (type jpg)
 <use Imagenes/Cap2/image008.jpg>
 Package pdftex.def Info: Imagenes/Cap2/image008.jpg  used on input line 341.
 (pdftex.def)             Requested size: 281.68513pt x 37.24666pt.
-<Imagenes/Cap2/image009.jpg, id=217, 727.21687pt x 228.10219pt>
+<Imagenes/Cap2/image009.jpg, id=220, 727.21687pt x 228.10219pt>
 File: Imagenes/Cap2/image009.jpg Graphic file (type jpg)
 <use Imagenes/Cap2/image009.jpg>
 Package pdftex.def Info: Imagenes/Cap2/image009.jpg  used on input line 353.
 (pdftex.def)             Requested size: 281.68513pt x 88.35735pt.
- [32 <./Imagenes/Cap2/image008.jpg> <./Imagenes/Cap2/image009.jpg>] [33] [34]
-<Imagenes/Cap2/image010.jpg, id=228, 358.33875pt x 149.05687pt>
+ [33 <./Imagenes/Cap2/image008.jpg> <./Imagenes/Cap2/image009.jpg>] [34] [35]
+<Imagenes/Cap2/image010.jpg, id=231, 358.33875pt x 149.05687pt>
 File: Imagenes/Cap2/image010.jpg Graphic file (type jpg)
 <use Imagenes/Cap2/image010.jpg>
 Package pdftex.def Info: Imagenes/Cap2/image010.jpg  used on input line 397.
 (pdftex.def)             Requested size: 328.62788pt x 136.70639pt.
- [35]
-<Imagenes/Cap2/image011.jpg, id=232, 429.85594pt x 143.03438pt>
+ [36]
+<Imagenes/Cap2/image011.jpg, id=236, 429.85594pt x 143.03438pt>
 File: Imagenes/Cap2/image011.jpg Graphic file (type jpg)
 <use Imagenes/Cap2/image011.jpg>
 Package pdftex.def Info: Imagenes/Cap2/image011.jpg  used on input line 419.
 (pdftex.def)             Requested size: 328.62788pt x 109.35327pt.
- [36 <./Imagenes/Cap2/image010.jpg>]
-<Imagenes/Cap2/image012.png, id=237, 203.25937pt x 188.20313pt>
+ [37 <./Imagenes/Cap2/image010.jpg>]
+<Imagenes/Cap2/image012.png, id=240, 203.25937pt x 188.20313pt>
 File: Imagenes/Cap2/image012.png Graphic file (type png)
 <use Imagenes/Cap2/image012.png>
 Package pdftex.def Info: Imagenes/Cap2/image012.png  used on input line 446.
 (pdftex.def)             Requested size: 140.84256pt x 130.41454pt.
- [37 <./Imagenes/Cap2/image011.jpg>] [38 <./Imagenes/Cap2/image012.png>]
-<Imagenes/Cap2/image013.png, id=244, 210.7875pt x 188.20313pt>
+ [38 <./Imagenes/Cap2/image011.jpg>] [39 <./Imagenes/Cap2/image012.png>]
+<Imagenes/Cap2/image013.png, id=247, 210.7875pt x 188.20313pt>
 File: Imagenes/Cap2/image013.png Graphic file (type png)
 <use Imagenes/Cap2/image013.png>
 Package pdftex.def Info: Imagenes/Cap2/image013.png  used on input line 462.
 (pdftex.def)             Requested size: 140.84256pt x 125.7537pt.
- [39 <./Imagenes/Cap2/image013.png>] [40] [41]
-<Imagenes/Cap2/image014.png, id=254, 342.27875pt x 191.71625pt>
+ [40 <./Imagenes/Cap2/image013.png>] [41] [42]
+<Imagenes/Cap2/image014.png, id=258, 342.27875pt x 191.71625pt>
 File: Imagenes/Cap2/image014.png Graphic file (type png)
 <use Imagenes/Cap2/image014.png>
 Package pdftex.def Info: Imagenes/Cap2/image014.png  used on input line 506.
 (pdftex.def)             Requested size: 258.21017pt x 144.6381pt.
-<Imagenes/Cap2/image015.png, id=255, 437.635pt x 244.915pt>
+<Imagenes/Cap2/image015.png, id=259, 437.635pt x 244.915pt>
 File: Imagenes/Cap2/image015.png Graphic file (type png)
 <use Imagenes/Cap2/image015.png>
 Package pdftex.def Info: Imagenes/Cap2/image015.png  used on input line 521.
 (pdftex.def)             Requested size: 328.62788pt x 183.91374pt.
- [42 <./Imagenes/Cap2/image014.png>] [43 <./Imagenes/Cap2/image015.png>] [44] [
-45]
-<Imagenes/Cap2/image016.png, id=271, 799.98875pt x 286.06876pt>
+ [43 <./Imagenes/Cap2/image014.png>] [44 <./Imagenes/Cap2/image015.png>] [45] [
+46]
+<Imagenes/Cap2/image016.png, id=274, 799.98875pt x 286.06876pt>
 File: Imagenes/Cap2/image016.png Graphic file (type png)
 <use Imagenes/Cap2/image016.png>
 Package pdftex.def Info: Imagenes/Cap2/image016.png  used on input line 602.
 (pdftex.def)             Requested size: 225.34381pt x 80.57886pt.
- [46 <./Imagenes/Cap2/image016.png>] [47] [48] [49]
-<Imagenes/Cap2/image018.png, id=285, 432.61626pt x 207.77625pt>
+ [47 <./Imagenes/Cap2/image016.png>] [48] [49] [50]
+<Imagenes/Cap2/image018.png, id=288, 432.61626pt x 207.77625pt>
 File: Imagenes/Cap2/image018.png Graphic file (type png)
 <use Imagenes/Cap2/image018.png>
 Package pdftex.def Info: Imagenes/Cap2/image018.png  used on input line 666.
 (pdftex.def)             Requested size: 234.73523pt x 112.73962pt.
- [50 <./Imagenes/Cap2/image018.png>]
-[51] [52] [53]
-<Imagenes/Cap2/image019.png, id=298, 655.44875pt x 538.01pt>
+ [51 <./Imagenes/Cap2/image018.png>]
+[52] [53] [54]
+<Imagenes/Cap2/image019.png, id=302, 655.44875pt x 538.01pt>
 File: Imagenes/Cap2/image019.png Graphic file (type png)
 <use Imagenes/Cap2/image019.png>
 Package pdftex.def Info: Imagenes/Cap2/image019.png  used on input line 740.
 (pdftex.def)             Requested size: 295.76308pt x 242.76721pt.
- [54 <./Imagenes/Cap2/image019.png>]
-<Imagenes/Cap2/image020.png, id=303, 481.8pt x 233.87375pt>
+ [55 <./Imagenes/Cap2/image019.png>]
+<Imagenes/Cap2/image020.png, id=306, 481.8pt x 233.87375pt>
 File: Imagenes/Cap2/image020.png Graphic file (type png)
 <use Imagenes/Cap2/image020.png>
 Package pdftex.def Info: Imagenes/Cap2/image020.png  used on input line 763.
 (pdftex.def)             Requested size: 187.78531pt x 91.15327pt.
-<Imagenes/Cap2/image021.png, id=304, 334.24875pt x 207.77625pt>
+<Imagenes/Cap2/image021.png, id=307, 334.24875pt x 207.77625pt>
 File: Imagenes/Cap2/image021.png Graphic file (type png)
 <use Imagenes/Cap2/image021.png>
 Package pdftex.def Info: Imagenes/Cap2/image021.png  used on input line 764.
 (pdftex.def)             Requested size: 187.78531pt x 116.73434pt.
- [55] [56 <./Imagenes/Cap2/image020.png> <./Imagenes/Cap2/image021.png>]
-<Imagenes/Cap2/image022.png, id=311, 479.7925pt x 388.45125pt>
+ [56] [57 <./Imagenes/Cap2/image020.png> <./Imagenes/Cap2/image021.png>]
+<Imagenes/Cap2/image022.png, id=314, 479.7925pt x 388.45125pt>
 File: Imagenes/Cap2/image022.png Graphic file (type png)
 <use Imagenes/Cap2/image022.png>
 Package pdftex.def Info: Imagenes/Cap2/image022.png  used on input line 780.
 (pdftex.def)             Requested size: 211.26027pt x 171.04353pt.
-<Imagenes/Cap2/image023.png, id=312, 444.66125pt x 261.97874pt>
+<Imagenes/Cap2/image023.png, id=315, 444.66125pt x 261.97874pt>
 File: Imagenes/Cap2/image023.png Graphic file (type png)
 <use Imagenes/Cap2/image023.png>
 Package pdftex.def Info: Imagenes/Cap2/image023.png  used on input line 794.
 (pdftex.def)             Requested size: 211.26027pt x 124.46518pt.
- [57 <./Imagenes/Cap2/image022.png> <./Imagenes/Cap2/image023.png>]
-<Imagenes/Cap2/image024.png, id=316, 448.67625pt x 214.8025pt>
+ [58 <./Imagenes/Cap2/image022.png> <./Imagenes/Cap2/image023.png>]
+<Imagenes/Cap2/image024.png, id=319, 448.67625pt x 214.8025pt>
 File: Imagenes/Cap2/image024.png Graphic file (type png)
 <use Imagenes/Cap2/image024.png>
 Package pdftex.def Info: Imagenes/Cap2/image024.png  used on input line 808.
 (pdftex.def)             Requested size: 234.73523pt x 112.3764pt.
-<Imagenes/Cap2/image025.png, id=317, 321.2pt x 85.31876pt>
+<Imagenes/Cap2/image025.png, id=320, 321.2pt x 85.31876pt>
 File: Imagenes/Cap2/image025.png Graphic file (type png)
 <use Imagenes/Cap2/image025.png>
 Package pdftex.def Info: Imagenes/Cap2/image025.png  used on input line 822.
 (pdftex.def)             Requested size: 140.84256pt x 37.41147pt.
- [58 <./Imagenes/Cap2/image024.png> <./Imagenes/Cap2/image025.png>] [59] [60] [
-61] [62] [63]
+ [59 <./Imagenes/Cap2/image024.png> <./Imagenes/Cap2/image025.png>] [60] [61] [
+62] [63] [64]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 964.
- [64] [65] [66] [67]
-<Imagenes/Cap2/image026.png, id=351, 503.8825pt x 604.2575pt>
+ [65] [66] [67] [68]
+<Imagenes/Cap2/image026.png, id=354, 503.8825pt x 604.2575pt>
 File: Imagenes/Cap2/image026.png Graphic file (type png)
 <use Imagenes/Cap2/image026.png>
 Package pdftex.def Info: Imagenes/Cap2/image026.png  used on input line 1011.
 (pdftex.def)             Requested size: 281.68513pt x 337.80103pt.
- [68 <./Imagenes/Cap2/image026.png>]
-<Imagenes/Cap2/image027.png, id=355, 311.1625pt x 159.59625pt>
+ [69 <./Imagenes/Cap2/image026.png>]
+<Imagenes/Cap2/image027.png, id=358, 311.1625pt x 159.59625pt>
 File: Imagenes/Cap2/image027.png Graphic file (type png)
 <use Imagenes/Cap2/image027.png>
 Package pdftex.def Info: Imagenes/Cap2/image027.png  used on input line 1054.
 (pdftex.def)             Requested size: 258.21017pt x 132.43805pt.
- [69] [70 <./Imagenes/Cap2/image027.png>]
-<Imagenes/Cap2/image028.png, id=362, 431.6125pt x 439.6425pt>
+ [70] [71 <./Imagenes/Cap2/image027.png>]
+<Imagenes/Cap2/image028.png, id=365, 431.6125pt x 439.6425pt>
 File: Imagenes/Cap2/image028.png Graphic file (type png)
 <use Imagenes/Cap2/image028.png>
 Package pdftex.def Info: Imagenes/Cap2/image028.png  used on input line 1074.
 (pdftex.def)             Requested size: 164.31752pt x 167.37447pt.
-<Imagenes/Cap2/image029.png, id=363, 430.60875pt x 444.66125pt>
+<Imagenes/Cap2/image029.png, id=366, 430.60875pt x 444.66125pt>
 File: Imagenes/Cap2/image029.png Graphic file (type png)
 <use Imagenes/Cap2/image029.png>
 Package pdftex.def Info: Imagenes/Cap2/image029.png  used on input line 1084.
 (pdftex.def)             Requested size: 164.31752pt x 169.67867pt.
- [71 <./Imagenes/Cap2/image028.png> <./Imagenes/Cap2/image029.png>]
-<Imagenes/Cap2/image030.png, id=367, 499.8675pt x 284.06125pt>
+ [72 <./Imagenes/Cap2/image028.png> <./Imagenes/Cap2/image029.png>]
+<Imagenes/Cap2/image030.png, id=371, 499.8675pt x 284.06125pt>
 File: Imagenes/Cap2/image030.png Graphic file (type png)
 <use Imagenes/Cap2/image030.png>
 Package pdftex.def Info: Imagenes/Cap2/image030.png  used on input line 1101.
 (pdftex.def)             Requested size: 211.26027pt x 120.05475pt.
- [72 <./Imagenes/Cap2/image030.png>]
-<Imagenes/Cap2/image031.png, id=372, 416.55624pt x 174.6525pt>
+ [73 <./Imagenes/Cap2/image030.png>]
+<Imagenes/Cap2/image031.png, id=375, 416.55624pt x 174.6525pt>
 File: Imagenes/Cap2/image031.png Graphic file (type png)
 <use Imagenes/Cap2/image031.png>
 Package pdftex.def Info: Imagenes/Cap2/image031.png  used on input line 1119.
 (pdftex.def)             Requested size: 211.26027pt x 88.5759pt.
- [73 <./Imagenes/Cap2/image031.png>]
-<Imagenes/Cap2/image032.jpg, id=376, 686.565pt x 248.42813pt>
+ [74 <./Imagenes/Cap2/image031.png>]
+<Imagenes/Cap2/image032.jpg, id=379, 686.565pt x 248.42813pt>
 File: Imagenes/Cap2/image032.jpg Graphic file (type jpg)
 <use Imagenes/Cap2/image032.jpg>
 Package pdftex.def Info: Imagenes/Cap2/image032.jpg  used on input line 1142.
 (pdftex.def)             Requested size: 234.73523pt x 84.9345pt.
-<Imagenes/Cap2/image033.png, id=377, 385.44pt x 77.28876pt>
+
+
+Package natbib Warning: Citation `perez' on page 75 undefined on input line 114
+8.
+
+<Imagenes/Cap2/image033.png, id=380, 385.44pt x 77.28876pt>
 File: Imagenes/Cap2/image033.png Graphic file (type png)
 <use Imagenes/Cap2/image033.png>
 Package pdftex.def Info: Imagenes/Cap2/image033.png  used on input line 1159.
 (pdftex.def)             Requested size: 281.68513pt x 56.48282pt.
- [74 <./Imagenes/Cap2/image032.jpg>] [75 <./Imagenes/Cap2/image033.png>]
-<Imagenes/Cap2/image034.png, id=384, 908.39375pt x 359.3425pt>
+[75 <./Imagenes/Cap2/image032.jpg>] [76 <./Imagenes/Cap2/image033.png>]
+<Imagenes/Cap2/image034.png, id=387, 908.39375pt x 359.3425pt>
 File: Imagenes/Cap2/image034.png Graphic file (type png)
 <use Imagenes/Cap2/image034.png>
 Package pdftex.def Info: Imagenes/Cap2/image034.png  used on input line 1186.
 (pdftex.def)             Requested size: 352.10284pt x 139.28215pt.
- [76 <./Imagenes/Cap2/image034.png>]
-[77]
-<Imagenes/Cap2/image035.png, id=391, 528.97626pt x 247.92625pt>
+
+
+Package natbib Warning: Citation `perez' on page 77 undefined on input line 119
+2.
+
+[77 <./Imagenes/Cap2/image034.png>] [78]
+<Imagenes/Cap2/image035.png, id=395, 528.97626pt x 247.92625pt>
 File: Imagenes/Cap2/image035.png Graphic file (type png)
 <use Imagenes/Cap2/image035.png>
 Package pdftex.def Info: Imagenes/Cap2/image035.png  used on input line 1224.
 (pdftex.def)             Requested size: 352.10284pt x 165.02777pt.
- [78 <./Imagenes/Cap2/image035.png>]
-<Imagenes/Cap2/image036.png, id=396, 355.3275pt x 118.94438pt>
+
+
+Package natbib Warning: Citation `perez' on page 79 undefined on input line 123
+0.
+
+[79 <./Imagenes/Cap2/image035.png>]
+<Imagenes/Cap2/image036.png, id=399, 355.3275pt x 118.94438pt>
 File: Imagenes/Cap2/image036.png Graphic file (type png)
 <use Imagenes/Cap2/image036.png>
 Package pdftex.def Info: Imagenes/Cap2/image036.png  used on input line 1251.
 (pdftex.def)             Requested size: 281.68513pt x 94.29533pt.
- [79 <./Imagenes/Cap2/image036.png>]
-[80] [81] [82] [83]
-<Imagenes/Cap2/image037.png, id=414, 479.7925pt x 458.71375pt>
+
+
+Package natbib Warning: Citation `perez' on page 80 undefined on input line 125
+7.
+
+[80 <./Imagenes/Cap2/image036.png>] [81] [82] [83] [84]
+<Imagenes/Cap2/image037.png, id=418, 479.7925pt x 458.71375pt>
 File: Imagenes/Cap2/image037.png Graphic file (type png)
 <use Imagenes/Cap2/image037.png>
 Package pdftex.def Info: Imagenes/Cap2/image037.png  used on input line 1320.
 (pdftex.def)             Requested size: 258.21017pt x 246.8688pt.
-<Imagenes/Cap2/image038.png, id=415, 349.305pt x 55.20625pt>
+<Imagenes/Cap2/image038.png, id=419, 349.305pt x 55.20625pt>
 File: Imagenes/Cap2/image038.png Graphic file (type png)
 <use Imagenes/Cap2/image038.png>
 Package pdftex.def Info: Imagenes/Cap2/image038.png  used on input line 1334.
 (pdftex.def)             Requested size: 234.73523pt x 37.09917pt.
- [84 <./Imagenes/Cap2/image037.png> <./Imagenes/Cap2/image038.png>] [85]
-<Imagenes/Cap2/image039.png, id=423, 339.2675pt x 598.235pt>
+ [85 <./Imagenes/Cap2/image037.png> <./Imagenes/Cap2/image038.png>] [86]
+<Imagenes/Cap2/image039.png, id=426, 339.2675pt x 598.235pt>
 File: Imagenes/Cap2/image039.png Graphic file (type png)
 <use Imagenes/Cap2/image039.png>
 Package pdftex.def Info: Imagenes/Cap2/image039.png  used on input line 1356.
 (pdftex.def)             Requested size: 187.78531pt x 331.12065pt.
- [86 <./Imagenes/Cap2/image039.png>] [87] [88] [89] [90]
-<Imagenes/Cap2/image040.png, id=442, 525.965pt x 191.71625pt>
+ [87 <./Imagenes/Cap2/image039.png>] [88] [89] [90] [91]
+<Imagenes/Cap2/image040.png, id=445, 525.965pt x 191.71625pt>
 File: Imagenes/Cap2/image040.png Graphic file (type png)
 <use Imagenes/Cap2/image040.png>
 Package pdftex.def Info: Imagenes/Cap2/image040.png  used on input line 1454.
 (pdftex.def)             Requested size: 234.73523pt x 85.56357pt.
- [91 <./Imagenes/Cap2/image040.png>] [92]
-<Imagenes/Cap2/image041.png, id=449, 533.995pt x 188.705pt>
+ [92 <./Imagenes/Cap2/image040.png>] [93]
+<Imagenes/Cap2/image041.png, id=452, 533.995pt x 188.705pt>
 File: Imagenes/Cap2/image041.png Graphic file (type png)
 <use Imagenes/Cap2/image041.png>
 Package pdftex.def Info: Imagenes/Cap2/image041.png  used on input line 1493.
 (pdftex.def)             Requested size: 305.15292pt x 107.83939pt.
- [93 <./Imagenes/Cap2/image041.png>]
-<Imagenes/Cap2/image042.png, id=453, 717.68124pt x 265.99374pt>
+ [94 <./Imagenes/Cap2/image041.png>]
+<Imagenes/Cap2/image042.png, id=456, 717.68124pt x 265.99374pt>
 File: Imagenes/Cap2/image042.png Graphic file (type png)
 <use Imagenes/Cap2/image042.png>
 Package pdftex.def Info: Imagenes/Cap2/image042.png  used on input line 1527.
 (pdftex.def)             Requested size: 234.73523pt x 86.99892pt.
- [94 <./Imagenes/Cap2/image042.png>] [95] [96]
-<Imagenes/Cap2/image043.png, id=465, 355.3275pt x 134.00063pt>
+ [95 <./Imagenes/Cap2/image042.png>] [96] [97]
+<Imagenes/Cap2/image043.png, id=468, 355.3275pt x 134.00063pt>
 File: Imagenes/Cap2/image043.png Graphic file (type png)
 <use Imagenes/Cap2/image043.png>
 Package pdftex.def Info: Imagenes/Cap2/image043.png  used on input line 1645.
 (pdftex.def)             Requested size: 281.68513pt x 106.23145pt.
- [97]
-<Imagenes/Cap2/image044.png, id=470, 355.3275pt x 134.00063pt>
+ [98]
+<Imagenes/Cap2/image044.png, id=473, 355.3275pt x 134.00063pt>
 File: Imagenes/Cap2/image044.png Graphic file (type png)
 <use Imagenes/Cap2/image044.png>
 Package pdftex.def Info: Imagenes/Cap2/image044.png  used on input line 1658.
 (pdftex.def)             Requested size: 281.68513pt x 106.23145pt.
- [98 <./Imagenes/Cap2/image043.png> <./Imagenes/Cap2/image044.png>] [99] [100] 
-[101] [102] [103] [104] [105]
-<Imagenes/Cap2/image045.png, id=499, 256.96pt x 292.09125pt>
+
+[99 <./Imagenes/Cap2/image043.png> <./Imagenes/Cap2/image044.png>] [100]
+[101] [102] [103] [104] [105] [106]
+<Imagenes/Cap2/image045.png, id=502, 256.96pt x 292.09125pt>
 File: Imagenes/Cap2/image045.png Graphic file (type png)
 <use Imagenes/Cap2/image045.png>
 Package pdftex.def Info: Imagenes/Cap2/image045.png  used on input line 1870.
 (pdftex.def)             Requested size: 211.26027pt x 240.14925pt.
- [106]
-[107 <./Imagenes/Cap2/image045.png>]
-<Imagenes/Cap2/image046.png, id=506, 497.86pt x 406.51875pt>
+ [107] [108 <./Imagenes/Cap2/image045.png>]
+<Imagenes/Cap2/image046.png, id=510, 497.86pt x 406.51875pt>
 File: Imagenes/Cap2/image046.png Graphic file (type png)
 <use Imagenes/Cap2/image046.png>
 Package pdftex.def Info: Imagenes/Cap2/image046.png  used on input line 1901.
 (pdftex.def)             Requested size: 187.78531pt x 153.33737pt.
- [108] [109 <./Imagenes/Cap2/image046.png>] [110]
-<Imagenes/Cap2/image047.png, id=517, 526.96875pt x 382.42876pt>
+
+[109] [110 <./Imagenes/Cap2/image046.png>] [111]
+<Imagenes/Cap2/image047.png, id=520, 526.96875pt x 382.42876pt>
 File: Imagenes/Cap2/image047.png Graphic file (type png)
 <use Imagenes/Cap2/image047.png>
 Package pdftex.def Info: Imagenes/Cap2/image047.png  used on input line 1947.
 (pdftex.def)             Requested size: 211.26027pt x 153.31306pt.
-<Imagenes/Cap2/image048.png, id=518, 186.6975pt x 157.58875pt>
+<Imagenes/Cap2/image048.png, id=521, 186.6975pt x 157.58875pt>
 File: Imagenes/Cap2/image048.png Graphic file (type png)
 <use Imagenes/Cap2/image048.png>
 Package pdftex.def Info: Imagenes/Cap2/image048.png  used on input line 1959.
 (pdftex.def)             Requested size: 140.84256pt x 118.8886pt.
- [111 <./Imagenes/Cap2/image047.png>] [112 <./Imagenes/Cap2/image048.png>]
-<Imagenes/Cap2/image049.png, id=525, 266.9975pt x 150.5625pt>
+ [112 <./Imagenes/Cap2/image047.png>] [113 <./Imagenes/Cap2/image048.png>]
+<Imagenes/Cap2/image049.png, id=528, 266.9975pt x 150.5625pt>
 File: Imagenes/Cap2/image049.png Graphic file (type png)
 <use Imagenes/Cap2/image049.png>
 Package pdftex.def Info: Imagenes/Cap2/image049.png  used on input line 2010.
 (pdftex.def)             Requested size: 164.31752pt x 92.66315pt.
- [113 <./Imagenes/Cap2/image049.png>]
-<Imagenes/Cap2/image050.png, id=529, 285.065pt x 207.77625pt>
+ [114 <./Imagenes/Cap2/image049.png>]
+<Imagenes/Cap2/image050.png, id=533, 285.065pt x 207.77625pt>
 File: Imagenes/Cap2/image050.png Graphic file (type png)
 <use Imagenes/Cap2/image050.png>
 Package pdftex.def Info: Imagenes/Cap2/image050.png  used on input line 2032.
 (pdftex.def)             Requested size: 140.84256pt x 102.65457pt.
- [114]
-<Imagenes/Cap2/image051.png, id=534, 336.25626pt x 202.7575pt>
+ [115]
+<Imagenes/Cap2/image051.png, id=537, 336.25626pt x 202.7575pt>
 File: Imagenes/Cap2/image051.png Graphic file (type png)
 <use Imagenes/Cap2/image051.png>
 Package pdftex.def Info: Imagenes/Cap2/image051.png  used on input line 2045.
 (pdftex.def)             Requested size: 164.31752pt x 99.07979pt.
-<Imagenes/Cap2/image052.png, id=535, 282.05376pt x 204.765pt>
+<Imagenes/Cap2/image052.png, id=538, 282.05376pt x 204.765pt>
 File: Imagenes/Cap2/image052.png Graphic file (type png)
 <use Imagenes/Cap2/image052.png>
 Package pdftex.def Info: Imagenes/Cap2/image052.png  used on input line 2057.
 (pdftex.def)             Requested size: 140.84256pt x 102.24788pt.
- [115 <./Imagenes/Cap2/image050.png> <./Imagenes/Cap2/image051.png>] [116 <./Im
-agenes/Cap2/image052.png>]
-<Imagenes/Cap2/image053.png, id=542, 397.485pt x 298.11375pt>
+ [116 <./Imagenes/Cap2/image050.png> <./Imagenes/Cap2/image051.png>]
+[117 <./Imagenes/Cap2/image052.png>]
+<Imagenes/Cap2/image053.png, id=545, 397.485pt x 298.11375pt>
 File: Imagenes/Cap2/image053.png Graphic file (type png)
 <use Imagenes/Cap2/image053.png>
 Package pdftex.def Info: Imagenes/Cap2/image053.png  used on input line 2088.
 (pdftex.def)             Requested size: 211.26027pt x 158.44986pt.
- [117 <./Imagenes/Cap2/image053.png>] [118]
-<Imagenes/Cap2/image054.png, id=549, 399.4925pt x 492.84125pt>
+ [118 <./Imagenes/Cap2/image053.png>]
+[119]
+<Imagenes/Cap2/image054.png, id=552, 399.4925pt x 492.84125pt>
 File: Imagenes/Cap2/image054.png Graphic file (type png)
 <use Imagenes/Cap2/image054.png>
 Package pdftex.def Info: Imagenes/Cap2/image054.png  used on input line 2155.
 (pdftex.def)             Requested size: 258.21017pt x 318.56073pt.
- [119] [120 <./Imagenes/Cap2/image054.png>]
-[121]
-<Imagenes/Cap2/image055.png, id=560, 390.45876pt x 227.85126pt>
+ [120] [121 <./Imagenes/Cap2/image054.png>] [122]
+<Imagenes/Cap2/image055.png, id=563, 390.45876pt x 227.85126pt>
 File: Imagenes/Cap2/image055.png Graphic file (type png)
 <use Imagenes/Cap2/image055.png>
 Package pdftex.def Info: Imagenes/Cap2/image055.png  used on input line 2211.
 (pdftex.def)             Requested size: 234.73523pt x 136.9795pt.
- [122 <./Imagenes/Cap2/image055.png>] [123]
-<Imagenes/Cap2/image056.png, id=567, 459.7175pt x 445.665pt>
+ [123 <./Imagenes/Cap2/image055.png>] [124]
+<Imagenes/Cap2/image056.png, id=570, 459.7175pt x 445.665pt>
 File: Imagenes/Cap2/image056.png Graphic file (type png)
 <use Imagenes/Cap2/image056.png>
 Package pdftex.def Info: Imagenes/Cap2/image056.png  used on input line 2275.
 (pdftex.def)             Requested size: 234.73523pt x 227.56496pt.
- [124] [125 <./Imagenes/Cap2/image056.png>]
-<Imagenes/Cap2/image057.png, id=574, 536.0025pt x 469.755pt>
+ [125] [126 <./Imagenes/Cap2/image056.png>]
+<Imagenes/Cap2/image057.png, id=578, 536.0025pt x 469.755pt>
 File: Imagenes/Cap2/image057.png Graphic file (type png)
 <use Imagenes/Cap2/image057.png>
 Package pdftex.def Info: Imagenes/Cap2/image057.png  used on input line 2300.
 (pdftex.def)             Requested size: 359.14503pt x 314.75572pt.
- [126 <./Imagenes/Cap2/image057.png>] [127] [128] [129] [130]
-[131]
-<Imagenes/Cap2/image058.png, id=594, 487.8225pt x 282.05376pt>
+ [127 <./Imagenes/Cap2/image057.png>] [128] [129] [130] [131] [132]
+<Imagenes/Cap2/image058.png, id=598, 487.8225pt x 282.05376pt>
 File: Imagenes/Cap2/image058.png Graphic file (type png)
 <use Imagenes/Cap2/image058.png>
 Package pdftex.def Info: Imagenes/Cap2/image058.png  used on input line 2386.
 (pdftex.def)             Requested size: 234.73523pt x 135.71996pt.
- [132] [133 <./Imagenes/Cap2/image058.png>] [134] [135] [136] [137]
-<Imagenes/Cap2/image059.png, id=615, 606.01407pt x 355.3275pt>
+ [133] [134 <./Imagenes/Cap2/image058.png>] [135] [136] [137] [138] [139]
+<Imagenes/Cap2/image059.png, id=622, 606.01407pt x 355.3275pt>
 File: Imagenes/Cap2/image059.png Graphic file (type png)
 <use Imagenes/Cap2/image059.png>
-Package pdftex.def Info: Imagenes/Cap2/image059.png  used on input line 2483.
+Package pdftex.def Info: Imagenes/Cap2/image059.png  used on input line 2492.
 (pdftex.def)             Requested size: 375.57779pt x 220.214pt.
-)
-[138 <./Imagenes/Cap2/image059.png>]
+) [140 <./Imagenes/Cap2/image059.png>]
 \openout2 = `Cap3.aux'.
 
  (Cap3.tex
 Cap\'{\i }tulo 3.
-<Imagenes/Cap3/image001.png, id=621, 740.7675pt x 542.025pt>
+<Imagenes/Cap3/image001.png, id=627, 740.7675pt x 542.025pt>
 File: Imagenes/Cap3/image001.png Graphic file (type png)
 <use Imagenes/Cap3/image001.png>
 Package pdftex.def Info: Imagenes/Cap3/image001.png  used on input line 7.
 (pdftex.def)             Requested size: 469.47046pt x 343.52039pt.
-[139
+[141
 
 
 
-] [140 <./Imagenes/Cap3/image001.png>]
-<Imagenes/Cap3/image002.png, id=628, 691.58376pt x 524.96124pt>
+] [142 <./Imagenes/Cap3/image001.png>]
+<Imagenes/Cap3/image002.png, id=634, 691.58376pt x 524.96124pt>
 File: Imagenes/Cap3/image002.png Graphic file (type png)
 <use Imagenes/Cap3/image002.png>
 Package pdftex.def Info: Imagenes/Cap3/image002.png  used on input line 40.
 (pdftex.def)             Requested size: 234.73523pt x 178.18007pt.
- [141] [142 <./Imagenes/Cap3/image002.png>]
+ [143] [144 <./Imagenes/Cap3/image002.png>]
 Overfull \vbox (43.90297pt too high) has occurred while \output is active []
 
 
-[143] [144]
-<Imagenes/Cap3/image003.jpg, id=642, 265.74281pt x 398.99063pt>
+[145] [146]
+<Imagenes/Cap3/image003.jpg, id=648, 265.74281pt x 398.99063pt>
 File: Imagenes/Cap3/image003.jpg Graphic file (type jpg)
 <use Imagenes/Cap3/image003.jpg>
 Package pdftex.def Info: Imagenes/Cap3/image003.jpg  used on input line 108.
 (pdftex.def)             Requested size: 201.86885pt x 303.096pt.
- [145 <./Imagenes/Cap3/image003.jpg>]
-<Imagenes/Cap3/image004.jpg, id=646, 464.4853pt x 392.96812pt>
+ [147 <./Imagenes/Cap3/image003.jpg>]
+<Imagenes/Cap3/image004.jpg, id=652, 464.4853pt x 392.96812pt>
 File: Imagenes/Cap3/image004.jpg Graphic file (type jpg)
 <use Imagenes/Cap3/image004.jpg>
 Package pdftex.def Info: Imagenes/Cap3/image004.jpg  used on input line 131.
 (pdftex.def)             Requested size: 328.62788pt x 278.03792pt.
- [146]
-<Imagenes/Cap3/image005.jpg, id=650, 584.1825pt x 176.15813pt>
+ [148]
+<Imagenes/Cap3/image005.jpg, id=656, 584.1825pt x 176.15813pt>
 File: Imagenes/Cap3/image005.jpg Graphic file (type jpg)
 <use Imagenes/Cap3/image005.jpg>
 Package pdftex.def Info: Imagenes/Cap3/image005.jpg  used on input line 145.
 (pdftex.def)             Requested size: 352.10284pt x 106.1795pt.
- [147 <./Imagenes/Cap3/image004.jpg>]
-<Imagenes/Cap3/image006.jpg, id=654, 567.62062pt x 419.31656pt>
+ [149 <./Imagenes/Cap3/image004.jpg>]
+<Imagenes/Cap3/image006.jpg, id=660, 567.62062pt x 419.31656pt>
 File: Imagenes/Cap3/image006.jpg Graphic file (type jpg)
 <use Imagenes/Cap3/image006.jpg>
 Package pdftex.def Info: Imagenes/Cap3/image006.jpg  used on input line 159.
 (pdftex.def)             Requested size: 328.62788pt x 242.77509pt.
- [148 <./Imagenes/Cap3/image005.jpg> <./Imagenes/Cap3/image006.jpg>]
-<Imagenes/Cap3/image007.jpg, id=658, 459.96844pt x 286.06876pt>
+ [150 <./Imagenes/Cap3/image005.jpg> <./Imagenes/Cap3/image006.jpg>]
+<Imagenes/Cap3/image007.jpg, id=665, 459.96844pt x 286.06876pt>
 File: Imagenes/Cap3/image007.jpg Graphic file (type jpg)
 <use Imagenes/Cap3/image007.jpg>
 Package pdftex.def Info: Imagenes/Cap3/image007.jpg  used on input line 175.
 (pdftex.def)             Requested size: 281.68513pt x 175.20009pt.
-<Imagenes/Cap3/image008.jpg, id=659, 459.96844pt x 328.97906pt>
+<Imagenes/Cap3/image008.jpg, id=666, 459.96844pt x 328.97906pt>
 File: Imagenes/Cap3/image008.jpg Graphic file (type jpg)
 <use Imagenes/Cap3/image008.jpg>
 Package pdftex.def Info: Imagenes/Cap3/image008.jpg  used on input line 189.
 (pdftex.def)             Requested size: 281.68513pt x 201.4801pt.
- [149 <./Imagenes/Cap3/image007.jpg>]
-<Imagenes/Cap3/image009.jpg, id=663, 611.28375pt x 152.06813pt>
+ [151 <./Imagenes/Cap3/image007.jpg>]
+<Imagenes/Cap3/image009.jpg, id=670, 611.28375pt x 152.06813pt>
 File: Imagenes/Cap3/image009.jpg Graphic file (type jpg)
 <use Imagenes/Cap3/image009.jpg>
 Package pdftex.def Info: Imagenes/Cap3/image009.jpg  used on input line 203.
 (pdftex.def)             Requested size: 375.57779pt x 93.43199pt.
- [150 <./Imagenes/Cap3/image008.jpg> <./Imagenes/Cap3/image009.jpg>]
-<Imagenes/Cap3/image010.jpg, id=668, 461.47406pt x 124.21407pt>
+ [152 <./Imagenes/Cap3/image008.jpg> <./Imagenes/Cap3/image009.jpg>]
+<Imagenes/Cap3/image010.jpg, id=674, 461.47406pt x 124.21407pt>
 File: Imagenes/Cap3/image010.jpg Graphic file (type jpg)
 <use Imagenes/Cap3/image010.jpg>
 Package pdftex.def Info: Imagenes/Cap3/image010.jpg  used on input line 219.
 (pdftex.def)             Requested size: 328.62788pt x 88.45604pt.
-<Imagenes/Cap3/image011.jpg, id=669, 631.60968pt x 444.15938pt>
+<Imagenes/Cap3/image011.jpg, id=675, 631.60968pt x 444.15938pt>
 File: Imagenes/Cap3/image011.jpg Graphic file (type jpg)
 <use Imagenes/Cap3/image011.jpg>
 Package pdftex.def Info: Imagenes/Cap3/image011.jpg  used on input line 235.
 (pdftex.def)             Requested size: 445.9955pt x 313.63391pt.
- [151 <./Imagenes/Cap3/image010.jpg>]
-<Imagenes/Cap3/image012.jpg, id=673, 461.47406pt x 95.6072pt>
+ [153 <./Imagenes/Cap3/image010.jpg>]
+<Imagenes/Cap3/image012.jpg, id=679, 461.47406pt x 95.6072pt>
 File: Imagenes/Cap3/image012.jpg Graphic file (type jpg)
 <use Imagenes/Cap3/image012.jpg>
 Package pdftex.def Info: Imagenes/Cap3/image012.jpg  used on input line 249.
 (pdftex.def)             Requested size: 328.62788pt x 68.08435pt.
-<Imagenes/Cap3/image013.jpg, id=674, 457.71pt x 96.36pt>
+<Imagenes/Cap3/image013.jpg, id=680, 457.71pt x 96.36pt>
 File: Imagenes/Cap3/image013.jpg Graphic file (type jpg)
 <use Imagenes/Cap3/image013.jpg>
 Package pdftex.def Info: Imagenes/Cap3/image013.jpg  used on input line 263.
 (pdftex.def)             Requested size: 328.62788pt x 69.18797pt.
- [152 <./Imagenes/Cap3/image011.jpg> <./Imagenes/Cap3/image012.jpg>]
-<Imagenes/Cap3/image014.jpg, id=678, 461.47406pt x 260.47313pt>
+ [154 <./Imagenes/Cap3/image011.jpg> <./Imagenes/Cap3/image012.jpg>]
+<Imagenes/Cap3/image014.jpg, id=684, 461.47406pt x 260.47313pt>
 File: Imagenes/Cap3/image014.jpg Graphic file (type jpg)
 <use Imagenes/Cap3/image014.jpg>
 Package pdftex.def Info: Imagenes/Cap3/image014.jpg  used on input line 277.
 (pdftex.def)             Requested size: 352.10284pt x 198.74063pt.
-<Imagenes/Cap3/image015.jpg, id=679, 458.46281pt x 110.66344pt>
+<Imagenes/Cap3/image015.jpg, id=685, 458.46281pt x 110.66344pt>
 File: Imagenes/Cap3/image015.jpg Graphic file (type jpg)
 <use Imagenes/Cap3/image015.jpg>
 Package pdftex.def Info: Imagenes/Cap3/image015.jpg  used on input line 291.
 (pdftex.def)             Requested size: 352.10284pt x 84.99326pt.
- [153 <./Imagenes/Cap3/image013.jpg> <./Imagenes/Cap3/image014.jpg>]
-<Imagenes/Cap3/image016.jpg, id=683, 459.21562pt x 112.92188pt>
+ [155 <./Imagenes/Cap3/image013.jpg> <./Imagenes/Cap3/image014.jpg>]
+<Imagenes/Cap3/image016.jpg, id=689, 459.21562pt x 112.92188pt>
 File: Imagenes/Cap3/image016.jpg Graphic file (type jpg)
 <use Imagenes/Cap3/image016.jpg>
 Package pdftex.def Info: Imagenes/Cap3/image016.jpg  used on input line 304.
 (pdftex.def)             Requested size: 352.10284pt x 86.58653pt.
-<Imagenes/Cap3/image017.jpg, id=684, 472.01344pt x 836.3747pt>
+<Imagenes/Cap3/image017.jpg, id=690, 472.01344pt x 836.3747pt>
 File: Imagenes/Cap3/image017.jpg Graphic file (type jpg)
 <use Imagenes/Cap3/image017.jpg>
 Package pdftex.def Info: Imagenes/Cap3/image017.jpg  used on input line 319.
 (pdftex.def)             Requested size: 305.15292pt x 540.71461pt.
- [154 <./Imagenes/Cap3/image015.jpg> <./Imagenes/Cap3/image016.jpg>]
+ [156 <./Imagenes/Cap3/image015.jpg> <./Imagenes/Cap3/image016.jpg>]
 Overfull \vbox (48.90642pt too high) has occurred while \output is active []
 
 
-[155 <./Imagenes/Cap3/image017.jpg>]
-<Imagenes/Cap3/image018.jpg, id=691, 473.51906pt x 959.83594pt>
+[157 <./Imagenes/Cap3/image017.jpg>]
+<Imagenes/Cap3/image018.jpg, id=698, 473.51906pt x 959.83594pt>
 File: Imagenes/Cap3/image018.jpg Graphic file (type jpg)
 <use Imagenes/Cap3/image018.jpg>
 Package pdftex.def Info: Imagenes/Cap3/image018.jpg  used on input line 332.
@@ -1140,340 +1157,339 @@ Package pdftex.def Info: Imagenes/Cap3/image018.jpg  used on input line 332.
 Overfull \vbox (50.64658pt too high) has occurred while \output is active []
 
 
-[156 <./Imagenes/Cap3/image018.jpg>]
-<Imagenes/Cap3/image019.jpg, id=696, 455.45157pt x 568.37344pt>
+[158 <./Imagenes/Cap3/image018.jpg>]
+<Imagenes/Cap3/image019.jpg, id=702, 455.45157pt x 568.37344pt>
 File: Imagenes/Cap3/image019.jpg Graphic file (type jpg)
 <use Imagenes/Cap3/image019.jpg>
 Package pdftex.def Info: Imagenes/Cap3/image019.jpg  used on input line 348.
 (pdftex.def)             Requested size: 305.15292pt x 380.8169pt.
- [157 <./Imagenes/Cap3/image019.jpg>]
-<Imagenes/Cap3/image020.jpg, id=700, 459.96844pt x 95.6072pt>
+ [159 <./Imagenes/Cap3/image019.jpg>]
+<Imagenes/Cap3/image020.jpg, id=706, 459.96844pt x 95.6072pt>
 File: Imagenes/Cap3/image020.jpg Graphic file (type jpg)
 <use Imagenes/Cap3/image020.jpg>
 Package pdftex.def Info: Imagenes/Cap3/image020.jpg  used on input line 364.
 (pdftex.def)             Requested size: 328.62788pt x 68.31047pt.
-<Imagenes/Cap3/image021.jpg, id=701, 459.96844pt x 97.11281pt>
+<Imagenes/Cap3/image021.jpg, id=707, 459.96844pt x 97.11281pt>
 File: Imagenes/Cap3/image021.jpg Graphic file (type jpg)
 <use Imagenes/Cap3/image021.jpg>
 Package pdftex.def Info: Imagenes/Cap3/image021.jpg  used on input line 377.
 (pdftex.def)             Requested size: 328.62788pt x 69.38622pt.
-<Imagenes/Cap3/image022.jpg, id=702, 459.21562pt x 204.01219pt>
+<Imagenes/Cap3/image022.jpg, id=708, 459.21562pt x 204.01219pt>
 File: Imagenes/Cap3/image022.jpg Graphic file (type jpg)
 <use Imagenes/Cap3/image022.jpg>
 Package pdftex.def Info: Imagenes/Cap3/image022.jpg  used on input line 393.
 (pdftex.def)             Requested size: 328.62788pt x 146.00458pt.
 
-[158 <./Imagenes/Cap3/image020.jpg> <./Imagenes/Cap3/image021.jpg>]
-<Imagenes/Cap3/image023.jpg, id=706, 456.95718pt x 420.82219pt>
+[160 <./Imagenes/Cap3/image020.jpg> <./Imagenes/Cap3/image021.jpg>]
+<Imagenes/Cap3/image023.jpg, id=712, 456.95718pt x 420.82219pt>
 File: Imagenes/Cap3/image023.jpg Graphic file (type jpg)
 <use Imagenes/Cap3/image023.jpg>
 Package pdftex.def Info: Imagenes/Cap3/image023.jpg  used on input line 409.
 (pdftex.def)             Requested size: 328.62788pt x 302.65141pt.
- [159 <./Imagenes/Cap3/image022.jpg>]
-<Imagenes/Cap3/image024.jpg, id=710, 456.95718pt x 148.30406pt>
+ [161 <./Imagenes/Cap3/image022.jpg>]
+<Imagenes/Cap3/image024.jpg, id=716, 456.95718pt x 148.30406pt>
 File: Imagenes/Cap3/image024.jpg Graphic file (type jpg)
 <use Imagenes/Cap3/image024.jpg>
 Package pdftex.def Info: Imagenes/Cap3/image024.jpg  used on input line 425.
 (pdftex.def)             Requested size: 328.62788pt x 106.65889pt.
- [160 <./Imagenes/Cap3/image023.jpg>]
-<Imagenes/Cap3/image025.jpg, id=714, 538.26094pt x 598.48593pt>
+ [162 <./Imagenes/Cap3/image023.jpg>]
+<Imagenes/Cap3/image025.jpg, id=721, 538.26094pt x 598.48593pt>
 File: Imagenes/Cap3/image025.jpg Graphic file (type jpg)
 <use Imagenes/Cap3/image025.jpg>
 Package pdftex.def Info: Imagenes/Cap3/image025.jpg  used on input line 441.
 (pdftex.def)             Requested size: 422.52054pt x 469.80336pt.
- [161 <./Imagenes/Cap3/image024.jpg>] [162 <./Imagenes/Cap3/image025.jpg>]
-<Imagenes/Cap3/image026.jpg, id=722, 557.83406pt x 429.85594pt>
+ [163 <./Imagenes/Cap3/image024.jpg>] [164 <./Imagenes/Cap3/image025.jpg>]
+<Imagenes/Cap3/image026.jpg, id=728, 557.83406pt x 429.85594pt>
 File: Imagenes/Cap3/image026.jpg Graphic file (type jpg)
 <use Imagenes/Cap3/image026.jpg>
 Package pdftex.def Info: Imagenes/Cap3/image026.jpg  used on input line 457.
 (pdftex.def)             Requested size: 399.05275pt x 307.50864pt.
-<Imagenes/Cap3/image027.jpg, id=723, 559.33969pt x 554.82281pt>
+<Imagenes/Cap3/image027.jpg, id=729, 559.33969pt x 554.82281pt>
 File: Imagenes/Cap3/image027.jpg Graphic file (type jpg)
 <use Imagenes/Cap3/image027.jpg>
 Package pdftex.def Info: Imagenes/Cap3/image027.jpg  used on input line 471.
 (pdftex.def)             Requested size: 399.05275pt x 395.84024pt.
- [163 <./Imagenes/Cap3/image026.jpg>]
-<Imagenes/Cap3/image028.jpg, id=727, 563.85657pt x 688.82344pt>
+ [165 <./Imagenes/Cap3/image026.jpg>]
+<Imagenes/Cap3/image028.jpg, id=733, 563.85657pt x 688.82344pt>
 File: Imagenes/Cap3/image028.jpg Graphic file (type jpg)
 <use Imagenes/Cap3/image028.jpg>
 Package pdftex.def Info: Imagenes/Cap3/image028.jpg  used on input line 485.
 (pdftex.def)             Requested size: 399.05275pt x 487.50198pt.
- [164 <./Imagenes/Cap3/image027.jpg>] [165 <./Imagenes/Cap3/image028.jpg>]
-<Imagenes/Cap3/image029.jpg, id=734, 475.7775pt x 94.85437pt>
+ [166 <./Imagenes/Cap3/image027.jpg>] [167 <./Imagenes/Cap3/image028.jpg>]
+<Imagenes/Cap3/image029.jpg, id=740, 475.7775pt x 94.85437pt>
 File: Imagenes/Cap3/image029.jpg Graphic file (type jpg)
 <use Imagenes/Cap3/image029.jpg>
 Package pdftex.def Info: Imagenes/Cap3/image029.jpg  used on input line 501.
 (pdftex.def)             Requested size: 328.62788pt x 65.5205pt.
-<Imagenes/Cap3/image030.jpg, id=735, 475.7775pt x 111.41624pt>
+<Imagenes/Cap3/image030.jpg, id=741, 475.7775pt x 111.41624pt>
 File: Imagenes/Cap3/image030.jpg Graphic file (type jpg)
 <use Imagenes/Cap3/image030.jpg>
 Package pdftex.def Info: Imagenes/Cap3/image030.jpg  used on input line 514.
 (pdftex.def)             Requested size: 328.62788pt x 76.96059pt.
-<Imagenes/Cap3/image031.jpg, id=736, 606.01407pt x 744.53156pt>
+<Imagenes/Cap3/image031.jpg, id=742, 606.01407pt x 744.53156pt>
 File: Imagenes/Cap3/image031.jpg Graphic file (type jpg)
 <use Imagenes/Cap3/image031.jpg>
 Package pdftex.def Info: Imagenes/Cap3/image031.jpg  used on input line 530.
 (pdftex.def)             Requested size: 375.57779pt x 461.42302pt.
- [166 <./Imagenes/Cap3/image029.jpg> <./Imagenes/Cap3/image030.jpg>]
-<Imagenes/Cap3/image032.jpg, id=740, 553.31718pt x 568.37344pt>
+ [168 <./Imagenes/Cap3/image029.jpg> <./Imagenes/Cap3/image030.jpg>]
+<Imagenes/Cap3/image032.jpg, id=747, 553.31718pt x 568.37344pt>
 File: Imagenes/Cap3/image032.jpg Graphic file (type jpg)
 <use Imagenes/Cap3/image032.jpg>
 Package pdftex.def Info: Imagenes/Cap3/image032.jpg  used on input line 544.
 (pdftex.def)             Requested size: 370.87851pt x 380.96434pt.
 
-[167 <./Imagenes/Cap3/image031.jpg>] [168 <./Imagenes/Cap3/image032.jpg>]
-<Imagenes/Cap3/image033.jpg, id=748, 459.96844pt x 382.42876pt>
+[169 <./Imagenes/Cap3/image031.jpg>] [170 <./Imagenes/Cap3/image032.jpg>]
+<Imagenes/Cap3/image033.jpg, id=754, 459.96844pt x 382.42876pt>
 File: Imagenes/Cap3/image033.jpg Graphic file (type jpg)
 <use Imagenes/Cap3/image033.jpg>
 Package pdftex.def Info: Imagenes/Cap3/image033.jpg  used on input line 562.
 (pdftex.def)             Requested size: 328.62788pt x 273.24191pt.
-<Imagenes/Cap3/image034.jpg, id=749, 456.95718pt x 761.09344pt>
+<Imagenes/Cap3/image034.jpg, id=755, 456.95718pt x 761.09344pt>
 File: Imagenes/Cap3/image034.jpg Graphic file (type jpg)
 <use Imagenes/Cap3/image034.jpg>
 Package pdftex.def Info: Imagenes/Cap3/image034.jpg  used on input line 576.
 (pdftex.def)             Requested size: 328.62788pt x 547.37137pt.
 
-[169 <./Imagenes/Cap3/image033.jpg>]
+[171 <./Imagenes/Cap3/image033.jpg>]
 Overfull \vbox (55.56317pt too high) has occurred while \output is active []
 
 
-[170 <./Imagenes/Cap3/image034.jpg>]
-<Imagenes/Cap3/image035.png, id=756, 65.7pt x 116.946pt>
+[172 <./Imagenes/Cap3/image034.jpg>]
+<Imagenes/Cap3/image035.png, id=762, 65.7pt x 116.946pt>
 File: Imagenes/Cap3/image035.png Graphic file (type png)
 <use Imagenes/Cap3/image035.png>
 Package pdftex.def Info: Imagenes/Cap3/image035.png  used on input line 593.
 (pdftex.def)             Requested size: 117.36761pt x 208.92696pt.
-<Imagenes/Cap3/image036.png, id=757, 63.072pt x 112.0185pt>
+<Imagenes/Cap3/image036.png, id=763, 63.072pt x 112.0185pt>
 File: Imagenes/Cap3/image036.png Graphic file (type png)
 <use Imagenes/Cap3/image036.png>
 Package pdftex.def Info: Imagenes/Cap3/image036.png  used on input line 607.
 (pdftex.def)             Requested size: 117.36761pt x 208.45477pt.
- [171 <./Imagenes/Cap3/image035.png>]
-<Imagenes/Cap3/image037.png, id=761, 60.444pt x 107.748pt>
+ [173 <./Imagenes/Cap3/image035.png>]
+<Imagenes/Cap3/image037.png, id=767, 60.444pt x 107.748pt>
 File: Imagenes/Cap3/image037.png Graphic file (type png)
 <use Imagenes/Cap3/image037.png>
 Package pdftex.def Info: Imagenes/Cap3/image037.png  used on input line 621.
 (pdftex.def)             Requested size: 117.36761pt x 209.24129pt.
 
-[172 <./Imagenes/Cap3/image036.png>]
-<Imagenes/Cap3/image038.png, id=765, 61.758pt x 109.719pt>
+[174 <./Imagenes/Cap3/image036.png>]
+<Imagenes/Cap3/image038.png, id=772, 61.758pt x 109.719pt>
 File: Imagenes/Cap3/image038.png Graphic file (type png)
 <use Imagenes/Cap3/image038.png>
 Package pdftex.def Info: Imagenes/Cap3/image038.png  used on input line 634.
 (pdftex.def)             Requested size: 117.36761pt x 208.51341pt.
-<Imagenes/Cap3/image039.png, id=766, 66.0285pt x 117.2745pt>
+<Imagenes/Cap3/image039.png, id=773, 66.0285pt x 117.2745pt>
 File: Imagenes/Cap3/image039.png Graphic file (type png)
 <use Imagenes/Cap3/image039.png>
 Package pdftex.def Info: Imagenes/Cap3/image039.png  used on input line 648.
 (pdftex.def)             Requested size: 117.36761pt x 208.47414pt.
- [173 <./Imagenes/Cap3/image037.png> <./Imagenes/Cap3/image038.png>]
-<Imagenes/Cap3/image040.png, id=770, 67.014pt x 119.2455pt>
+ [175 <./Imagenes/Cap3/image037.png> <./Imagenes/Cap3/image038.png>]
+<Imagenes/Cap3/image040.png, id=777, 67.014pt x 119.2455pt>
 File: Imagenes/Cap3/image040.png Graphic file (type png)
 <use Imagenes/Cap3/image040.png>
 Package pdftex.def Info: Imagenes/Cap3/image040.png  used on input line 662.
 (pdftex.def)             Requested size: 117.36761pt x 208.86285pt.
- [174 <./Imagenes/Cap3/image039.png>]
-<Imagenes/Cap3/image041.png, id=775, 67.014pt x 119.2455pt>
+ [176 <./Imagenes/Cap3/image039.png>]
+<Imagenes/Cap3/image041.png, id=781, 67.014pt x 119.2455pt>
 File: Imagenes/Cap3/image041.png Graphic file (type png)
 <use Imagenes/Cap3/image041.png>
 Package pdftex.def Info: Imagenes/Cap3/image041.png  used on input line 676.
 (pdftex.def)             Requested size: 117.36761pt x 208.86285pt.
- [175 <./Imagenes/Cap3/image040.png>]
-<Imagenes/Cap3/image042.png, id=779, 70.956pt x 126.144pt>
+ [177 <./Imagenes/Cap3/image040.png>]
+<Imagenes/Cap3/image042.png, id=785, 70.956pt x 126.144pt>
 File: Imagenes/Cap3/image042.png Graphic file (type png)
 <use Imagenes/Cap3/image042.png>
 Package pdftex.def Info: Imagenes/Cap3/image042.png  used on input line 690.
 (pdftex.def)             Requested size: 117.36761pt x 208.65984pt.
- [176 <./Imagenes/Cap3/image041.png>]
-<Imagenes/Cap3/image043.png, id=783, 70.956pt x 126.144pt>
+ [178 <./Imagenes/Cap3/image041.png>]
+<Imagenes/Cap3/image043.png, id=789, 70.956pt x 126.144pt>
 File: Imagenes/Cap3/image043.png Graphic file (type png)
 <use Imagenes/Cap3/image043.png>
 Package pdftex.def Info: Imagenes/Cap3/image043.png  used on input line 704.
 (pdftex.def)             Requested size: 117.36761pt x 208.65984pt.
- [177 <./Imagenes/Cap3/image042.png>]
+ [179 <./Imagenes/Cap3/image042.png>]
 
-LaTeX Warning: Reference `fig:fig:figura3.44' on page 178 undefined on input li
+LaTeX Warning: Reference `fig:fig:figura3.44' on page 180 undefined on input li
 ne 714.
 
-<Imagenes/Cap3/image044.png, id=787, 70.6275pt x 125.8155pt>
+<Imagenes/Cap3/image044.png, id=793, 70.6275pt x 125.8155pt>
 File: Imagenes/Cap3/image044.png Graphic file (type png)
 <use Imagenes/Cap3/image044.png>
 Package pdftex.def Info: Imagenes/Cap3/image044.png  used on input line 718.
 (pdftex.def)             Requested size: 117.36761pt x 209.08403pt.
-[178 <./Imagenes/Cap3/image043.png>]
-<Imagenes/Cap3/image045.png, id=791, 70.6275pt x 125.8155pt>
+[180 <./Imagenes/Cap3/image043.png>]
+<Imagenes/Cap3/image045.png, id=798, 70.6275pt x 125.8155pt>
 File: Imagenes/Cap3/image045.png Graphic file (type png)
 <use Imagenes/Cap3/image045.png>
 Package pdftex.def Info: Imagenes/Cap3/image045.png  used on input line 732.
 (pdftex.def)             Requested size: 117.36761pt x 209.08403pt.
- [179 <./Imagenes/Cap3/image044.png>]
-<Imagenes/Cap3/image046.png, id=795, 71.613pt x 127.458pt>
+ [181 <./Imagenes/Cap3/image044.png>]
+<Imagenes/Cap3/image046.png, id=802, 71.613pt x 127.458pt>
 File: Imagenes/Cap3/image046.png Graphic file (type png)
 <use Imagenes/Cap3/image046.png>
 Package pdftex.def Info: Imagenes/Cap3/image046.png  used on input line 746.
 (pdftex.def)             Requested size: 117.36761pt x 208.90211pt.
 
-[180 <./Imagenes/Cap3/image045.png>]
-<Imagenes/Cap3/image047.png, id=800, 65.3715pt x 116.289pt>
+[182 <./Imagenes/Cap3/image045.png>]
+<Imagenes/Cap3/image047.png, id=806, 65.3715pt x 116.289pt>
 File: Imagenes/Cap3/image047.png Graphic file (type png)
 <use Imagenes/Cap3/image047.png>
 Package pdftex.def Info: Imagenes/Cap3/image047.png  used on input line 760.
 (pdftex.def)             Requested size: 117.36761pt x 208.79657pt.
- [181 <./Imagenes/Cap3/image046.png>]
-<Imagenes/Cap3/image048.png, id=805, 69.3135pt x 123.1875pt>
+ [183 <./Imagenes/Cap3/image046.png>]
+<Imagenes/Cap3/image048.png, id=811, 69.3135pt x 123.1875pt>
 File: Imagenes/Cap3/image048.png Graphic file (type png)
 <use Imagenes/Cap3/image048.png>
 Package pdftex.def Info: Imagenes/Cap3/image048.png  used on input line 774.
 (pdftex.def)             Requested size: 117.36761pt x 208.59267pt.
 
-[182 <./Imagenes/Cap3/image047.png>]
-<Imagenes/Cap3/image049.png, id=809, 74.241pt x 132.057pt>
+[184 <./Imagenes/Cap3/image047.png>]
+<Imagenes/Cap3/image049.png, id=815, 74.241pt x 132.057pt>
 File: Imagenes/Cap3/image049.png Graphic file (type png)
 <use Imagenes/Cap3/image049.png>
 Package pdftex.def Info: Imagenes/Cap3/image049.png  used on input line 788.
 (pdftex.def)             Requested size: 117.36761pt x 208.78682pt.
- [183 <./Imagenes/Cap3/image048.png>]
-<Imagenes/Cap3/image050.png, id=813, 78.5115pt x 139.284pt>
+ [185 <./Imagenes/Cap3/image048.png>]
+<Imagenes/Cap3/image050.png, id=819, 78.5115pt x 139.284pt>
 File: Imagenes/Cap3/image050.png Graphic file (type png)
 <use Imagenes/Cap3/image050.png>
 Package pdftex.def Info: Imagenes/Cap3/image050.png  used on input line 802.
 (pdftex.def)             Requested size: 117.36761pt x 208.22624pt.
 
-[184 <./Imagenes/Cap3/image049.png>]
-<Imagenes/Cap3/image051.png, id=817, 80.811pt x 143.883pt>
+[186 <./Imagenes/Cap3/image049.png>]
+<Imagenes/Cap3/image051.png, id=824, 80.811pt x 143.883pt>
 File: Imagenes/Cap3/image051.png Graphic file (type png)
 <use Imagenes/Cap3/image051.png>
 Package pdftex.def Info: Imagenes/Cap3/image051.png  used on input line 816.
 (pdftex.def)             Requested size: 117.36761pt x 208.98723pt.
- [185 <./Imagenes/Cap3/image050.png>]
-<Imagenes/Cap3/image052.png, id=821, 71.2845pt x 126.801pt>
+ [187 <./Imagenes/Cap3/image050.png>]
+<Imagenes/Cap3/image052.png, id=828, 71.2845pt x 126.801pt>
 File: Imagenes/Cap3/image052.png Graphic file (type png)
 <use Imagenes/Cap3/image052.png>
 Package pdftex.def Info: Imagenes/Cap3/image052.png  used on input line 830.
 (pdftex.def)             Requested size: 117.36761pt x 208.78113pt.
 
-[186 <./Imagenes/Cap3/image051.png>]
-<Imagenes/Cap3/image053.png, id=826, 70.956pt x 126.4725pt>
+[188 <./Imagenes/Cap3/image051.png>]
+<Imagenes/Cap3/image053.png, id=832, 70.956pt x 126.4725pt>
 File: Imagenes/Cap3/image053.png Graphic file (type png)
 <use Imagenes/Cap3/image053.png>
 Package pdftex.def Info: Imagenes/Cap3/image053.png  used on input line 844.
 (pdftex.def)             Requested size: 117.36761pt x 209.20323pt.
- [187 <./Imagenes/Cap3/image052.png>]
-<Imagenes/Cap3/image054.png, id=830, 359.09157pt x 294.34969pt>
+ [189 <./Imagenes/Cap3/image052.png>]
+<Imagenes/Cap3/image054.png, id=836, 359.09157pt x 294.34969pt>
 File: Imagenes/Cap3/image054.png Graphic file (type png)
 <use Imagenes/Cap3/image054.png>
 Package pdftex.def Info: Imagenes/Cap3/image054.png  used on input line 858.
 (pdftex.def)             Requested size: 258.21017pt x 211.6711pt.
 
-[188 <./Imagenes/Cap3/image053.png>]
-<Imagenes/Cap3/image055.png, id=834, 69.642pt x 123.8445pt>
+[190 <./Imagenes/Cap3/image053.png>]
+<Imagenes/Cap3/image055.png, id=840, 69.642pt x 123.8445pt>
 File: Imagenes/Cap3/image055.png Graphic file (type png)
 <use Imagenes/Cap3/image055.png>
 Package pdftex.def Info: Imagenes/Cap3/image055.png  used on input line 872.
 (pdftex.def)             Requested size: 117.36761pt x 208.71684pt.
- [189 <./Imagenes/Cap3/image054.png>]
-<Imagenes/Cap3/image056.png, id=839, 71.9415pt x 127.7865pt>
+ [191 <./Imagenes/Cap3/image054.png>]
+<Imagenes/Cap3/image056.png, id=845, 71.9415pt x 127.7865pt>
 File: Imagenes/Cap3/image056.png Graphic file (type png)
 <use Imagenes/Cap3/image056.png>
 Package pdftex.def Info: Imagenes/Cap3/image056.png  used on input line 886.
 (pdftex.def)             Requested size: 117.36761pt x 208.48512pt.
 
-[190 <./Imagenes/Cap3/image055.png>]
-<Imagenes/Cap3/image057.jpg, id=843, 371.13657pt x 296.60812pt>
+[192 <./Imagenes/Cap3/image055.png>]
+<Imagenes/Cap3/image057.jpg, id=850, 371.13657pt x 296.60812pt>
 File: Imagenes/Cap3/image057.jpg Graphic file (type jpg)
 <use Imagenes/Cap3/image057.jpg>
 Package pdftex.def Info: Imagenes/Cap3/image057.jpg  used on input line 899.
 (pdftex.def)             Requested size: 258.21017pt x 206.36154pt.
-<Imagenes/Cap3/image058.png, id=844, 72.927pt x 129.429pt>
+<Imagenes/Cap3/image058.png, id=851, 72.927pt x 129.429pt>
 File: Imagenes/Cap3/image058.png Graphic file (type png)
 <use Imagenes/Cap3/image058.png>
 Package pdftex.def Info: Imagenes/Cap3/image058.png  used on input line 913.
 (pdftex.def)             Requested size: 117.36761pt x 208.31505pt.
- [191 <./Imagenes/Cap3/image056.png> <./Imagenes/Cap3/image057.jpg>]
-<Imagenes/Cap3/image059.png, id=848, 69.3135pt x 123.516pt>
+ [193 <./Imagenes/Cap3/image056.png> <./Imagenes/Cap3/image057.jpg>]
+<Imagenes/Cap3/image059.png, id=855, 69.3135pt x 123.516pt>
 File: Imagenes/Cap3/image059.png Graphic file (type png)
 <use Imagenes/Cap3/image059.png>
 Package pdftex.def Info: Imagenes/Cap3/image059.png  used on input line 927.
 (pdftex.def)             Requested size: 117.36761pt x 209.1489pt.
- [192 <./Imagenes/Cap3/image058.png>]
-<Imagenes/Cap3/image060.png, id=853, 70.299pt x 125.1585pt>
+ [194 <./Imagenes/Cap3/image058.png>]
+<Imagenes/Cap3/image060.png, id=859, 70.299pt x 125.1585pt>
 File: Imagenes/Cap3/image060.png Graphic file (type png)
 <use Imagenes/Cap3/image060.png>
 Package pdftex.def Info: Imagenes/Cap3/image060.png  used on input line 941.
 (pdftex.def)             Requested size: 117.36761pt x 208.96234pt.
- [193 <./Imagenes/Cap3/image059.png>]
-<Imagenes/Cap3/image061.png, id=857, 74.241pt x 132.057pt>
+ [195 <./Imagenes/Cap3/image059.png>]
+<Imagenes/Cap3/image061.png, id=863, 74.241pt x 132.057pt>
 File: Imagenes/Cap3/image061.png Graphic file (type png)
 <use Imagenes/Cap3/image061.png>
 Package pdftex.def Info: Imagenes/Cap3/image061.png  used on input line 954.
 (pdftex.def)             Requested size: 117.36761pt x 208.78682pt.
- [194 <./Imagenes/Cap3/image060.png> <./Imagenes/Cap3/image061.png>]
-<Imagenes/Cap3/image062.jpg, id=861, 288.3272pt x 710.655pt>
+ [196 <./Imagenes/Cap3/image060.png> <./Imagenes/Cap3/image061.png>]
+<Imagenes/Cap3/image062.jpg, id=867, 288.3272pt x 710.655pt>
 File: Imagenes/Cap3/image062.jpg Graphic file (type jpg)
 <use Imagenes/Cap3/image062.jpg>
 Package pdftex.def Info: Imagenes/Cap3/image062.jpg  used on input line 970.
 (pdftex.def)             Requested size: 187.78531pt x 462.86368pt.
- [195]
-<Imagenes/Cap3/image063.jpg, id=865, 500.62032pt x 675.27281pt>
+ [197]
+<Imagenes/Cap3/image063.jpg, id=871, 500.62032pt x 675.27281pt>
 File: Imagenes/Cap3/image063.jpg Graphic file (type jpg)
 <use Imagenes/Cap3/image063.jpg>
 Package pdftex.def Info: Imagenes/Cap3/image063.jpg  used on input line 984.
 (pdftex.def)             Requested size: 305.15292pt x 411.6273pt.
- [196 <./Imagenes/Cap3/image062.jpg>]
-<Imagenes/Cap3/image064.jpg, id=869, 601.4972pt x 776.14969pt>
+ [198 <./Imagenes/Cap3/image062.jpg>]
+<Imagenes/Cap3/image064.jpg, id=876, 601.4972pt x 776.14969pt>
 File: Imagenes/Cap3/image064.jpg Graphic file (type jpg)
 <use Imagenes/Cap3/image064.jpg>
 Package pdftex.def Info: Imagenes/Cap3/image064.jpg  used on input line 998.
 (pdftex.def)             Requested size: 314.54434pt x 405.88588pt.
- [197 <./Imagenes/Cap3/image063.jpg>]
-<Imagenes/Cap3/image065.jpg, id=873, 578.91281pt x 801.74532pt>
+ [199 <./Imagenes/Cap3/image063.jpg>]
+<Imagenes/Cap3/image065.jpg, id=880, 578.91281pt x 801.74532pt>
 File: Imagenes/Cap3/image065.jpg Graphic file (type jpg)
 <use Imagenes/Cap3/image065.jpg>
 Package pdftex.def Info: Imagenes/Cap3/image065.jpg  used on input line 1012.
 (pdftex.def)             Requested size: 314.54434pt x 435.61519pt.
- [198 <./Imagenes/Cap3/image064.jpg>]
-<Imagenes/Cap3/image066.jpg, id=878, 526.21594pt x 612.03656pt>
+ [200 <./Imagenes/Cap3/image064.jpg>]
+<Imagenes/Cap3/image066.jpg, id=884, 526.21594pt x 612.03656pt>
 File: Imagenes/Cap3/image066.jpg Graphic file (type jpg)
 <use Imagenes/Cap3/image066.jpg>
 Package pdftex.def Info: Imagenes/Cap3/image066.jpg  used on input line 1026.
 (pdftex.def)             Requested size: 338.0193pt x 393.15894pt.
- [199 <./Imagenes/Cap3/image065.jpg>]
-<Imagenes/Cap3/image067.jpg, id=882, 527.72156pt x 580.41844pt>
+ [201 <./Imagenes/Cap3/image065.jpg>]
+<Imagenes/Cap3/image067.jpg, id=888, 527.72156pt x 580.41844pt>
 File: Imagenes/Cap3/image067.jpg Graphic file (type jpg)
 <use Imagenes/Cap3/image067.jpg>
 Package pdftex.def Info: Imagenes/Cap3/image067.jpg  used on input line 1040.
 (pdftex.def)             Requested size: 338.0193pt x 371.76765pt.
- [200 <./Imagenes/Cap3/image066.jpg>] [201 <./Imagenes/Cap3/image067.jpg>]
-<Imagenes/Cap3/image068.jpg, id=889, 507.39563pt x 371.13657pt>
+ [202 <./Imagenes/Cap3/image066.jpg>] [203 <./Imagenes/Cap3/image067.jpg>]
+<Imagenes/Cap3/image068.jpg, id=895, 507.39563pt x 371.13657pt>
 File: Imagenes/Cap3/image068.jpg Graphic file (type jpg)
 <use Imagenes/Cap3/image068.jpg>
 Package pdftex.def Info: Imagenes/Cap3/image068.jpg  used on input line 1054.
 (pdftex.def)             Requested size: 338.0193pt x 247.25009pt.
-[202 <./Imagenes/Cap3/image068.jpg>]
-<Imagenes/Cap3/image069.jpg, id=893, 526.21594pt x 333.49594pt>
+[204 <./Imagenes/Cap3/image068.jpg>] [205]
+<Imagenes/Cap3/image069.jpg, id=903, 526.21594pt x 333.49594pt>
 File: Imagenes/Cap3/image069.jpg Graphic file (type jpg)
 <use Imagenes/Cap3/image069.jpg>
-Package pdftex.def Info: Imagenes/Cap3/image069.jpg  used on input line 1075.
+Package pdftex.def Info: Imagenes/Cap3/image069.jpg  used on input line 1088.
 (pdftex.def)             Requested size: 291.06938pt x 184.47668pt.
- [203]
-<Imagenes/Cap3/image070.jpg, id=897, 519.44063pt x 389.20406pt>
+<Imagenes/Cap3/image070.jpg, id=904, 519.44063pt x 389.20406pt>
 File: Imagenes/Cap3/image070.jpg Graphic file (type jpg)
 <use Imagenes/Cap3/image070.jpg>
-Package pdftex.def Info: Imagenes/Cap3/image070.jpg  used on input line 1090.
+Package pdftex.def Info: Imagenes/Cap3/image070.jpg  used on input line 1103.
 (pdftex.def)             Requested size: 197.17673pt x 147.73872pt.
- [204 <./Imagenes/Cap3/image069.jpg> <./Imagenes/Cap3/image070.jpg>] (TablasCap
-3.tex [205] [206] [207] [208]
-[209] [210]
+ [206 <./Imagenes/Cap3/image069.jpg>] [207 <./Imagenes/Cap3/image070.jpg>] (Tab
+lasCap3.tex [208] [209] [210]
+[211] [212] [213]
 Underfull \hbox (badness 10000) in paragraph at lines 776--784
 
  []
 
-[211] [212] [213] [214] [215]
+[214] [215] [216] [217] [218]
 Underfull \hbox (badness 10000) in paragraph at lines 1433--1442
 
  []
 
-[216] [217] [218] [219]
+[219] [220] [221] [222]
 Underfull \hbox (badness 10000) in paragraph at lines 1725--1733
 
  []
@@ -1483,232 +1499,232 @@ Underfull \hbox (badness 10000) in paragraph at lines 1725--1733
 
  []
 
-[220]
+[223]
 Underfull \hbox (badness 10000) in paragraph at lines 1912--1924
 
  []
 
-[221] [222] [223] [224] [225] [226]
+[224] [225] [226] [227] [228] [229]
 Underfull \hbox (badness 10000) in paragraph at lines 2665--2676
 
  []
 
-[227] [228] [229] [230]
+[230] [231] [232] [233]
 Underfull \hbox (badness 10000) in paragraph at lines 3212--3223
 
  []
 
-[231]) [232]
-<Imagenes/Cap3/image071.png, id=990, 916.42375pt x 664.4825pt>
+[234]) [235]
+<Imagenes/Cap3/image071.png, id=1000, 916.42375pt x 664.4825pt>
 File: Imagenes/Cap3/image071.png Graphic file (type png)
 <use Imagenes/Cap3/image071.png>
-Package pdftex.def Info: Imagenes/Cap3/image071.png  used on input line 1125.
+Package pdftex.def Info: Imagenes/Cap3/image071.png  used on input line 1138.
 (pdftex.def)             Requested size: 305.15292pt x 221.25703pt.
- [233]
-<Imagenes/Cap3/image072.png, id=994, 917.4275pt x 665.48625pt>
+ [236]
+<Imagenes/Cap3/image072.png, id=1004, 917.4275pt x 665.48625pt>
 File: Imagenes/Cap3/image072.png Graphic file (type png)
 <use Imagenes/Cap3/image072.png>
-Package pdftex.def Info: Imagenes/Cap3/image072.png  used on input line 1139.
+Package pdftex.def Info: Imagenes/Cap3/image072.png  used on input line 1152.
 (pdftex.def)             Requested size: 305.15292pt x 221.34755pt.
-<Imagenes/Cap3/image073.png, id=995, 917.4275pt x 664.4825pt>
+<Imagenes/Cap3/image073.png, id=1005, 917.4275pt x 664.4825pt>
 File: Imagenes/Cap3/image073.png Graphic file (type png)
 <use Imagenes/Cap3/image073.png>
-Package pdftex.def Info: Imagenes/Cap3/image073.png  used on input line 1151.
+Package pdftex.def Info: Imagenes/Cap3/image073.png  used on input line 1164.
 (pdftex.def)             Requested size: 305.15292pt x 221.01369pt.
- [234 <./Imagenes/Cap3/image071.png> <./Imagenes/Cap3/image072.png>]
-<Imagenes/Cap3/image074.png, id=1000, 916.42375pt x 665.48625pt>
+ [237 <./Imagenes/Cap3/image071.png> <./Imagenes/Cap3/image072.png>]
+<Imagenes/Cap3/image074.png, id=1009, 916.42375pt x 665.48625pt>
 File: Imagenes/Cap3/image074.png Graphic file (type png)
 <use Imagenes/Cap3/image074.png>
-Package pdftex.def Info: Imagenes/Cap3/image074.png  used on input line 1165.
+Package pdftex.def Info: Imagenes/Cap3/image074.png  used on input line 1178.
 (pdftex.def)             Requested size: 305.15292pt x 221.59126pt.
-<Imagenes/Cap3/image075.png, id=1001, 915.42pt x 665.48625pt>
+<Imagenes/Cap3/image075.png, id=1010, 915.42pt x 665.48625pt>
 File: Imagenes/Cap3/image075.png Graphic file (type png)
 <use Imagenes/Cap3/image075.png>
-Package pdftex.def Info: Imagenes/Cap3/image075.png  used on input line 1177.
+Package pdftex.def Info: Imagenes/Cap3/image075.png  used on input line 1190.
 (pdftex.def)             Requested size: 305.15292pt x 221.83496pt.
- [235 <./Imagenes/Cap3/image073.png> <./Imagenes/Cap3/image074.png>]
-<Imagenes/Cap3/image076.png, id=1005, 917.4275pt x 665.48625pt>
+ [238 <./Imagenes/Cap3/image073.png> <./Imagenes/Cap3/image074.png>]
+<Imagenes/Cap3/image076.png, id=1014, 917.4275pt x 665.48625pt>
 File: Imagenes/Cap3/image076.png Graphic file (type png)
 <use Imagenes/Cap3/image076.png>
-Package pdftex.def Info: Imagenes/Cap3/image076.png  used on input line 1191.
+Package pdftex.def Info: Imagenes/Cap3/image076.png  used on input line 1204.
 (pdftex.def)             Requested size: 305.15292pt x 221.34755pt.
 
-[236 <./Imagenes/Cap3/image075.png> <./Imagenes/Cap3/image076.png>]
-<Imagenes/Cap3/image077.png, id=1009, 915.42pt x 662.475pt>
+[239 <./Imagenes/Cap3/image075.png> <./Imagenes/Cap3/image076.png>]
+<Imagenes/Cap3/image077.png, id=1018, 915.42pt x 662.475pt>
 File: Imagenes/Cap3/image077.png Graphic file (type png)
 <use Imagenes/Cap3/image077.png>
-Package pdftex.def Info: Imagenes/Cap3/image077.png  used on input line 1215.
+Package pdftex.def Info: Imagenes/Cap3/image077.png  used on input line 1228.
 (pdftex.def)             Requested size: 305.15292pt x 220.83119pt.
- [237]
-<Imagenes/Cap3/image078.png, id=1013, 916.42375pt x 663.47874pt>
+ [240]
+<Imagenes/Cap3/image078.png, id=1023, 916.42375pt x 663.47874pt>
 File: Imagenes/Cap3/image078.png Graphic file (type png)
 <use Imagenes/Cap3/image078.png>
-Package pdftex.def Info: Imagenes/Cap3/image078.png  used on input line 1229.
+Package pdftex.def Info: Imagenes/Cap3/image078.png  used on input line 1242.
 (pdftex.def)             Requested size: 305.15292pt x 220.9228pt.
-<Imagenes/Cap3/image079.jpg, id=1014, 688.07062pt x 497.60907pt>
+<Imagenes/Cap3/image079.jpg, id=1024, 688.07062pt x 497.60907pt>
 File: Imagenes/Cap3/image079.jpg Graphic file (type jpg)
 <use Imagenes/Cap3/image079.jpg>
-Package pdftex.def Info: Imagenes/Cap3/image079.jpg  used on input line 1241.
+Package pdftex.def Info: Imagenes/Cap3/image079.jpg  used on input line 1254.
 (pdftex.def)             Requested size: 305.15292pt x 220.67984pt.
 
-[238 <./Imagenes/Cap3/image077.png> <./Imagenes/Cap3/image078.png>]
-<Imagenes/Cap3/image080.jpg, id=1018, 685.8122pt x 497.60907pt>
+[241 <./Imagenes/Cap3/image077.png> <./Imagenes/Cap3/image078.png>]
+<Imagenes/Cap3/image080.jpg, id=1028, 685.8122pt x 497.60907pt>
 File: Imagenes/Cap3/image080.jpg Graphic file (type jpg)
 <use Imagenes/Cap3/image080.jpg>
-Package pdftex.def Info: Imagenes/Cap3/image080.jpg  used on input line 1255.
+Package pdftex.def Info: Imagenes/Cap3/image080.jpg  used on input line 1268.
 (pdftex.def)             Requested size: 305.15292pt x 221.41635pt.
-<Imagenes/Cap3/image081.jpg, id=1019, 686.565pt x 498.36188pt>
+<Imagenes/Cap3/image081.jpg, id=1029, 686.565pt x 498.36188pt>
 File: Imagenes/Cap3/image081.jpg Graphic file (type jpg)
 <use Imagenes/Cap3/image081.jpg>
-Package pdftex.def Info: Imagenes/Cap3/image081.jpg  used on input line 1267.
+Package pdftex.def Info: Imagenes/Cap3/image081.jpg  used on input line 1280.
 (pdftex.def)             Requested size: 305.15292pt x 221.50038pt.
- [239 <./Imagenes/Cap3/image079.jpg> <./Imagenes/Cap3/image080.jpg>]
-<Imagenes/Cap3/image082.jpg, id=1023, 686.565pt x 498.36188pt>
+ [242 <./Imagenes/Cap3/image079.jpg> <./Imagenes/Cap3/image080.jpg>]
+<Imagenes/Cap3/image082.jpg, id=1033, 686.565pt x 498.36188pt>
 File: Imagenes/Cap3/image082.jpg Graphic file (type jpg)
 <use Imagenes/Cap3/image082.jpg>
-Package pdftex.def Info: Imagenes/Cap3/image082.jpg  used on input line 1281.
+Package pdftex.def Info: Imagenes/Cap3/image082.jpg  used on input line 1294.
 (pdftex.def)             Requested size: 305.15292pt x 221.50038pt.
-<Imagenes/Cap3/image083.jpg, id=1024, 687.31781pt x 498.36188pt>
+<Imagenes/Cap3/image083.jpg, id=1034, 687.31781pt x 498.36188pt>
 File: Imagenes/Cap3/image083.jpg Graphic file (type jpg)
 <use Imagenes/Cap3/image083.jpg>
-Package pdftex.def Info: Imagenes/Cap3/image083.jpg  used on input line 1293.
+Package pdftex.def Info: Imagenes/Cap3/image083.jpg  used on input line 1306.
 (pdftex.def)             Requested size: 305.15292pt x 221.25703pt.
- [240 <./Imagenes/Cap3/image081.jpg> <./Imagenes/Cap3/image082.jpg>]
-<Imagenes/Cap3/image084.png, id=1029, 916.42375pt x 662.475pt>
+ [243 <./Imagenes/Cap3/image081.jpg> <./Imagenes/Cap3/image082.jpg>]
+<Imagenes/Cap3/image084.png, id=1038, 916.42375pt x 662.475pt>
 File: Imagenes/Cap3/image084.png Graphic file (type png)
 <use Imagenes/Cap3/image084.png>
-Package pdftex.def Info: Imagenes/Cap3/image084.png  used on input line 1308.
+Package pdftex.def Info: Imagenes/Cap3/image084.png  used on input line 1321.
 (pdftex.def)             Requested size: 305.15292pt x 220.5886pt.
- [241 <./Imagenes/Cap3/image083.jpg>] [242 <./Imagenes/Cap3/image084.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1347--1349
+ [244 <./Imagenes/Cap3/image083.jpg>] [245 <./Imagenes/Cap3/image084.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1360--1362
 
  []
 
-[243]
-<Imagenes/Cap3/image085.jpg, id=1039, 595.47469pt x 672.26157pt>
+[246]
+<Imagenes/Cap3/image085.jpg, id=1049, 595.47469pt x 672.26157pt>
 File: Imagenes/Cap3/image085.jpg Graphic file (type jpg)
 <use Imagenes/Cap3/image085.jpg>
-Package pdftex.def Info: Imagenes/Cap3/image085.jpg  used on input line 1359.
+Package pdftex.def Info: Imagenes/Cap3/image085.jpg  used on input line 1372.
 (pdftex.def)             Requested size: 399.05275pt x 450.50523pt.
- [244] [245 <./Imagenes/Cap3/image085.jpg>]
-<Imagenes/Cap3/image086.jpg, id=1046, 596.98032pt x 325.96782pt>
+ [247] [248 <./Imagenes/Cap3/image085.jpg>]
+<Imagenes/Cap3/image086.jpg, id=1056, 596.98032pt x 325.96782pt>
 File: Imagenes/Cap3/image086.jpg Graphic file (type jpg)
 <use Imagenes/Cap3/image086.jpg>
-Package pdftex.def Info: Imagenes/Cap3/image086.jpg  used on input line 1373.
+Package pdftex.def Info: Imagenes/Cap3/image086.jpg  used on input line 1386.
 (pdftex.def)             Requested size: 399.05275pt x 217.89493pt.
-<Imagenes/Cap3/image087.jpg, id=1047, 615.80063pt x 324.46219pt>
+<Imagenes/Cap3/image087.jpg, id=1057, 615.80063pt x 324.46219pt>
 File: Imagenes/Cap3/image087.jpg Graphic file (type jpg)
 <use Imagenes/Cap3/image087.jpg>
-Package pdftex.def Info: Imagenes/Cap3/image087.jpg  used on input line 1387.
+Package pdftex.def Info: Imagenes/Cap3/image087.jpg  used on input line 1400.
 (pdftex.def)             Requested size: 399.05275pt x 210.26419pt.
- [246 <./Imagenes/Cap3/image086.jpg>]
-<Imagenes/Cap3/image088.jpg, id=1052, 560.8453pt x 103.88812pt>
+ [249 <./Imagenes/Cap3/image086.jpg>]
+<Imagenes/Cap3/image088.jpg, id=1061, 560.8453pt x 103.88812pt>
 File: Imagenes/Cap3/image088.jpg Graphic file (type jpg)
 <use Imagenes/Cap3/image088.jpg>
-Package pdftex.def Info: Imagenes/Cap3/image088.jpg  used on input line 1401.
+Package pdftex.def Info: Imagenes/Cap3/image088.jpg  used on input line 1414.
 (pdftex.def)             Requested size: 399.05275pt x 73.91801pt.
-<Imagenes/Cap3/image089.jpg, id=1053, 643.6547pt x 741.52031pt>
+<Imagenes/Cap3/image089.jpg, id=1062, 643.6547pt x 741.52031pt>
 File: Imagenes/Cap3/image089.jpg Graphic file (type jpg)
 <use Imagenes/Cap3/image089.jpg>
-Package pdftex.def Info: Imagenes/Cap3/image089.jpg  used on input line 1414.
+Package pdftex.def Info: Imagenes/Cap3/image089.jpg  used on input line 1427.
 (pdftex.def)             Requested size: 399.05275pt x 459.73784pt.
-) [247 <./Imagenes/Cap3/image087.jpg> <./Imagenes/Cap3/image088.jpg>]
-[248 <./Imagenes/Cap3/image089.jpg>]
+) [250 <./Imagenes/Cap3/image087.jpg> <./Imagenes/Cap3/image088.jpg>]
+[251 <./Imagenes/Cap3/image089.jpg>]
 \openout2 = `Cap4.aux'.
 
  (Cap4.tex
 Cap\'{\i }tulo 4.
-[249
+[252
 
 
 
-] [250] [251] [252] [253] [254] [255] [256] [257] [258] [259] [260]
-<Imagenes/Cap4/image001.jpg, id=1098, 670.75594pt x 392.96812pt>
+] [253] [254] [255] [256] [257] [258] [259] [260] [261] [262] [263]
+<Imagenes/Cap4/image001.jpg, id=1107, 670.75594pt x 392.96812pt>
 File: Imagenes/Cap4/image001.jpg Graphic file (type jpg)
 <use Imagenes/Cap4/image001.jpg>
 Package pdftex.def Info: Imagenes/Cap4/image001.jpg  used on input line 494.
 (pdftex.def)             Requested size: 328.62788pt x 192.52608pt.
 
-[261]
-<Imagenes/Cap4/image002.png, id=1102, 663.98062pt x 392.21532pt>
+[264]
+<Imagenes/Cap4/image002.png, id=1112, 663.98062pt x 392.21532pt>
 File: Imagenes/Cap4/image002.png Graphic file (type png)
 <use Imagenes/Cap4/image002.png>
 Package pdftex.def Info: Imagenes/Cap4/image002.png  used on input line 506.
 (pdftex.def)             Requested size: 328.62788pt x 194.12024pt.
- [262 <./Imagenes/Cap4/image001.jpg> <./Imagenes/Cap4/image002.png>]
-[263] [264] [265] [266] [267] [268] [269] [270]
-<Imagenes/Cap4/image003.jpg, id=1133, 660.21657pt x 383.93437pt>
+ [265 <./Imagenes/Cap4/image001.jpg> <./Imagenes/Cap4/image002.png>]
+[266] [267] [268] [269] [270] [271] [272] [273]
+<Imagenes/Cap4/image003.jpg, id=1142, 660.21657pt x 383.93437pt>
 File: Imagenes/Cap4/image003.jpg Graphic file (type jpg)
 <use Imagenes/Cap4/image003.jpg>
 Package pdftex.def Info: Imagenes/Cap4/image003.jpg  used on input line 977.
 (pdftex.def)             Requested size: 328.62788pt x 191.11139pt.
- [271]
-<Imagenes/Cap4/image004.png, id=1137, 663.98062pt x 389.95688pt>
+ [274]
+<Imagenes/Cap4/image004.png, id=1146, 663.98062pt x 389.95688pt>
 File: Imagenes/Cap4/image004.png Graphic file (type png)
 <use Imagenes/Cap4/image004.png>
 Package pdftex.def Info: Imagenes/Cap4/image004.png  used on input line 989.
 (pdftex.def)             Requested size: 328.62788pt x 193.00247pt.
- [272 <./Imagenes/Cap4/image003.jpg> <./Imagenes/Cap4/image004.png>]
-<Imagenes/Cap4/image005.jpg, id=1142, 652.68843pt x 328.22626pt>
+ [275 <./Imagenes/Cap4/image003.jpg> <./Imagenes/Cap4/image004.png>]
+<Imagenes/Cap4/image005.jpg, id=1151, 652.68843pt x 328.22626pt>
 File: Imagenes/Cap4/image005.jpg Graphic file (type jpg)
 <use Imagenes/Cap4/image005.jpg>
 Package pdftex.def Info: Imagenes/Cap4/image005.jpg  used on input line 1047.
 (pdftex.def)             Requested size: 281.68513pt x 141.6604pt.
- [273]
-<Imagenes/Cap4/image006.jpg, id=1146, 658.71094pt x 328.22626pt>
+ [276]
+<Imagenes/Cap4/image006.jpg, id=1156, 658.71094pt x 328.22626pt>
 File: Imagenes/Cap4/image006.jpg Graphic file (type jpg)
 <use Imagenes/Cap4/image006.jpg>
 Package pdftex.def Info: Imagenes/Cap4/image006.jpg  used on input line 1060.
 (pdftex.def)             Requested size: 281.68513pt x 140.36325pt.
- [274 <./Imagenes/Cap4/image005.jpg> <./Imagenes/Cap4/image006.jpg>] [275] [276
-] [277] [278] [279] [280]
-[281]
-<Imagenes/Cap4/image007.jpg, id=1172, 668.4975pt x 391.4625pt>
+ [277 <./Imagenes/Cap4/image005.jpg> <./Imagenes/Cap4/image006.jpg>] [278] [279
+] [280] [281] [282] [283]
+[284]
+<Imagenes/Cap4/image007.jpg, id=1182, 668.4975pt x 391.4625pt>
 File: Imagenes/Cap4/image007.jpg Graphic file (type jpg)
 <use Imagenes/Cap4/image007.jpg>
 Package pdftex.def Info: Imagenes/Cap4/image007.jpg  used on input line 1398.
 (pdftex.def)             Requested size: 328.62788pt x 192.44548pt.
- [282]
-<Imagenes/Cap4/image008.png, id=1177, 663.22781pt x 388.45125pt>
+ [285]
+<Imagenes/Cap4/image008.png, id=1186, 663.22781pt x 388.45125pt>
 File: Imagenes/Cap4/image008.png Graphic file (type png)
 <use Imagenes/Cap4/image008.png>
 Package pdftex.def Info: Imagenes/Cap4/image008.png  used on input line 1410.
 (pdftex.def)             Requested size: 328.62788pt x 192.4766pt.
- [283 <./Imagenes/Cap4/image007.jpg> <./Imagenes/Cap4/image008.png>] [284] [285
-] [286] [287] [288] [289]
-<Imagenes/Cap4/image009.jpg, id=1201, 667.74469pt x 391.4625pt>
+ [286 <./Imagenes/Cap4/image007.jpg> <./Imagenes/Cap4/image008.png>] [287] [288
+] [289] [290] [291] [292]
+<Imagenes/Cap4/image009.jpg, id=1210, 667.74469pt x 391.4625pt>
 File: Imagenes/Cap4/image009.jpg Graphic file (type jpg)
 <use Imagenes/Cap4/image009.jpg>
 Package pdftex.def Info: Imagenes/Cap4/image009.jpg  used on input line 1721.
 (pdftex.def)             Requested size: 328.62788pt x 192.66052pt.
-<Imagenes/Cap4/image010.png, id=1202, 664.73344pt x 392.21532pt>
+<Imagenes/Cap4/image010.png, id=1211, 664.73344pt x 392.21532pt>
 File: Imagenes/Cap4/image010.png Graphic file (type png)
 <use Imagenes/Cap4/image010.png>
 Package pdftex.def Info: Imagenes/Cap4/image010.png  used on input line 1733.
 (pdftex.def)             Requested size: 328.62788pt x 193.9048pt.
- [290 <./Imagenes/Cap4/image009.jpg>]
-[291 <./Imagenes/Cap4/image010.png>] [292] [293]
-<Imagenes/Cap4/image011.png, id=1216, 432.86719pt x 252.19218pt>
+ [293 <./Imagenes/Cap4/image009.jpg>]
+[294 <./Imagenes/Cap4/image010.png>] [295] [296]
+<Imagenes/Cap4/image011.png, id=1226, 432.86719pt x 252.19218pt>
 File: Imagenes/Cap4/image011.png Graphic file (type png)
 <use Imagenes/Cap4/image011.png>
 Package pdftex.def Info: Imagenes/Cap4/image011.png  used on input line 1889.
 (pdftex.def)             Requested size: 281.68513pt x 164.11922pt.
- [294 <./Imagenes/Cap4/image011.png>]) [295]
+ [297 <./Imagenes/Cap4/image011.png>]) [298]
 \openout2 = `Cap5.aux'.
 
  (Cap5.tex
 Cap\'{\i }tulo 5.
-[296
+[299
 
 
 
-] [297] [298] [299] [300] [301]) [302] (Tesis.bbl
+] [300] [301] [302] [303] [304]) [305] (Tesis.bbl
 Underfull \hbox (badness 4366) in paragraph at lines 14--17
 []\T1/ptm/m/n/12 Cook, S. (2002).  Speech re-cog-ni-tion how-to.  $\T1/pcr/m/n/
 12 http : / / www . tldp . org / HOWTO /
  []
 
-[303
+[306
 
 
 ]
@@ -1729,7 +1745,7 @@ Overfull \hbox (17.77647pt too wide) in paragraph at lines 43--47
 os-[]cuÃ¡l-[]elegir$\T1/ptm/m/n/12 . 
  []
 
-[304]
+[307]
 Underfull \hbox (badness 10000) in paragraph at lines 95--99
 []\T1/ptm/m/n/12 Mathematics (2015).  Nor-ma-li-sa-tion of a ran-ge of num-bers
  to anot-her ran-
@@ -1741,40 +1757,40 @@ Underfull \hbox (badness 10000) in paragraph at lines 95--99
 estions / 1554078 /
  []
 
-[305]
-Underfull \hbox (badness 10000) in paragraph at lines 161--165
+[308]
+Underfull \hbox (badness 10000) in paragraph at lines 156--160
 []\T1/ptm/m/n/12 Sanchez, H. (2015).  Ven-ta-jas y des-ven-ta-jas de los con-tr
 o-les bio-mé-tri-cos.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 161--165
+Underfull \hbox (badness 10000) in paragraph at lines 156--160
 \T1/pcr/m/n/12 http : / / controlbiometricodigital . blogspot . com / 2015 / 07
  /
  []
 
-[306]
-Underfull \hbox (badness 10000) in paragraph at lines 186--190
+
+Underfull \hbox (badness 10000) in paragraph at lines 181--185
 []\T1/ptm/m/n/12 Toast, T. (2018).  La his-to-ria de los sis-te-mas de re-co-no
 -ci-mien-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 186--190
+Underfull \hbox (badness 10000) in paragraph at lines 181--185
 \T1/ptm/m/n/12 to de voz.  $\T1/pcr/m/n/12 https : / / www . timetoast . com / 
 timelines /
  []
 
-) [307]
+[309]) [310]
 \openout2 = `Apendice.aux'.
 
  (Apendice.tex
 Ap\'{e}ndice A.
-[308
+[311
 
 
-] [309]
-<Imagenes/Apendice/image001.png, id=1269, 636.12656pt x 381.67593pt>
+] [312]
+<Imagenes/Apendice/image001.png, id=1279, 636.12656pt x 381.67593pt>
 File: Imagenes/Apendice/image001.png Graphic file (type png)
 <use Imagenes/Apendice/image001.png>
 Package pdftex.def Info: Imagenes/Apendice/image001.png  used on input line 52.
@@ -1784,8 +1800,8 @@ Package pdftex.def Info: Imagenes/Apendice/image001.png  used on input line 52.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) [310] [311 <./Imagenes/Apendice/image001.png>]
-<Documentos/DECLARACION_JURADA.pdf, id=1277, 597.63278pt x 845.1575pt>
+) [313] [314 <./Imagenes/Apendice/image001.png>]
+<Documentos/DECLARACION_JURADA.pdf, id=1287, 597.63278pt x 845.1575pt>
 File: Documentos/DECLARACION_JURADA.pdf Graphic file (type pdf)
 <use Documentos/DECLARACION_JURADA.pdf>
 Package pdftex.def Info: Documentos/DECLARACION_JURADA.pdf  used on input line 
@@ -1796,7 +1812,7 @@ File: Documentos/DECLARACION_JURADA.pdf Graphic file (type pdf)
 Package pdftex.def Info: Documentos/DECLARACION_JURADA.pdf  used on input line 
 63.
 (pdftex.def)             Requested size: 597.63132pt x 845.15544pt.
-<Documentos/DECLARACION_JURADA.pdf, id=1280, page=1, 597.63278pt x 845.1575pt>
+<Documentos/DECLARACION_JURADA.pdf, id=1290, page=1, 597.63278pt x 845.1575pt>
 File: Documentos/DECLARACION_JURADA.pdf Graphic file (type pdf)
 <use Documentos/DECLARACION_JURADA.pdf, page 1>
 Package pdftex.def Info: Documentos/DECLARACION_JURADA.pdf , page1 used on inpu
@@ -1822,10 +1838,10 @@ File: Documentos/DECLARACION_JURADA.pdf Graphic file (type pdf)
 Package pdftex.def Info: Documentos/DECLARACION_JURADA.pdf , page1 used on inpu
 t line 63.
 (pdftex.def)             Requested size: 598.26053pt x 846.04526pt.
- [312
+ [315
 
  <./Documentos/DECLARACION_JURADA.pdf>]
-<Documentos/CARTA_AUTORIZACION.pdf, id=1310, 597.63278pt x 845.1575pt>
+<Documentos/CARTA_AUTORIZACION.pdf, id=1319, 597.63278pt x 845.1575pt>
 File: Documentos/CARTA_AUTORIZACION.pdf Graphic file (type pdf)
 <use Documentos/CARTA_AUTORIZACION.pdf>
 Package pdftex.def Info: Documentos/CARTA_AUTORIZACION.pdf  used on input line 
@@ -1836,7 +1852,7 @@ File: Documentos/CARTA_AUTORIZACION.pdf Graphic file (type pdf)
 Package pdftex.def Info: Documentos/CARTA_AUTORIZACION.pdf  used on input line 
 65.
 (pdftex.def)             Requested size: 597.63132pt x 845.15544pt.
-<Documentos/CARTA_AUTORIZACION.pdf, id=1313, page=1, 597.63278pt x 845.1575pt>
+<Documentos/CARTA_AUTORIZACION.pdf, id=1322, page=1, 597.63278pt x 845.1575pt>
 File: Documentos/CARTA_AUTORIZACION.pdf Graphic file (type pdf)
 <use Documentos/CARTA_AUTORIZACION.pdf, page 1>
 Package pdftex.def Info: Documentos/CARTA_AUTORIZACION.pdf , page1 used on inpu
@@ -1862,19 +1878,24 @@ File: Documentos/CARTA_AUTORIZACION.pdf Graphic file (type pdf)
 Package pdftex.def Info: Documentos/CARTA_AUTORIZACION.pdf , page1 used on inpu
 t line 65.
 (pdftex.def)             Requested size: 598.26053pt x 846.04526pt.
- [313 <./Documentos/CARTA_AUTORIZACION.pdf>] (Tesis.aux (Cap0.aux)
+ [316 <./Documentos/CARTA_AUTORIZACION.pdf>]
+
+Package natbib Warning: There were undefined citations.
+
+(Tesis.aux (Cap0.aux)
 LaTeX Info: Redefining \. on input line 7.
 LaTeX Info: Redefining \% on input line 7.
-(Cap1.aux) (Cap2.aux) (Cap3.aux) (Cap4.aux) (Cap5.aux) (Apendice.aux))
+ (Cap1.aux) (Cap2.aux) (Cap3.aux) (Cap4.aux) (Cap5.aux)
+(Apendice.aux))
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 8984 strings out of 492945
- 143669 string characters out of 3126252
- 300434 words of memory out of 3000000
- 12498 multiletter control sequences out of 15000+200000
+ 8982 strings out of 492945
+ 143643 string characters out of 3126252
+ 300459 words of memory out of 3000000
+ 12496 multiletter control sequences out of 15000+200000
  75384 words of font info for 94 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,18n,43p,1115b,705s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1902,9 +1923,9 @@ ams/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/edwin/AppData/Local
 /Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/edwin/AppData/L
 ocal/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/edwin/AppDa
 ta/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Tesis.pdf (344 pages, 9569310 bytes).
+Output written on Tesis.pdf (347 pages, 9573476 bytes).
 PDF statistics:
- 1422 PDF objects out of 1440 (max. 8388607)
+ 1431 PDF objects out of 1440 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  841 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -2425,27 +2425,6 @@ i = 1,2,...,9
 \subsection{Diseño de la investigación}
 De acuerdo al fin que persigue, el presente trabajo es una investigación aplicada. Por otro lado, de acuerdo al diseño de contrastación de la hipótesis es una investigación experimental.
 
-\subsection{Instrumentos}
-\begin{enumerate}
-\item[-]Un dispositivo móvil con Android 8.0, memoria RAM 3GB y CPU 4x1.4GHz.
-\item[-]Un módem router pasarela con tecnología 802.11 b,g,n.
-\item[-]Un computador con Windows 10, memoria RAM 8GB y CPU Intel Core i5 2x2.60GHz.
-\item[-]Un Arduino Mega 2560 R3.
-\item[-]Un módulo Ethernet Shield W5100 compatible con Arduino Mega.
-\item[-]Un módulo relé 4 Songle 10A 250VAC.
-\item[-]Un transformador DC 9-12V 1A.
-\item[-]Un transformador DC 5V 500mA.
-\item[-]Un transformador DC 12V 1A.
-\item[-]Una cerradura eléctrica YALE.
-\end{enumerate}
-
-\subsection{Población y muestra}
-Siendo una investigación experimental, la determinación de la muestra se basa en los antecedentes \cite{perez} y \cite{navarrete} debido a que estás investigaciones son de caso similar y en la experiencia del autor.
-\vskip 0.5cm
-Para esta tesis la población estará conformada por un conjunto de 800 audios dividido entre los comandos de voz \textit{Abrir} y los \textit{Nombres de los Usuarios} (Edwin, Carlos, Josué, Édison, Gerson, Nizama, Anthony, Jhordan, Renzo y Franchesco), los cuales serán las palabras claves de acceso para 10 miembros de la vivienda.
-\vskip 0.5cm
-La muestra está conformada por el conjunto de los 11 comandos de voz antes mencionados.
-\newpage
 \subsection{Variables de estudio}
 \begin{enumerate}
 \item[•]\textbf{Variable dependiente:} Control de acceso a una vivienda.
@@ -2455,19 +2434,49 @@ La muestra está conformada por el conjunto de los 11 comandos de voz antes menc
 El factor de medida para el control de acceso a una vivienda mediante el reconocimiento de voz consiste en el tiempo de respuesta y la tasa de precisión en el reconocimiento que se obtengan de los resultados experimentales.
 
 \subsection{Métodos y procedimientos para la recolección de datos}
-Para recolectar los datos se harán grabaciones a 10 personas escogidas aleatoriamente, para esto se contará con el micrófono del dispositivo móvil y el del computador. El procedimiento a emplear será darle a cada persona la lista de los 2 comandos de voz (\textit{Abrir} y su \textit{Nombre}), las cuales, al ser leídas, serán grabadas. El nivel de ruido de la grabación deberá ser moderado.
+Para recolectar los datos se harán grabaciones a 10 personas escogidas aleatoriamente, para esto se contará con el micrófono del dispositivo móvil y el del computador. El procedimiento a emplear será darle a cada persona una lista de dos comandos de voz (\textit{Abrir} y su \textit{Nombre}), las cuales, al ser leídas, serán grabadas. El nivel de ruido de la grabación deberá ser moderado.
+
+\subsection{Población y muestra}
+Siendo una investigación experimental, la determinación de la muestra se basa en los antecedentes \cite{eyra} y \cite{varela} debido a que estás investigaciones son de caso similar y en la experiencia del autor.
+\subsubsection{Población}
+\begin{enumerate}
+\item[•]\textbf{Área:} Audios de señales de voz.
+\item[•]\textbf{Categoría:} Palabras de idioma español.
+\item[•]\textbf{Subcategoría:} Hombres con edad promedio de 23 años.
+\end{enumerate}
+La población es infinita para esta investigación, debido al número infinito de formas distintas en que una señal de voz puede ser capturada. Se tomarán en cuenta audios donde se muestren señales de voz de palabras en español habladas por hombres con edad promedio de 23 años.
+
+\subsubsection{Muestra}
+La muestra estará conformada por un conjunto de 800 audios dividido entre los comandos de voz \textit{Abrir} y los \textit{Nombres de los Usuarios} (Edwin, Carlos, Josué, Édison, Gerson, Nizama, Anthony, Jhordan, Renzo y Franchesco), los cuales serán las palabras claves de acceso para 10 miembros de la vivienda, por lo que estará agrupada por el conjunto de estos 11 comandos de voz.
+\vskip 0.5cm
+Dado que la población de señales de voz es infinita, se optó por usar un muestreo aletorio simple para poblaciones desconocidas con un nivel de confianza del 95\% y un error de muestreo del 3.5\%.
+
+\begin{equation}
+\label{eq:ecuacion}
+n = \frac{z^{2}pq}{e^2}
+\end{equation}
+
+En el que:
+\begin{enumerate}
+\item[•]$n$ = Tamaño de muestra.
+\item[•]$z$ = Coeficiente de confiabilidad 95\% al que corresponde (1.96).
+\item[•]$pq$ = Varianza de la población, ponemos la varianza mayor posible porque a mayor varianza hará falta una muestra mayor (0.25).
+\item[•]$e$ = Error muestral 3.5\% (0.035).
+\end{enumerate}
 
 \subsection{Método de estudio}
 Para llegar a los objetivos propuestos, el desarrollo de la investigación comprendió las siguientes etapas:
 \begin{enumerate}
 \item[a)]Análisis del problema de los sistemas de control de acceso en la ciudad de Trujillo, en el Perú y el mundo, comprendiendo la situación actual y el levantamiento de los principales casos de éxito.
 \item[b)]Formulación del problema principal de la investigación y justificación de la importancia de su solución.
-\item[c)]Levantamiento de los diferentes temas necesarios para la elaboración de la investigación.
-\item[d)]Diseño e implementación del software de reconocimiento de voz.
-\item[e)]Diseño y construcción del hardware capaz de ser controlado a través del protocolo de red inalámbrica 802.11g.
-\item[f)]Integración de las dos partes mencionadas anteriormente, así como la ejecución de pruebas para su correcto funcionamiento.
-\item[g)]La implementación de todo el sistema en un ambiente real.
-\item[h)]Realización del reporte de incidencias ocurridas mientras estaba en uso el sistema.
+\item[c)]Recopilación de herramientas, técnicas y métodos acústicos matemáticos y físicos de la voz para identificar y autenticar a los dueños de la vivienda.
+\item[d)]Levantamiento de los diferentes temas necesarios para la elaboración de la investigación.
+\item[e)]Diseño e implementación del software de reconocimiento de voz.
+\item[f)]Diseño y construcción del hardware capaz de ser controlado a través del protocolo de red inalámbrica 802.11g.
+\item[g)]Integración de las dos partes mencionadas anteriormente, así como la ejecución de pruebas para su correcto funcionamiento.
+\item[h)]La implementación de todo el sistema en un ambiente real.
+\item[i)]Realización del reporte de incidencias ocurridas mientras estaba en uso el sistema.
+\item[i)]Para el análisis de resultados, se pretende usar la técnica de Chi-Cuadrado de Pearson para dos variables nominales, a través de esta técnica se puede conocer la relación de dependencia de nuestras variables con Identificación Correcta, Falsa Identificación y No Identificación métricas usadas conmumente para evaluar la calidad de nuestro sistema de reconocimiento de voz.
 \end{enumerate}
 
 \subsection{Análisis estadístico de los datos}

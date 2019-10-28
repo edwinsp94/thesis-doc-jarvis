@@ -19,7 +19,7 @@ En \citep{cosentino} se explica que dentro de la biometría como sistema de acce
 \vskip 0.5cm
 \textit{El Reconocimiento por Geometría de Mano}, identifica los parámetros dimensionales de la mano, que son únicos. Funciona muy bien, sobre todo en lugares donde no se utilizan guantes y es bastante robusta frente al vandalismo. Los motivos por el cual esta tecnología no se popularizó masivamente son estrictamente comerciales, y es que sólo había un fabricante en el mercado, lo que hizo que los fabricantes de sistemas de control de acceso no ayudaran a difundirla.
 \vskip 0.5cm
-\textit{El Reconocimiento por Huella Digital}, sin dudas la más popular de todas las biometrías. Es utilizado por los organismos de seguridad y gobiernos para la identificación de personas y/o sospechosos de delitos, y también en los controles de acceso. No son resistentes al vandalismo y uno de los grandes inconvenientes es que la reparación del daño en el elemento sensor es bastante costoso, por lo que se recomienda utilizarlos en lugares no expuestos a estos inconvenientes. Algo similar ocurre con las inclemencias del tiempo, por lo que se deberán extremar los cuidados, si es necesario colocarlos en el exterior y sobre todo expuestos a la intemperie.
+\textit{El Reconocimiento por Huella Digital}, sin dudas la más popular de todas las biometrías. Es utilizado por los organismos de seguridad y gobiernos para la identificación de personas y/o sospechosos de delitos, y también en controles de acceso. No son resistentes al vandalismo y uno de los grandes inconvenientes es que la reparación del daño en el elemento sensor es bastante costoso, por lo que se recomienda utilizarlos en lugares no expuestos a estos inconvenientes. Algo similar ocurre con las inclemencias del tiempo, por lo que se deberán extremar los cuidados, si es necesario colocarlos en el exterior y sobre todo expuestos a la intemperie.
 \vskip 0.5cm
 \textit{El Reconocimiento Facial}, es una tecnología que año a año mejora en sus resultados y si bien actualmente existen fabricantes que ofrecen soluciones de este tipo, todavía no se consiguen equipos comerciales de bajo costo con prestaciones aceptables de identificación y velocidad. Básicamente consiste en identificar y calcular las distancias entre los diferentes accidentes faciales, reduciendo la imagen a un conjunto de coordenadas de puntos significativos.
 \vskip 0.5cm
@@ -41,24 +41,30 @@ Si bien existen muchos tipos de sistemas de seguridad, donde los biométricos de
 Además, actualmente no existe ninguna API (Interfaz de Programación de Aplicaciones) de reconocimiento de voz que este de manera gratuita para los desarrolladores de programas informáticos que deseen usar el reconocimiento de voz en sus aplicaciones. Si bien Google ofrece gratuitamente su API de reconocimiento de voz a los desarrolladores de aplicaciones para dispositivos Android, ocurre que para el uso de está API es necesario la conexión a internet, lo que hace que su uso tenga esta limitante, es por ello que nuestro proyecto será una alternativa para aquellos desarrolladores que no cuentan con dinero y acceso a internet, puedan usar esta tecnología en sus programas.
 
 \section{Formulación del problema}
-En este trabajo, se propone el desarrollo de un sistema de seguridad para el control de acceso a una vivienda por reconocimiento de voz haciendo uso de los métodos de cuantificación de la señal de voz con ayuda de los MFCC (Coeficientes Cepstrales en la Frecuencia de Mel) y el DTW (Alineamiento Temporal Dinámico) para responder a la siguiente pregunta:
- \begin{center} 
-     ?`Cómo controlar el acceso a una vivienda por reconocimiento de voz del locutor dependiente del texto?
- \end{center}
+\begin{center} 
+	?`Cómo controlar el acceso a una vivienda por reconocimiento de voz del locutor dependiente del texto?
+\end{center}
 
 \section{Hipótesis}
-El acceso a una vivienda puede ser controlado por reconocimiento de voz del locutor dependiente del texto utilizando MFCC Y DTW.
+El acceso a una vivienda puede ser controlado por reconocimiento de voz del locutor dependiente del texto haciendo uso de los métodos de cuantificación de la señal de voz MFCC Y DTW.
 
 \section{Objetivos}
 \subsection{Generales}
-Desarrollar un sistema de seguridad para el control de acceso a una vivienda que funcione en base al reconocimiento de voz.
+Desarrollar un sistema de seguridad para el control de acceso a una vivienda que funcione en base al reconocimiento de voz dependiente del texo.
 \subsection{Específicos}
 \begin{enumerate}
-\item[a)]Recopilar herramientas, técnicas y métodos acústicos matemáticos y físicos de la voz para identificar y autenticar a los dueños de la vivienda.
+\item[a)]Aplicar la metodología propuesta por Tammy Noergaard para el diseño de arquitecturas para sistemas empotrados o embebidos.
 \item[b)]Analizar la transmisión, aplicación y manipulación de las señales de voz para poderlas utilizar en el desarrollo del sistema de seguridad de control de acceso.
-\item[c)]Desarrollar un software que funcione como interfaz con el usuario y que además realice las comparaciones y cálculos necesarios para el reconocimiento del locutor.
-\item[d)]Construir un prototipo hardware para el acceso a una vivienda.
-\item[e)]Implementar un canal de comunicación inalámbrica entre el hardware y el software.
+\item[c)]Implementar un algoritmo para la extracción de caracteristicas de la señal de voz para la etapa de entrenamiento.
+\item[d)]Implementar un algoritmo para la comparación entre dos señales de voz para la etapa de reconocimiento.
+\item[e)]Implementar un algoritmo para la eliminación de ruido externo o ambiental producida por alguna fuente de ruido.
+\item[f)]Implementar un algoritmo para la detección de inicio y fin de la señal de voz.
+\item[g)]Integrar y evaluar los algoritmos de los módulos de preprocesamiento, entrenamiento y reconocimiento, de manera que se genere un modelo con menor tasa de error en el reconocimiento de voz.
+\item[h)]Desarrollar un software que funcione como interfaz con el usuario y que además realice las comparaciones y cálculos necesarios para el reconocimiento del locutor.
+\item[i)]Construir un prototipo hardware para el acceso a una vivienda.
+\item[j)]Implementar un canal de comunicación inalámbrica entre el hardware y el software.
+\item[k)]Evaluar la seguridad de nuestro sistema ante intrusos en un ambiente real.
+\item[l)]Evaluar el rendimiento y minimizar el tiempo de respuesta para el reconocimiento de voz.
 \end{enumerate}
 
 \section{Estructura de la tesis}

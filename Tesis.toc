@@ -12,98 +12,100 @@
 \contentsline {section}{\numberline {1.3}Hip\IeC {\'o}tesis}{7}% 
 \contentsline {section}{\numberline {1.4}Objetivos}{7}% 
 \contentsline {subsection}{\numberline {1.4.1}Generales}{7}% 
-\contentsline {subsection}{\numberline {1.4.2}Espec\IeC {\'\i }ficos}{8}% 
-\contentsline {section}{\numberline {1.5}Estructura de la tesis}{8}% 
-\contentsline {chapter}{\numberline {2}Materiales y m\IeC {\'e}todos}{10}% 
-\contentsline {section}{\numberline {2.1}Marco te\IeC {\'o}rico}{10}% 
-\contentsline {subsection}{\numberline {2.1.1}Sistema de reconocimiento de voz}{10}% 
-\contentsline {subsubsection}{\numberline {2.1.1.1}Historia del reconocedor de voz}{10}% 
-\contentsline {subsubsection}{\numberline {2.1.1.2}Fundamentos sobre sonidos y la se\IeC {\~n}al de voz}{13}% 
-\contentsline {subsubsection}{\numberline {2.1.1.3}Modelo digital para la voz (Fuente-Filtro)}{25}% 
-\contentsline {subsubsection}{\numberline {2.1.1.4}Funcionamiento de un sistema de reconocimiento de voz}{26}% 
-\contentsline {subsection}{\numberline {2.1.2}Procesamiento o an\IeC {\'a}lisis de la se\IeC {\~n}al de voz}{29}% 
-\contentsline {subsubsection}{\numberline {2.1.2.1}Preprocesamiento}{30}% 
-\contentsline {subsubsection}{\numberline {2.1.2.2}Entrenamiento}{82}% 
-\contentsline {subsubsection}{\numberline {2.1.2.3}Reconocimiento}{105}% 
-\contentsline {section}{\numberline {2.2}M\IeC {\'e}todo de la investigaci\IeC {\'o}n}{134}% 
-\contentsline {subsection}{\numberline {2.2.1}Dise\IeC {\~n}o de la investigaci\IeC {\'o}n}{134}% 
-\contentsline {subsection}{\numberline {2.2.2}Instrumentos}{134}% 
-\contentsline {subsection}{\numberline {2.2.3}Poblaci\IeC {\'o}n y muestra}{135}% 
-\contentsline {subsection}{\numberline {2.2.4}Variables de estudio}{136}% 
-\contentsline {subsection}{\numberline {2.2.5}M\IeC {\'e}todos y procedimientos para la recolecci\IeC {\'o}n de datos}{136}% 
-\contentsline {subsection}{\numberline {2.2.6}M\IeC {\'e}todo de estudio}{136}% 
-\contentsline {subsection}{\numberline {2.2.7}An\IeC {\'a}lisis estad\IeC {\'\i }stico de los datos}{137}% 
-\contentsline {subsection}{\numberline {2.2.8}Esquema general del proyecto}{138}% 
-\contentsline {chapter}{\numberline {3}Sistema de control de acceso por reconocimiento de voz}{139}% 
-\contentsline {section}{\numberline {3.1}Fase 1. Creaci\IeC {\'o}n de la arquitectura}{141}% 
-\contentsline {subsection}{\numberline {3.1.1}Etapa 1: Tener una base t\IeC {\'e}cnica s\IeC {\'o}lida}{141}% 
-\contentsline {subsection}{\numberline {3.1.2}Etapa 2: Entender el ciclo de negocio de la arquitectura}{142}% 
-\contentsline {subsection}{\numberline {3.1.3}Etapa 3: Definir el patr\IeC {\'o}n arquitect\IeC {\'o}nico y modelo de referencia}{144}% 
-\contentsline {section}{\numberline {3.2}Fase 2. Implementaci\IeC {\'o}n de la arquitectura}{146}% 
-\contentsline {subsection}{\numberline {3.2.1}Desarrollo del software de aplicaci\IeC {\'o}n}{146}% 
-\contentsline {subsubsection}{\numberline {3.2.1.1}Software de reconocimiento de voz}{146}% 
-\contentsline {subsubsection}{\numberline {3.2.1.2}Software de administraci\IeC {\'o}n de usuarios}{171}% 
-\contentsline {subsection}{\numberline {3.2.2}Desarrollo del software del sistema}{195}% 
-\contentsline {subsection}{\numberline {3.2.3}Construcci\IeC {\'o}n del hardware}{203}% 
-\contentsline {subsubsection}{\numberline {3.2.3.1}Dise\IeC {\~n}o del hardware del sistema}{203}% 
-\contentsline {subsubsection}{\numberline {3.2.3.2}Implementaci\IeC {\'o}n del hardware del sistema}{204}% 
-\contentsline {section}{\numberline {3.3}Fase 3. Testeo del sistema}{205}% 
-\contentsline {subsection}{\numberline {3.3.1}Hallar BC y M}{205}% 
-\contentsline {subsection}{\numberline {3.3.2}Hallar V}{210}% 
-\contentsline {subsection}{\numberline {3.3.3}Hallar P}{213}% 
-\contentsline {subsection}{\numberline {3.3.4}Hallar S}{216}% 
-\contentsline {subsection}{\numberline {3.3.5}Hallar S}{218}% 
-\contentsline {subsection}{\numberline {3.3.6}Hallar r}{219}% 
-\contentsline {subsection}{\numberline {3.3.7}Hallar T}{221}% 
-\contentsline {subsection}{\numberline {3.3.8}Hallar V y S}{223}% 
-\contentsline {subsection}{\numberline {3.3.9}Hallar V, S, y T}{227}% 
-\contentsline {subsection}{\numberline {3.3.10}Hallar d}{231}% 
-\contentsline {subsection}{\numberline {3.3.11}Hallar el algoritmo para la detecci\IeC {\'o}n de inicio y fin de la se\IeC {\~n}al de voz}{233}% 
-\contentsline {subsection}{\numberline {3.3.12}Hallar el algoritmo para la eliminaci\IeC {\'o}n de ruido aditivo}{237}% 
-\contentsline {section}{\numberline {3.4}Fase 4. Mantenimiento del sistema}{244}% 
-\contentsline {chapter}{\numberline {4}Resultados y discusi\IeC {\'o}n de la tesis}{249}% 
-\contentsline {section}{\numberline {4.1}Pruebas para obtener los umbrales de decisi\IeC {\'o}n}{253}% 
-\contentsline {subsection}{\numberline {4.1.1}Prueba para obtener U2}{253}% 
-\contentsline {subsubsection}{\numberline {4.1.1.1}Caso 1}{253}% 
-\contentsline {subsubsection}{\numberline {4.1.1.2}Caso 2}{254}% 
-\contentsline {subsubsection}{\numberline {4.1.1.3}Caso 3}{255}% 
-\contentsline {subsubsection}{\numberline {4.1.1.4}Caso 4}{256}% 
-\contentsline {subsubsection}{\numberline {4.1.1.5}Caso 5}{257}% 
-\contentsline {subsubsection}{\numberline {4.1.1.6}Caso 6}{258}% 
-\contentsline {subsubsection}{\numberline {4.1.1.7}Caso 7}{259}% 
-\contentsline {subsubsection}{\numberline {4.1.1.8}Caso 8}{260}% 
-\contentsline {subsection}{\numberline {4.1.2}Prueba para obtener U1}{263}% 
-\contentsline {subsubsection}{\numberline {4.1.2.1}Caso 1}{263}% 
-\contentsline {subsubsection}{\numberline {4.1.2.2}Caso 2}{264}% 
-\contentsline {subsubsection}{\numberline {4.1.2.3}Caso 3}{265}% 
-\contentsline {subsubsection}{\numberline {4.1.2.4}Caso 4}{266}% 
-\contentsline {subsubsection}{\numberline {4.1.2.5}Caso 5}{267}% 
-\contentsline {subsubsection}{\numberline {4.1.2.6}Caso 6}{268}% 
-\contentsline {subsubsection}{\numberline {4.1.2.7}Caso 7}{269}% 
-\contentsline {subsubsection}{\numberline {4.1.2.8}Caso 8}{270}% 
-\contentsline {section}{\numberline {4.2}Pruebas para la construcci\IeC {\'o}n del patr\IeC {\'o}n de referencia}{276}% 
-\contentsline {subsection}{\numberline {4.2.1}Prueba con U1 din\IeC {\'a}mico}{276}% 
-\contentsline {subsubsection}{\numberline {4.2.1.1}Caso 1}{276}% 
-\contentsline {subsubsection}{\numberline {4.2.1.2}Caso 2}{277}% 
-\contentsline {subsubsection}{\numberline {4.2.1.3}Caso 3}{278}% 
-\contentsline {subsubsection}{\numberline {4.2.1.4}Caso 4}{279}% 
-\contentsline {subsubsection}{\numberline {4.2.1.5}Caso 5}{279}% 
-\contentsline {subsubsection}{\numberline {4.2.1.6}Caso 6}{280}% 
-\contentsline {subsubsection}{\numberline {4.2.1.7}Caso 7}{281}% 
-\contentsline {subsubsection}{\numberline {4.2.1.8}Caso 8}{282}% 
-\contentsline {subsection}{\numberline {4.2.2}Prueba con U1 est\IeC {\'a}tico}{284}% 
-\contentsline {subsubsection}{\numberline {4.2.2.1}Caso 1}{284}% 
-\contentsline {subsubsection}{\numberline {4.2.2.2}Caso 2}{285}% 
-\contentsline {subsubsection}{\numberline {4.2.2.3}Caso 3}{285}% 
-\contentsline {subsubsection}{\numberline {4.2.2.4}Caso 4}{286}% 
-\contentsline {subsubsection}{\numberline {4.2.2.5}Caso 5}{287}% 
-\contentsline {subsubsection}{\numberline {4.2.2.6}Caso 6}{287}% 
-\contentsline {subsubsection}{\numberline {4.2.2.7}Caso 7}{288}% 
-\contentsline {subsubsection}{\numberline {4.2.2.8}Caso 8}{289}% 
-\contentsline {subsection}{\numberline {4.2.3}Prueba de hip\IeC {\'o}tesis o de significaci\IeC {\'o}n}{293}% 
-\contentsline {chapter}{\numberline {5}Consideraciones finales}{296}% 
-\contentsline {section}{\numberline {5.1}Conclusiones}{296}% 
-\contentsline {section}{\numberline {5.2}Trabajos futuros}{300}% 
-\contentsline {chapter}{ Referencias bibliogr\IeC {\'a}f\IeC {\'\i }cas}{303}% 
-\contentsline {chapter}{\numberline {A}Primer ap\IeC {\'e}ndice}{308}% 
-\contentsline {section}{\numberline {A.1}Prueba de independencia Chi-Cuadrado de Pearson}{308}% 
+\contentsline {subsection}{\numberline {1.4.2}Espec\IeC {\'\i }ficos}{7}% 
+\contentsline {section}{\numberline {1.5}Estructura de la tesis}{9}% 
+\contentsline {chapter}{\numberline {2}Materiales y m\IeC {\'e}todos}{11}% 
+\contentsline {section}{\numberline {2.1}Marco te\IeC {\'o}rico}{11}% 
+\contentsline {subsection}{\numberline {2.1.1}Sistema de reconocimiento de voz}{11}% 
+\contentsline {subsubsection}{\numberline {2.1.1.1}Historia del reconocedor de voz}{11}% 
+\contentsline {subsubsection}{\numberline {2.1.1.2}Fundamentos sobre sonidos y la se\IeC {\~n}al de voz}{14}% 
+\contentsline {subsubsection}{\numberline {2.1.1.3}Modelo digital para la voz (Fuente-Filtro)}{26}% 
+\contentsline {subsubsection}{\numberline {2.1.1.4}Funcionamiento de un sistema de reconocimiento de voz}{27}% 
+\contentsline {subsection}{\numberline {2.1.2}Procesamiento o an\IeC {\'a}lisis de la se\IeC {\~n}al de voz}{30}% 
+\contentsline {subsubsection}{\numberline {2.1.2.1}Preprocesamiento}{31}% 
+\contentsline {subsubsection}{\numberline {2.1.2.2}Entrenamiento}{83}% 
+\contentsline {subsubsection}{\numberline {2.1.2.3}Reconocimiento}{106}% 
+\contentsline {section}{\numberline {2.2}M\IeC {\'e}todo de la investigaci\IeC {\'o}n}{135}% 
+\contentsline {subsection}{\numberline {2.2.1}Dise\IeC {\~n}o de la investigaci\IeC {\'o}n}{135}% 
+\contentsline {subsection}{\numberline {2.2.2}Variables de estudio}{135}% 
+\contentsline {subsection}{\numberline {2.2.3}M\IeC {\'e}todos y procedimientos para la recolecci\IeC {\'o}n de datos}{136}% 
+\contentsline {subsection}{\numberline {2.2.4}Poblaci\IeC {\'o}n y muestra}{136}% 
+\contentsline {subsubsection}{\numberline {2.2.4.1}Poblaci\IeC {\'o}n}{136}% 
+\contentsline {subsubsection}{\numberline {2.2.4.2}Muestra}{137}% 
+\contentsline {subsection}{\numberline {2.2.5}M\IeC {\'e}todo de estudio}{138}% 
+\contentsline {subsection}{\numberline {2.2.6}An\IeC {\'a}lisis estad\IeC {\'\i }stico de los datos}{139}% 
+\contentsline {subsection}{\numberline {2.2.7}Esquema general del proyecto}{139}% 
+\contentsline {chapter}{\numberline {3}Sistema de control de acceso por reconocimiento de voz}{141}% 
+\contentsline {section}{\numberline {3.1}Fase 1. Creaci\IeC {\'o}n de la arquitectura}{143}% 
+\contentsline {subsection}{\numberline {3.1.1}Etapa 1: Tener una base t\IeC {\'e}cnica s\IeC {\'o}lida}{143}% 
+\contentsline {subsection}{\numberline {3.1.2}Etapa 2: Entender el ciclo de negocio de la arquitectura}{144}% 
+\contentsline {subsection}{\numberline {3.1.3}Etapa 3: Definir el patr\IeC {\'o}n arquitect\IeC {\'o}nico y modelo de referencia}{146}% 
+\contentsline {section}{\numberline {3.2}Fase 2. Implementaci\IeC {\'o}n de la arquitectura}{148}% 
+\contentsline {subsection}{\numberline {3.2.1}Desarrollo del software de aplicaci\IeC {\'o}n}{148}% 
+\contentsline {subsubsection}{\numberline {3.2.1.1}Software de reconocimiento de voz}{148}% 
+\contentsline {subsubsection}{\numberline {3.2.1.2}Software de administraci\IeC {\'o}n de usuarios}{173}% 
+\contentsline {subsection}{\numberline {3.2.2}Desarrollo del software del sistema}{197}% 
+\contentsline {subsection}{\numberline {3.2.3}Construcci\IeC {\'o}n del hardware}{205}% 
+\contentsline {subsubsection}{\numberline {3.2.3.1}Instrumentos}{205}% 
+\contentsline {subsubsection}{\numberline {3.2.3.2}Dise\IeC {\~n}o del hardware del sistema}{205}% 
+\contentsline {subsubsection}{\numberline {3.2.3.3}Implementaci\IeC {\'o}n del hardware del sistema}{207}% 
+\contentsline {section}{\numberline {3.3}Fase 3. Testeo del sistema}{208}% 
+\contentsline {subsection}{\numberline {3.3.1}Hallar BC y M}{208}% 
+\contentsline {subsection}{\numberline {3.3.2}Hallar V}{213}% 
+\contentsline {subsection}{\numberline {3.3.3}Hallar P}{216}% 
+\contentsline {subsection}{\numberline {3.3.4}Hallar S}{219}% 
+\contentsline {subsection}{\numberline {3.3.5}Hallar S}{221}% 
+\contentsline {subsection}{\numberline {3.3.6}Hallar r}{222}% 
+\contentsline {subsection}{\numberline {3.3.7}Hallar T}{224}% 
+\contentsline {subsection}{\numberline {3.3.8}Hallar V y S}{226}% 
+\contentsline {subsection}{\numberline {3.3.9}Hallar V, S, y T}{230}% 
+\contentsline {subsection}{\numberline {3.3.10}Hallar d}{234}% 
+\contentsline {subsection}{\numberline {3.3.11}Hallar el algoritmo para la detecci\IeC {\'o}n de inicio y fin de la se\IeC {\~n}al de voz}{236}% 
+\contentsline {subsection}{\numberline {3.3.12}Hallar el algoritmo para la eliminaci\IeC {\'o}n de ruido aditivo}{240}% 
+\contentsline {section}{\numberline {3.4}Fase 4. Mantenimiento del sistema}{247}% 
+\contentsline {chapter}{\numberline {4}Resultados y discusi\IeC {\'o}n de la tesis}{252}% 
+\contentsline {section}{\numberline {4.1}Pruebas para obtener los umbrales de decisi\IeC {\'o}n}{256}% 
+\contentsline {subsection}{\numberline {4.1.1}Prueba para obtener U2}{256}% 
+\contentsline {subsubsection}{\numberline {4.1.1.1}Caso 1}{256}% 
+\contentsline {subsubsection}{\numberline {4.1.1.2}Caso 2}{257}% 
+\contentsline {subsubsection}{\numberline {4.1.1.3}Caso 3}{258}% 
+\contentsline {subsubsection}{\numberline {4.1.1.4}Caso 4}{259}% 
+\contentsline {subsubsection}{\numberline {4.1.1.5}Caso 5}{260}% 
+\contentsline {subsubsection}{\numberline {4.1.1.6}Caso 6}{261}% 
+\contentsline {subsubsection}{\numberline {4.1.1.7}Caso 7}{262}% 
+\contentsline {subsubsection}{\numberline {4.1.1.8}Caso 8}{263}% 
+\contentsline {subsection}{\numberline {4.1.2}Prueba para obtener U1}{266}% 
+\contentsline {subsubsection}{\numberline {4.1.2.1}Caso 1}{266}% 
+\contentsline {subsubsection}{\numberline {4.1.2.2}Caso 2}{267}% 
+\contentsline {subsubsection}{\numberline {4.1.2.3}Caso 3}{268}% 
+\contentsline {subsubsection}{\numberline {4.1.2.4}Caso 4}{269}% 
+\contentsline {subsubsection}{\numberline {4.1.2.5}Caso 5}{270}% 
+\contentsline {subsubsection}{\numberline {4.1.2.6}Caso 6}{271}% 
+\contentsline {subsubsection}{\numberline {4.1.2.7}Caso 7}{272}% 
+\contentsline {subsubsection}{\numberline {4.1.2.8}Caso 8}{273}% 
+\contentsline {section}{\numberline {4.2}Pruebas para la construcci\IeC {\'o}n del patr\IeC {\'o}n de referencia}{279}% 
+\contentsline {subsection}{\numberline {4.2.1}Prueba con U1 din\IeC {\'a}mico}{279}% 
+\contentsline {subsubsection}{\numberline {4.2.1.1}Caso 1}{279}% 
+\contentsline {subsubsection}{\numberline {4.2.1.2}Caso 2}{280}% 
+\contentsline {subsubsection}{\numberline {4.2.1.3}Caso 3}{281}% 
+\contentsline {subsubsection}{\numberline {4.2.1.4}Caso 4}{282}% 
+\contentsline {subsubsection}{\numberline {4.2.1.5}Caso 5}{282}% 
+\contentsline {subsubsection}{\numberline {4.2.1.6}Caso 6}{283}% 
+\contentsline {subsubsection}{\numberline {4.2.1.7}Caso 7}{284}% 
+\contentsline {subsubsection}{\numberline {4.2.1.8}Caso 8}{285}% 
+\contentsline {subsection}{\numberline {4.2.2}Prueba con U1 est\IeC {\'a}tico}{287}% 
+\contentsline {subsubsection}{\numberline {4.2.2.1}Caso 1}{287}% 
+\contentsline {subsubsection}{\numberline {4.2.2.2}Caso 2}{288}% 
+\contentsline {subsubsection}{\numberline {4.2.2.3}Caso 3}{288}% 
+\contentsline {subsubsection}{\numberline {4.2.2.4}Caso 4}{289}% 
+\contentsline {subsubsection}{\numberline {4.2.2.5}Caso 5}{290}% 
+\contentsline {subsubsection}{\numberline {4.2.2.6}Caso 6}{290}% 
+\contentsline {subsubsection}{\numberline {4.2.2.7}Caso 7}{291}% 
+\contentsline {subsubsection}{\numberline {4.2.2.8}Caso 8}{292}% 
+\contentsline {subsection}{\numberline {4.2.3}Prueba de hip\IeC {\'o}tesis o de significaci\IeC {\'o}n}{296}% 
+\contentsline {chapter}{\numberline {5}Consideraciones finales}{299}% 
+\contentsline {section}{\numberline {5.1}Conclusiones}{299}% 
+\contentsline {section}{\numberline {5.2}Trabajos futuros}{303}% 
+\contentsline {chapter}{ Referencias bibliogr\IeC {\'a}f\IeC {\'\i }cas}{306}% 
+\contentsline {chapter}{\numberline {A}Primer ap\IeC {\'e}ndice}{311}% 
+\contentsline {section}{\numberline {A.1}Prueba de independencia Chi-Cuadrado de Pearson}{311}% 
