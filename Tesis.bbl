@@ -64,21 +64,18 @@ Guevara, J. and Salazar, J. (2007).
 \newblock Escuela de Informática, Facultad de Ciencias Físicas Y
   Matemáticas, Universidad Nacional de Trujillo, Perú.
 
-\bibitem[Harrington, 1999]{harrington}
-Harrington, J. (1999).
-\newblock {\em Techniques in Speech Acoustics}.
-\newblock Kluwer Academic Publishers, Canada.
+\bibitem[Herrera, 2012]{herrera}
+Herrera, J. (2012).
+\newblock {\em Análisis de Codificaciones Perceptuales de la Voz y su
+  Comparación en el Reconocimiento de Comandos.}
+\newblock Escuela de Electrónica, Facultad de Ingeniería, Universidad
+  Nacional Autónoma de México, México D.F.
 
 \bibitem[Huang et~al., 2001]{xuedong}
 Huang, X., Acero, A., and Hon, H. (2001).
 \newblock {\em Spoken Language Processing: A Guide to Theory, Algorithm, and
   System Development}.
 \newblock Carnegie Mellon University, EE.UU.
-
-\bibitem[Jelinek, 2004]{frederick}
-Jelinek, F. (2004).
-\newblock {\em Computer Speech: Recognition, Compression, Synthesis}.
-\newblock Springer Science \& Business Media, Germany.
 
 \bibitem[Lee, 1989]{kaifu}
 Lee, K. (1989).
@@ -157,12 +154,6 @@ Sanchez, H. (2015).
 \newblock Ventajas y desventajas de los controles biométricos.
 \newblock
   \url{http://controlbiometricodigital.blogspot.com/2015/07/ventajas-y-desventajas-de-los-controles.html}.
-
-\bibitem[Schroeder, 1998]{manfred}
-Schroeder, M. (1998).
-\newblock {\em Statistical Methods for Speech Recognition (Language, Speech,
-  and Communication)}.
-\newblock University Press Group Ltd, EE.UU.
 
 \bibitem[Shubhra, 2017]{shubhra}
 Shubhra, D. (2017).
