@@ -29,12 +29,12 @@ En la ejecución de las pruebas se presentarán 8 escenarios o casos distintos, 
 
 \section{Pruebas para obtener los umbrales de decisión}
 Esta parte consta de 2 etapas, la primera será en hallar $U2$ valor que nos permitirá decir si es o no el locutor ante una falsa identificación además $U1$ tendrá como valor a $U$, una vez obtenido el mejor valor para $U2$ pasaremos a la segunda etapa que consiste en hallar $U1$ valor que nos permitirá decir si es o no la palabra hablada.
+\vskip 0.5cm
+Los valores de $A$ y $D$ determinan que tan efectivo es nuestro algoritmo en la etapa de reconocimiento, por ejemplo para el caso 1 si se tiene que $A = 100$ y $D = 0$, esto quiere decir que el algoritmo de reconocimiento de voz obtuvo el patrón de referencia correcto (es el locutor y es la palabra) para cada audio de prueba, con esto podemos decir que el algoritmo alcanzó un 100\% de efectividad en la etapa de reconocimiento.
 
 \subsection{Prueba para obtener U2}
-\subsubsection{Caso 1}
-En la Tabla \ref{table:tabla4.1} podemos observar que $A = 100$ y $D = 0$, esto quiere decir que el algoritmo de reconocimiento de voz obtuvo el patrón de referencia correcto (es el locutor y es la palabra) para cada audio de prueba, con esto podemos decir que el algoritmo alcanzó un 100\% de efectividad en la etapa de reconocimiento.
-\vskip 0.5cm
-Ahora en cuanto a la respuesta de decisión del sistema para este caso la única respuesta correcta será $IC$, podemos ver en la Tabla \ref{table:tabla4.1} que conforme $U2$ aumenta de valor $E$ disminuye, esto porque al ser $U2$ más grande permite un mayor paso de accesos al sistema, pero hay que tener mucho cuidado ya que este valor no puede ser muy grande porque podría dejar pasar a usuarios intrusos, haciendo que el sistema sea inseguro.
+\par
+De esta primera prueba se obtuvo que el mejor valor para $U2$ es 0.31. Esto porque, se observó que para los resultados de los casos 3, 4, 5, 7 y 8 cualquier valor que tome $U2$ entre 0.20 y 0.35 el valor de $E$ es el mismo, por lo que no se tomó en cuenta estos casos, entonces de los casos 1 y 2, ver las Tablas \ref{table:tabla4.1} y \ref{table:tabla4.2} respectivamente, se observó que el mejor valor para $U2$ es 0.35 dando $E = 0$ alcanzando el sistema un 100\% de efectividad en la respuesta del reconocimiento de voz, ver la Figura \ref{fig:figura4.1}, sin embargo, para el caso 6 el valor de $IC$ sería 5, ver Tabla \ref{table:tabla4.6}, esto quiere decir que de las 100 veces que el intruso intento acceder al sistema en 5 de ellas el sistema le permitió el acceso, y esto es grave ya que nosotros lo que buscamos es la seguridad, por lo que $U2$ tendrá que ser menor que 0.32 y mayor que 0.30 para que el número de $FI$ no sea grande para los casos 1 y 2, por lo que se escogió a 0.31 como valor intermedio, ver la Figura \ref{fig:figura4.2}.
 
 \begin{center}
 \begin{table}[H]
@@ -88,10 +88,7 @@ U & 0.35 & 100 & 0 & 0 & 100 & 0 & 0 \\
 \end{table}
 \end{center}
 
-\subsubsection{Caso 2}
-En la Tabla \ref{table:tabla4.2} podemos observar que $A = 100$ y $D = 0$, esto quiere decir que el algoritmo de reconocimiento de voz obtuvo el patrón de referencia correcto (es el locutor y es la palabra) para cada audio de prueba, con esto podemos decir que el algoritmo alcanzó un 100\% de efectividad en la etapa de reconocimiento.
-\vskip 0.5cm
-Ahora en cuanto a la respuesta de decisión del sistema para este caso la única respuesta correcta será $IC$, podemos ver en la Tabla \ref{table:tabla4.2} que conforme $U2$ aumenta de valor $E$ disminuye, tal como en el caso anterior.
+\vskip -1.0cm
 
 \begin{center}
 \begin{table}[H]
@@ -145,124 +142,7 @@ U & 0.35 & 100 & 0 & 0 & 100 & 0 & 0 \\
 \end{table}
 \end{center}
 
-\subsubsection{Caso 3}
-En la Tabla \ref{table:tabla4.3} podemos observar que $A = 0$ y $D = 100$, esto es porque los usuarios pronunciaron una palabra distinta a las que se encuentran en la base de datos.
-\vskip 0.5cm
-Ahora en cuanto a la respuesta de decisión del sistema para este caso la única respuesta correcta será $NI$, podemos ver en la Tabla \ref{table:tabla4.3} que para cualquier valor de $U2$ el valor $E$ sigue siendo el mismo, esto es porque la respuesta depende de $U1$ que para esta prueba su valor se define por la Ecuación \eqref{eq:ecuacion105}, en todo caso si se quiere disminuir $FI$ el valor de $U1$ tendría que ser menor, pero esto lo veremos en la segunda etapa. Lo importante es que $IC = 0$ por lo que el sistema no dejo pasar a ningún usuario con clave de acceso incorrecta.
-
-\begin{center}
-\begin{table}[H]
-\centering
-\caption{\small{Resultados para obtener U2 en el caso 3.}}
-\label{table:tabla4.3}
-\vskip 0.2cm
-\scalebox{0.7}{
-\begin{tabular}{|c|c|c|c|c|c|c|c|}
-\hline 
-U1 & U2 & IC & FI & NI & A & D & E \\
-\hline 
-U & 0.20 & 0 & 13 & 87 & 0 & 100 & 13 \\
-\hline 
-U & 0.21 & 0 & 13 & 87 & 0 & 100 & 13 \\
-\hline 
-U & 0.22 & 0 & 13 & 87 & 0 & 100 & 13 \\
-\hline 
-U & 0.23 & 0 & 13 & 87 & 0 & 100 & 13 \\
-\hline 
-U & 0.24 & 0 & 13 & 87 & 0 & 100 & 13 \\
-\hline 
-U & 0.25 & 0 & 13 & 87 & 0 & 100 & 13 \\
-\hline 
-U & 0.26 & 0 & 13 & 87 & 0 & 100 & 13 \\
-\hline 
-U & 0.27 & 0 & 13 & 87 & 0 & 100 & 13 \\
-\hline 
-U & 0.28 & 0 & 13 & 87 & 0 & 100 & 13 \\
-\hline 
-U & 0.29 & 0 & 13 & 87 & 0 & 100 & 13 \\
-\hline 
-U & 0.30 & 0 & 13 & 87 & 0 & 100 & 13 \\
-\hline 
-U & 0.31 & 0 & 13 & 87 & 0 & 100 & 13 \\
-\hline 
-U & 0.32 & 0 & 13 & 87 & 0 & 100 & 13 \\
-\hline 
-U & 0.33 & 0 & 13 & 87 & 0 & 100 & 13 \\
-\hline 
-U & 0.34 & 0 & 13 & 87 & 0 & 100 & 13 \\
-\hline 
-U & 0.35 & 0 & 13 & 87 & 0 & 100 & 13 \\
-\hline 
-\end{tabular} 
-}
-\begin{center}
-\vskip 0.2cm
-{\small{Fuente: Elaboración propia}}
-\end{center}
-\end{table}
-\end{center}
-
-\subsubsection{Caso 4}
-En la Tabla \ref{table:tabla4.4} podemos observar que $A = 0$ y $D = 100$, esto es porque los usuarios pronunciaron una palabra distinta a las que se encuentran en la base de datos.
-\vskip 0.5cm
-En cuanto a la respuesta de decisión del sistema en este caso la única respuesta correcta será $NI$, podemos ver en la Tabla \ref{table:tabla4.4} que el valor de $E = 0$, por lo que para este caso el sistema alcanzó un 100\% de efectividad en su respuesta.
-
-\begin{center}
-\begin{table}[H]
-\centering
-\caption{\small{Resultados para obtener U2 en el caso 4.}}
-\label{table:tabla4.4}
-\vskip 0.2cm
-\scalebox{0.7}{
-\begin{tabular}{|c|c|c|c|c|c|c|c|}
-\hline 
-U1 & U2 & IC & FI & NI & A & D & E \\
-\hline 
-U & 0.20 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-U & 0.21 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-U & 0.22 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-U & 0.23 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-U & 0.24 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-U & 0.25 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-U & 0.26 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-U & 0.27 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-U & 0.28 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-U & 0.29 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-U & 0.30 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-U & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-U & 0.32 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-U & 0.33 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-U & 0.34 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-U & 0.35 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-\end{tabular} 
-}
-\begin{center}
-\vskip 0.2cm
-{\small{Fuente: Elaboración propia}}
-\end{center}
-\end{table}
-\end{center}
-
-\subsubsection{Caso 5}
-En la Tabla \ref{table:tabla4.5} podemos observar que $A = 90$ y $D = 10$, esto quiere decir que el algoritmo de reconocimiento de voz obtuvo un 90\% de efectividad en la etapa de reconocimiento.
-\vskip 0.5cm
-Ahora en cuanto a la respuesta de decisión del sistema para este caso la única respuesta correcta será $FI$, podemos ver en la Tabla \ref{table:tabla4.5} que para cualquier valor de $U2$ el valor de $E$ sigue siendo el mismo, esto es porque la respuesta depende de $U1$ que para esta prueba es $U$ definido por la Ecuación \eqref{eq:ecuacion105}, para disminuir el valor de $NI$ es necesario que $U1$ tenga un mayor valor, pero esto lo veremos en la segunda etapa. Lo importante es que $IC = 0$ por lo que el sistema no dejo pasar a ningún intruso.
+\vskip -1.0cm
 
 \begin{center}
 \begin{table}[H]
@@ -316,10 +196,7 @@ U & 0.35 & 0 & 36 & 64 & 90 & 10 & 64 \\
 \end{table}
 \end{center}
 
-\subsubsection{Caso 6}
-En la Tabla \ref{table:tabla4.6} podemos observar que $A = 100$ y $D = 0$, esto quiere decir que el algoritmo de reconocimiento de voz obtuvo un 100\% de efectividad en la etapa de reconocimiento.
-\vskip 0.5cm
-Ahora en cuanto a la respuesta de decisión del sistema para este caso la única respuesta correcta será $FI$, podemos ver en la Tabla \ref{table:tabla4.6} que para $U2 \leq 0.32$ el valor de $IC = 0$, de lo contrario el número de $IC$ aumenta, esto quiere decir que el sistema va permitiendo cada vez más el acceso a intrusos.
+\vskip -1.0cm
 
 \begin{center}
 \begin{table}[H]
@@ -373,121 +250,7 @@ U & 0.35 & 5 & 41 & 54 & 100 & 0 & 56 \\
 \end{table}
 \end{center}
 
-\subsubsection{Caso 7}
-En la Tabla \ref{table:tabla4.7} podemos observar que $A = 0$ y $D = 100$, esto es porque el usuario pronunció una palabra distinta a las que se encuentran en la base de datos.
-\vskip 0.5cm
-Ahora en cuanto a la respuesta de decisión del sistema para este caso la única respuesta correcta será $NI$, podemos ver en la Tabla \ref{table:tabla4.7} que para cualquier valor de $U2$ el valor $E$ sigue siendo el mismo, esto es porque la respuesta depende de $U1$ que para esta prueba es $U$ valor definido por la Ecuación \eqref{eq:ecuacion105}, en todo caso si se quiere disminuir $FI$ el valor de $U1$ tendría que ser menor, pero esto no es necesario ya que $E = 1$, por lo que el sistema alcanzó un 99\% de efectividad en su respuesta. Además, lo importante es que $IC = 0$ lo que quiere decir que el sistema no dejo pasar a ningún intruso.
-
-\begin{center}
-\begin{table}[H]
-\centering
-\caption{\small{Resultados para obtener U2 en el caso 7.}}
-\label{table:tabla4.7}
-\vskip 0.2cm
-\scalebox{0.7}{
-\begin{tabular}{|c|c|c|c|c|c|c|c|}
-\hline 
-U1 & U2 & IC & FI & NI & A & D & E \\
-\hline 
-U & 0.20 & 0 & 1 & 99 & 0 & 100 & 1 \\
-\hline 
-U & 0.21 & 0 & 1 & 99 & 0 & 100 & 1 \\
-\hline 
-U & 0.22 & 0 & 1 & 99 & 0 & 100 & 1 \\
-\hline 
-U & 0.23 & 0 & 1 & 99 & 0 & 100 & 1 \\
-\hline 
-U & 0.24 & 0 & 1 & 99 & 0 & 100 & 1 \\
-\hline 
-U & 0.25 & 0 & 1 & 99 & 0 & 100 & 1 \\
-\hline 
-U & 0.26 & 0 & 1 & 99 & 0 & 100 & 1 \\
-\hline 
-U & 0.27 & 0 & 1 & 99 & 0 & 100 & 1 \\
-\hline 
-U & 0.28 & 0 & 1 & 99 & 0 & 100 & 1 \\
-\hline 
-U & 0.29 & 0 & 1 & 99 & 0 & 100 & 1 \\
-\hline 
-U & 0.30 & 0 & 1 & 99 & 0 & 100 & 1 \\
-\hline 
-U & 0.31 & 0 & 1 & 99 & 0 & 100 & 1 \\
-\hline 
-U & 0.32 & 0 & 1 & 99 & 0 & 100 & 1 \\
-\hline 
-U & 0.33 & 0 & 1 & 99 & 0 & 100 & 1 \\
-\hline 
-U & 0.34 & 0 & 1 & 99 & 0 & 100 & 1 \\
-\hline 
-U & 0.35 & 0 & 1 & 99 & 0 & 100 & 1 \\
-\hline 
-\end{tabular} 
-}
-\begin{center}
-\vskip 0.2cm
-{\small{Fuente: Elaboración propia}}
-\end{center}
-\end{table}
-\end{center}
-
-\subsubsection{Caso 8}
-En la Tabla \ref{table:tabla4.8} podemos observar que $A = 0$ y $D = 100$, esto es porque el usuario pronunció una palabra distinta a las que se encuentran en la base de datos.
-\vskip 0.5cm
-En cuanto a la respuesta de decisión del sistema para este caso la única respuesta correcta será $NI$, podemos ver en la Tabla \ref{table:tabla4.8} que el valor de $E = 0$, por lo que para este caso el sistema alcanzó un 100\% de efectividad en su respuesta.
-
-\begin{center}
-\begin{table}[H]
-\centering
-\caption{\small{: Resultados para obtener U2 en el caso 8.}}
-\label{table:tabla4.8}
-\vskip 0.2cm
-\scalebox{0.7}{
-\begin{tabular}{|c|c|c|c|c|c|c|c|}
-\hline 
-U1 & U2 & IC & FI & NI & A & D & E \\
-\hline 
-U & 0.20 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-U & 0.21 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-U & 0.22 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-U & 0.23 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-U & 0.24 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-U & 0.25 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-U & 0.26 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-U & 0.27 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-U & 0.28 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-U & 0.29 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-U & 0.30 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-U & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-U & 0.32 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-U & 0.33 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-U & 0.34 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-U & 0.35 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-\end{tabular} 
-}
-\begin{center}
-\vskip 0.2cm
-{\small{Fuente: Elaboración propia}}
-\end{center}
-\end{table}
-\end{center}
-
-De esta primera prueba podemos ver que el mejor valor para $U2$ es 0.31. Esto porque, observamos que para los resultados de los casos 3, 4, 5, 7 y 8 cualquier valor que tome $U2$ entre 0.20 y 0.35 el valor de $E$ es el mismo, por lo que no tomaremos en cuenta estos casos, entonces de las Tablas \ref{table:tabla4.1} y \ref{table:tabla4.2} de los casos 1 y 2 respectivamente podemos ver que el mejor valor para $U2$ es 0.35 dando $E = 0$ alcanzando el sistema un 100\% de efectividad en la respuesta del reconocimiento de voz, ver la Figura \ref{fig:figura4.1}, sin embargo, para el caso 6 el valor de $IC$ sería 5 esto quiere decir que de las 100 veces que el intruso intento acceder al sistema en 5 de ellas el sistema le permitió el acceso, y esto es grave ya que nosotros lo que buscamos es la seguridad, por lo que $U2$ tendrá que ser menor que 0.32 y mayor que 0.30 para que el número de $FI$ no sea grande para los casos 1 y 2, por lo que se escogió a 0.31 como valor intermedio, ver la Figura \ref{fig:figura4.2}.
+\vskip -1.0cm
 
 \begin{figure}[H]
 \begin{center}
@@ -500,6 +263,7 @@ De esta primera prueba podemos ver que el mejor valor para $U2$ es 0.31. Esto po
 {\small{Fuente: Elaboración propia}}
 \end{center}
 \end{figure}
+
 
 \begin{figure}[H]
 \begin{center}
@@ -514,10 +278,8 @@ De esta primera prueba podemos ver que el mejor valor para $U2$ es 0.31. Esto po
 \end{figure}
 
 \subsection{Prueba para obtener U1}
-\subsubsection{Caso 1}
-En la Tabla \ref{table:tabla4.9} podemos observar que $A = 100$ y $D = 0$, esto quiere decir que el algoritmo de reconocimiento de voz obtuvo el patrón de referencia correcto (es el locutor y es la palabra) para cada audio de prueba, con esto podemos decir que el algoritmo alcanzó un 100\% de efectividad en la etapa de reconocimiento.
-\vskip 0.5cm
-Ahora en cuanto a la respuesta de decisión del sistema para este caso la única respuesta correcta será $IC$, podemos ver en la Tabla \ref{table:tabla4.9} que para cualquier valor de $U1$ el valor de $E$ sigue siendo el mismo, esto es porque la respuesta depende de $U2$, por lo que para disminuir el número de $FI$ tendría que $U2$ tener un mayor valor, pero como se dijo anteriormente si este valor es muy grande el sistema permitiría el acceso a intrusos y esto es lo que no se desea. Sin embargo, $E = 5$ esto quiere decir que el sistema alcanzó un 95\% de efectividad en su respuesta.
+\par
+Para esta segunda prueba se obtuvo que el mejor valor para $U1$ es 0.51. Esto porque, se observó que para los resultados de los casos 1, 2 y 7, ver Tablas \ref{table:tabla4.9} y \ref{table:tabla4.10}, cualquier valor que tome $U1$ entre 0.40 y 0.55 el valor de $E$ es el mismo, por lo que no se tomó en cuenta estos casos, entonces para de los casos 3, 4 y 8 se observó que conforme $U1$ aumenta de valor $E$ también aumenta, por otro lado, para los casos 5 y 6 si $U1$ aumenta $E$ disminuye, por ello se escogió a 0.51 como mejor valor intermedio para los casos 3, 4, 5, 6 y 8, ver la Figura \ref{fig:figura4.3}. Además, el sistema no dejo pasar en ningún caso a intrusos por lo que alcanzó un 100\% en seguridad, ver la Figura \ref{fig:figura4.4}.
 
 \begin{center}
 \begin{table}[H]
@@ -571,10 +333,7 @@ U1 & U2 & IC & FI & NI & A & D & E \\
 \end{table}
 \end{center}
 
-\subsubsection{Caso 2}
-En la Tabla \ref{table:tabla4.10} podemos observar que $A = 100$ y $D = 0$, esto quiere decir que el algoritmo de reconocimiento de voz obtuvo el patrón de referencia correcto (es el locutor y es la palabra) para cada audio de prueba, con esto podemos decir que el algoritmo alcanzó un 100\% de efectividad en la etapa de reconocimiento.
-\vskip 0.5cm
-Ahora en cuanto a la respuesta de decisión del sistema para este caso la única respuesta correcta será $IC$, podemos ver en la Tabla \ref{table:tabla4.10} que para cualquier valor de $U1$ el valor de $E$ sigue siendo el mismo, tal como en el caso anterior. Sin embargo, $E = 1$ esto quiere decir que el sistema alcanzó un 99\% de efectividad en su respuesta.
+\vskip -1.0cm
 
 \begin{center}
 \begin{table}[H]
@@ -628,124 +387,7 @@ U1 & U2 & IC & FI & NI & A & D & E \\
 \end{table}
 \end{center}
 
-\subsubsection{Caso 3}
-En la Tabla \ref{table:tabla4.11} podemos observar que $A = 0$ y $D = 100$, esto es porque los usuarios pronunciaron una palabra distinta a las que se encuentran en la base de datos.
-\vskip 0.5cm
-Ahora en cuanto a la respuesta de decisión del sistema para este caso la única respuesta correcta será $NI$, podemos ver en la Tabla \ref{table:tabla4.11} que para $U1 \leq 0.51$ el valor de $E = 0$, pero si $U1$ aumenta entonces aumentará el número de $FI$ y eso no es correcto, sim embargo el valor de $E$ es pequeño por lo que esto es un buen resultado. Además, $IC = 0$ por lo que el sistema no dejo pasar a ningún usuario con clave de acceso incorrecta.
-
-\begin{center}
-\begin{table}[H]
-\centering
-\caption{\small{Resultados para obtener U1 en el caso 3.}}
-\label{table:tabla4.11}
-\vskip 0.2cm
-\scalebox{0.7}{
-\begin{tabular}{|c|c|c|c|c|c|c|c|}
-\hline 
-U1 & U2 & IC & FI & NI & A & D & E \\
-\hline 
-0.40 & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-0.41 & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-0.42 & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-0.43 & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-0.44 & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-0.45 & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-0.46 & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-0.47 & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-0.48 & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-0.49 & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-0.50 & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-0.51 & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-0.52 & 0.31 & 0 & 1 & 99 & 0 & 100 & 1 \\
-\hline 
-0.53 & 0.31 & 0 & 1 & 99 & 0 & 100 & 1 \\
-\hline 
-0.54 & 0.31 & 0 & 1 & 99 & 0 & 100 & 1 \\
-\hline 
-0.55 & 0.31 & 0 & 1 & 99 & 0 & 100 & 1 \\
-\hline 
-\end{tabular} 
-}
-\begin{center}
-\vskip 0.2cm
-{\small{Fuente: Elaboración propia}}
-\end{center}
-\end{table}
-\end{center}
-
-\subsubsection{Caso 4}
-En la Tabla \ref{table:tabla4.12} podemos observar que $A = 0$ y $D = 100$, esto es porque los usuarios pronunciaron una palabra distinta a las que se encuentran en la base de datos.
-\vskip 0.5cm
-En cuanto a la respuesta de decisión del sistema en este caso la única respuesta correcta será $NI$, podemos ver en la Tabla \ref{table:tabla4.12} que el valor de $E = 0$ mientras $U1 \leq 0.49$, pero si este aumenta entonces aumentará el número de $FI$ ocurriendo lo mismo que en el caso anterior.
-
-\begin{center}
-\begin{table}[H]
-\centering
-\caption{\small{Resultados para obtener U1 en el caso 4.}}
-\label{table:tabla4.12}
-\vskip 0.2cm
-\scalebox{0.7}{
-\begin{tabular}{|c|c|c|c|c|c|c|c|}
-\hline 
-U1 & U2 & IC & FI & NI & A & D & E \\
-\hline 
-0.40 & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-0.41 & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-0.42 & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-0.43 & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-0.44 & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-0.45 & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-0.46 & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-0.47 & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-0.48 & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-0.49 & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-0.50 & 0.31 & 0 & 1 & 99 & 0 & 100 & 1 \\
-\hline 
-0.51 & 0.31 & 0 & 1 & 99 & 0 & 100 & 1 \\
-\hline 
-0.52 & 0.31 & 0 & 1 & 99 & 0 & 100 & 1 \\
-\hline 
-0.53 & 0.31 & 0 & 1 & 99 & 0 & 100 & 1 \\
-\hline 
-0.54 & 0.31 & 0 & 1 & 99 & 0 & 100 & 1 \\
-\hline 
-0.55 & 0.31 & 0 & 2 & 98 & 0 & 100 & 2 \\
-\hline 
-\end{tabular} 
-}
-\begin{center}
-\vskip 0.2cm
-{\small{Fuente: Elaboración propia}}
-\end{center}
-\end{table}
-\end{center}
-
-\subsubsection{Caso 5}
-En la Tabla \ref{table:tabla4.13} podemos observar que $A = 90$ y $D = 10$, esto quiere decir que el algoritmo de reconocimiento de voz obtuvo un 90\% de efectividad en la etapa de reconocimiento.
-\vskip 0.5cm
-Ahora en cuanto a la respuesta de decisión del sistema para este caso la única respuesta correcta será $FI$, podemos ver en la Tabla \ref{table:tabla4.13} que conforme aumentamos el valor de $U1$ entonces $E$ disminuye, pero si $U1$ es muy grande el sistema no podría diferenciar las palabras que son parecidas, por ejemplo, \textit{ENTENDER} con \textit{ENCENDER}. Sin embargo, $IC = 0$ por lo que el sistema no dejo pasar a ningún intruso.
+\vskip -1.0cm
 
 \begin{center}
 \begin{table}[H]
@@ -799,10 +441,7 @@ U1 & U2 & IC & FI & NI & A & D & E \\
 \end{table}
 \end{center}
 
-\subsubsection{Caso 6}
-En la Tabla \ref{table:tabla4.14} podemos observar que $A = 100$ y $D = 0$, esto quiere decir que el algoritmo de reconocimiento de voz obtuvo un 100 \% de efectividad en la etapa de reconocimiento.
-\vskip 0.5cm
-Ahora en cuanto a la respuesta de decisión del sistema para este caso la única respuesta correcta será $FI$, podemos ver en la Tabla \ref{table:tabla4.14} que conforme aumentamos de valor a $U1$ entonces $E$ disminuye, tal como en el caso anterior se explicó que $U1$ no puede ser muy grande, sin embargo, se puede ver que en este caso $E$ tiene menores valores que en el caso anterior.
+\vskip -1.0cm
 
 \begin{center}
 \begin{table}[H]
@@ -856,121 +495,6 @@ U1 & U2 & IC & FI & NI & A & D & E \\
 \end{table}
 \end{center}
 
-\subsubsection{Caso 7}
-En la Tabla \ref{table:tabla4.15} podemos observar que $A = 0$ y $D = 100$, esto es porque el usuario pronunció una palabra distinta a las que se encuentran en la base de datos.
-\vskip 0.5cm
-Ahora en cuanto a la respuesta de decisión del sistema para este caso la única respuesta correcta será $NI$, podemos ver en la Tabla \ref{table:tabla4.15} que para cualquier valor de $U1$ el valor de $E = 0$, para que el número de $FI$ aumente $U1$ tiene que ser más grande, pero esto es lo que no se quiere. Sin embargo, $E = 0$ por lo que el sistema alcanzo un 100\% de efectividad en su respuesta.
-
-\begin{center}
-\begin{table}[H]
-\centering
-\caption{\small{Resultados para obtener U1 en el caso 7.}}
-\label{table:tabla4.15}
-\vskip 0.2cm
-\scalebox{0.7}{
-\begin{tabular}{|c|c|c|c|c|c|c|c|}
-\hline 
-U1 & U2 & IC & FI & NI & A & D & E \\
-\hline 
-0.40 & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-0.41 & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-0.42 & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-0.43 & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-0.44 & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-0.45 & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-0.46 & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-0.47 & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-0.48 & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-0.49 & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-0.50 & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-0.51 & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-0.52 & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-0.53 & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-0.54 & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-0.55 & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-\end{tabular} 
-}
-\begin{center}
-\vskip 0.2cm
-{\small{Fuente: Elaboración propia}}
-\end{center}
-\end{table}
-\end{center}
-
-\subsubsection{Caso 8}
-En la Tabla \ref{table:tabla4.16} podemos observar que $A = 0$ y $D = 100$, esto es porque el usuario pronunció una palabra distinta a las que se encuentran en la base de datos.
-\vskip 0.5cm
-En cuanto a la respuesta de decisión del sistema para este caso la única respuesta correcta será $NI$, podemos ver en la Tabla \ref{table:tabla4.16} que conforme aumentamos de valor a $U1$ entonces $E$ aumenta, tal como se explicó anteriormente, y esto no es lo que se quiere, sin embargo el número de $FI$ sigue siendo pequeño al igual que $E$ y esto es bueno.
-
-\begin{center}
-\begin{table}[H]
-\centering
-\caption{\small{Resultados para obtener U1 en el caso 8.}}
-\label{table:tabla4.16}
-\vskip 0.2cm
-\scalebox{0.7}{
-\begin{tabular}{|c|c|c|c|c|c|c|c|}
-\hline 
-U1 & U2 & IC & FI & NI & A & D & E \\
-\hline 
-0.40 & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-0.41 & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-0.42 & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-0.43 & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-0.44 & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-0.45 & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-0.46 & 0.31 & 0 & 1 & 99 & 0 & 100 & 1 \\
-\hline 
-0.47 & 0.31 & 0 & 1 & 99 & 0 & 100 & 1 \\
-\hline 
-0.48 & 0.31 & 0 & 1 & 99 & 0 & 100 & 1 \\
-\hline 
-0.49 & 0.31 & 0 & 1 & 99 & 0 & 100 & 1 \\
-\hline 
-0.50 & 0.31 & 0 & 2 & 98 & 0 & 100 & 2 \\
-\hline 
-0.51 & 0.31 & 0 & 3 & 97 & 0 & 100 & 3 \\
-\hline 
-0.52 & 0.31 & 0 & 3 & 97 & 0 & 100 & 3 \\
-\hline 
-0.53 & 0.31 & 0 & 3 & 97 & 0 & 100 & 3 \\
-\hline 
-0.54 & 0.31 & 0 & 3 & 97 & 0 & 100 & 3 \\
-\hline 
-0.55 & 0.31 & 0 & 3 & 97 & 0 & 100 & 3 \\
-\hline 
-\end{tabular} 
-}
-\begin{center}
-\vskip 0.2cm
-{\small{Fuente: Elaboración propia}}
-\end{center}
-\end{table}
-\end{center}
-
-De esta segunda prueba podemos ver que el mejor valor para $U1$ es 0.51. Esto porque, observamos que para los resultados de los casos 1, 2 y 7 cualquier valor que tome $U1$ entre 0.40 y 0.55 el valor de $E$ es el mismo, por lo que no tomaremos en cuenta estos casos, entonces de las tablas \ref{table:tabla4.11}, \ref{table:tabla4.12} y \ref{table:tabla4.16} de los casos 3, 4 y 8 respectivamente, podemos ver que conforme $U1$ aumenta de valor $E$ también aumenta, por otro lado, para los casos 5 y 6 si $U1$ aumenta $E$ disminuye, por ello se escogió a 0.51 como mejor valor intermedio para los casos 3, 4, 5, 6 y 8, ver la Figura \ref{fig:figura4.3}. Además, el sistema no dejo pasar en ningún caso a intrusos por lo que alcanzó un 100\% en seguridad, ver la Figura \ref{fig:figura4.4}.
 
 \begin{figure}[H]
 \begin{center}
@@ -996,7 +520,6 @@ De esta segunda prueba podemos ver que el mejor valor para $U1$ es 0.51. Esto po
 \end{center}
 \end{figure}
 
-\vskip 0.5cm
 De esta primera etapa se puede concluir que los valores para los umbrales $U1$ y $U2$ son, para $U2 = 0.31$ sin embargo todavía no hemos escogido cual es el mejor valor para $U1$ si $U$ o 0.51, para ello haremos una comparación del total de errores obtenidos para esto dos valores.
 
 \begin{center}
@@ -1039,8 +562,9 @@ $N^\circ$ & U2 & U1=U & U1=0.51 \\
 
 En la Tabla \ref{table:tabla4.17} se puede ver que para $U1 = 0.51$ se obtuvo una menor cantidad de número de errores en la respuesta del sistema de reconocimiento de voz, debido a esto se escogerá este valor.
 \vskip 0.5cm
-Ahora evaluaremos el tiempo de ejecución que toma el sistema para realizar el reconocimiento de voz y el reajuste de los umbrales, si bien este último no es necesario evaluar ya que el valor de $U1$ es 0.51 un valor estático y no dinámico (calculado por la Ecuación \eqref{eq:ecuacion105}), lo haremos igual como información complementaria para la investigación.
+Ahora evaluaremos el tiempo de ejecución que toma el sistema para realizar el reconocimiento de voz y el reajuste de los umbrales, si bien este último no es necesario evaluar ya que el valor de $U1$ es 0.51 un valor estático y no dinámico (calculado por la Ecuación \eqref{eq:ecuacion105}), de todas maneras se realizará como información complementaria para la investigación.
 
+\vskip 0.5cm
 \begin{figure}[H]
 \captionsetup{justification=centering}
 \begin{center}
@@ -1067,7 +591,6 @@ Ahora evaluaremos el tiempo de ejecución que toma el sistema para realizar el r
 \end{center}
 \end{figure}
 
-\vskip -0.5cm
 Como podemos ver en la Figura \ref{fig:figura4.5} el gráfico muestra una pendiente de función lineal, conforme aumentamos el número de audios en la base de datos el tiempo de ejecución para la respuesta del sistema aumenta, por lo que esta puede ser calculada por la siguiente fórmula:
 
 \begin{equation}
@@ -1085,7 +608,7 @@ Donde:
 \vskip 0.5cm
 De la Ecuación \eqref{eq:ecuacion4.1} y los datos obtenidos que se ve en la Figura \ref{fig:figura4.5}, se tiene que el valor de $t$ es 0.08 segundos, este valor varía de acuerdo al hardware del dispositivo en donde se implemente el sistema, para nuestro proyecto hemos usado un dispositivo móvil Android Samsung J6+ con un procesador de 4 núcleos de 1.8 GHz.
 \vskip 0.5cm
-El tiempo de respuesta del sistema para el reconocimiento de voz no debe ser mayor a 5 segundos tal como se definió en las características generales del ciclo de negocio de la arquitectura del sistema en la Tabla \ref{table:tabla3.1}, sin embargo, si se utiliza un número mayor a 60 audios en la base de datos, entonces no se cumplira con este requisito que se planteó.
+El tiempo de respuesta del sistema para el reconocimiento de voz no debe ser mayor a 5 segundos tal como se definió en las características generales del ciclo de negocio de la arquitectura del sistema en la Tabla \ref{table:tabla3.1}, sin embargo, si se utiliza un número mayor a 60 audios en la base de datos, entonces no se cumplirá con este requisito que se planteó.
 \vskip 0.5cm
 Por ello, se planteó utilizar la técnica para la construcción del patrón de referencia definida por la Ecuación \eqref{eq:ecuacion101} que consistía en agrupar un número de audios y dar como resultado un patrón promedio que los represente, así podremos disminuir el tiempo de respuesta del sistema al tener un número menor de patrones en la base de datos.
 
@@ -1095,10 +618,8 @@ En esta segunda parte al igual que la primera consta de 2 etapas, en la primera 
 A continuación, veremos los resultados que se obtuvieron en la realización de las pruebas para los 8 escenarios o casos definidos anteriormente, donde $N$ representa el número de patrones o audios que se emplearán para la construcción del patrón de referencia.
 
 \subsection{Prueba con U1 dinámico}
-\subsubsection{Caso 1}
-En la Tabla \ref{table:tabla4.18} podemos observar que $A = 100$ y $D = 0$, esto quiere decir que el algoritmo de reconocimiento de voz obtuvo el patrón de referencia correcto (es el locutor y es la palabra) para cada audio de prueba, con esto podemos decir que el algoritmo alcanzó un 100\% de efectividad en la etapa de reconocimiento.
-\vskip 0.5cm
-Ahora en cuanto a la respuesta de decisión del sistema para este caso la única respuesta correcta será $IC$, podemos ver en la Tabla \ref{table:tabla4.18} que se obtuvo un menor número de errores de respuesta para $N = 5$ teniendo como resultado a $E = 15$ siendo de estos $FI = 7$ y $NI = 8$, además este valor es muy alto y no cumple con los requisitos que se propuso en la arquitectura del ciclo de negocio, por lo que este no es un buen resultado.
+\par
+De esta primera prueba se obtuvo que el mejor valor para $N$ es 5. Esto porque, se observó que para los casos 3, 4, 7 y 8 cualquier valor que tome $N$ el valor de $E = 0$, por lo que no se tomó en cuenta estos casos, entonces para los casos 1, 2, 5 y 6, ver Tablas \ref{table:tabla4.18}, \ref{table:tabla4.19}, \ref{table:tabla4.22}, \ref{table:tabla4.23}, se observó que el mejor valor para $N$ es 5, ver la Figura \ref{fig:figura4.7}, si bien los valores de $E$ son grandes, por otro lado, $IC = 0$ por lo que en ningún caso se dejo pasar a intrusos, por lo tanto, se obtuvo un 100\% en seguridad del sistema, ver la Figura \ref{fig:figura4.8}.
 
 \begin{center}
 \begin{table}[H]
@@ -1132,10 +653,7 @@ $N^\circ$ & U1 & U2 & IC & FI & NI & A & D & E \\
 \end{table}
 \end{center}
 
-\subsubsection{Caso 2}
-En la Tabla \ref{table:tabla4.19} podemos observar que $A = 100$ y $D = 0$, esto quiere decir que el algoritmo de reconocimiento de voz obtuvo el patrón de referencia correcto (es el locutor y es la palabra) para cada audio de prueba, con esto podemos decir que el algoritmo alcanzó un 100\% de efectividad en la etapa de reconocimiento.
-\vskip 0.5cm
-Ahora en cuanto a la respuesta de decisión del sistema para este caso la única respuesta correcta será $IC$, podemos ver en la Tabla \ref{table:tabla4.19} que se obtuvo un menor número de errores de respuesta para $N = 6$ teniendo como resultado a $E = 13$ siendo de estos $FI = 0$ y $NI = 13$, además este valor es muy alto y no cumple con los requisitos que se propuso en la arquitectura del ciclo de negocio, por lo que este no es un buen resultado.
+\vskip -1.0cm
 
 \begin{center}
 \begin{table}[H]
@@ -1169,84 +687,7 @@ $N^\circ$ & U1 & U2 & IC & FI & NI & A & D & E \\
 \end{table}
 \end{center}
 
-\subsubsection{Caso 3}
-En la Tabla \ref{table:tabla4.20} podemos observar que $A = 0$ y $D = 100$, esto es porque los usuarios pronunciaron una palabra distinta a las que se encuentran en la base de datos.
-\vskip 0.5cm
-Ahora en cuanto a la respuesta de decisión del sistema para este caso la única respuesta correcta será $NI$, podemos ver en la Tabla \ref{table:tabla4.20} que para cualquier valor de $N$ el valor de $E = 0$, logrando un excelente resultado de un 100\% de efectividad en la respuesta del sistema.
-
-\begin{center}
-\begin{table}[H]
-\centering
-\caption{\small{Resultados para el caso 3 con U1 dinámico.}}
-\label{table:tabla4.20}
-\vskip 0.2cm
-\scalebox{0.7}{
-\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
-\hline 
-$N^\circ$ & U1 & U2 & IC & FI & NI & A & D & E \\
-\hline 
-5 & U & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-6 & U & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-7 & U & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-8 & U & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-9 & U & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-10 & U & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-\end{tabular} 
-}
-\begin{center}
-\vskip 0.2cm
-{\small{Fuente: Elaboración propia}}
-\end{center}
-\end{table}
-\end{center}
-
-\subsubsection{Caso 4}
-En la Tabla \ref{table:tabla4.21} podemos observar que $A = 0$ y $D = 100$, esto es porque los usuarios pronunciaron una palabra distinta a las que se encuentran en la base de datos.
-\vskip 0.5cm
-Ahora en cuanto a la respuesta de decisión del sistema para este caso la única respuesta correcta será $NI$, podemos ver en la Tabla \ref{table:tabla4.21} que para cualquier valor de $N$ el valor de $E = 0$, logrando un excelente resultado igual que en el caso anterior de un 100\% de efectividad en la respuesta del sistema.
-
-\begin{center}
-\begin{table}[H]
-\centering
-\caption{\small{Resultados para el caso 4 con U1 dinámico.}}
-\label{table:tabla4.21}
-\vskip 0.2cm
-\scalebox{0.7}{
-\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
-\hline 
-$N^\circ$ & U1 & U2 & IC & FI & NI & A & D & E \\
-\hline 
-5 & U & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-6 & U & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-7 & U & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-8 & U & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-9 & U & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-10 & U & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-\end{tabular} 
-}
-\begin{center}
-\vskip 0.2cm
-{\small{Fuente: Elaboración propia}}
-\end{center}
-\end{table}
-\end{center}
-
-\subsubsection{Caso 5}
-En la Tabla \ref{table:tabla4.22} podemos observar que para $N = 8$ se obtuvo un número menor de desaciertos con $D = 7$, esto quiere decir que el algoritmo de reconocimiento de voz obtuvo un 93\% de efectividad en la etapa de reconocimiento.
-\vskip 0.5cm
-Ahora en cuanto a la respuesta de decisión del sistema para este caso la única respuesta correcta será $FI$, podemos ver en la Tabla \ref{table:tabla4.22} que se obtuvo un número menor de errores de respuesta para $N = 10$ dando como resultado a $E = 95$, si bien este valor es muy malo, de estos todos fueron $NI$ siendo $IC = 0$, por lo que el sistema no dejo pasar a ningún intruso, sin embargo, el valor de $E$ es muy grande y no cumple con los requisitos de la arquitectura del sistema.
+\vskip -1.0cm
 
 \begin{center}
 \begin{table}[H]
@@ -1280,10 +721,7 @@ $N^\circ$ & U1 & U2 & IC & FI & NI & A & D & E \\
 \end{table}
 \end{center}
 
-\subsubsection{Caso 6}
-En la Tabla \ref{table:tabla4.23} podemos observar que $A = 100$ y $D = 0$, esto quiere decir que el algoritmo de reconocimiento de voz alcanzó un 100\% de efectividad en la etapa de reconocimiento.
-\vskip 0.5cm
-Ahora en cuanto a la respuesta de decisión del sistema para este caso la única respuesta correcta será $FI$, podemos ver en la Tabla \ref{table:tabla4.23} que se obtuvo un número menor de errores de respuesta para $N = 9$ con $E = 96$, si bien este valor es muy grande todos estos fueron por $NI$ siendo $IC = 0$, por lo que el sistema no dejo pasar a ningún intruso, sin embargo, el valor de $E$ es muy grande y no cumple con los requisitos de la arquitectura del sistema.
+\vskip -1.0cm
 
 \begin{center}
 \begin{table}[H]
@@ -1317,81 +755,7 @@ $N^\circ$ & U1 & U2 & IC & FI & NI & A & D & E \\
 \end{table}
 \end{center}
 
-\subsubsection{Caso 7}
-En la Tabla \ref{table:tabla4.24} podemos observar que $A = 0$ y $D = 100$, esto es porque el usuario pronunció una palabra distinta a las que se encuentran en la base de datos.
-\vskip 0.5cm
-Ahora en cuanto a la respuesta de decisión del sistema para este caso la única respuesta correcta será $NI$, podemos ver en la Tabla \ref{table:tabla4.24} que para cualquier valor de $N$ el valor de $E = 0$, logrando un excelente resultado de un 100\% de efectividad en la respuesta del sistema.
-
-\begin{center}
-\begin{table}[H]
-\centering
-\caption{\small{Resultados para el caso 7 con U1 dinámico.}}
-\label{table:tabla4.24}
-\vskip 0.2cm
-\scalebox{0.7}{
-\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
-\hline 
-$N^\circ$ & U1 & U2 & IC & FI & NI & A & D & E \\
-\hline 
-5 & U & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-6 & U & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-7 & U & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-8 & U & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-9 & U & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-10 & U & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-\end{tabular} 
-}
-\begin{center}
-\vskip 0.2cm
-{\small{Fuente: Elaboración propia}}
-\end{center}
-\end{table}
-\end{center}
-
-\subsubsection{Caso 8}
-En la Tabla \ref{table:tabla4.25} podemos observar que $A = 0$ y $D = 100$, esto es porque el usuario pronunció una palabra distinta a las que se encuentran en la base de datos.
-\vskip 0.5cm
-Ahora en cuanto a la respuesta de decisión del sistema para este caso la única respuesta correcta será $NI$, podemos ver en la Tabla \ref{table:tabla4.25} que para cualquier valor de $N$ el valor de $E = 0$, logrando un excelente resultado igual que en el caso anterior de un 100\% de efectividad en la respuesta del sistema.
-
-\begin{center}
-\begin{table}[H]
-\centering
-\caption{\small{Resultados para el caso 8 con U1 dinámico.}}
-\label{table:tabla4.25}
-\vskip 0.2cm
-\scalebox{0.7}{
-\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
-\hline 
-$N^\circ$ & U1 & U2 & IC & FI & NI & A & D & E \\
-\hline 
-5 & U & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-6 & U & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-7 & U & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-8 & U & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-9 & U & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-10 & U & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-\end{tabular} 
-}
-\begin{center}
-\vskip 0.2cm
-{\small{Fuente: Elaboración propia}}
-\end{center}
-\end{table}
-\end{center}
-
-De esta primera prueba podemos ver que el mejor valor para $N$ es 5. Esto porque, observamos que para los resultados de los casos 3, 4, 7 y 8 cualquier valor que tome $N$ el valor de $E = 0$, por lo que no tomaremos en cuenta estos casos, entonces de las tablas de los casos 1, 2, 5 y 6 podemos ver que el mejor valor para $N$ es 5, ver la Figura \ref{fig:figura4.7}, si bien los valores de $E$ son grandes, por otro lado, $IC = 0$ por lo que en ningún caso se dejo pasar a intrusos resultando tener un 100\% en seguridad del sistema, ver la Figura \ref{fig:figura4.8}.
+\vskip -1.0cm
 
 \begin{figure}[H]
 \begin{center}
@@ -1404,6 +768,7 @@ De esta primera prueba podemos ver que el mejor valor para $N$ es 5. Esto porque
 {\small{Fuente: Elaboración propia}}
 \end{center}
 \end{figure}
+
 
 \begin{figure}[H]
 \begin{center}
@@ -1418,10 +783,8 @@ De esta primera prueba podemos ver que el mejor valor para $N$ es 5. Esto porque
 \end{figure}
 
 \subsection{Prueba con U1 estático}
-\subsubsection{Caso 1}
-En la Tabla \ref{table:tabla4.26} podemos observar que $A = 100$ y $D = 0$, esto quiere decir que el algoritmo de reconocimiento de voz obtuvo el patrón de referencia correcto (es el locutor y es la palabra) para cada audio de prueba, con esto podemos decir que el algoritmo alcanzó un 100\% de efectividad en la etapa de reconocimiento.
-\vskip 0.5cm
-Ahora en cuanto a la respuesta de decisión del sistema para este caso la única respuesta correcta será $IC$, podemos ver en la Tabla \ref{table:tabla4.26} que se obtuvo un menor número de errores de respuesta para $N = 5$ teniendo como resultado a $E = 8$ siendo todos de estos por $FI$, además este valor es muy alto y no cumple con los requisitos que se propuso en la arquitectura del ciclo de negocio, por lo que este no es un buen resultado.
+\par
+De esta segunda prueba se obtuvo que el mejor valor para $N$ es 5. Esto porque, se observó que para los casos 3, 4 y 7 cualquier valor que tome $N$ el valor de $E = 0$, por lo que no se tomó en cuenta estos casos, entonces para los casos 1, 2, 5, 6 y 8, ver Tablas \ref{table:tabla4.26}, \ref{table:tabla4.27}, \ref{table:tabla4.30} y \ref{table:tabla4.31}, podemos ver que el mejor valor para $N$ es 5, ver la Figura \ref{fig:figura4.9}, si bien los valores de $E$ son grandes, por otro lado, $IC = 0$ por lo que en ningún caso se dejo pasar a intrusos, por lo tanto, se obtuvo un 100\% en seguridad del sistema, ver la Figura \ref{fig:figura4.10}.
 
 \begin{center}
 \begin{table}[H]
@@ -1455,10 +818,7 @@ $N^\circ$ & U1 & U2 & IC & FI & NI & A & D & E \\
 \end{table}
 \end{center}
 
-\subsubsection{Caso 2}
-En la Tabla \ref{table:tabla4.27} podemos observar que $A = 100$ y $D = 0$, esto quiere decir que el algoritmo de reconocimiento de voz obtuvo el patrón de referencia correcto (es el locutor y es la palabra) para cada audio de prueba, con esto podemos decir que el algoritmo alcanzó un 100\% de efectividad en la etapa de reconocimiento.
-\vskip 0.5cm
-Ahora en cuanto a la respuesta de decisión del sistema para este caso la única respuesta correcta será $IC$, podemos ver en la Tabla \ref{table:tabla4.27} que se obtuvo un menor número de errores de respuesta para $N = 5$ teniendo como resultado a $E = 1$ por lo que el sistema alcanzo un 99\% de efectividad en su respuesta, cumpliendo con los requisitos que se propuso en la arquitectura del ciclo de negocio.
+\vskip -1.0cm
 
 \begin{center}
 \begin{table}[H]
@@ -1492,84 +852,7 @@ $N^\circ$ & U1 & U2 & IC & FI & NI & A & D & E \\
 \end{table}
 \end{center}
 
-\subsubsection{Caso 3}
-En la Tabla \ref{table:tabla4.28} podemos observar que $A = 0$ y $D = 100$, esto es porque los usuarios pronunciaron una palabra distinta a las que se encuentran en la base de datos.
-\vskip 0.5cm
-Ahora en cuanto a la respuesta de decisión del sistema para este caso la única respuesta correcta será $NI$, podemos ver en la Tabla \ref{table:tabla4.28} que para cualquier valor de $N$ el valor de $E = 0$, logrando un excelente resultado de un 100\% de efectividad en la respuesta del sistema.
-
-\begin{center}
-\begin{table}[H]
-\centering
-\caption{\small{Resultados para el caso 3 con U1 estático.}}
-\label{table:tabla4.28}
-\vskip 0.2cm
-\scalebox{0.7}{
-\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
-\hline 
-$N^\circ$ & U1 & U2 & IC & FI & NI & A & D & E \\
-\hline 
-5 & 0.51 & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-6 & 0.51 & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-7 & 0.51 & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-8 & 0.51 & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-9 & 0.51 & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-10 & 0.51 & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-\end{tabular} 
-}
-\begin{center}
-\vskip 0.2cm
-{\small{Fuente: Elaboración propia}}
-\end{center}
-\end{table}
-\end{center}
-
-\subsubsection{Caso 4}
-En la Tabla \ref{table:tabla4.29} podemos observar que $A = 0$ y $D = 100$, esto es porque los usuarios pronunciaron una palabra distinta a las que se encuentran en la base de datos.
-\vskip 0.5cm
-Ahora en cuanto a la respuesta de decisión del sistema para este caso la única respuesta correcta será $NI$, podemos ver en la Tabla \ref{table:tabla4.29} que para cualquier valor de $N$ el valor de $E = 0$, logrando un excelente resultado igual que en el caso anterior de un 100\% de efectividad en la respuesta del sistema.
-
-\begin{center}
-\begin{table}[H]
-\centering
-\caption{\small{Resultados para el caso 4 con U1 estático.}}
-\label{table:tabla4.29}
-\vskip 0.2cm
-\scalebox{0.7}{
-\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
-\hline 
-$N^\circ$ & U1 & U2 & IC & FI & NI & A & D & E \\
-\hline 
-5 & 0.51 & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-6 & 0.51 & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-7 & 0.51 & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-8 & 0.51 & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-9 & 0.51 & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-10 & 0.51 & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-\end{tabular} 
-}
-\begin{center}
-\vskip 0.2cm
-{\small{Fuente: Elaboración propia}}
-\end{center}
-\end{table}
-\end{center}
-
-\subsubsection{Caso 5}
-En la Tabla \ref{table:tabla4.30} podemos observar que para $N = 8$ se obtuvo un número menor de desaciertos con $D = 7$, esto quiere decir que el algoritmo de reconocimiento de voz obtuvo un 93\% de efectividad en la etapa de reconocimiento.
-\vskip 0.5cm
-Ahora en cuanto a la respuesta de decisión del sistema para este caso la única respuesta correcta será $FI$, podemos ver en la Tabla \ref{table:tabla4.30} que se obtuvo un número menor de errores de respuesta para $N = 6$ dando como resultado a $E = 80$, si bien este valor es muy grande, de estos todos fueron por $NI$ siendo $IC = 0$, por lo que el sistema no dejo pasar a ningún intruso, sin embargo, el valor de $E$ es muy grande y no cumple con los requisitos de la arquitectura del sistema.
+\vskip -1.0cm
 
 \begin{center}
 \begin{table}[H]
@@ -1603,10 +886,6 @@ $N^\circ$ & U1 & U2 & IC & FI & NI & A & D & E \\
 \end{table}
 \end{center}
 
-\subsubsection{Caso 6}
-En la Tabla \ref{table:tabla4.31} podemos observar que $A = 100$ y $D = 0$, esto quiere decir que el algoritmo de reconocimiento de voz alcanzó un 100\% de efectividad en la etapa de reconocimiento.
-\vskip 0.5cm
-Ahora en cuanto a la respuesta de decisión del sistema para este caso la única respuesta correcta será $FI$, podemos ver en la Tabla \ref{table:tabla4.31} que se obtuvo un número menor de errores de respuesta para $N = 5$ con $E = 6$, siendo todos estos por $NI$ siendo $IC = 0$, por lo que el sistema no dejo pasar a ningún intruso, sin embargo, el valor de $E$ es un valor casi aceptable y puede cumplir con los requisitos de la arquitectura del sistema.
 
 \begin{center}
 \begin{table}[H]
@@ -1640,81 +919,6 @@ $N^\circ$ & U1 & U2 & IC & FI & NI & A & D & E \\
 \end{table}
 \end{center}
 
-\subsubsection{Caso 7}
-En la Tabla \ref{table:tabla4.32} podemos observar que $A = 0$ y $D = 100$, esto es porque el usuario pronunció una palabra distinta a las que se encuentran en la base de datos.
-\vskip 0.5cm
-Ahora en cuanto a la respuesta de decisión del sistema para este caso la única respuesta correcta será $NI$, podemos ver en la Tabla \ref{table:tabla4.32} que para cualquier valor de $N$ el valor de $E = 0$, logrando un excelente resultado de un 100\% de efectividad en la respuesta del sistema.
-
-\begin{center}
-\begin{table}[H]
-\centering
-\caption{\small{Resultados para el caso 7 con U1 estático.}}
-\label{table:tabla4.32}
-\vskip 0.2cm
-\scalebox{0.7}{
-\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
-\hline 
-$N^\circ$ & U1 & U2 & IC & FI & NI & A & D & E \\
-\hline 
-5 & 0.51 & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-6 & 0.51 & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-7 & 0.51 & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-8 & 0.51 & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-9 & 0.51 & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-10 & 0.51 & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline
-\end{tabular} 
-}
-\begin{center}
-\vskip 0.2cm
-{\small{Fuente: Elaboración propia}}
-\end{center}
-\end{table}
-\end{center}
-
-\subsubsection{Caso 8}
-En la Tabla \ref{table:tabla4.33} podemos observar que $A = 0$ y $D = 100$, esto es porque el usuario pronunció una palabra distinta a las que se encuentran en la base de datos.
-\vskip 0.5cm
-Ahora en cuanto a la respuesta de decisión del sistema para este caso la única respuesta correcta será $NI$, podemos ver en la Tabla \ref{table:tabla4.33} que para $N = 9$ el valor de $E = 0$, logrando un excelente resultado de un 100\% de efectividad en la respuesta del sistema.
-
-\begin{center}
-\begin{table}[H]
-\centering
-\caption{\small{Resultados para el caso 8 con U1 estático.}}
-\label{table:tabla4.33}
-\vskip 0.2cm
-\scalebox{0.7}{
-\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
-\hline 
-$N^\circ$ & U1 & U2 & IC & FI & NI & A & D & E \\
-\hline 
-5 & 0.51 & 0.31 & 0 & 2 & 98 & 0 & 100 & 2 \\
-\hline 
-6 & 0.51 & 0.31 & 0 & 1 & 99 & 0 & 100 & 1 \\
-\hline 
-7 & 0.51 & 0.31 & 0 & 1 & 99 & 0 & 100 & 1 \\
-\hline 
-8 & 0.51 & 0.31 & 0 & 1 & 99 & 0 & 100 & 1 \\
-\hline 
-9 & 0.51 & 0.31 & 0 & 0 & 100 & 0 & 100 & 0 \\
-\hline 
-10 & 0.51 & 0.31 & 0 & 1 & 99 & 0 & 100 & 1 \\
-\hline 
-\end{tabular} 
-}
-\begin{center}
-\vskip 0.2cm
-{\small{Fuente: Elaboración propia}}
-\end{center}
-\end{table}
-\end{center}
-
-De esta primera prueba podemos ver que el mejor valor para $N$ es 5. Esto porque, observamos que para los resultados de los casos 3, 4 y 7 cualquier valor que tome $N$ el valor de $E = 0$, por lo que no tomaremos en cuenta estos casos, entonces de las tablas de los casos 1, 2, 5, 6 y 8 podemos ver que el mejor valor para $N$ es 5, ver la Figura \ref{fig:figura4.9}, si bien los valores de $E$ son grandes, por otro lado, $IC = 0$ por lo que en ningún caso se dejo pasar a intrusos resultando tener un 100\% en seguridad del sistema, ver la Figura \ref{fig:figura4.10}.
 
 \begin{figure}[H]
 \begin{center}
@@ -1728,6 +932,8 @@ De esta primera prueba podemos ver que el mejor valor para $N$ es 5. Esto porque
 \end{center}
 \end{figure}
 
+\vskip -1.0cm
+
 \begin{figure}[H]
 \begin{center}
 \includegraphics[width=0.7\textwidth]{Imagenes/Cap4/image010}
@@ -1740,7 +946,7 @@ De esta primera prueba podemos ver que el mejor valor para $N$ es 5. Esto porque
 \end{center}
 \end{figure}
 
-Después de realizar todas las pruebas para poder hallar el mejor valor para $N$ (número de patrones para la construcción del patrón de referencia) podemos ver que se obtuvieron mejores resultados para $N = 5$, además que sigue siendo el mejor valor para $U1 = 0.51$ y no el valor definido por la Ecuación \eqref{eq:ecuacion101}, por lo que queda totalmente comprado que este es el mejor valor. 
+Después de realizar todas las pruebas para poder hallar el mejor valor para $N$ (número de patrones para la construcción del patrón de referencia) podemos ver que se obtuvieron mejores resultados para $N = 5$, además que sigue siendo el mejor valor para $U1 = 0.51$ y no el valor definido por la Ecuación \eqref{eq:ecuacion101}, por lo que queda totalmente corroborado que este es el mejor valor. 
 \vskip 0.5cm
 Si bien con $N = 5$ disminuimos en la quinta parte el tiempo de ejecución en la respuesta para el reconocimiento del locutor en el sistema, todavía no hemos comparado si este tiene menos errores que $N = 1$, a continuación, en la Tabla \ref{table:tabla4.34} veremos la cantidad de errores que se obtuvieron para estos dos casos.
 
@@ -1878,8 +1084,8 @@ $X^{2}_{cri} = 23.6848$
 
 \item[4.]Plantear las hipótesis.
 \par
-$H_{0}$: La respuesta del reconocimiento de voz es independiente del caso de control de acceso. \\
-$H_{1}$: La respuesta del reconocimiento de voz depende del caso de control de acceso.
+$H_{0}$: La respuesta del reconocimiento de voz utilizando MFCC y DTW es independiente del caso de control de acceso. \\
+$H_{1}$: La respuesta del reconocimiento de voz utilizando MFCC y DTW depende del caso de control de acceso.
 
 \item[5.] Construcción de las áreas de aceptación y rechazo.
 
@@ -1896,6 +1102,7 @@ $H_{1}$: La respuesta del reconocimiento de voz depende del caso de control de a
 \end{center}
 \end{figure}
 
+\newpage
 \item[6.]La Tabla \ref{table:tabla4.37} muestra los valores de la diferencia cuadrada de la frecuencia observada con la esperada y luego dividida entre la frecuencia esperada, teniendo todo esto pasaremos a calcular la ji-Cuadrada que no es más que la raíz cuadrada de la sumatoria de estos valores.
 
 \begin{center}
@@ -1934,7 +1141,7 @@ C8 & 24.25 & 11.5294118 & 24.9031915 \\
 \end{table}
 \end{center}
 
-\item[7.] Finalmente se obtuvo un $X^{2}_{exp} = 36.6772$, como podemos ver este valor es mayor al valor de $X^{2}_{cri} = 23.6848$, por lo que la hipótesis nula H0 se rechaza. Entonces podemos decir que con un nivel de confianza del 5\% se encontró que la respuesta del reconocimiento de voz depende del caso de control de acceso. Por lo que se contrasta la hipótesis planteada durante el proceso de elaboración del plan de investigación, es decir, que se logró demostrar la relación entre las variables de estudio formuladas en la investigación, por lo que podemos decir que el acceso a una vivienda puede ser controlado por reconocimiento de voz del locutor dependiente del texto utilizando MFCC Y DTW.
+\item[7.] Finalmente se obtuvo un $X^{2}_{exp} = 36.6772$, como podemos ver este valor es mayor al valor de $X^{2}_{cri} = 23.6848$, por lo que la hipótesis nula H0 se rechaza. Entonces podemos decir que con un nivel de confianza del 5\% se encontró que la respuesta del reconocimiento de voz utilizando MFCC y DTW depende del caso de control de acceso. Por lo que se contrasta la hipótesis planteada durante el proceso de elaboración del plan de investigación, es decir, que se logró demostrar la relación entre las variables de estudio formuladas en la investigación, por lo que podemos decir que el acceso a una vivienda puede ser controlado por reconocimiento de voz del locutor dependiente del texto utilizando MFCC Y DTW.
 
 \end{enumerate}
 
