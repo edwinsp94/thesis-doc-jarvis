@@ -45,12 +45,6 @@ Fermax (2016).
 \newblock
   \url{https://blog.fermax.com/esp/sistemas-de-identificación-en-el-control-de-accesos-cuál-elegir}.
 
-\bibitem[Franco, 2010]{franco}
-Franco, J. (2010).
-\newblock {\em Reconocimiento de Voz para Niños con Discapacidad en el Habla}.
-\newblock Ingeniería en Electrónica y Computadoras, Universidad de las
-  Américas Puebla, México.
-
 \bibitem[Furui, 1981]{furui}
 Furui, S. (1981).
 \newblock Cepstral analysis technique for automatic speaker verification.
@@ -82,12 +76,6 @@ Lee, K. (1989).
 \newblock {\em Automatic Speech Recognition}.
 \newblock Springer, New York.
 
-\bibitem[Llisterri, 2018]{joaquim}
-Llisterri, J. (2018).
-\newblock Las características acústicas de los sonidos del habla.
-\newblock
-  \url{http://liceu.uab.es/~joaquim/phonetics/fon_anal_acus/fon_acust.html}.
-
 \bibitem[Mathematics, 2015]{mathematics}
 Mathematics (2015).
 \newblock Normalisation of a range of numbers to another range.
@@ -110,11 +98,6 @@ Navarrete, O. (2013).
 Noergaard, T. (2012).
 \newblock {\em Embedded Systems Architecture}.
 \newblock Newnes, EE.UU.
-
-\bibitem[Owens, 1993]{owens}
-Owens, F. (1993).
-\newblock {\em Signal processing of speech}.
-\newblock McGraw-Hill, New York.
 
 \bibitem[Pérez et~al., 2013]{eyra}
 Pérez, E., Poceros, F., and Villalobos, J. (2013).

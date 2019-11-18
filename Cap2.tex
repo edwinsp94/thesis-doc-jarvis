@@ -9,7 +9,7 @@ En 1940’s y 1950’s, la mayoría de los investigadores reconocen que era un p
 \vskip 0.5cm
 Estos sistemas empiezan a incorporar técnicas de normalización del tiempo (minimizar diferencia en velocidad del habla). Además, ya no buscaban una exactitud perfecta en el reconocimiento. Después IBM y CMV trabajan en reconocimiento de voz continuo, pero no se ven resultados hasta los 1970’s, \citep{eyra}.
 \vskip 0.5cm
-En 1970’s, un ambicioso proyecto para construir un sistema informático que entienda y procese el habla fue iniciado por DARPA, la meta era integrar conocimiento acerca del habla, lingüística e inteligencia artificial para desarrollar un \textit{Sistema Informático del Lenguaje Hablado}. Se desarrolló un sistema informático llamado \textit{Harpy} que integraba todas las fuentes de conocimiento en redes de estado finito, que eran entrenadas estadísticamente. En estos años crecen notoriamente métodos que hacen uso de la probabilidad y se entiende por \textit{Reconocimiento Automático del Habla} como buscar la palabra más probable en una señal de audio, dada alguna información de su distribución de probabilidad, \citep{orlando}.
+En 1970’s, un ambicioso proyecto para construir un sistema informático que entienda y procese el habla fue iniciado por DARPA, la meta era integrar conocimiento acerca del habla, lingüística e inteligencia artificial para desarrollar un \textit{Sistema Informático del Lenguaje Hablado}, como resultado se obtuvo a \textit{Harpy} que integraba todas las fuentes de conocimiento en redes de estado finito, que eran entrenadas estadísticamente. En estos años crecen notoriamente métodos que hacen uso de la probabilidad y se entiende por \textit{Reconocimiento Automático del Habla} como buscar la palabra más probable en una señal de audio, dada alguna información de su distribución de probabilidad, \citep{orlando}.
 \vskip 0.5cm
 En 1980’s, modernos reconocedores son lanzados al mercado, los algoritmos desarrollados en este tiempo son usados todavía en estos días como: Modelos n-grams, Mixturas Gaussianas, Modelos Ocultos de Markov, Decodificador Viterbi, etc. En 1984 es construido el primer sistema de dictado en tiempo real, por IBM, \citep{orlando}.
 \vskip 0.5cm
@@ -17,29 +17,18 @@ En 1990’s, con el aumento del poder de cómputo y capacidad de memoria de las 
 \vskip 0.5cm
 En los años 2010’s, salió a la luz el asistente de voz Siri, realizando funciones de un asistente personal para dispositivos iOS, macOS, tvOS y watchOS. Esta aplicación utiliza procesamiento del lenguaje natural para responder preguntas, hacer recomendaciones y realizar acciones mediante la delegación de solicitudes hacia un conjunto de servicios web. También surgieron asistentes de voz como Cortana de Microsoft y Alexa de Amazon, \citep{timetoast2010}.
 \vskip 0.5cm
-En la actualidad, se espera que con el poder de cómputo actual de las máquinas y las diversas investigaciones en el tema, se logre aumentar el desempeño. Aplicaciones actuales van desde software para celulares, robótica hasta interfaces de voz para personas discapacitadas; desafortunadamente las comparaciones de error entre humanos y máquinas todavía dan un amplio margen de diferencia, por lo que se espera lograr que éste margen disminuya en los próximos años.
+En la actualidad, se espera que con el poder de cómputo actual de las máquinas y las diversas investigaciones en el tema, se logre aumentar el desempeño. Aplicaciones actuales van desde software para celulares, robótica hasta interfaces de voz para personas discapacitadas, desafortunadamente las comparaciones de error entre humanos y máquinas todavía dan un amplio margen de diferencia, por lo que se espera lograr que éste margen disminuya en los próximos años.
 
 \subsubsection{Fundamentos sobre sonidos y la señal de voz}
-Ahora veremos algunos conceptos empleados en el estudio de las señales de voz, así como en el funcionamiento de los sistemas generadores de voz, de tal forma que se puedan establecer las características que sirvan para realizar un correcto reconocimiento de voz. Existen varias maneras para analizar y describir el habla. Los enfoques más comúnmente usados son:
-\begin{enumerate}
-\item[•]\textbf{Articulación:} Análisis de cómo el humano produce los sonidos del habla.
-\item[•]\textbf{Señal Acústica:} Análisis de la señal de voz como una secuencia de sonidos.
-\item[•]\textbf{Percepción Auditiva:} Análisis de cómo el humano procesa el habla.
-\end{enumerate}
-
-Los tres enfoques proveen ideas y herramientas para obtener mejores y más eficientes resultados en el reconocimiento.
+Existen varias maneras para analizar y describir el habla, los enfoques más comúnmente usados son, la articulación que es el análisis de cómo el humano produce los sonidos del habla, la señal acustica que es el análisis de la señal de voz como una secuencia de sonidos y la percepción auditiva que es el análisis de cómo el humano procesa el habla, este último es el enfoque que usaremos para esta tesis. Los tres enfoques proveen ideas y herramientas para obtener mejores y más eficientes resultados en el reconocimiento.
 
 \begin{enumerate}
 \item[a)]Articulación
 \par
-La voz humana se produce por medio del aparato fonatorio, también llamado aparato bucal o articulatorio, el cual está formado por un conjunto de órganos. El aparato fonador consiste en tres grupos de órganos diferenciados, tal como se ve en la Figura \ref{fig:figura2.1}
-
-\begin{enumerate}
-\item[•]\textbf{Órganos de respiración o cavidades infraglóticas:} pulmones, bronquios y tráquea.
-\item[•]\textbf{Órganos de fonación o cavidades glóticas:} laringe, cuerdas vocales y resonadores nasal, bucal y faríngeo.
-\item[•]\textbf{Órganos de articulación o cavidades supraglóticas:} paladar, lengua, dientes, labios y glotis.
-\end{enumerate}
-
+La voz humana se produce por medio del aparato fonatorio, también llamado aparato bucal o articulatorio, el cual está formado por un conjunto de órganos. El aparato fonador consiste en tres grupos de órganos diferenciados, tal como se ve en la Figura \ref{fig:figura2.1}.
+\vskip 0.5cm
+Las voces del hombre y la mujer difieren debido a varios aspectos, que incluyen el tamaño de la laringe, el tono, el rango de tono, el espacio entre las cuerdas vocales y ocurrencia de problemas del habla. Antes de la pubertad, en promedio el tono y el tamaño de la laringe es el mismo tanto en hombres como en mujeres. La frecuencia fundamental de la voz (la cual está estrechamente relacionada con la percepción del tono) está alrededor de los 250 Hz y la longitud de las cuerdas vocales es de aproximadamente 10.4 mm.
+\newpage
 \begin{figure}[ht]
 \begin{center}
 \includegraphics[width=0.4\textwidth]{Imagenes/Cap2/image001}
@@ -52,60 +41,16 @@ La voz humana se produce por medio del aparato fonatorio, también llamado apara
 \end{center}
 \end{figure}
 
-El proceso básico de generación de la voz es el mismo ya sea al hablar o al cantar. El cerebro envía señales a través del sistema nervioso a los músculos de la cabeza, cuello y torso de manera que se produzca la inhalación previa a la generación. Al final de la inhalación se efectúan varias acciones, primero se realiza el movimiento de los cartílagos aritenoides en la laringe acercando a las cuerdas vocales entre sí, luego el volumen de los pulmones disminuye para producir una presión de aire positiva en los mismos, después el aire comienza a fluir hacia la laringe generando una excitación y esta adquiere las formas siguientes: fonación, susurro, fricación, compresión y vibración.
-
-\begin{figure}[ht]
-\begin{center}
-\includegraphics[width=0.4\textwidth]{Imagenes/Cap2/image002}
-\end{center}
-\begin{center}
-\vskip -0.5cm
-\caption{\small{Corte esquemático de la laringe en un plano horizontal.}}
-\label{fig:figura2.2}
-{\small{Fuente: \cite{owens}}}
-\end{center}
-\end{figure}
-
-Las voces del hombre y la mujer difieren debido a varios aspectos, que incluyen el tamaño de la laringe, el tono, el rango de tono, el espacio entre las cuerdas vocales y ocurrencia de problemas del habla. Antes de la pubertad, en promedio el tono y el tamaño de la laringe es el mismo tanto en hombres como en mujeres. La frecuencia fundamental de la voz (la cual está estrechamente relacionada con la percepción del tono) está alrededor de los 250 Hz y la longitud de las cuerdas vocales es de aproximadamente 10.4 mm. 
+En el habla los formantes se determinan por el proceso de filtrado que se produce en el tracto vocal por la configuración de los articuladores, es decir el sonido particular de la voz de cada persona está determinado por el tamaño y la forma de las cuerdas vocales, de la boca, etc. de tal manera que los sonidos se ven afectados por la forma del tracto vocal.
 \vskip 0.5cm
-Durante la pubertad, el tamaño de las cuerdas se incrementa en promedio de 5-10 mm. en el caso de los hombres y de 3-5 mm. en el caso de las mujeres. Este aumento reduce el tono promedio a 120 Hz en el hombre y 200 Hz en la mujer. De manera que el tono más alto de la mujer comparado con el hombre es casi una octava, significa que las cuerdas vocales vibran casi el doble de veces por segundo que en los hombres.
-\vskip 0.5cm
-En resumen, en el habla los formantes se determinan por el proceso de filtrado que se produce en el tracto vocal por la configuración de los articuladores, es decir el sonido particular de la voz de cada persona está determinado por el tamaño y la forma de las cuerdas vocales, de la boca, etc. de tal manera que los sonidos se ven afectados por la forma del tracto vocal.
-\vskip 0.5cm
-Dada la anterior explicación es necesaria una clasificación acústica, como la que se resume en la Tabla \ref{table:tabla2.1}.
-
-\begin{center}
-\begin{table}[h!]
-\centering
-\caption{\small{Clasificación acústica de los sonidos.}}
-\label{table:tabla2.1}
-\vskip 0.2cm
-\begin{tabular}{|p{4cm}|p{8cm}|p{3cm}|r|}
-\hline
-{\small Sonidos periódicos compuestos o complejos} & {\small Vibración de la cuerdas vocales(frecuencia fundamental, F0) y resonancia (armónicos)} & {\small Vocales, nasales, laterales}  \\ 
-\hline 
-{\small Sonidos aperiódicos impulsionales} & {\small Cierre y explosión en el tracto vocal} & {\small Oclusivas}  \\ 
-\hline 
-{\small Sonidos aperiódicos continuos} & {\small Fricción en el tracto vocal} & {\small Fricativas}  \\ 
-\hline 
-\end{tabular} 
-\begin{center}
-\vskip 0.2cm
-{\small{Fuente: \cite{joaquim}}}
-\end{center}
-\end{table}
-\end{center}
-
-Los formantes son elementos que sirven para distinguir componentes del habla humana, principalmente, las vocales y sonidos sonantes. El formante con la frecuencia más baja se llama \textit{F1}, el segundo \textit{F2}, el tercero \textit{F3}, etc. Normalmente sólo los dos primeros son necesarios para caracterizar una vocal, aunque la pueden caracterizar más formantes. Generalmente, los formantes posteriores determinan propiedades acústicas como el timbre.
-\newpage
-No todos los sonidos se componen de formantes definidos. Solamente aparecen en sonantes, que incluyen los sonidos pulmonares (vocales y nasales). Los nasales tienen un formante adicional \textit{F3}, en torno a los 1500 Hz. Si la frecuencia fundamental es mayor que la frecuencia de los formantes, entonces el carácter del sonido se pierde y se vuelven difíciles de distinguir, por lo cual son difíciles de reconocer. En la Tabla \ref{table:tabla2.2} se muestran algunos anchos de banda entre los cuales se localizan las vocales:
+Los formantes son elementos que sirven para distinguir componentes del habla humana, principalmente, las vocales y sonidos sonantes. El formante con la frecuencia más baja se llama \textit{F1}, el segundo \textit{F2}, el tercero \textit{F3}, etc. Normalmente sólo los dos primeros son necesarios para caracterizar una vocal, aunque la pueden caracterizar más formantes. Generalmente, los formantes posteriores determinan propiedades acústicas como el timbre. En la Tabla \ref{table:tabla2.2} se muestran algunos anchos de banda entre los cuales se localizan las vocales:
 
 \begin{center}
 \begin{table}[h!]
 \centering
 \caption{\small{Formantes vocálicos.}}
 \label{table:tabla2.2}
-\vskip 0.2cm
+\vskip 0.1cm
 \begin{tabular}{|c|c|c|}
 \hline
 {\small Vocal} & {\small Región principal formantica}\\ 
@@ -130,39 +75,17 @@ No todos los sonidos se componen de formantes definidos. Solamente aparecen en s
 
 \item[b)]Señal acústica
 \par
-Un reconocedor no puede analizar los movimientos en la boca. En su lugar, la fuente de información es la señal de voz misma. El habla es una señal analógica, es decir, un flujo continuo de ondas sonoras y silencios. El conocimiento de la ciencia de la acústica se utiliza para identificar y describir los atributos del habla que son necesarios para un reconocimiento de voz efectivo, \cite{luis}.
+Un reconocedor no puede analizar los movimientos en la boca. En su lugar, la fuente de información es la señal de voz misma. El habla es una señal analógica, es decir, un flujo continuo de ondas sonoras y silencios. El conocimiento de la ciencia de la acústica se utiliza para identificar y describir los atributos del habla que son necesarios para un reconocimiento de voz efectivo. Algunas características importantes del análisis acústico son, la frecuencia, la amplitud, la resonancia, la estructura armónica, el ruido y la coarticulación, \cite{luis}.
 \vskip 0.5cm
-Algunas características importantes del análisis acústico son:
-\begin{enumerate}
-\item[•]Frecuencia y amplitud:
-\par
 La frecuencia es el número de vibraciones (ciclos) del tono por segundo y se mide en Hz (hertz), donde los tonos altos tienen mayor frecuencia y los tonos bajos tienen menor frecuencia. Por otro lado, el volumen de un sonido refleja la cantidad de aire que es forzada a moverse, esta describe y representa la amplitud de la onda y se mide en dBC (decibéles).
-
-\item[•]Resonancia:
-\par
-La resonancia se define comúnmente como la habilidad que tiene una fuente vibrante de sonido de causar que otro objeto vibre gracias a ella. La mayoría de los sonidos incluyendo el habla tienen una frecuencia dominante llamada frecuencia fundamental, también conocida como pitch (tono) que es la velocidad a la que vibran las cuerdas vocales al producir un fonema sonoro. Sumadas a la frecuencia fundamental hay otras frecuencias que contribuyen al timbre del sonido (permiten distinguir una trompeta de un violín, las voces de diferentes personas, etc.) llamados formantes.
-
-\item[•]Estructura armónica y ruido:
-\par
-El habla no es un tono puro es continuación de múltiples frecuencias y se representa como una onda compleja. Las vocales se componen de 2 o más ondas simples, ricos en frecuencias secundarias y contienen estructuras internas de ondas cíclicas y acíclicas.
 \vskip 0.5cm
-Las ondas acíclicas no tienen patrones repetitivos, son llamados ruido y forman parte de todos los fonemas sonoros, consonantes y semivocales. Las frecuencias y características de estas ondas proveen información importante sobre la identidad de los fonemas.
-\vskip 0.5cm
-La identidad de las consonantes también se revela por el cambio en las formantes que resultan cuando los articuladores se mueven de un fonema anterior a la consonante y de ella al siguiente fonema llamadas transiciones de formantes. Estas se analizan utilizando técnicas como FFT (Transformada Rápida de Fourier) generando espectrogramas.
+La resonancia se define como la habilidad que tiene una fuente vibrante de sonido de causar que otro objeto vibre gracias a ella. La mayoría de los sonidos incluyendo el habla tienen una frecuencia dominante llamada frecuencia fundamental, también conocida como pitch (tono) que es la velocidad a la que vibran las cuerdas vocales al producir un fonema sonoro. Sumadas a la frecuencia fundamental hay otras frecuencias que contribuyen al timbre del sonido (permiten distinguir las voces de las personas) llamados formantes.
 
-\item[•]Coarticulación:
-\par
-Los fonemas aparentemente tienen parámetros acústicos claramente definidos, pero más bien, los fonemas tienden a ser abstracciones implícitamente definidas por la pronunciación de palabras en un lenguaje. La forma acústica de un fonema depende fuertemente del contexto acústico en el que sucede, a éste efecto se le llama coarticulación. Los investigadores, utilizan este concepto para distinguir entre la característica conceptual de un sonido del habla y una instancia o pronunciación específica de ese fonema, \cite{franco}.
-\end{enumerate}
-
-\newpage
 \item[c)]Percepción auditiva
 \par
 La variabilidad del habla producida por coarticulación y otros factores hacen del análisis de la voz extremadamente difícil. La facilidad del humano en superar estas dificultades sugiere que un sistema basado en la percepción auditiva podría ser un buen enfoque desafortunadamente el conocimiento de la percepción humana es incompleto, lo que se sabe es que el sistema auditivo está adaptado a la percepción de la voz.
 \vskip 0.5cm
-El oído humano detecta frecuencias de 20 a 20000 Hz, pero es más sensible al rango entre 1000 y 6000 Hz, además de los pequeños cambios en la frecuencia en el ancho de banda, crítico para el habla. El patrón de sensibilidad a cambios en el tono no corresponde a la escala lineal de frecuencias de ciclos por segundo de la acústica. Para representar mejor al patrón de percepción acústica, se tiene una escala llamada \textit{Escala de Mel}, la cual es una escala logarítmica que representa los niveles de la señal.
-\vskip 0.5cm
-El humano no procesa frecuencias individuales independientemente, como lo sugiere el análisis acústico. En su lugar escucha grupos de frecuencias por lo cual es capaz de distinguirlas de ruidos alrededor, \cite{eyra}.
+El oído humano detecta frecuencias de 20 a 20000 Hz, pero es más sensible al rango entre 1000 y 6000 Hz, además de los pequeños cambios en la frecuencia en el ancho de banda, crítico para el habla. El patrón de sensibilidad a cambios en el tono no corresponde a la escala lineal de frecuencias de ciclos por segundo de la acústica. Para representar mejor al patrón de percepción acústica, se tiene una escala llamada \textit{Escala de Mel}, la cual es una escala logarítmica que representa los niveles de la señal, \cite{eyra}.
 \end{enumerate}
 
 \subsubsection{Funcionamiento de un sistema de reconocimiento de voz}
@@ -254,7 +177,7 @@ Como ya se mencionó, el preprocesamiento es un módulo presente en las etapas d
 \end{center}
 \end{figure}
 
-El preprocesamiento consta de los siguientes módulos: convertidor A/D, eliminación de ruido, filtro de preénfasis, ventaneo o segmentación, detección de ruido ambiental y detección de inicio y fin de la señal de voz. Estos módulos se describen a continuación:
+El preprocesamiento consta de los siguientes módulos: convertidor A/D, eliminación de ruido, filtro de preénfasis, ventaneo o segmentación y detección de inicio y fin de la señal de voz. Estos módulos se describen a continuación:
 
 \begin{enumerate}
 \item[a)]Digitalización de la señal de voz
@@ -281,7 +204,7 @@ El micrófono es un transductor electroacústico. Su función es la de transform
 \vskip 0.5cm
 Como se dijo, el audio es un fenómeno analógico. Para grabar una señal de voz se hace la conversión de la señal analógica del micrófono en una señal digital por medio del conversor A/D en la tarjeta de sonido. Cuando un micrófono está operando las ondas de sonido hacen que vibre el elemento magnético del micrófono, causando una corriente eléctrica hacia la tarjeta de sonido, donde el conversor A/D básicamente graba los voltajes eléctricos en intervalos específicos.
 \vskip 0.5cm
-Hay dos factores importantes durante este proceso. Primero está la taza de muestreo, es decir que tan seguido los valores de voltaje son grabados. Segundo, son los bits por segundo, en otras palabras, que tan exactamente los valores son grabados. Un tercero podría ser el número de canales (mono o estéreo), pero para las aplicaciones de reconocimiento de voz un canal (mono) es suficiente.
+Hay dos factores importantes durante este proceso. Primero está la taza de muestreo, es decir que tan seguido los valores de voltaje son grabados. Segundo,es la resolución que son los bits por segundo, en otras palabras, que tan exactamente los valores son grabados. Un tercero podría ser el número de canales (mono o estéreo), pero para las aplicaciones de reconocimiento de voz un canal (mono) es suficiente.
 
 \item[•]Ancho de banda y muestreo
 \par
@@ -317,13 +240,9 @@ En donde $N_{x}$ es el número total de muestras presentes en la señal de voz. 
 \end{center}
 \end{figure}
 
-La señal discreta de voz \textit{x(n)} esta indizada por la variable \textit{n}, que da una normalización de la señal, es decir, que ésta no contiene ninguna información explícita acerca de la frecuencia de muestreo. Aunque las muestras definen una señal discreta, se acostumbra unir éstas para que formen una curva continua para representar la señal de voz.
-
 \item[•]Resolución o cuantificación
 \par
-La cuantificación es uno de los pasos que se siguen para lograr la digitalización de una señal analógica. Este proceso convierte una sucesión de muestras de amplitud continua en una sucesión de valores discretos preestablecidos según el código utilizado.
-\vskip 0.5cm
-Durante el proceso de cuantificación se mide el nivel de tensión de cada una de las muestras, obtenidas en el proceso de muestreo, y se les atribuye un valor finito de amplitud, seleccionado por aproximación dentro de un margen de niveles previamente fijado. En la Figura \ref{fig:figura2.11} se muestra un ejemplo utilizando 2 bits donde se pueden representar 4 valores diferentes y con 4 bits 16 valores.
+Este proceso convierte una sucesión de muestras de amplitud continua en una sucesión de valores discretos preestablecidos según el código utilizado. Durante el proceso de cuantificación se mide el nivel de tensión de cada una de las muestras, obtenidas en el proceso de muestreo, y se les atribuye un valor finito de amplitud, seleccionado por aproximación dentro de un margen de niveles previamente fijado. En la Figura \ref{fig:figura2.11} se muestra un ejemplo utilizando 2 bits donde se pueden representar 4 valores diferentes y con 4 bits 16 valores.
 
 \begin{figure}[ht]
 \begin{center}
@@ -337,30 +256,9 @@ Durante el proceso de cuantificación se mide el nivel de tensión de cada una d
 \end{center}
 \end{figure}
 
-Esto se puede ver como la resolución:
-\begin{enumerate}
-\item[-]El error o diferencia entre la señal original y la reconstruida se percibe como ruido.
-\item[-]Por lo tanto, a mayor resolución menor ruido como consecuencia.
-\item[-]La resolución (número de bits por muestra) se describe generalmente en términos de la relación señal a ruido (Signal to Noise Ratio o SNR).
-\item[-]A mayor SNR es mayor la fidelidad de la señal digitalizada.
-\item[-]SNR es aproximadamente $2^B$ (B=bits/muestra)
-\item[-]Es independiente de la frecuencia de muestreo.
-\end{enumerate}
-\vskip 0.3cm
-Existen diferentes técnicas de cuantificación: uniforme, no uniforme, logarítmica y vectorial, \cite{rama}. En los cuantificadores uniformes o lineales la distancia entre los niveles de reconstrucción es siempre la misma, la mayoría usan un número de niveles que es una potencia de 2, ver Figura \ref{fig:figura2.12}. No hacen ninguna suposición acerca de la señal a cuantificar, de allí que no proporcionen los mejores resultados, pero su ventaja es que son más fáciles y económicos al implementarlos, es por esto que usaremos esta técnica para nuestra investigación.
-\vskip 0.4cm
-La cuantificación más usada, es de 8 bits, mínimo requerido para una calidad baja, puede mejorarse su SNR con una técnica no lineal de cuantificación, pero se obtienen excelentes resultados aumentando la cuantificación a 16 bits, \cite{kaifu}.
-\begin{figure}[ht]
-\begin{center}
-\includegraphics[width=0.3\textwidth]{Imagenes/Cap2/image012}
-\end{center}
-\begin{center}
-\vskip -0.5cm
-\caption{\small{Señal cuantificada uniformemente.}}
-\label{fig:figura2.12}
-{\small{Fuente: \cite{rama}}}
-\end{center}
-\end{figure}
+Existen diferentes técnicas de cuantificación: uniforme, no uniforme, logarítmica y vectorial, \cite{rama}. En los cuantificadores uniformes la distancia entre los niveles de reconstrucción es siempre la misma, la mayoría usan un número de niveles que es una potencia de 2. No hacen ninguna suposición acerca de la señal a cuantificar, de allí que no proporcionen los mejores resultados, pero su ventaja es que son más fáciles y económicos al implementarlos, por ello emplearemos esta técnica para nuestra investigación.
+\vskip 0.5cm
+La cuantificación más usada, es de 8 bits, mínimo requerido para una calidad baja, puede mejorarse su SNR (Relacion Señal a Ruido) con una técnica no lineal de cuantificación, pero se obtienen excelentes resultados aumentando la cuantificación a 16 bits, \cite{kaifu}.
 \end{enumerate}
 
 \item[b)]Eliminación de ruido y normalización
@@ -378,25 +276,10 @@ El ruido es como una señal no deseada, es un elemento independiente de la seña
 \begin{enumerate}
 \item[•]Cancelación de ruido aditivo
 \par
-En los sistemas de cancelación de ruido podemos encontrar dos tipos de filtros, los filtros digitales y los filtros adaptativos. Los filtros digitales solo pueden ser usados en ambientes de ruido estacionario, ya que es necesario conocer a priori las estadísticas del ruido, una solución a esto son los filtros adaptativos.
+Para nuestra investigación nos centraremos en la cancelacíon de ruido aditivo, donde podemos encontrar dos tipos de filtros, los digitales y los adaptativos. Los filtros digitales solo pueden ser usados en ambientes de ruido estacionario, por lo que es necesario conocer a priori las estadísticas del ruido, ejemplos de estos filtros son el filtro Weiner y el filtro Kalman, ver en \cite{shubhra}.
 \vskip 0.5cm
-El propósito de los filtros digitales es separar señales que se han combinado y restaurar señales que se han distorsionado de alguna manera. La separación de señales se requiere cuando una señal se ha contaminado con una interferencia, ruido, u otras señales. Los filtros Weiner y filtros Kalman son ejemplos de filtros digitales, ver la Figura \ref{fig:figura2.14}, \cite{shubhra}.
-
+Por otro lado, los filtros adaptativos confian en el uso de una fuente de ruido para eliminar el ruido de una señal recibida. Básicamente, un cancelador de ruido adaptativo es un arreglo de doble entrada de lazo cerrado del sistema de realimentación como se ilustra en la Figura \ref{fig:figura2.15}, se derivan las dos entradas del sistema de un par de sensores: un sensor primario y un sensor de referencia (auxiliar).
 \newpage
-\begin{figure}[ht]
-\begin{center}
-\includegraphics[width=0.5\textwidth]{Imagenes/Cap2/image014}
-\end{center}
-\begin{center}
-\vskip -0.5cm
-\caption{\small{Ilustración de la estructura de un filtro Wiener.}}
-\label{fig:figura2.14}
-{\small{Fuente: \cite{shubhra}}}
-\end{center}
-\end{figure}
-\vskip -0.5cm
-Por otro lado, los filtros adaptativos confian en el uso de una fuente de ruido para eliminar el ruido de una señal recibida. Básicamente, un cancelador de ruido adaptativo es un arreglo de doble entrada de lazo cerrado del sistema de realimentación como se ilustra en la Figura \ref{fig:figura2.15}, se derivan las dos entradas del sistema de un par de sensores: un sensor primario y un sensor de referencia (auxiliar), ver Figura \ref{fig:figura2.15}.
-
 \begin{figure}[ht]
 \begin{center}
 \includegraphics[width=0.65\textwidth]{Imagenes/Cap2/image015}
@@ -408,7 +291,7 @@ Por otro lado, los filtros adaptativos confian en el uso de una fuente de ruido 
 {\small{Fuente: \cite{walter}}}
 \end{center}
 \end{figure}
-
+\vskip -0.5cm
 Específicamente, nosotros tenemos lo siguiente:
 \begin{enumerate}
 \item[1.]El sensor primario recibe una señal que lleva información \textit{s(n)} adulterada por un ruido aditivo \textit{$v_{0}(n)$}, como se muestra en la Ecuación \eqref{eq:ecuacion1}.
@@ -465,53 +348,16 @@ Así que, minimizando el error cuadrático medio de la señal $e(n)$ es equivale
 \vskip 0.5cm
 El uso efectivo del cancelador de ruido adaptativo requiere que se coloque el sensor de referencia en el campo de ruido del sensor primario.
 \vskip 0.5cm
-\item[•]Estructura de los filtros adaptativos
-\par
-El algoritmo adaptativo debe disponer del error $e(n)$ para actualizar los coeficientes, ya que $e(n)$ permite definir las mejoras del filtro y determinar la forma en que han de modificarse dichos coeficientes. La eficiencia de un filtro adaptativo lineal depende de una serie de factores, como el tipo de filtro (IIR o FIR), la estructura del mismo (transversal, de celosía o sistólico), o la función de costo usada como criterio de adaptación (error cuadrático medio, mínimo error cuadrático, etc.).
-\vskip 0.5cm
-Nuestro estudio se va a centrar en el filtro FIR (Respuesta Finita al Impulso) por varias razones:
-\begin{enumerate}
-\item[-]El error cuadrático medio para un filtro transversal es una función cuadrática de los pesos del filtro. La superficie de error es un paraboloide con sólo un mínimo, y por ello, la búsqueda del error cuadrático medio mínimo es relativamente sencilla.
-\item[-]Dado que los coeficientes del filtro son limitados, se puede controlar fácilmente la estabilidad del filtro.
-\item[-]Existen algoritmos para la actualización de los coeficientes que con filtros FIR son mucho más simples y eficientes.
-\item[-]Las prestaciones de estos algoritmos son perfectamente conocidas en términos de convergencia y estabilidad.
-\end{enumerate}
-De los tres tipos de estructuras de filtro que se distinguen en el contexto de un filtro adaptativo lineal, vamos a conceder toda la atención al tipo transversal.
-\begin{figure}[ht]
-\begin{center}
-\includegraphics[width=0.6\textwidth]{Imagenes/Cap2/image016}
-\end{center}
-\begin{center}
-\vskip -0.5cm
-\caption{\small{Filtro transversal.}}
-\label{fig:figura2.16}
-{\small{Fuente: \cite{walter}}}
-\end{center}
-\end{figure}
-
-Los filtros transversales, también llamados filtros directos de pesos retardados, consisten en tres elementos básicos, como se describió en la Figura \ref{fig:figura2.16}, primero los elementos de unidad de retardo, segundo el multiplicador, y tercero la sumatoria. El número de elementos de retardo usados en el filtro, mostrado como $M-1$ en la Figura \ref{fig:figura2.16}, determinan el filtro FIR, estos normalmente estan referidos al orden del filtro. Los elementos de retardo son identificados por el operador de la unidad de retraso $z^{-1}$. 
-\vskip 0.5cm
-En particular, cuando $z^{-1}$ opera en la entrada $u(n)$, la salida resultante es $u(n-1)$. El papel de cada multiplicador en el filtro es realizar el producto del valor de entrada por un coeficiente del filtro. Así un multiplicador conectado $k$ veces a entradas retardadas $u(n-k)$ produce la versión del escalar de que es el producto interno, $w^{*}_{k}u(n-k)$, donde $w_{k}$ va desde $k=1$ a $M$. El asterisco denota la conjugación compleja que asume la entrada y por consiguiente también los pesos actualizables son valores complejos. 
-\vskip 0.5cm
-El papel combinado de las sumatorias en el filtro es sumar los resultados de los productos individuales y producir una salida total del filtro. Para el filtro transversal descrito en la Figura \ref{fig:figura2.16}, la salida está dada de la siguiente manera:
-\begin{equation}
-\label{eq:ecuacion8}
-y(n) = \sum_{k=0}^{M-1}W_{k} \cdot u(n-k)
-\end{equation}
-La ecuación es llamada sumatoria de convolución finita, en el sentido que la respuesta convoluciona el impulso de duración finita del filtro, $w^{*}_{n}$, con la entrada $u(n)$ del filtro, luego cada producto individual se suma para dar como resultado $y(n)$.
-\vskip 0.5cm
-La estructura transversal es la más sencilla de implementar, conduciendo a algoritmos igualmente sencillos. La estructura de celosía, presenta mejores propiedades, pues ofrece mayor robustez frente a errores de redondeo y una mayor eficiencia computacional. Sin embargo, aumenta la complejidad de los algoritmos. Por lo tanto, en el presente trabajo de tesis se adopta la primera estructura debido a su sencillez, pero aun así con buen desempeño.
-\vskip 0.5cm
 \item[•]Algoritmos de filtros adaptativos
 \par
-El filtro adaptativo ajusta sus coeficientes con un objetivo, garantizar la posible convergencia más rápida a los parámetros óptimos del punto de vista del criterio adoptado. La mayoría de algoritmos adaptivos significa modificaciones de los procedimientos iterativos normales para la solución del problema de minimización de la función de criterio en tiempo real. El más común de filtros adaptativos es el filtro transversal (escogido para nuestra investigación) y es usado por ejemplo en los algoritmos LMS (Mínimo Error Cuadrado Medio) y RLS (Mínimo Error Cuadrado Recursivo). Para lograr un buen desempeño del filtro adaptativo requiere el uso del mejor algoritmo adaptivo con baja complejidad computacional y un rango de convergencia rápido, es por esto que veremos el algoritmo LMS y su variante NLMS.
+El filtro adaptativo ajusta sus coeficientes con un objetivo, garantizar la posible convergencia más rápida a los parámetros óptimos del punto de vista del criterio adoptado. El más común de los filtros adaptativos es el filtro transversal (escogido para nuestra investigación), ver en \cite{walter}, y es usado por ejemplo en los algoritmos LMS (Mínimo Error Cuadrado Medio) y RLS (Mínimo Error Cuadrado Recursivo). Para lograr un buen desempeño del filtro adaptativo requiere el uso del mejor algoritmo adaptivo con baja complejidad computacional y un rango de convergencia rápido, debido a esto veremos el algoritmo LMS y su variante NLMS.
 
 \begin{enumerate}
 \item[-]Algoritmo Least Mean Square (LMS)
 \par
 Desarrollado por Windrow y Hoff, este algoritmo usa un descenso de la gradiente para estimar una variación del tiempo en la señal. El método de descenso de la gradiente encuentra un mínimo (si este existe), tomando los pasos en la dirección negativa de la gradiente y hace esto para ir ajustando los coeficientes del filtro para minimizar el error. La gradiente es un operador y se aplica para encontrar la divergencia de una función, que es el error con respecto en este caso al número de coeficientes. 
 \vskip 0.5cm
-El algoritmo LMS se ha aceptado por varios investigadores para la aplicación en el hardware debido a su estructura simple. Para llevarlo a cabo, las modificaciones tienen que ser hechas al algoritmo LMS original porque los bucles recursivos en la fórmula de actualización del filtro le impide ser un flujo lineal.
+El algoritmo LMS es aceptado por varios investigadores para la aplicación en el hardware debido a su estructura simple. Para llevarlo a cabo, las modificaciones tienen que ser hechas al algoritmo LMS original porque los bucles recursivos en la fórmula de actualización del filtro le impide ser un flujo lineal.
 \vskip 0.5cm
 La Ecuación \ref{eq:ecuacion9} muestra el detalle del algoritmo LMS, la evaluación de pesos:
 \begin{equation}
@@ -539,7 +385,7 @@ De estas ecuaciones, en cada iteración la información de la mayoría de los re
 \vskip 0.5cm
 \item[-]Algoritmo Normalized Least Mean Square (NLMS)
 \par
-La debilidad principal del LMS del tipo convencional radica en su complejidad seleccionando un valor conveniente para el parámetro de tamaño de paso que garantiza la estabilidad. Ante este inconveniente, fue propuesto el NLMS, controlando el factor de la convergencia del LMS a través de la modificación en un parámetro de tamaño de paso de tiempo variante. 
+La debilidad principal del LMS radica en su complejidad seleccionando un valor conveniente para el parámetro de tamaño de paso que garantiza la estabilidad. Debido a esto, fue propuesto el NLMS, controlando el factor de la convergencia del LMS a través de un parámetro de tamaño de paso de tiempo variante. 
 \vskip 0.5cm
 El NLMS emplea un parámetro de tamaño de paso inconstante pensado a minimizar el error de salida instantáneamente el cual converge más rápidamente que el LMS convencional. El algoritmo LMS convencional experimenta en la gradiente problemas de amplificación de ruido cuando el factor de la convergencia $\mu$ es grande. La corrección se aplicó al vector de pesos $w(n)$ al $n+1$ de la iteración, es normalizada con respecto al cuadrado de la norma euclidiana del vector de entrada $x(n)$ a la iteración $n$. 
 \vskip 0.5cm
@@ -559,8 +405,6 @@ w(n+1) = w(n) + \frac{\beta }{c+\left \| x(n) \right \|^{2}}e(n)x(n)
 \vskip 0.5cm
 En comparación al LMS, el NLMS tiene tamaño de paso variante que hace al NLMS para converger más rápidamente. Para sacar mejores aplicaciones se han desarrollado varias variantes del LMS, ver la Tabla \ref{table:tabla24}.
 \end{enumerate}
-\vskip 0.5cm
-Además del LMS, NLMS y sus variantes, existen otros algoritmos adaptivos como el algoritmo RLS (Mínimo Error Cuadrado Recursivo), el algoritmo CMA (Adaptivo de Módulo Constante), el algoritmo DMI (Adaptivo de Inversión de Matriz Directa), los cuales pueden verse en \citep{shubhra}.
 
 \begin{center}
 \begin{table}[h!]
@@ -581,31 +425,15 @@ Además del LMS, NLMS y sus variantes, existen otros algoritmos adaptivos como e
 \end{center}
 \end{table}
 \end{center}
-
-\item[•]Convergencia
-\par
-Los coeficientes del filtro adaptativo se modifican constantemente hasta lograr que el error sea mínimo, es decir el algoritmo alcance la convergencia, dicho de otra manera, que la entrada se aproxime a la respuesta deseada. Para precisar lo que sucede, supongamos que el orden del filtro es $M=2$, es decir los coeficientes son de la forma $w(n)=[w1(n) w2(n)]$, siendo $\xi$ el error donde $\xi_{min}$ es el mínimo.
-\vskip 0.5cm
-Entonces el sistema se puede graficar en un espacio de tres dimensiones,ver la Figura \ref{fig:figura2.20}, cuando empieza el algoritmo, el error es grande y a medida que el tiempo transcurre, los coeficientes van descendiendo por la curva a una velocidad relativa a $\mu$ hasta llegar a $\xi_{min}$. Pero se debe tener en cuenta que este proceso no sucede de una manera trunca, sino similar a una pelota deslizándose por la pared interna cuando llega al fondo, pasa de largo y vuelve a subir, pero con menor impulso y luego vuelve a bajar y así sucesivamente hasta detenerse en el fondo. El tiempo que se demore en detenerse en el fondo es el tiempo de convergencia y $w_{0}$ es el punto de convergencia.
-
-\begin{figure}[ht]
-\begin{center}
-\includegraphics[width=0.4\textwidth]{Imagenes/Cap2/image020}
-\includegraphics[width=0.4\textwidth]{Imagenes/Cap2/image021}
-\end{center}
-\begin{center}
 \vskip -0.5cm
-\caption{\small{Convergencia y error mínimo.}}
-\label{fig:figura2.20}
-{\small{Fuente: \cite{simon}}}
-\end{center}
-\end{figure}
+Además del LMS, NLMS y sus variantes, existen otros algoritmos adaptivos como el algoritmo RLS (Mínimo Error Cuadrado Recursivo), el algoritmo CMA (Adaptivo de Módulo Constante), el algoritmo DMI (Adaptivo de Inversión de Matriz Directa), los cuales pueden verse en \citep{shubhra}.
 \end{enumerate}
-\vskip -0.5cm
+
+\newpage
 En \citep{simon} se realizaron pruebas para obtener el mejor número de orden $M$ y tamaño de paso $\mu$ para el algoritmo LMS y el mejor número de orden $M$, la constante de adaptación $\beta$ y el término constante para la normalización $c$ para el algoritmo NLMS. Estas pruebas se realizaron con un micrófono primario ubicado a 2 metros de la fuente de ruido (equipo de sonido) y un segundo micrófono ubicado a 50 cm de esta fuente. Se concluyo que cuando se utiliza un tamaño de paso grande ($\mu > 0.03$) el error en un determinado momento se eleva, el valor de $W$ se torna inestable, por lo cual se debe elegir un valor menor. 
 \vskip 0.5cm
 En la Figura \ref{fig:figura2.21} se puede apreciar como la energía se va reduciendo desde $M=32$ hasta $M=128$, pero luego vuelve a incrementarse como se dijo anteriormente. Entonces se puede concluir que el mejor valor de $M$ bordea el valor 128.
-
+\vskip 0.2cm
 \begin{figure}[ht]
 \begin{center}
 \includegraphics[width=0.45\textwidth]{Imagenes/Cap2/image022}
@@ -617,12 +445,9 @@ En la Figura \ref{fig:figura2.21} se puede apreciar como la energía se va reduc
 {\small{Fuente: \cite{simon}}}
 \end{center}
 \end{figure}
-\vskip -0.5cm
-El error varía poco para un tamaño de paso entre 0.02 y 0.08 además debe ser menor a 0.03 para evitar el desborde, por lo que se eligió el valor de 0.02 que asegura la estabilidad del filtro y mantiene el error a un nivel aceptable, ver la Figura \ref{fig:figura2.22}.
-
-En la Figura \ref{fig:figura2.23} se puede apreciar que se obtuvo una buena eficiencia hasta 81dBC de ruido a 2m de distancia de los parlantes. Para el algoritmo NLMS se propuso los valores de $M =128$ al igual que el del LMS, con $\beta = 0.25$ y $c = 0.0001$.
-
 \newpage
+El error varía poco para un tamaño de paso entre 0.02 y 0.08 además debe ser menor a 0.03 para evitar el desborde, por lo que se eligió el valor de 0.02 que asegura la estabilidad del filtro y mantiene el error a un nivel aceptable, ver la Figura \ref{fig:figura2.22}.
+\vskip 0.2cm
 \begin{figure}[ht]
 \begin{center}
 \includegraphics[width=0.45\textwidth]{Imagenes/Cap2/image023}
@@ -631,10 +456,12 @@ En la Figura \ref{fig:figura2.23} se puede apreciar que se obtuvo una buena efic
 \vskip -0.5cm
 \caption{\small{Valor para el número de orden M con $\mu$\protect=0.02.}}
 \label{fig:figura2.22}
-
 {\small{Fuente: \cite{simon}}}
 \end{center}
 \end{figure}
+\vskip -0.5cm
+En la Figura \ref{fig:figura2.23} se puede apreciar que se obtuvo una buena eficiencia hasta 81dBC de ruido a 2m de distancia de los parlantes. Para el algoritmo NLMS se propuso los valores de $M =128$ al igual que el del LMS, con $\beta = 0.25$ y $c = 0.0001$.
+\vskip 0.2cm
 \begin{figure}[ht]
 \begin{center}
 \includegraphics[width=0.5\textwidth]{Imagenes/Cap2/image024}
@@ -646,13 +473,13 @@ En la Figura \ref{fig:figura2.23} se puede apreciar que se obtuvo una buena efic
 {\small{Fuente: \cite{simon}}}
 \end{center}
 \end{figure}
-
-Finalmente, esta etapa de eliminación de ruido estará conformada por dos submódulos, el primero será la eliminación de ruido donde evaluaremos los algoritmos LMS Y NLMS para luego elegir el que tenga un mejor desempeño y el segundo es la normalización de la señal después de haber aplicado el filtro adaptativo, debido a que puede haber un aumento en el espectro de potencia.
-
 \newpage
+Finalmente, esta etapa de eliminación de ruido estará conformada por dos submódulos, el primero será la eliminación de ruido donde evaluaremos los algoritmos LMS Y NLMS para luego elegir el que tenga un mejor desempeño y el segundo es la normalización de la señal después de haber aplicado el filtro adaptativo, debido a que puede haber un aumento en el espectro de potencia.
+\vskip 0.5cm
 En \cite{mathematics} se muestra la formula para la normalización de la señal:\\
 $[c, d]$ = rango de entrada mínimo y máximo.\\
-$[m, n]$ = rango de salida mínimo y máximo.\\
+$[m, n]$ = rango de salida mínimo y máximo.
+\vskip 0.5cm
 Donde:
 \begin{equation}
 \label{eq:ecuacion14}
@@ -678,18 +505,6 @@ La tarea de separar la voz del espacio de silencio no es una tarea tan simple co
 \vskip 0.5cm
 Sin embargo, dichas condiciones ideales de grabación no son prácticas para las aplicaciones del mundo real. Por ende, la simple medición de la energía se convierte en una condición necesaria más no suficiente para separar los fricativos débiles del fondo de silencio.
 \vskip 0.5cm
-Algunos de los problemas que se presentan en la detección son:
-\begin{enumerate}
-\item[-]Silencios contenidos dentro de las palabras que tienen fonemas plosivos (\textit{ej. /t/, /p/, /k/}) que pueden confundirse con un falso principio o fin. 
-\item[-]Presencia de espurias de ruido que se pueden confundir con la señal. 
-\item[-]Los fonemas fricativos (\textit{ej. /f/, /th/, /h/, etc.}), ya que tienen baja energía.
-\item[-]Sonidos cortos (\textit{ej. /t/, /p/, /k/}).
-\item[-]Detección de fonemas nasales al final de la palabra.
-\item[-]Respiraciones del locutor, que pueden confundirse por su duración.
-\item[-]Los micrófonos tienen resonancia después de pronunciar una palabra (sobre todo en vocales).
-\item[-]Los niveles de ruido pueden confundirse con la señal de voz.
-\end{enumerate}
-
 En este trabajo de tesis se evaluará el algoritmo por función de energía y los algoritmos propuestos por Rabiner y Sambur, la expuesta en \citep{unam} la denominaremos \textit{Tipo 1} y la de \citep{rabiner} la denominaremos \textit{Tipo 2}, para la localización de los puntos de inicio y final de la señal de voz de una grabación. El algoritmo de Rabiner y Sambur es muy útil y funciona muy bien en ambientes con una relación señal a ruido de al menos 30 dBC y está basado en dos mediciones de la voz, la energía de tiempo corto y la tasa de cruces por cero. Por último, se escogerá el que tenga mejor desempeño.
 
 \begin{enumerate}
@@ -711,8 +526,6 @@ Donde $E_{n}$ es la energía promedio de cada segmento y $E_{avg}$ es la energí
 
 \item[•]Algoritmo de Rabiner y Sambur tipo 1
 \par
-Tanto la energía como la magnitud son útiles para distinguir segmentos sordos y sonoros en la señal de voz. Pero existen otras maneras para identificar segmentos sonoros, hay un método denominado \textit{cruces por cero y máximos}, se puede decir que una señal clasificada como ruido (la \textit{s} es un ruido de alta frecuencia) provoca en la amplitud un cambio de signo, de esta manera se pueden localizar consonantes fricativas.
-\vskip 0.5cm
 El algoritmo de Rabiner y Sambur combina la energía instantánea en una trama, con medidas de tasas de cruce por cero y confían en que un nivel alto de energía es el mejor estímulo para la detección. Se asume que la tasa de cruces por cero es bien distinta en zonas de voz con baja energía o de ruido de fondo y seria el punto adicional para determinar los límites de la voz.
 
 \begin{enumerate}
@@ -720,7 +533,7 @@ El algoritmo de Rabiner y Sambur combina la energía instantánea en una trama, 
 \par
 La energía de la voz $E(n)$, se define como la suma de las magnitudes de la voz al cuadrado en intervalos centrados de 10 ms, todo medido sobre el intervalo de medición, tal como se definió en la Ecuación \eqref{eq:ecuacion17}.
 \vskip 0.5cm
-En donde, $x(n)$ son las muestras de voz muestreadas a la frecuencia escogida. El escoger una ventana de 10 ms para el cálculo de la energía y el uso de la función de magnitud en lugar del cuadrado de la magnitud, se realizó porque puede causar un aumento en el espectro de la potencia, además así podemos aumentar la velocidad de computo, debido a que requerirá de una operación menos. La función de magnitud se define en la Ecuación \eqref{eq:ecuacion22}.
+En donde, $x(n)$ son las muestras de voz muestreadas a la frecuencia escogida. El escoger una ventana de 10 ms para el cálculo de la energía y el uso de la función de magnitud en lugar del cuadrado de la magnitud, se realizó porque puede causar un aumento en el espectro de la potencia, además de poder aumentar la velocidad de computo, debido a que requerirá de una operación menos. La función de magnitud se define en la Ecuación \eqref{eq:ecuacion22}.
 
 \item[-]Tasa de cruces por cero
 \par
@@ -822,20 +635,8 @@ Para la detección de fin de la señal de voz hacemos lo mismo, pero en sentido 
 
 \item[•]Algoritmo de Rabiner y Sambur tipo 2
 \par
-Al igual que el algoritmo anterior esta variante del algoritmo de Rabiner y Sambur también utiliza la energía de tiempo corto y la tasa de cruces por cero. La Figura \ref{fig:figura2.25} explica su funcionamiento, donde la señal se filtra en un ancho de banda entre 100 Hz y 4 KHz, con una frecuencia de muestreo de 10 KHz. De forma simple, el algoritmo de detección se basa en medidas de la energía cada 10 milisegundos.
-
-\begin{figure}[ht]
-\begin{center}
-\includegraphics[width=0.55\textwidth]{Imagenes/Cap2/image026}
-\end{center}
-\begin{center}
-\vskip -0.5cm
-\caption{\small{Diagrama de flujo del algoritmo Rabiner y Sambur.}}
-\label{fig:figura2.25}
-{\small{Fuente: \cite{rabiner}}}
-\end{center}
-\end{figure}
-
+Al igual que el algoritmo anterior esta variante del algoritmo de Rabiner y Sambur también utiliza la energía de tiempo corto y la tasa de cruces por cero. En \cite{rabiner} se explica que la señal debe filtrarse en un ancho de banda entre 100 Hz y 4 KHz, con una frecuencia de muestreo de 10 KHz. De forma simple, el algoritmo de detección se basa en medidas de la energía cada 10 milisegundos.
+\vskip 0.5cm
 Por otro lado, la tasa de cruces por cero $Z(n)$, también se calcula una vez cada trama de 10 milisegundos. El algoritmo supone que durante los 100 milisegundos primeros de la grabación no hay voz presente. Durante este periodo de silencio inicial se miden, la media $IZC$ (Cruce por Cero Integrado), y la desviación estándar \textit{IZC}, de la tasa de cruces por cero, la $IMX$ (Energía Máxima de Voz) y la $IMN$ (Energía Media del Ruido de fondo). Una vez obtenida la energía de toda la grabación se establecen los siguientes umbrales:
 
 \begin{equation}
@@ -866,7 +667,7 @@ ITU = 5 \cdot ITL
 El umbral $IZCT$ tiene en cuenta el mínimo entre la tasa de cruces por cero promedios en una zona de silencio ($IZC$) más dos veces su desviación estándar y un umbral de tasa de cruces por cero $IF$, típicamente con valor 25. $I1$ simboliza la suma entre la $IMN$ (Energía Media del Ruido de fondo) y el 3\% de la diferencia entre el $IMX$ (\textit{Valor Máximo de la Energía de voz}) y la $IMN$ (Energía Media del Ruido de fondo). $I2$ es cuatro veces la $IMN$, $ITL$ el mínimo entre $I1$ e $I2$, y finalmente $ITU$, cinco veces $ITL$.
 \vskip 0.5cm
 En el detector sencillo que proponen Rabiner y Sambur, la decisión viene dada en función de una combinación de umbrales de energía y de tasa de cruces por cero. El diagrama de energía se puede visualizar en la Figura \ref{fig:figura2.26}.
-
+\newpage
 \begin{figure}[ht]
 \begin{center}
 \includegraphics[width=0.55\textwidth]{Imagenes/Cap2/image027}
@@ -984,8 +785,6 @@ A partir de la figura anterior, se puede observar que la cantidad o el número t
 \label{eq:ecuacion34}
 L = \frac{N_{x} - N}{S} + 1
 \end{equation}
-Si $N>S$, entonces sí ocurre el traslape y $N \text{-} S$ muestras al final de las tramas son duplicadas al inicio de la siguiente trama. Entre mayor sea el traslape, la correlación entre las tramas adyacentes también será mayor y los cambios serán más suaves. Por otra parte, si $N < S$, entonces no hay traslape, pero además algunas porciones de la señal de voz se perderán, ya que no aparecerán en ninguna de las tramas. Por lo tanto, esta última situación resulta inaceptable en cualquier tipo de procesamiento de voz.
-\vskip 0.5cm
 Entonces, la señal de voz se divide en $L$ tramas para su análisis. Cada una de éstas se compone por $N$ muestras con $S$ muestras de separación entre tramas adyacentes. Sin embargo, para no perder las propiedades dinámicas o variantes en el tiempo de la señal de voz, es necesario volver a calcular otros coeficientes para la siguiente trama, para ello se recomienda aplicarle un ponderado a través de una ventana. Primero demos un vistazo a la más simple de las ventanas, la cual tiene una forma rectangular y se define como:
 \begin{equation}
 \label{eq:ecuacion35}
@@ -998,21 +797,7 @@ w(n) =
 \end{cases}
 %
 \end{equation}
-Esta ventana rectangular se usa de manera implícita cuando se extrae una trama de $N$ muestras a partir de una señal de voz:
-
-\begin{figure}[ht]
-\begin{center}
-\includegraphics[width=0.75\textwidth]{Imagenes/Cap2/image035}
-\end{center}
-\begin{center}
-\vskip -0.5cm
-\caption{\small{Extracción de una trama mediante una ventana rectangular.}}
-\label{fig:figura2.34}
-{\small{Fuente: \cite{eyra}}}
-\end{center}
-\end{figure}
-
-Sin embargo, la presencia de ésta ventana ocasiona la distorsión del espectro de la señal de voz, pero si se pondera la trama por una ventana con la forma adecuada, entonces se puede reducir la distorsión en la frecuencia, aunque se deforme la señal en el tiempo. En el reconocimiento de voz, la ventana que más se utiliza es la de Hamming:
+Esta ventana rectangular se usa de manera implícita cuando se extrae una trama de $N$ muestras a partir de una señal de voz. Sin embargo, la presencia de ésta ventana ocasiona la distorsión del espectro de la señal de voz, pero si se pondera la trama por una ventana con la forma adecuada, entonces se puede reducir la distorsión en la frecuencia, aunque se deforme la señal en el tiempo. En el reconocimiento de voz, la ventana más usada es la de Hamming:
 \begin{equation}
 \label{eq:ecuacion36}
 %
@@ -1037,6 +822,7 @@ La Figura \ref{fig:figura2.35} es la representación gráfica de la ventana de H
 {\small{Fuente: \cite{eyra}}}
 \end{center}
 \end{figure}
+\vskip -0.5cm
 El segmento o la trama ponderada $x_{w}(n)$ se obtiene mediante el producto de cada una de las muestras de la trama de análisis $x_{l}(n)$ por el peso correspondiente de la ventana de Hamming $w(n)$:
 \begin{equation}
 \label{eq:ecuacion37}
@@ -1052,9 +838,7 @@ El ponderado de la trama de análisis contribuye a minimizar las discontinuidade
 \vskip 0.5cm
 Otro aspecto importante es la selección de la longitud de la trama $N$, pues por lo general, el trabajo de computo requerido durante el análisis es proporcional a esta, por lo que resulta ventajoso mantenerla tan pequeña como sea posible. Sin embargo, se deben abarcar varios periodos del tono fundamental (pitch) para asegurar que los resultados sean confiables. Además, debido al ponderado, la longitud de la trama debe ser lo suficientemente larga como para que los efectos de atenuación de la ventana de Hamming no afecten seriamente los resultados. 
 \vskip 0.5cm
-Adicionalmente, la longitud o la duración de la trama se determina mediante un compromiso entre las resoluciones en el tiempo y en la frecuencia, ya que la longitud de la trama es proporcional a la resolución en frecuencia, pero inversamente proporcional a la resolución en el tiempo. De manera similar, el traslape es proporcional al número de tramas en la señal de voz, pero también es proporcional a la correlación de las tramas subsecuentes. Por lo tanto, se debe buscar un balance o compromiso entre estas características contrapuestas.
-\vskip 0.5cm
-Una manera para determinar $V$ (longitud de la trama N), es haciendo el producto de la duración de la trama $T$ por la frecuencia de muestreo $f_{s}$ de la señal de voz:
+Adicionalmente, la longitud o la duración de la trama se determina mediante un compromiso entre las resoluciones en el tiempo y en la frecuencia, ya que la longitud de la trama es proporcional a la resolución en frecuencia, pero inversamente proporcional a la resolución en el tiempo. De manera similar, el traslape es proporcional al número de tramas en la señal de voz, pero también es proporcional a la correlación de las tramas subsecuentes. Por lo tanto, se debe buscar un balance o compromiso entre estas características contrapuestas. Una manera para determinar $V$ (longitud de la trama N), es haciendo el producto de la duración de la trama $T$ por la frecuencia de muestreo $f_{s}$ de la señal de voz:
 \begin{equation}
 \label{eq:ecuacion38}
 V = (T:f_{s})_{int}
@@ -1064,32 +848,13 @@ No obstante, como el número de muestras por trama $N$ debe ser un valor entero,
 \label{eq:ecuacion39}
 Fps = \frac{f_{s}}{S} \hspace{1cm} \Rightarrow \hspace{1cm} S = \frac{f_{s}}{100}
 \end{equation}
-Los valores típicos de $V$ son de 10 a 30 ms. Las ventanas cortas han sido propuestas para estimar los parámetros del tracto vocal que varían rápidamente, mientras que las ventanas largas se usan para estimar la frecuencia del tono fundamental (pitch). Las tramas de 20 a 30 ms de duración generalmente tienen una buena relación entre ambas resoluciones, \cite{eyra}.
-\vskip 0.5cm
-Hasta aquí hemos visto todos los componentes que conforman el módulo de preprocesamiento, a continuación, veremos el módulo de entrenamiento.
+Los valores típicos de $V$ son de 10 a 30 ms. Las ventanas cortas han sido propuestas para estimar los parámetros del tracto vocal que varían rápidamente, mientras que las ventanas largas se usan para estimar la frecuencia fundamental. Las tramas de 20 a 30 ms de duración generalmente tienen una buena relación entre ambas resoluciones, \cite{eyra}.
 \end{enumerate}
 
 \subsubsection{Entrenamiento}
-Para el entrenamiento se deben capturar diversas palabras recortadas por medio del módulo de preprocesamiento, mismas que representan las diferentes repeticiones. A partir de estas repeticiones se obtiene un conjunto de centroides que son almacenados en memoria. Para poder obtener estos centroides los valores numéricos obtenidos del preprocesamiento deben pasar por un algoritmo de extracción de características.
-\begin{enumerate}
-\item[a)]Extracción de características
-\par
-Es el proceso mediante el cual, dado un conjunto de datos se desea obtener otro conjunto de datos resumidos, pero que contengan solo la información necesaria de los datos de entrada. Una buena técnica de extracción de características garantiza que dichos datos obtenidos son únicos para una determinada entrada, es decir que para dos señales de entrada diferentes, se obtiene dos conjuntos de características diferentes, \cite{claudio}.
+Para el entrenamiento se deben capturar diversas palabras recortadas por medio del módulo de preprocesamiento, mismas que representan las diferentes repeticiones. A partir de estas repeticiones se obtiene un conjunto de centroides que son almacenados en memoria. Para poder obtener estos centroides los valores numéricos obtenidos del preprocesamiento deben pasar por un algoritmo de extracción de características, algunas de estas son por ejemplo: el algoritmo de Características Fonético Acústicas, el algoritmo basado en la Transformada de Fourier, Codificación Predictiva Lineal (LPC), Coeficientes Cepstrales en Escala Mel (MFCC), Predicción Perceptual Lineal (PLP)y el Algoritmo basado en Wavelet.
 \vskip 0.5cm
-Sin embargo, obtener características plenamente diferentes involucra que todas las señales sean diferentes, así se traten de dos palabras iguales, pero con diversas tonalidades y velocidades. Por lo tanto, la obtención de características debe de asegurarme, que en ambas señales existen características que son propias para ambas. De esta manera podemos obtener un grado de similaridad adecuado para el reconocimiento de la señal de voz.
-\vskip 0.5cm
-Entre muchas técnicas de extracción de características, podemos mencionar las siguientes:
-\begin{enumerate}
-\item[-]Algoritmo de características Fonético Acústicas
-\item[-]Algoritmo basado en la Transformada de Fourier
-\item[-]Codificación Predictiva Lineal (LPC)
-\item[-]Coeficientes Cepstrales en Escala Mel (MFCC)
-\item[-]Predicción Perceptual Lineal (PLP)
-\item[-]Algoritmo basado en Wavelet.
-\end{enumerate}
-
 En \citep{unam}, se hace un análisis comparativo entre los algoritmos LPC, MFCC y PLP teniendo como resultado al MFCC como mejor algoritmo de extracción de características, ver la Figura \ref{fig:figura2.36}. En \citep{orlando}, se realiza una evaluación y comparación entre los Wavelets y los MFCC, resultando también a los MFCC con mejor desempeño, pero si bien tienen la misma complejidad computacional el tiempo de ejecución de los Wavelets es menor.
-
 \newpage
 \begin{figure}[ht]
 \begin{center}
@@ -1102,31 +867,12 @@ En \citep{unam}, se hace un análisis comparativo entre los algoritmos LPC, MFCC
 {\small{Fuente: \cite{unam}}}
 \end{center}
 \end{figure}
-
-Para este trabajo de Tesis teniendo lo anterior como antecedentes, hemos optado por la técnica MFCC (Coeficientes Cepstrales en la Frecuencia de Mel). La Figura \ref{fig:figura2.37} muestra el proceso del MFCC y como al final se retornan los cepstrum.
-
-\begin{figure}[ht]
-\begin{center}
-\includegraphics[width=0.5\textwidth]{Imagenes/Cap2/image038}
-\end{center}
-\begin{center}
 \vskip -0.5cm
-\caption{\small{Proceso de extracción de características con MFCC.}}
-\label{fig:figura2.37}
-{\small{Fuente: \cite{rabiner}}}
-\end{center}
-\end{figure}
-
-\newpage
-\item[b)]Codificación o análisis Mel cepstral
-\par
-En 1980 Davis y Mermelstein propusieron un nuevo tipo de representación del cepstrum, en el cual combinaron sus ventajas con los conocimientos de la percepción no lineal de la frecuencia en el sistema auditivo humano, tomando como base los estudios realizados por Zwicker en 1961. En este método de análisis, se utiliza la parte real del cepstrum, pero con una transformación no lineal de la frecuencia, pasando de la escala en Hertz a la escala de frecuencia Mel. Por eso, a estos coeficientes se les ha denominado como los Coeficientes Cepstral en la Frecuencia Mel o MFCC, \cite{eyra}.
+Para este trabajo de Tesis teniendo lo anterior como antecedentes, hemos optado por la técnica MFCC (Coeficientes Cepstrales en la Frecuencia de Mel). A continuación, se describe un procedimiento para obtener los coeficientes MFCC. 
 \vskip 0.5cm
-La mayor parte de los sistemas han estado convergiendo hacia el uso de estos vectores, que se obtienen a partir de un procesamiento de la señal de voz empleando un banco de filtros que ha sido diseñado tomando en cuenta algunas propiedades de la percepción del sonido en el sistema auditivo humano, con lo que se busca imitar su comportamiento.
-\vskip 0.5cm
-A continuación, se describe un procedimiento para obtener los coeficientes MFCC. La Figura \ref{fig:figura2.38} muestra el diagrama de bloques para este procedimiento. Los bloques muestran las operaciones necesarias y a la izquierda de éstos se muestran los parámetros de entrada requeridos en cada paso. A partir del cuarto bloque (ponderado por la ventana de Hamming), las operaciones se realizan sobre las tramas de la señal de voz. La consiguiente reducción en el número de parámetros para cada trama se ilustra mediante la cantidad de flechas.
-
+La Figura \ref{fig:figura2.38} muestra el diagrama de bloques para este procedimiento. Los bloques muestran las operaciones necesarias y a la izquierda de éstos se muestran los parámetros de entrada requeridos en cada paso. A partir del cuarto bloque (ponderado por la ventana de Hamming), las operaciones se realizan sobre las tramas de la señal de voz. La consiguiente reducción en el número de parámetros para cada trama se ilustra mediante la cantidad de flechas. 
 \newpage
+
 \begin{figure}[ht]
 \begin{center}
 \includegraphics[width=0.4\textwidth]{Imagenes/Cap2/image039}
@@ -1138,12 +884,11 @@ A continuación, se describe un procedimiento para obtener los coeficientes MFCC
 {\small{Fuente: \cite{eyra}}}
 \end{center}
 \end{figure}
-
+\vskip -0.5cm
 Las etapas preénfasis, división de tramas y ponderado por la ventana de Hamming ya las vimos en la etapa de preprocesamiento, por lo que solamente veremos las etapas restantes.
-
 \newpage
 \begin{enumerate}
-\item[•]Transformada discreta de Fourier
+\item[a)]Transformada discreta de Fourier
 \par
 El espectro en frecuencia de una señal discreta se puede estimar mediante DFT (Transformada Discreta de Fourier):
 \begin{equation}
@@ -1152,7 +897,7 @@ X(k) = \sum_{n=0}^{N-1}x(n)e^{-j\frac{2\pi nk}{N}}
 \end{equation}
 Esta transformada proporciona un conjunto de $N$ valores en el dominio de la frecuencia, en donde $X(k)$ es la transformada discreta de Fourier en el dominio de la frecuencia, de la señal discreta $x(n)$ en el dominio del tiempo. Sin embargo, en la práctica, la transformada discreta de Fourier se calcula de una manera mucho más eficiente mediante FFT (Transformada Rápida de Fourier).
 
-\item[•]Rellenado con ceros
+\item[b)]Rellenado con ceros
 \par
 Para facilitar el uso de la transformada rápida de Fourier, la longitud de la trama $N$ debería de ser igual al número de puntos para la transformada rápida de Fourier $N_{fft}$, un número que debe ser igual a la potencia de dos más próxima:
 \begin{equation}
@@ -1176,9 +921,9 @@ A partir de la Ecuación \eqref{eq:ecuacion40} de la transformada discreta de Fo
 \label{eq:ecuacion43}
 X(k) = \sum_{n=0}^{N_{fft}-1}x(n)e^{-j\frac{2\pi nk}{N_{fft}}}
 \end{equation}
-Se puede apreciar que el agregar valores nulos a $x(n)$ no afecta significativamente la sumatoria para cualquier $X(k)$. Sin embargo, la longitud aumentada de la trama $N_{fft}$ solamente proporciona una mejor descripción de la transformada discreta de Fourier, pues no incrementa la resolución en frecuencia, pues este es el único propósito de la longitud de la trama $N$.
+Se puede apreciar que el agregar valores nulos a $x(n)$ no afecta significativamente la sumatoria para cualquier $X(k)$. La longitud aumentada de la trama $N_{fft}$ solamente proporciona una mejor descripción de la transformada discreta de Fourier, pues no incrementa la resolución en frecuencia, pues este es el único propósito de la longitud de la trama $N$.
 
-\item[•]Obtención del espectro de frecuencia
+\item[c)]Obtención del espectro de frecuencia
 \par
 El espectro en frecuencia de una trama de análisis se obtiene mediante el algoritmo FFT (Transformada Rápida de Fourier):
 \begin{equation}
@@ -1192,7 +937,7 @@ X(k) = \mathbf{FFT}\{ x_{zp}(n), N_{fft} \}
 \end{equation}
 Dado que la señal de voz $x(n)$ es una secuencia de números reales, $X(k)$ y $X(N - k)$ son conjugados complejos. Puesto que la magnitud de los conjugados complejos es igual, el espectro en frecuencia resultante tiene una simetría par con respecto a la mitad de la frecuencia de muestreo, es decir, que la magnitud de la mitad superior del espectro es un reflejo de la mitad inferior.
 
-\item[•]Obtención del espectro de potencia
+\item[d)]Obtención del espectro de potencia
 \par
 Ahora bien, no importa tanto la respuesta en frecuencia, sino la envolvente de la respuesta en frecuencia. Las características del tracto vocal se pueden estimar mediante el espectro de potencia $P(k)$ que se calcula como la magnitud del espectro al cuadrado o la suma de los cuadrados de la parte real e imaginaria del espectro:
 \begin{equation}
@@ -1213,16 +958,10 @@ El espectro de potencia se compone de valores reales, enfatiza los picos en el e
 \end{aligned}
 \end{equation}
 Hay que destacar que el espectro de potencia solamente proporciona información acerca de la magnitud, pues la información relacionada con la fase se descarta. Esto es consistente con el hecho de que la fase no aporta ninguna información que resulte útil. De hecho, se ha comprobado experimentalmente que la percepción de una señal reconstruida con una fase distinta es prácticamente indistinguible de la señal original, esto si se mantiene la continuidad secuencial de la fase entre las tramas.
-
-\item[•]Cambio de la escala de frecuencia
+\newpage
+\item[e)]Cambio de la escala de frecuencia
 \par
-Existen muchas formas diferentes para las ventanas que se pueden emplear en los bancos de filtros, pero todas estas se basan en alguna escala de frecuencia que se considera aproximadamente lineal para frecuencias menores de 1000 Hz, pero para frecuencias mayores que ésta, presenta un comportamiento no lineal (logarítmico).
-\vskip 0.5cm
-Este cambio en la escala de frecuencia en inglés se denomina \textit{frequency warping}, es decir, que se realiza un arqueado o una transformación de la escala de frecuencia en Hertz, a otra escala de frecuencia que exhibe un comportamiento logarítmico. Las escalas Mel, que es la que usaremos en esta tesis, y Bark son dos ejemplos, puesto que están basadas en datos experimentales de la percepción humana, existen varias aproximaciones que se pueden usar para estas.
-\vskip 0.5cm
-La escala Mel fue propuesta por Stevens, Volksman y Newmann en 1940. Un Mel es una unidad de medición de la frecuencia o del tono percibido, esta no corresponde de manera lineal a la frecuencia real del tono. Se designó como punto inicial de referencia, que una frecuencia de 1000 Hz también es de 1000 Mels. 
-\vskip 0.5cm
-Los observadores juzgan tonos espaciados exponencialmente como tonos equiespaciados. De esta manera fue posible determinar un mapeo entre la escala de la frecuencia real (Hertz) y la escala de la frecuencia percibida (Mels).
+La escala Mel fue propuesta por Stevens, Volksman y Newmann en 1940. Un Mel es una unidad de medición de la frecuencia o del tono percibido, esta no corresponde de manera lineal a la frecuencia real del tono. Se designó como punto inicial de referencia, que una frecuencia de 1000 Hz también es de 1000 Mels.
 \vskip 0.5cm
 La siguiente ecuación proporciona una equivalencia entre la escala logarítmica de la frecuencia Mel $f_{mel}$ con respecto a la escala de frecuencia en Hertz $f_{Hz}$:
 \begin{equation}
@@ -1234,25 +973,10 @@ No obstante, se acostumbra utilizar otra función de aproximación para realizar
 \label{eq:ecuacion48}
 f_{mel}(f_{Hz}) = 1125\mathbf{Ln}\left ( 1 + \frac{f_{Hz}}{700} \right )
 \end{equation}
-La Figura \ref{fig:figura2.40} muestra la representación gráfica de la ecuación anterior, en donde se puede apreciar el arqueado de la frecuencia al cambiar de la escala lineal de frecuencia en Hertz $f_{Hz}$ a la escala logarítmica de la frecuencia Mel $f_{mel}$:
-\begin{figure}[H]
-\begin{center}
-\includegraphics[width=0.65\textwidth]{Imagenes/Cap2/image041}
-\end{center}
-\begin{center}
-\vskip -0.5cm
-\caption{\small{Gráfica del arqueado de la frecuencia con la escala Mel.}}
-\label{fig:figura2.40}
-{\small{Fuente: \cite{eyra}}}
-\end{center}
-\end{figure}
 
-\newpage
-\item[•]Definición de las bandas criticas triangulares con la escala Mel
+\item[f)]Definición de las bandas criticas triangulares con la escala Mel
 \par
-El diseño de los filtros para las bandas críticas primero se realiza en la escala Mel. Los filtros utilizados en este método presentan una forma triangular, que es simétrica con respecto a su frecuencia central y tienen el mismo ancho de banda en la escala Mel.
-\vskip 0.5cm
-Aunque a estas ventanas triangulares se les suele llamar filtros, estas simplemente se usan para promediar el espectro de potencia con respecto a la frecuencia central de cada una de las bandas críticas. La función que las define está dada por la siguiente ecuación y su representación gráfica se muestra en la Figura \ref{fig:figura2.41}.
+El diseño de los filtros para las bandas críticas primero se realiza en la escala Mel. Los filtros utilizados en este método presentan una forma triangular, que es simétrica con respecto a su frecuencia central y tienen el mismo ancho de banda en la escala Mel. Aunque a estas ventanas triangulares se les suele llamar filtros, estas simplemente se usan para promediar el espectro de potencia con respecto a la frecuencia central de cada una de las bandas críticas, la función que las define está dada por la ecuación \ref{eq:ecuacion49}.
 \begin{equation}
 \label{eq:ecuacion49}
 H_{bc}(f)= \left\{ \begin{array}{lcl}
@@ -1269,21 +993,7 @@ H_{bc}(f)= \left\{ \begin{array}{lcl}
 \right.
 \end{equation}
 
-\begin{figure}[H]
-\begin{center}
-\includegraphics[width=0.5\textwidth]{Imagenes/Cap2/image042}
-\end{center}
-\begin{center}
-\vskip -0.5cm
-\caption{\small{Curva para las bandas críticas triangulares.}}
-\label{fig:figura2.41}
-{\small{Fuente: \cite{eyra}}}
-\end{center}
-\end{figure}
-
-En la Ecuación \eqref{eq:ecuacion49} se puede apreciar que los primeros términos (cocientes) son las pendientes de las rectas que forman la ventana triangular, y los otros términos del producto contienen a la variable independiente con su respectiva abscisa al origen. Ahora bien, la transformación no lineal de la frecuencia en Hertz a la escala de frecuencia Mel, se acostumbra realizar mediante la función de aproximación Ecuación \eqref{eq:ecuacion48}.
-\vskip 0.5cm
-El rango de frecuencias de interés abarca desde los 0 Hz hasta la frecuencia de Nyquist, sin embargo, se puede determinar un límite inferior de frecuencia $f_{min}$, y un límite superior de frecuencia $f_{max}$. Para la señal de voz, se recomienda que $f_{min} > 100 Hz$ y que el límite superior de frecuencia sea menor a la frecuencia de Nyquist, aunque para una frecuencia mayor de 6800 Hz ya no hay mucha información en la señal de voz. Además, si se fija el límite inferior de frecuencia arriba de 50 o 60 Hz, se puede evitar el ruido procedente de la red de suministro o distribución de AC. Ahora bien, puesto que estos límites están definidos en Hertz, hace falta transformarlos a la escala Mel.
+El rango de frecuencias de interés abarca desde los 0 Hz hasta la frecuencia de Nyquist, sin embargo, se puede determinar un límite inferior de frecuencia $f_{min}$, y un límite superior de frecuencia $f_{max}$. Ahora bien, puesto que estos límites están definidos en Hertz, hace falta transformarlos a la escala Mel.
 \begin{equation}
 \label{eq:ecuacion50}
 \left ( f_{min} \right )_{mel} = 1125\mathbf{Ln}\left ( 1 + \frac{f_{min}}{700} \right )
@@ -1295,7 +1005,7 @@ Las frecuencias centrales deben estar equiespaciadas en la escala Mel, entonces 
 \label{eq:ecuacion51}
 SF = \frac{\left ( f_{max} \right )_{mel} - \left ( f_{min} \right )_{mel}}{BC + 1}
 \end{equation}
-\newpage
+
 Las frecuencias centrales están separadas por múltiplos enteros de este parámetro más el valor del límite inferior de frecuencia:
 \begin{equation}
 \label{eq:ecuacion52}
@@ -1323,38 +1033,12 @@ La frecuencia inferior de la primera banda crítica es igual al límite inferior
 \label{eq:ecuacion56}
 f_{l}(1) = f_{min}
 \end{equation}
-
+\vskip -1.0cm
 \begin{equation}
 \label{eq:ecuacion57}
 f_{h}(BC) = f_{max}
 \end{equation}
 
-En la Figura \ref{fig:figura2.42} se muestra la representación gráfica, en la escala Mel con banco de filtros $BC = 17$, limite inferior de frecuencia $f_{min} = 0 Hz$ y limite superior de frecuencia $f_{max} = 4000 Hz$, podemos ver que las bandas críticas están equiespaciadas y todas las bandas críticas tienen el mismo ancho de banda.
-\begin{figure}[H]
-\begin{center}
-\includegraphics[width=0.53\textwidth]{Imagenes/Cap2/image043}
-\end{center}
-\begin{center}
-\vskip -0.5cm
-\caption{\small{Banco de filtros o ventanas triangulares equiespaciados en la escala Mel.}}
-\label{fig:figura2.42}
-{\small{Fuente: \cite{eyra}}}
-\end{center}
-\end{figure}
-\vskip -0.5cm
-La Figura \ref{fig:figura2.43} muestra el mismo banco de filtros, pero ahora en la escala en Hertz. Puede apreciarse como la distribución de las bandas críticas ahora sigue una distribución logarítmica y también como se incrementa el ancho de banda al aumentar la frecuencia.
-\begin{figure}[H]
-\begin{center}
-\includegraphics[width=0.53\textwidth]{Imagenes/Cap2/image044}
-\end{center}
-\begin{center}
-\vskip -0.5cm
-\caption{\small{Banco de filtros o ventanas triangulares en Hertz con distribución logarítmica.}}
-\label{fig:figura2.43}
-{\small{Fuente: \cite{eyra}}}
-\end{center}
-\end{figure}
-\newpage
 Finalmente, falta hacer un muestreo de las bandas críticas de acuerdo al número de puntos del espectro de potencia $N_{p}.$ Ahora bien, como las bandas críticas contienen unos cuantos valores diferentes de cero, no hace falta calcular todos los valores correspondientes a cada uno de los puntos del espectro de potencia, basta con las muestras comprendidas entre la frecuencia inferior y la superior para cada banda crítica.
 \vskip 0.5cm
 A cada muestra del espectro de potencia $P(k)$ le corresponde un valor de frecuencia en Hertz, el cual es un múltiplo de la resolución en frecuencia del espectro:
@@ -1379,16 +1063,14 @@ El cual se puede utilizar para determinar que índice o muestra corresponde a de
 \label{eq:ecuacion61}
 k = \left ( f \cdot \Delta k  \right )_{\mathbf{int}}
 \end{equation}
-Puesto que los índices de las muestras deben ser números enteros, se tiene que redondear el resultado a un número entero. El índice para la frecuencia inferior $k_{l}$ se puede redondear hacia arriba, pero el índice para la frecuencia superior $k_{h}$ se puede redondear hacia abajo. También, si es necesario, hay que tomar en cuenta que la primera muestra del espectro de potencia representa a la frecuencia cero.
-\vskip 0.5cm
-Con los índices correspondientes a las frecuencias inferior $k_{l}$ y superior $k_{h}$, ya se pueden calcular los $N_{bc}$ valores diferentes de cero para cada una de las bandas críticas.
+Puesto que los índices de las muestras deben ser números enteros, se tiene que redondear el resultado a un número entero. El índice para la frecuencia inferior $k_{l}$ se puede redondear hacia arriba, pero el índice para la frecuencia superior $k_{h}$ se puede redondear hacia abajo. También, si es necesario, hay que tomar en cuenta que la primera muestra del espectro de potencia representa a la frecuencia cero. Con los índices correspondientes a las frecuencias inferior $k_{l}$ y superior $k_{h}$, ya se pueden calcular los $N_{bc}$ valores diferentes de cero para cada una de las bandas críticas.
 \begin{equation}
 \label{eq:ecuacion62}
 N_{bc} = k_{h}(bc) - k_{l}(bc) + 1
 \end{equation}
 Para esto, primero se obtiene el valor correspondiente en frecuencia para la muestra $k$, comprendida dentro del intervalo $k_{l}(bc) \leq k \leq k_{h}(bc)$ de una banda crítica $bc$. Entonces, el valor correspondiente a la muestra $k$ para el filtro o la banda crítica $H_{bc}$ se determina mediante la Ecuación \eqref{eq:ecuacion58}, según sea el caso.
 
-\item[•]Compresión
+\item[g)]Compresión
 \par
 En lugar de simplemente usar la magnitud del espectro remuestreado mediante la escala Mel para calcular los MFCC, algunos investigadores han sugerido que es más provechoso el emplear una función logaritmo para calcular la energía total de las bandas críticas alrededor de las frecuencias centrales:
 \begin{equation}
@@ -1399,7 +1081,7 @@ bc = 1,2,3,...,BC
 \end{equation}
 El procesamiento de la magnitud y la obtención de su logaritmo también se realizan en el oído humano. Es más, el empleo de la magnitud descarta la información innecesaria que proporciona la fase mientras que el logaritmo efectúa una compresión, dando como resultado que la extracción de características sea menos sensible a las variaciones de la amplitud producidas por las resonancias espectrales.
 
-\item[•]Transformada inversa de Fourier
+\item[h)]Transformada inversa de Fourier
 \par
 El último paso en el cálculo de los MFCC consiste en realizar la transformada discreta inversa de Fourier del espectro muestreado y comprimido $P_{sc}$. En este paso es donde se obtienen los MFCC, además esta etapa del procedimiento tiene grandes ventajas, puesto que los valores del espectro son números reales y presentan una simetría par con respecto a la frecuencia de Nyquist, entonces se puede reducir a una DCT (Transformada Coseno Discreta) en lugar de la IFFT (Transformada Discreta Inversa de Fourier):
 \begin{equation}
@@ -1408,7 +1090,7 @@ c_{m} = \sum_{bc = 1}^{BC}P_{sc}(bc)\mathbf{cos}\left [ \frac{\pi }{BC}\left ( b
 \qquad
 m = 0,1,2,3,...,M
 \end{equation}
-La transformada coseno discreta tiene la propiedad de producir características que prácticamente no están correlacionadas entre sí. De tal manera que se pueden usar matrices diagonales de covarianza en lugar de las matrices ordinarias de covarianza, con lo que se reduce en gran manera el trabajo de cómputo y el número de parámetros a estimar. Además, la transformada coseno discreta proporciona un suavizado del espectro si solamente se conservan los primeros coeficientes.
+La DCT tiene la propiedad de producir características que prácticamente no están correlacionadas entre sí. De tal manera que se pueden usar matrices diagonales de covarianza en lugar de las matrices ordinarias de covarianza, con lo que se reduce en gran manera el trabajo de cómputo y el número de parámetros a estimar. Además, la transformada coseno discreta proporciona un suavizado del espectro si solamente se conservan los primeros coeficientes.
 \vskip 0.5cm
 Por lo tanto, la solución final es el vector o el conjunto de coeficientes MFCC:
 \begin{equation}
@@ -1422,7 +1104,7 @@ m = 1,2,3,...,M
 \end{equation}
 El coeficiente inicial $c_{0}$ representa el logaritmo de la energía promedio en la trama y se descarta, pues ésta se puede calcular directamente a partir de la señal de voz.
 
-\item[•]Coeficientes delta y doble deltas
+\item[i)]Coeficientes delta y doble deltas
 \par
 Los cambios temporales en el espectro, tienen una importancia significativa en la percepción humana, una manera de capturar estos cambios es utilizando los coeficientes delta cuya finalidad es medir el cambio de los coeficientes en el tiempo, \cite{xuedong}. Las características a usar en un reconocedor usando MFCC con $F_{s}$ de 16 KHz, es la siguiente:
 \vskip 0.5cm
@@ -1451,14 +1133,13 @@ C_{k}\\
 \end{equation}
 \end{enumerate}
 \end{enumerate}
-\end{enumerate}
 
 \subsubsection{Reconocimiento}
-Una vez terminada la fase de extracción de características, debemos empezar con la tarea del reconocimiento automático. Al igual que en la extracción de características, el proceso de reconocer una señal de voz por una persona también es motivo del estudio de múltiples algoritmos que realizan esta tarea, tales como el DTW (Alineamiento Temporal Dinámico), HMM (Modelos Ocultos de Markov), ANN (Redes Neuronales), etc. ver en \citep{luna}. 
+Una vez terminada la fase de extracción de características, debemos empezar con la tarea del reconocimiento automático. Al igual que en la extracción de características, el proceso de reconocer una señal de voz por una persona también es motivo del estudio de múltiples algoritmos que realizan esta tarea, tales como el DTW (Alineamiento Temporal Dinámico), HMM (Modelos Ocultos de Markov), ANN (Redes Neuronales), etc. ver en \citep{luna}.
 \vskip 0.5cm
-Este bloque dentro de los sistemas de reconocimiento de locutor, consiste en la comparación de parámetros característicos o patrones de voz. Como se explicó en el diagrama de bloques en la Figura \ref{fig:figura2.6}, es necesario hacer la comparación de patrones de referencia contra los patrones de prueba y en base a una lógica de decisión reconocer al locutor.
+Este bloque dentro de los sistemas de reconocimiento de locutor, consiste en la comparación de parámetros característicos de la voz. Como se explicó en el diagrama de bloques en la Figura \ref{fig:figura2.6}, es necesario hacer la comparación de patrones de referencia contra los patrones de prueba y en base a una lógica de decisión reconocer al locutor.
 \vskip 0.5cm
-Una característica fundamental de los sistemas de reconocimiento es la forma en que los vectores característicos son combinados y comparados con los patrones de referencia. Para poder realizar estas operaciones es necesario definir una medida de distancia o distorsión entre los vectores característicos. Si las características a medir tienen la misma longitud, pues es fácil realizar esta operación. Sin embargo, el problema se presenta si tenemos dos patrones que corresponden a la misma palabra, pero pronunciadas a diferentes velocidades, este análisis se hace inadecuado. Es por ello que para esta tesis emplearemos la técnica de \textit{Alineamiento Temporal Dinámico} (DTW) para comparar estos patrones, la cual a su vez servirá para construir los patrones de referencia.
+Una característica fundamental de los sistemas de reconocimiento es la forma en que los vectores característicos son combinados y comparados con los patrones de referencia. Para poder realizar estas operaciones es necesario definir una medida de distancia o distorsión entre los vectores característicos. Si las características a medir tienen la misma longitud, pues es fácil realizar esta operación. Sin embargo, el problema se presenta si tenemos dos patrones que corresponden a la misma palabra, pero pronunciadas a diferentes velocidades, este análisis se hace inadecuado. Es por ello que para esta tesis emplearemos la técnica de \textit{Alineamiento Temporal Dinámico} (DTW), la cual a su vez servirá para construir los patrones de referencia.
 \newpage
 \begin{enumerate}
 \item[a)]Alineamiento Temporal Dinámico
@@ -1487,127 +1168,7 @@ M_{1} = w(N_{1})
 \label{eq:ecuacion71}
 M_{2} = w(N_{2})
 \end{equation}
-La función de alineamiento debe cumplir con las Ecuaciones \eqref{eq:ecuacion70} y \eqref{eq:ecuacion71}, a estas condiciones se les llama conjunto restringido en los límites, además de cumplir con ciertas suposiciones acerca de la forma de $w(n)$. Por ejemplo, si $w(n)$ es una función lineal, el alineamiento en el tiempo es simplemente una compresión o expansión de una escala en el tiempo. Esta función lineal asume que la variación en la pronunciación de una palabra es proporcional a la duración de la misma y es independiente del sonido hablado y por consiguiente no modela adecuadamente la forma en que se pronuncia una palabra, sobre todo no modela las variaciones de velocidad con que se pronuncian los sonidos vocales, por lo que es necesario emplear una función de alineamiento no lineal entre los patrones de voz.
-\vskip 0.5cm
-Un enfoque más sofisticado y poderoso para alinear en el tiempo, consiste en restringir a $w(n)$ para que satisfaga un conjunto de condiciones locales de continuidad,
-\begin{equation}
-\label{eq:ecuacion72}
-w(n+1) - w(n) = 0,1,2(w(n) \neq w(n-1))
-\end{equation}
-\begin{equation}
-\label{eq:ecuacion73}
-w(n+1) - w(n) = 1,2(w(n) = w(n-1))
-\end{equation}
-estas ecuaciones hacen que $w(n)$ sea monotónicamente creciente con una pendiente máxima de 2 y una pendiente mínima de 0, excepto cuando la pendiente anterior fue 0, en tal caso la pendiente mínima será de 1. 
-\vskip 0.3cm
-Las condiciones de las Ecuaciones \eqref{eq:ecuacion70} y \eqref{eq:ecuacion71} junto con las condiciones de continuidad de las Ecuaciones \eqref{eq:ecuacion72} y \eqref{eq:ecuacion73} limitan a la función de alineamiento a seguir una trayectoria dentro del paralelogramo formado en el plano $(n, m)$ como se muestra en la Figura \ref{fig:figura2.46}. Los vértices, $A$ y $B$, del paralelogramo se obtiene de la intersección de las líneas,
-\begin{equation}
-\label{eq:ecuacion74}
-\begin{aligned}
-& m - 1 = 2(n - 1) \\
-& m - M = (n - N)/2
-\end{aligned}
-\qquad
-\text{Vértice A}
-\end{equation}
-y
-\begin{equation}
-\label{eq:ecuacion75}
-\begin{aligned}
-& m - 1 = (n - 1)/2 \\
-& m - M = 2(n - N)
-\end{aligned}
-\qquad
-\text{Vértice B}
-\end{equation}
-
-La función de alineamiento $w(n)$, está restringida a seguir una trayectoria dentro de la región sombreada de la Figura \ref{fig:figura2.46}.
-\begin{figure}[H]
-\begin{center}
-\includegraphics[width=0.43\textwidth]{Imagenes/Cap2/image047}
-\end{center}
-\begin{center}
-\vskip -0.5cm
-\caption{\small{Región de posibles trayectorias de la función de alineamiento.}}
-\label{fig:figura2.46}
-{\small{Fuente: \cite{rabiner}}}
-\end{center}
-\end{figure}
-\newpage
-Para obtener la trayectoria de la función de alineamiento es necesario considerar una medida de similitud o distancia entre $X$ y $Y$, la cual se define considerando una distancia local $d(x_{n},y_{m})$. Esta distancia local se calcula para todos los vectores en el eje $n$ contra todos los vectores en el eje $m$ como se muestra en la Figura \ref{fig:figura2.47}. Por simplicidad esta distancia local será denotada como $d(n, m)$, donde $n = 1,2,...,N$, $m = 1,2,...,M$ y generalmente $N \neq M$. Entre más pequeño sea el valor de $d$, mayor es la similitud entre $x_{n}$ y $y_{m}$.
-\begin{figure}[H]
-\begin{center}
-\includegraphics[width=0.3\textwidth]{Imagenes/Cap2/image048}
-\end{center}
-\begin{center}
-\vskip -0.5cm
-\caption{\small{Distancias locales generadas por los patrones de voz.}}
-\label{fig:figura2.47}
-{\small{Fuente: \cite{rabiner}}}
-\end{center}
-\end{figure}
-\vskip -0.5cm
-Dada la función de distancia local $d$, la trayectoria óptima de la función de alineamiento $w(n)$ acotada por el paralelogramo de la Figura \ref{fig:figura2.46}, debe de ser tal que la distancia acumulada total $D_{T}$ desde el punto $(x_{1}, y_{1})$ al punto $(x_{N}, y_{M})$ siguiendo a $w(n)$ sea mínima, es decir: 
-\begin{equation}
-\label{eq:ecuacion76}
-D_{T} = \underset{\{w(n)\}}{min} \sum_{n=1}^{N}d(n,w(n))
-\end{equation}
-Donde $d(n,w(n))$ es la distancia local entre el segmento $n$ del patrón de referencia y el segmento $w(n)$ del patrón de prueba.
-\vskip 0.5cm
-Hasta este punto se ha mencionado la trayectoria óptima de la función de alineamiento, sin embargo, no se ha establecido un método para obtenerla. La técnica para determinarla es mediante el método de programación dinámica. Usando esta técnica, la distancia mínima acumulada a cualquier punto en el plano $(n,m)$ puede ser determinada en forma recursiva:
-\begin{equation}
-\label{eq:ecuacion77}
-D_{A}(n,m) = d(n,m) + \underset{q \leq m}{min} D_{A}(n-1,q)
-\qquad
-\begin{aligned}
-& n = 1,2,...,N \\
-& m = 1,2,...,M
-\end{aligned}
-\end{equation}
-\vskip 0.5cm
-Donde $D_{A}(n-1, q)$ es la distancia mínima acumulada al punto $(n-1, q)$, y $q$ puede tomar valores de $q = m, m - 1, m - 2$. Dadas las restricciones de continuidad de las Ecuaciones \eqref{eq:ecuacion72} y \eqref{eq:ecuacion73} y la Ecuación \eqref{eq:ecuacion77} puede ser escrita de la siguiente forma:
-\begin{equation}
-\label{eq:ecuacion78}
-\begin{aligned}
-D_{A}(n,m) = d(n,m) + min[D_{A}(n-1,m)g(n-1,m) , \\
-D_{A}(n-1,m-1),D_{A}(n-1,m-2)]
-\end{aligned}
-\end{equation}
-
-Donde:
-\vskip 0.2cm
-\begin{center}
-$
-g(n,m) = \left\{ \begin{array}{lcl}
-1 & w(n) \neq w(n-1) \\
-& \\
-\infty & w(n) = w(n-1) \\
-\end{array}
-\right.
-$
-\end{center}
-\vskip 0.2cm
-En la Figura \ref{fig:figura2.48}, se muestra un ejemplo gráfico de las restricciones de continuidad, además, se muestra una restricción no lineal ya que si la mejor trayectoria al punto $(n - 1, m)$ viene del punto $(n - 2, m)$, entonces ninguna trayectoria puede salir del punto $(n - 1, m)$, a estas restricciones se les conoce como restricciones locales del tipo Itakura.
-\begin{figure}[H]
-\begin{center}
-\includegraphics[width=0.35\textwidth]{Imagenes/Cap2/image049}
-\end{center}
-\begin{center}
-\vskip -0.5cm
-\caption{\small{Conjunto de posibles trayectorias hacia el punto (n, m).}}
-\label{fig:figura2.48}
-{\small{Fuente: \cite{rabiner}}}
-\end{center}
-\end{figure}
-\vskip -1.0cm
-La función de alineamiento se obtiene a partir de la Ecuación \eqref{eq:ecuacion77}. Esta función contiene los índices $m$ donde $D_{A}(n - 1, q)$ es mínima para $q = m, m-1, m-2$ y $n = 2,3,...,N$, en otras palabras, la función de alineamiento contiene los índices para los cuales existe una correspondencia entre el índice $n$ del patrón de referencia y el índice $m$ del patrón de prueba. La iteración de la ecuación se realiza para todos los índices $m$ válidos, es decir, todos los índices $m$ dentro del paralelogramo de la Figura \ref{fig:figura2.46}, y para cada valor de $n$, desde $n = 1$ hasta $n = N$. La solución final o distancia total está dada como:
-\begin{equation}
-\label{eq:ecuacion79}
-D_{T} = D_{A}(N,M)
-\end{equation}
-Las Ecuaciones \eqref{eq:ecuacion78} y \eqref{eq:ecuacion79} definen la técnica de programación dinámica para el alineamiento en el tiempo de patrones de voz. Al aplicarla a dos patrones de voz, se obtiene la medida de distancia total y la función de alineamiento. La función de alineamiento se usa en la etapa de entrenamiento, mientras que la distancia total entre los patrones de voz se emplea en la etapa de prueba.
-\vskip 0.5cm
-A este método de alineación en el tiempo se le conoce como inicio y fin con restricción, rango de la pendiente 2 a 1 (Constrained Endpoints 2 to 1 slope range, CE2-1) donde se asume que existe un alineamiento perfecto entre los puntos de inicio y fin de los patrones de voz de prueba y referencia. En la Figura \ref{fig:figura2.49}, se ilustra este método.
+La función de alineamiento debe cumplir con las Ecuaciones \eqref{eq:ecuacion70} y \eqref{eq:ecuacion71}, a estas condiciones se les llama conjunto restringido en los límites, además de cumplir con ciertas suposiciones acerca de la forma de $w(n)$. Por ejemplo, si $w(n)$ es una función lineal, el alineamiento en el tiempo es simplemente una compresión o expansión de una escala en el tiempo. A este método de alineación en el tiempo se le conoce como inicio y fin con restricción, rango de la pendiente 2 a 1 (Constrained Endpoints 2 to 1 slope range, CE2-1) donde se asume que existe un alineamiento perfecto entre los puntos de inicio y fin de los patrones de voz de prueba y referencia. En la Figura \ref{fig:figura2.49}, se ilustra este método.
 \begin{figure}[H]
 \begin{center}
 \includegraphics[width=0.3\textwidth]{Imagenes/Cap2/image050}
