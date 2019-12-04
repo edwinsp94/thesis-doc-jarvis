@@ -63,7 +63,7 @@ Una vez entendido el ciclo de negocio de la arquitectura, se debe plasmar la inf
 \cline{2-3}
  & {\small Objetivo de Mercado} & {\small El sistema a diseñar es del tipo de módulo reconocedor de la voz y está dirigido al control de acceso, sin embargo, puede ser usado para el control de cualquier otro objeto.}  \\ 
 \cline{2-3}
- & {\small Capacidad} & {\small El sistema debe poder reconocer la voz con una tasa de acierto del 95\%. El sistema debe poder controlar los accesos para nuevos de usuarios. El sistema debe poder dar información de todos los accesos que tuvo un usuario. El sistema debe poder permitir o denegar el acceso a un usuario. El sistema debe ser capaz de trabajar en ambientes con ruido no mayores a 80 dBC.
+ & {\small Capacidad} & {\small El sistema debe poder reconocer la voz con una tasa de acierto del 95\%. El sistema debe poder controlar los accesos para nuevos usuarios. El sistema debe poder dar información de todos los accesos que tuvo un usuario. El sistema debe poder permitir o denegar el acceso a un usuario. El sistema debe ser capaz de trabajar en ambientes con ruido no mayores a 80 dBC.
 } \\
 \hline 
 {\small \multirow{4}{4em}{Técnicos}} & {\small Desempeño} & {\small El sistema debe ser capaz de reconocer la voz de un locutor en un tiempo menor o igual a 5 segundos. Sin embargo, la rapidez de respuesta del sistema dependerá de la cantidad de usuarios registrados en el sistema}  \\ 
@@ -122,37 +122,7 @@ El modelo de referencia servirá para aproximarse al posible hardware y software
 Primero se implementará una aplicación de escritorio en lenguaje Java, este nos permitirá evaluar y testear el algoritmo de reconocimiento de voz encontrando así las mejores funciones y los parámetros adecuados para un correcto y eficiente funcionamiento del reconocimiento de voz, para luego, finalmente ser llevado a una aplicación Android, el cual servirá como interfaz entre el usuario y el sistema. A continuación, se mostrará algunos codigos fuente de los algoritmos más importantes que usaremos para nuestro sistema de reconocimiento de voz.
 
 \begin{enumerate}
-\item[a)]Eliminación de ruido
-\par
-En la Figura \ref{fig:figura3.8} podemos ver la función del algoritmo NLMS definido por las Ecuaciones \eqref{eq:ecuacion10}, \eqref{eq:ecuacion11}, \eqref{eq:ecuacion12} y \eqref{eq:ecuacion13}, donde $beta/DEN$ es el factor de convergencia, $nord$ el tamaño del filtro y $a0$ el vector de pesos inicial.
-\begin{figure}[H]
-\captionsetup{justification=centering}
-\begin{center}
-\includegraphics[width=0.6\textwidth]{Imagenes/Cap3/image008}
-\end{center}
-\begin{center}
-\vskip -0.5cm
-\caption{\small{Código fuente del algoritmo NLMS.}}
-\label{fig:figura3.8}
-{\small{Fuente: Elaboración propia}}
-\end{center}
-\end{figure}
-\vskip -0.5cm
-Al eliminar el ruido en la señal de voz a veces esta puede quedar con valores que sobrepasan el valor de cuantificación dado inicialmente, por lo que será necesario aplicar una normalización en la señal, esta función se muestra en la Figura \ref{fig:figura3.9} definida por las Ecuaciones \eqref{eq:ecuacion14}, \eqref{eq:ecuacion15} y \eqref{eq:ecuacion16}.
-\begin{figure}[H]
-\captionsetup{justification=centering}
-\begin{center}
-\includegraphics[width=0.8\textwidth]{Imagenes/Cap3/image009}
-\end{center}
-\begin{center}
-\vskip -0.5cm
-\caption{\small{Código fuente de la función de normalización de datos.}}
-\label{fig:figura3.9}
-{\small{Fuente: Elaboración propia}}
-\end{center}
-\end{figure}
-\vskip -0.5cm
-\item[b)]Filtro preénfasis
+\item[a)]Filtro preénfasis
 \par
 En la Figura \ref{fig:figura3.10} se muestra la función para el filtro de preénfasis definida en la Ecuación \eqref{eq:ecuacion32}, donde $vEntrada$ es el vector de datos de la señal a filtrar y $alfa$ el parámetro de preénfasis.
 \begin{figure}[H]
@@ -168,36 +138,24 @@ En la Figura \ref{fig:figura3.10} se muestra la función para el filtro de preé
 \end{center}
 \end{figure}
 \vskip -0.5cm
+\item[b)]Eliminación de ruido
+\par
+En la Figura \ref{fig:figura3.8} podemos ver la función del algoritmo NLMS definido por las Ecuaciones \eqref{eq:ecuacion10}, \eqref{eq:ecuacion11}, \eqref{eq:ecuacion12} y \eqref{eq:ecuacion13}, donde $beta/DEN$ es el factor de convergencia, $nord$ el tamaño del filtro y $a0$ el vector de pesos inicial.
+\begin{figure}[H]
+\captionsetup{justification=centering}
+\begin{center}
+\includegraphics[width=0.6\textwidth]{Imagenes/Cap3/image008}
+\end{center}
+\begin{center}
+\vskip -0.5cm
+\caption{\small{Código fuente del algoritmo NLMS.}}
+\label{fig:figura3.8}
+{\small{Fuente: Elaboración propia}}
+\end{center}
+\end{figure}
+\vskip -0.5cm
 \item[c)]Detección de inicio y fin de la señal de voz
 \par
-La Figura \ref{fig:figura3.13} muestra la función de energía de tiempo corto definida en la Ecuación \eqref{eq:ecuacion22}.
-\begin{figure}[H]
-\captionsetup{justification=centering}
-\begin{center}
-\includegraphics[width=0.7\textwidth]{Imagenes/Cap3/image013}
-\end{center}
-\begin{center}
-\vskip -0.5cm
-\caption{\small{Código fuente de la función de energía de tiempo corto.}}
-\label{fig:figura3.13}
-{\small{Fuente: Elaboración propia}}
-\end{center}
-\end{figure}
-\vskip -0.5cm
-En la Figura \ref{fig:figura3.14} se muestra la función de la tasa de cruce por ceros definida por las Ecuaciones \eqref{eq:ecuacion19}, \eqref{eq:ecuacion20}, \eqref{eq:ecuacion21} y \eqref{eq:ecuacion23}.
-\begin{figure}[H]
-\captionsetup{justification=centering}
-\begin{center}
-\includegraphics[width=0.75\textwidth]{Imagenes/Cap3/image014}
-\end{center}
-\begin{center}
-\vskip -0.5cm
-\caption{\small{Código fuente de la función de tasa de cruce por ceros.}}
-\label{fig:figura3.14}
-{\small{Fuente: Elaboración propia}}
-\end{center}
-\end{figure}
-\vskip -0.5cm
 En la Figura \ref{fig:figura3.17} se muestra el algoritmo de Rabiner y Sambur de Tipo 1, definido por las Ecuaciones \eqref{eq:ecuacion22}, \eqref{eq:ecuacion23}, \eqref{eq:ecuacion24}, \eqref{eq:ecuacion25} y \eqref{eq:ecuacion26}, teniendo como entradas a $vEntrada$ que es el vector de datos de la señal y $tamTrana$ que es la longitud de la trama con la que se hará la evaluación, retornando el punto de inicio o fin de la voz en la señal según sea el caso.
 
 \begin{figure}[H]
@@ -263,7 +221,7 @@ En la Figura \ref{fig:figura3.25} se muestra la función de remuestreo por banda
 \newpage
 \item[g)]Obtención de los coeficientes MFCC
 \par
-La Figura \ref{fig:figura3.26} muestra la función para la obtención de los coeficientes MFCC, definido por las Ecuaciones \eqref{eq:ecuacion63}, \eqref{eq:ecuacion64} y \eqref{eq:ecuacion65}. Estas ecuaciones definen las etapas de compresión y la transformada discreta inversa de Fourier de la señal.
+La Figura \ref{fig:figura3.26} muestra la función para la obtención de los coeficientes MFCC, definido por las Ecuaciones \eqref{eq:ecuacion63}, \eqref{eq:ecuacion64} y \eqref{eq:ecuacion65}.
 \begin{figure}[H]
 \captionsetup{justification=centering}
 \begin{center}
@@ -276,27 +234,10 @@ La Figura \ref{fig:figura3.26} muestra la función para la obtención de los coe
 {\small{Fuente: Elaboración propia}}
 \end{center}
 \end{figure}
-\newpage
-\item[h)]Medidas de distorsión
-\par
-En las Figura \ref{fig:figura3.30} se muestra las funcion de la distancia de error cuadrático medio entre dos señales de voz, definida por la Ecuación \eqref{eq:ecuacion100}.
 
-\begin{figure}[H]
-\captionsetup{justification=centering}
-\begin{center}
-\includegraphics[width=0.7\textwidth]{Imagenes/Cap3/image030}
-\end{center}
-\begin{center}
-\vskip -0.5cm
-\caption{\small{Código fuente de la función de distancia de error cuadrático medio.}}
-\label{fig:figura3.30}
-{\small{Fuente: Elaboración propia}}
-\end{center}
-\end{figure}
-\vskip -0.5cm
 \item[i)]Alineamiento temporal dinámico
 \par
-En la Figura \ref{fig:figura3.32} se muestra la función DTW de tipo simétrico con slope constrain $P = 1/2$ sin ventana de ajuste en la comparación de patrones.
+En la Figura \ref{fig:figura3.32} se muestra la función DTW Simétrico con $P = 1/2$ sin ventana de ajuste.
 \begin{figure}[H]
 \captionsetup{justification=centering}
 \begin{center}
@@ -312,20 +253,6 @@ En la Figura \ref{fig:figura3.32} se muestra la función DTW de tipo simétrico 
 
 \item[j)]Construcción del patrón de referencia
 \par
-En la Figura \ref{fig:figura3.33} tenemos la función $indicesMinAnterior$ que nos permite hallar el punto anterior con menor peso en la matriz de comparación de patrones $mg$, esta es usada por la función $calcularCaminoDTW$, la cual permite obtener el camino con menor distancia $y_{w(n)}$, definida por la Ecuación \eqref{eq:ecuacion101}, llamada función warping o función de alineamiento.
-\begin{figure}[H]
-\captionsetup{justification=centering}
-\begin{center}
-\includegraphics[width=0.7\textwidth]{Imagenes/Cap3/image033}
-\end{center}
-\begin{center}
-\vskip -0.5cm
-\caption{\small{Código fuente de la función para obtener el recorrido mínimo DTW.}}
-\label{fig:figura3.33}
-{\small{Fuente: Elaboración propia}}
-\end{center}
-\end{figure}
-\vskip -0.5cm
 En la Figura \ref{fig:figura3.34} se muestra la función para la construcción de los patrones de referencia, definido por la Ecuación \eqref{eq:ecuacion101}.
 \begin{figure}[H]
 \captionsetup{justification=centering}
@@ -343,7 +270,7 @@ En la Figura \ref{fig:figura3.34} se muestra la función para la construcción d
 
 \newpage
 \subsubsection{Software de administración de usuarios}
-A continuación, veremos algunas de las interfaces gráficas de usuario del software de aplicación del sistema de control de acceso por reconocimiento de voz. En la Figura \ref{fig:figura3.35} podemos ver la primera interfaz que se mostrará después de haber instalado la aplicación en el dispositivo móvil Android, donde tendremos dos opciones \textit{Iniciar} y \textit{Crear Cuenta}. La primera es cuando ya se tiene un usuario del tipo \textit{Administrador}, pero sin tener aún el registro de su patrón de voz de clave de acceso, en caso de no ocurrir esto entonces se escogerá la segunda opción.
+A continuación, mostraremos algunas de las interfaces gráficas de usuario del software de aplicación del sistema de control de acceso por reconocimiento de voz. En la Figura \ref{fig:figura3.35} podemos ver la primera interfaz que se mostrará después de haber instalado la aplicación en el dispositivo móvil Android, donde tendremos dos opciones \textit{Iniciar} y \textit{Crear Cuenta}. La primera es cuando ya se tiene un usuario del tipo \textit{Administrador}, pero sin tener aún el registro de su patrón de voz de clave de acceso, en caso de no ocurrir esto entonces se escogerá la segunda opción.
 \begin{figure}[H]
 \captionsetup{justification=centering}
 \begin{center}
@@ -356,9 +283,9 @@ A continuación, veremos algunas de las interfaces gráficas de usuario del soft
 {\small{Fuente: Elaboración propia}}
 \end{center}
 \end{figure}
-
+\vskip -0.5cm
 Después de registrar el usuario \textit{Administrador} del sistema (esto solo se hará una sola vez), la opción \textit{Crear Cuenta} desaparecerá.
-
+\newpage
 En la Figura \ref{fig:figura3.39} se muestra las opciones del menú principal del sistema que son: \textit{Comandos por Voz}, \textit{Cerrar Sesión}, \textit{Micrófono Externo}, \textit{Dispositivo Arduino}, \textit{Administrar Cuentas} y \textit{Consultar Accesos}, donde estos dos últimos solo se mostrarán para usuarios del tipo \textit{Administrador}.
 \begin{figure}[H]
 \captionsetup{justification=centering}
@@ -372,7 +299,7 @@ En la Figura \ref{fig:figura3.39} se muestra las opciones del menú principal de
 {\small{Fuente: Elaboración propia}}
 \end{center}
 \end{figure}
-
+\vskip -0.5cm
 En la Figura \ref{fig:figura3.40} se puede ver la interfaz para la opción del menú principal \textit{Administrar Cuentas}, donde se muestra una lista de las cuentas de los usuarios del sistema. La opción con el \textit{ícono de lupa} es para buscar usuarios, esta búsqueda puede ser por su nombre o DNI (Documento Nacional de Identidad), la opción con el \textit{ícono del mas} es para registrar un nuevo usuario al sistema, además al seleccionar un usuario de la lista podemos ver y editar sus datos.
 \begin{figure}[H]
 \captionsetup{justification=centering}
@@ -386,9 +313,10 @@ En la Figura \ref{fig:figura3.40} se puede ver la interfaz para la opción del m
 {\small{Fuente: Elaboración propia}}
 \end{center}
 \end{figure}
-
+\vskip -0.5cm
 En la Figura \ref{fig:figura3.41} se muestra la interfaz para registrar a un nuevo usuario al sistema, donde en \textit{tipo} se especificará que tipo de acceso tendrá este usuario al sistema, si es \textit{Administrador} tendrá todos los privilegios del sistema, si es \textit{Normal} no podrá registrar ni editar los datos de los usuarios ni tampoco podrá consultar los accesos de estos al sistema y si es \textit{Sin Acceso} se le denegará el acceso al sistema.
-
+\vskip 0.5cm
+En la Figura \ref{fig:figura3.42} se muestra el menú con las opciones \textit{Guardar}, \textit{Patrón de Voz} y \textit{Comando de Voz}. El primero es para guardar el registro o el editado de los datos de un usuario. El segundo es para poder asignar un patrón de voz clave al usuario que le permitirá acceder al sistema. Y la última opción es para asignar los comandos de voz que realizará el sistema por parte del usuario.
 \begin{figure}[H]
 \captionsetup{justification=centering}
 \begin{center}
@@ -401,8 +329,7 @@ En la Figura \ref{fig:figura3.41} se muestra la interfaz para registrar a un nue
 {\small{Fuente: Elaboración propia}}
 \end{center}
 \end{figure}
-
-En la Figura \ref{fig:figura3.42} se muestra el menú con las opciones \textit{Guardar}, \textit{Patrón de Voz} y \textit{Comando de Voz}. El primero es para guardar el registro o el editado de los datos de un usuario. El segundo es para poder asignar un patrón de voz clave al usuario que le permitirá acceder al sistema. Y la última opción es para asignar los comandos de voz que realizará el sistema por parte del usuario.
+\vskip -0.5cm
 \begin{figure}[H]
 \captionsetup{justification=centering}
 \begin{center}
@@ -415,7 +342,7 @@ En la Figura \ref{fig:figura3.42} se muestra el menú con las opciones \textit{G
 {\small{Fuente: Elaboración propia}}
 \end{center}
 \end{figure}
-
+\newpage
 En la Figura \ref{fig:figura3.43} se muestra la lista de audios de los patrones de voz que conforman la clave de acceso de un usuario, esta interfaz se muestra a través de la opción \textit{Patrones de Voz} del menú de opciones que se vió en la Figura \ref{fig:figura3.42}.
 \begin{figure}[H]
 \captionsetup{justification=centering}
@@ -429,22 +356,8 @@ En la Figura \ref{fig:figura3.43} se muestra la lista de audios de los patrones 
 {\small{Fuente: Elaboración propia}}
 \end{center}
 \end{figure}
-
-En la Figura \ref{fig:figura3.44} se muestra la interfaz para la grabación de un nuevo audio, a través de la opción con \textit{ícono de mas} que se vió en la interfaz anterior en la Figura \ref{fig:figura3.43}. Como podemos ver en esta interfaz al inicio se muestran tres opciones, la primera es para iniciar la grabación, la segunda es para reproducir la grabación y la tercera es para regresar a la lista de audios.
-\begin{figure}[H]
-\captionsetup{justification=centering}
-\begin{center}
-\includegraphics[width=0.25\textwidth]{Imagenes/Cap3/image044}
-\end{center}
-\begin{center}
 \vskip -0.5cm
-\caption{\small{Grabación de un nuevo audio en el sistema.}}
-\label{fig:figura3.44}
-{\small{Fuente: Elaboración propia}}
-\end{center}
-\end{figure}
-
-Una vez terminada la grabación se mostrarán las opciones de \textit{cancelar} y \textit{aceptar} el almacenamiento del audio en la base datos, \textit{grabar} un nuevo audio, \textit{reproducir} el audio grabado, y por ultimo ir a la \textit{lista de audios}, ver la Figura \ref{fig:figura3.45}.
+En la Figura \ref{fig:figura3.45} se muestra la interfaz para la grabación de un nuevo audio, a través de la opción con \textit{ícono de mas} que se vió en la interfaz anterior en la Figura \ref{fig:figura3.43}. Como podemos ver en esta interfaz al inicio se muestran tres opciones, la primera es para iniciar la grabación, la segunda es para reproducir la grabación y la tercera es para regresar a la lista de audios. Una vez terminada la grabación se mostrarán las opciones de \textit{cancelar} y \textit{aceptar} el almacenamiento del audio en la base datos, \textit{grabar} un nuevo audio, \textit{reproducir} el audio grabado, y por ultimo ir a la \textit{lista de audios}, ver la Figura \ref{fig:figura3.45}.
 \begin{figure}[H]
 \captionsetup{justification=centering}
 \begin{center}
@@ -457,21 +370,7 @@ Una vez terminada la grabación se mostrarán las opciones de \textit{cancelar} 
 {\small{Fuente: Elaboración propia}}
 \end{center}
 \end{figure}
-
-También, podemos eliminar audios del sistema, para ello mantenemos presionado por un tiempo el audio a eliminar y así la vista cambiará a modo eliminación, permitiendo seleccionar uno a más audios a eliminar, al seleccionar la opción con \textit{ícono de tacho} se eliminarán todos los audios seleccionados de la base datos, ver la Figura \ref{fig:figura3.46}.
-\begin{figure}[H]
-\captionsetup{justification=centering}
-\begin{center}
-\includegraphics[width=0.25\textwidth]{Imagenes/Cap3/image046}
-\end{center}
-\begin{center}
 \vskip -0.5cm
-\caption{\small{Eliminar audios de un usuario del sistema.}}
-\label{fig:figura3.46}
-{\small{Fuente: Elaboración propia}}
-\end{center}
-\end{figure}
-
 En la Figura \ref{fig:figura3.47} podemos ver la lista de los accesos de los usuarios del sistema, esta se mostrará a través de la opción \textit{Consultar Accesos} del menú principal del sistema mostrado en la Figura \ref{fig:figura3.39}. En esta interfaz se puede realizar búsquedas por DNI del usuario o por fecha de acceso al sistema, a través de la opción con \textit{ícono de lupa}.
 \begin{figure}[H]
 \captionsetup{justification=centering}
@@ -485,22 +384,9 @@ En la Figura \ref{fig:figura3.47} podemos ver la lista de los accesos de los usu
 {\small{Fuente: Elaboración propia}}
 \end{center}
 \end{figure}
-
-En la Figura \ref{fig:figura3.48} podemos observar la interfaz que nos permitirá realizar el reconocimiento del usuario para su acceso al sistema, así como los comandos de voz. A través de la opción con \textit{ícono de cámara}, nos permitirá cambiar la foto de la cuenta que ha iniciado sesíon, para ello se abrirá la cámara del dispositivo para poder tomar la foto.
-\begin{figure}[H]
-\captionsetup{justification=centering}
-\begin{center}
-\includegraphics[width=0.25\textwidth]{Imagenes/Cap3/image048}
-\end{center}
-\begin{center}
 \vskip -0.5cm
-\caption{\small{Interfaz para el reconocimiento del usuario y comandos por voz.}}
-\label{fig:figura3.48}
-{\small{Fuente: Elaboración propia}}
-\end{center}
-\end{figure}
+En la Figura \ref{fig:figura3.50} podemos observar la interfaz que nos permitirá realizar el reconocimiento del usuario para su acceso al sistema, así como los comandos de voz. En la figura se muestra la grabación de un comando de voz para su reconocimiento por parte del sistema, a través de la opción con \textit{ícono de micrófono} (el tiempo máximo de grabación es de un minuto), una vez terminada la grabación esta puede ser cancelada o enviada para su procesamiento y reconocimiento del comando de voz. Además través de la opción con \textit{ícono de cámara}, nos permitirá cambiar la foto de la cuenta que ha iniciado sesíon, para ello se abrirá la cámara del dispositivo para poder tomar la foto.
 
-En la Figura \ref{fig:figura3.50} se muestra la grabación de un comando de voz para su reconocimiento por parte del sistema, a través de la opción con \textit{ícono de micrófono} (el tiempo máximo de grabación es de un minuto), una vez terminada la grabación esta puede ser cancelada o enviada para su procesamiento y reconocimiento del comando de voz.
 \begin{figure}[H]
 \captionsetup{justification=centering}
 \begin{center}
@@ -513,7 +399,7 @@ En la Figura \ref{fig:figura3.50} se muestra la grabación de un comando de voz 
 {\small{Fuente: Elaboración propia}}
 \end{center}
 \end{figure}
-
+\vskip -0.5cm
 En el reconocimiento pueden darse los resultados de \textit{usuario reconocido, usuario no reconocido, usted no es el usuario, comando reconocido o comando no reconocido.} En la Figura \ref{fig:figura3.51} se muestra el reconocimiento del comando de voz \textit{encender}. Para esta aplicación solo se reconocerán los comandos \textit{encender}, \textit{apagar} y \textit{jarvis}.
 \begin{figure}[H]
 \captionsetup{justification=centering}
@@ -527,23 +413,8 @@ En el reconocimiento pueden darse los resultados de \textit{usuario reconocido, 
 {\small{Fuente: Elaboración propia}}
 \end{center}
 \end{figure}
-
-Después de dar en la opción \textit{Cerrar Sesión} del menú principal de la Figura \ref{fig:figura3.39}, nos llevará a la pantalla principal. En la Figura \ref{fig:figura3.53} se muestra el menú principal antes de iniciar sesión al sistema con una cuenta de usuario.
-
-\begin{figure}[H]
-\captionsetup{justification=centering}
-\begin{center}
-\includegraphics[width=0.25\textwidth]{Imagenes/Cap3/image053}
-\end{center}
-\begin{center}
 \vskip -0.5cm
-\caption{\small{Menú de opciones antes de iniciar sesión en el sistema.}}
-\label{fig:figura3.53}
-{\small{Fuente: Elaboración propia}}
-\end{center}
-\end{figure}
-
-Para iniciar sesión debemos ir a la opción \textit{Iniciar Sesión} del menú principal, ver la Figura \ref{fig:figura3.53}, donde se nos mostrará la interfaz para poder hacer la grabación del patrón clave de voz a reconocer, esta interfaz es la misma que para grabar comandos que se vió en la Figura \ref{fig:figura3.50}. Si el patrón clave de acceso es incorrecto, o si el usuario todavía no se ha registrado o si un usuario quiere hacerse pasar por otro usuario se mostrará un mensaje de error, tal como se ve en la Figura \ref{fig:figura3.54}.
+Después de dar en la opción \textit{Cerrar Sesión} del menú principal de la Figura \ref{fig:figura3.39}, nos llevará a la pantalla principal. En la Figura \ref{fig:figura3.60} se muestra el menú principal antes de iniciar sesión al sistema con una cuenta de usuario. Para iniciar sesión debemos ir a la opción \textit{Iniciar Sesión} del menú principal, donde se nos mostrará la interfaz para poder hacer la grabación del patrón clave de voz a reconocer, esta interfaz es la misma que para grabar comandos que se vió en la Figura \ref{fig:figura3.50}. Si el patrón clave de acceso es incorrecto, o si el usuario todavía no se ha registrado o si un usuario quiere hacerse pasar por otro usuario se mostrará un mensaje de error, tal como se ve en la Figura \ref{fig:figura3.54}.
 \begin{figure}[H]
 \captionsetup{justification=centering}
 \begin{center}
@@ -556,7 +427,7 @@ Para iniciar sesión debemos ir a la opción \textit{Iniciar Sesión} del menú 
 {\small{Fuente: Elaboración propia}}
 \end{center}
 \end{figure}
-
+\vskip -0.5cm
 En la Figura \ref{fig:figura3.60} se muestra un mensaje de error al momento de establecer la comunicación con el Arduino para el control del hardware del sistema, a través de la opción \textit{Dispositivo Arduino} del menú principal, esto se debe a que el Arduino se encuentra apagado. Por otro lado, en la Figura \ref{fig:figura3.61} se muestra un mensaje de una conexión correcta con el Arduino, permitiendo así el control del hardware del sistema.
 \begin{figure}[H]
 \captionsetup{justification=centering}
@@ -580,41 +451,6 @@ En la Figura \ref{fig:figura3.60} se muestra un mensaje de error al momento de e
 \vskip -0.5cm
 \caption{\small{Conexión establecida con arduino.}}
 \label{fig:figura3.61}
-{\small{Fuente: Elaboración propia}}
-\end{center}
-\end{figure}
-
-\newpage
-\subsection{Desarrollo del software del sistema}
-Esta etapa consiste en construir los algoritmos utilizados para establecer la comunicación entre el software de aplicación y el hardware del sistema, esta está conformada por tres módulos \textit{Controlador de Activación de la Cerradura Eléctrica}, \textit{Comunicación con el Arduino} y \textit{Comunicación con el Computador}, ver la Figura \ref{fig:figura3.3}.
-\vskip 0.5cm
-El módulo \textit{Comunicación con Computador} consiste en implementar un algoritmo tanto en el dispositivo móvil como en el computador, para establecer la comunicación entre ellos para el uso del micrófono para la grabación del ruido del ambiente. A continuación, mostraremos los códigos fuentes de la implementación de los otros módulos restantes.
-\vskip 0.5cm
-En la Figura se muestra el código fuente que se implementará en el Arduino para establecer la comunicación con el dispositivo móvil, para poder desde este manipular el hardware del sistema, para nuestro caso solo se ralizarán las acciones de \textit{abrir}, \textit{cerrar}, \textit{encender} y \textit{apagar}.
-
-\begin{figure}[H]
-\captionsetup{justification=centering}
-\begin{center}
-\includegraphics[width=0.4\textwidth]{Imagenes/Cap3/image062}
-\end{center}
-\begin{center}
-\vskip -0.5cm
-\caption{\small{Código fuente para establecer la comunicación con el dispositivo móvil en arduino.}}
-\label{fig:figura3.62}
-{\small{Fuente: Elaboración propia}}
-\end{center}
-\end{figure}
-
-En la Figura \ref{fig:figura3.63} se muestra el código fuente que se implementará en la aplicación del dispositivo móvil para la comunicación con el arduino para la manipulación del hardware del sistema.
-\begin{figure}[H]
-\captionsetup{justification=centering}
-\begin{center}
-\includegraphics[width=0.65\textwidth]{Imagenes/Cap3/image063}
-\end{center}
-\begin{center}
-\vskip -0.5cm
-\caption{\small{Código fuente para establecer la comunicación con el arduino en android.}}
-\label{fig:figura3.63}
 {\small{Fuente: Elaboración propia}}
 \end{center}
 \end{figure}
@@ -680,12 +516,12 @@ A continuación, veremos los resultados obtenidos de las evaluaciones para cada 
 \input{TablasCap3}
 % --------------------------------------------------%
 
-\subsection{Hallar el algoritmo para la detección de inicio y fin de la señal de voz}
-Ahora pasaremos ah escoger el mejor algoritmo para la etapa de Detección de Inicio y Fin de la Señal de Voz, teniendo la siguiente configuración del algoritmo: \\
+\subsection{Evaluar algoritmo para la detección de inicio y fin de la señal de voz}
+Ahora pasaremos a escoger el mejor algoritmo para la etapa de Detección de Inicio y Fin de la Señal de Voz, teniendo la siguiente configuración del algoritmo: \\
 - Eliminación de Segmentos Inútiles por Energía \\
 \hspace*{1cm} T = 192 ; \qquad E = 3 \\
 - Algoritmo de Rabiner \& Sambur de Tipo 1 \\
-\hspace*{1cm} T = 128 \\S
+\hspace*{1cm} T = 128 \\
 - Algoritmo de Rabiner \& Sambur de Tipo 2 \\
 \hspace*{1cm} T = 128 
 
@@ -733,7 +569,7 @@ La grabación se realizó con una frecuencia de muestreo de 16000 Hz, canal mono
 
 De las Figuras \ref{fig:figura3.74}, \ref{fig:figura3.75} y \ref{fig:figura3.76} vemos que el algoritmo de Rabiner \& Sambur Tipo 1 recortó a la señal de voz mejor con respecto a los otros algoritmos, por lo tanto, se escogerá a este algoritmo para la etapa de Detección de Inicio y Fin de la Señal de Voz.
 
-\subsection{Hallar el algoritmo para la eliminación de ruido aditivo}
+\subsection{Evaluar algoritmo para la eliminación de ruido aditivo}
 Ahora pasaremos ah escoger el mejor algoritmo para la etapa de \textit{Eliminación de Ruido}, teniendo como configuración del algoritmo de reconocimiento de voz para el sistema: \\
 - Algoritmo LMS\\
 \hspace*{1cm} M = 128 ; \qquad $\mu$ = 0.02 y 0.002\\
@@ -796,27 +632,9 @@ En la Figura \ref{fig:figura3.77} se muestra la señal de voz contaminada por el
 \end{center}
 \end{figure}
 
-Las Figuras \ref{fig:figura3.80} y \ref{fig:figura3.83} se muestran los mejores resultados para cada algoritmo de esta prueba, podemos concluir que el mejor resultado para la eliminación de ruido lo obtuvo el NLMS con $\beta = 0.0025$, observamos que el ruido tiene una amplitud baja con respecto a la de la voz, por lo que resultará un mejor caso para la etapa de \textit{Detección de Inicio y Fin de la Señal de Voz}.
+Las Figuras \ref{fig:figura3.80} y \ref{fig:figura3.83} se muestran los mejores resultados para cada algoritmo de esta prueba, podemos concluir que el mejor resultado para la eliminación de ruido lo obtuvo el NLMS con $\beta = 0.0025$, observamos que el ruido tiene una amplitud baja con respecto a la de la voz, por lo que resultará un mejor caso para la etapa de \textit{Detección de Inicio y Fin de la Señal de Voz}. Finalmente, podemos concluir de esta etapa de Testeo del Sistema que la configuración que tendrá el algoritmo de reconocimiento de voz para el sistema, es el siguiente:
 
-\begin{figure}[H]
-\captionsetup{justification=centering}
-\begin{center}
-\includegraphics[width=0.65\textwidth]{Imagenes/Cap3/image084}
-\end{center}
-\begin{center}
-\vskip -0.5cm
-\caption{\small{Grafica de la señal para NLMS con \\ $\beta$=0.0025 y Rabiner \& Sambur Tipo 1 con T = 128.}}
-\label{fig:figura3.84}
-{\small{Fuente: Elaboración propia}}
-\end{center}
-\end{figure}
-
-\vskip -1.0cm
-Como vemos en la Figura \ref{fig:figura3.84} la señal no fue recortada perfectamente, el punto de fin de corte está muy lejos del final de la palabra esto se debe a que el sonido de la fuente de ruido tuvo mucho volumen pasando el rango de los 81 dBC que es el valor máximo para que funcione correctamente el algoritmo. Finalmente, podemos concluir de esta etapa de Testeo del Sistema que la configuración que tendrá el algoritmo de reconocimiento de voz para el sistema, es el siguiente:
-
-\newpage
 \begin{enumerate}
-
 \item[•]Etapa de Eliminación de Ruido: 
 \par
 \hspace*{1cm} - Algoritmo NLMS \\
@@ -840,7 +658,6 @@ Como vemos en la Figura \ref{fig:figura3.84} la señal no fue recortada perfecta
 \par
 \hspace*{1cm} - Algoritmo DTW Simétrico \\
 \hspace*{2cm} P = 1/2 ; \qquad R = 40 ; \qquad D = Error Cuadrático Medio \\
-
 \end{enumerate}
 
 \section{Fase 4. Mantenimiento del sistema}

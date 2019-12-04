@@ -20,13 +20,6 @@ Cosentino, L. (2016).
 \newblock Control de accesos. negocios de seguridad.
 \newblock 49:172--184.
 
-\bibitem[Cruz, 2009]{luis}
-Cruz, L. (2009).
-\newblock Aplicación del reconocimiento de voz de un hablante mediante una red
-  neuronal artificial backpropagation y coeficientes lpc sobre un canal
-  telefónico.
-\newblock 1:111--129.
-
 \bibitem[De~Luna et~al., 2006]{luna}
 De~Luna, O., Martínez, R., and Mora, G. (2006).
 \newblock {\em Reconocimiento de Voz con Redes Neuronales, DTW y Modelos
@@ -116,11 +109,6 @@ Rabiner, L. and Sambur, M. (1975).
 \newblock An algorithm for determining the endpoints of isolated utterances.
 \newblock 54:297--315.
 
-\bibitem[Rama, 2007]{rama}
-Rama, A. (2007).
-\newblock {\em Procesamiento Digital de la Señal Sonora Utilizando Matlab}.
-\newblock Lulu.com, México.
-
 \bibitem[Rowden, 1992]{rowden}
 Rowden, C. (1992).
 \newblock {\em Speech Processing}.
@@ -175,11 +163,6 @@ Velásquez, G. (2008).
 \newblock {\em Sistema de Reconocimiento de Voz en Matlab}.
 \newblock Escuela de Ingeniería Mecánica Eléctrica, Facultad de Ingeniería,
   Universidad de San Carlos de Guatemala, Guatemala.
-
-\bibitem[Wikipedia, 2016]{wikipedia1}
-Wikipedia (2016).
-\newblock Formante.
-\newblock \url{https://es.wikipedia.org/wiki/Formante}.
 
 \bibitem[Zelaya, 2004]{walter}
 Zelaya, W. (2004).

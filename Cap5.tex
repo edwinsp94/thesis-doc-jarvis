@@ -7,11 +7,11 @@ En esta tesis se desarrolló un sistema de seguridad por reconocimiento de voz e
 
 \item[2.]Se observó que el sistema funciona mejor con una frecuencia de muestreo de 16000 Hz en las grabaciones, si bien en la mayoría de reconocedores del habla se emplea una frecuencia de 8000 Hz, en nuestro caso no fue así, esto porque aparte de reconocer la palabra es necesario reconocer al locutor, por lo que se requiere más información de la señal de voz. Además de esta configuración se tuvo las siguientes características de grabación: un solo canal (mono), una resolución 16 bits y un ordenamiento de bits Little Endian.
 
-\item[3.]En la etapa de entrenamiento se empleó el algoritmo MFCC con el que se obtuvo una mayor tasa de acierto en el reconocimiento de voz, en lugar de los MFCC delta y doble delta, ver Tablas del \ref{table:tabla3.2} al \ref{table:tabla3.9}.
+\item[3.]En la etapa de entrenamiento se empleó el algoritmo MFCC con el que se obtuvo una mayor tasa de acierto en el reconocimiento de voz, en lugar de los MFCC delta y doble delta, ver Tablas del \ref{table:tabla3.3} al \ref{table:tabla3.9}.
 
 \item[4.]En la etapa de reconocimiento se empleó el algoritmo DTW simétrico en lugar del asimétrico, esto porque de la forma simétrica se obtiene una mayor información de la matriz de distancias permitiendo escoger la distancia con menor peso, ver Tablas del \ref{table:tabla3.13} al \ref{table:tabla3.16}.
 
-\item[5.]Para la eliminación del ruido se empleó el algoritmo NLMS, esto porque este usa un tamaño de paso de adaptación dinámico lo que permite que la señal se filtre de una mejor manera sin distorsionarla, sin embargo, este algoritmo tiene una limitación y es que funciona correctamente en ambientes con un ruido no máximo de 80 dBC.
+\item[5.]Para la eliminación del ruido se empleó el algoritmo NLMS, esto porque este usa un tamaño de paso de adaptación dinámico lo que permite que la señal se filtre de una mejor manera sin distorsionarla, sin embargo, este algoritmo tiene una limitación y es que funciona correctamente en ambientes con un ruido no máximo de 80 dBC, ver Figuras \ref{fig:figura3.80} y \ref{fig:figura3.83}.
 
 \item[6.]Para la detección de inicio y fin de la señal de voz se usó el algoritmo de Rabiner \& Sambur propuesto en \citep{unam}, esto porque el algoritmo definido en \citep{rabiner} se requiere que la frecuencia de muestreo sea de 10 KHz para su correcto funcionamiento, sin embargo como se dijo anteriormente se optó por una frecuencia de muestreo de 16 KHz, es por esto que se obtuvo mejores resultados con el primer algoritmo, ver Figuras \ref{fig:figura3.75} y \ref{fig:figura3.76}.
 
@@ -27,9 +27,9 @@ Para corregir este problema se podría proponer tener más bases de datos del mi
 
 \item[11.]Se implementó el algoritmo de construcción de patron de referencia, que consiste en obtener un patron característico a partir de un conjunto de patrones de un usuario, reduciendo así el número de comparaciones que realiza el sistema para reconocer la voz del locutor, sin embargo no se empleo esta técnica en nuestro sistema debido a que se obtuvo una tasa de error del 8\% en el reconocimiento de los usuarios del sistema, ver Tabla \ref{table:tabla4.34}.
 
-\item[12.]Nuestro algoritmo contribuye en el recocimiento de voz del locutor con una tasa de acierto del 95\% para el caso de un sistema de conjunto cerrado y una tasa de acierto del 100\% ante intrusos en el caso de sistema de conjunto abierto, mucho mejor que los resultados de 79.63\% y 92.6\% para sistemas abierto y cerrado respectivamente obtenido por \cite{eyra} y mucho más proximo y mejor al resultado de 94.44\% y 98.06\% obtenido en la investigación hecha por \cite{varela}.
+\item[12.]Nuestro algoritmo contribuye en el reconocimiento de voz del locutor con una tasa de acierto del 95\% para el caso de un sistema de conjunto cerrado y una tasa de acierto del 100\% ante intrusos en el caso de sistema de conjunto abierto, mucho mejor que los resultados de 79.63\% y 92.6\% para sistemas abierto y cerrado respectivamente obtenido por \cite{eyra} y mucho más proximo y mejor al resultado de 94.44\% y 98.06\% obtenido en la investigación hecha por \cite{varela}.
 
-\item[13.]En conclusión, el objetivo general que trata sobre implementar un sistema de seguridad para el control de acceso a una vivienda que funcione en base al reconocimiento de voz que sea dependiente del texto fue conseguido a través del algortimo conformado por los métodos MFCC Y DTW.
+\item[13.]En conclusión, el objetivo general que trata sobre implementar un sistema de seguridad para el control de acceso a una vivienda que funcione en base al reconocimiento de voz que sea dependiente del texto fue conseguido a través del algoritmo conformado por los métodos MFCC Y DTW.
 \end{enumerate}
 
 \section{Trabajos futuros}

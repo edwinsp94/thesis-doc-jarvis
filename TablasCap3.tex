@@ -10,7 +10,7 @@ En esta prueba hallaremos $BC$ y $M$, parámetros del algoritmo MFCC empleado pa
 \hspace*{1cm} P = 1 Simétrico ; \qquad R = 40 ; \qquad D = Euclidiana Cuadrática
 
 \vskip 0.5cm
-A continuación, veremos algunos de los resultados (mejores) que se obtuvieron para los MFCC, los Delta y Doble Delta.
+A continuación, veremos los mejores resultados que se obtuvieron para los MFCC, los Delta y Doble Delta.
 
 \begin{center}
 \begin{table}[H]
@@ -867,7 +867,7 @@ error &
 \end{table}
 \end{center}
 
-A partir de los resultados obtenidos y vistos en las Tablas \ref{table:tabla3.13}, \ref{table:tabla3.14}, \ref{table:tabla3.15} y \ref{table:tabla3.16} podemos concluir que se obtuvieron mejores resultados para $P = 1$ simétrico con un error promedio de 2.0, por lo que se cumplió con lo que se dijo en la teoría para el valor de $P$, y en segundo lugar para $P = 1/2$ simétrico con un error promedio de 2.9.
+A partir de los resultados obtenidos y vistos en las Tablas \ref{table:tabla3.13}, \ref{table:tabla3.14}, \ref{table:tabla3.15} y \ref{table:tabla3.16} podemos concluir que se obtuvieron mejores resultados para $P = 1$ simétrico con un error promedio de 2.0, por lo que contrasta con lo que se dijo en la teoría para el valor de $P$, y el segundo lugar fue para $P = 1/2$ simétrico con un error promedio de 2.9.
 
 \subsection{Hallar S}
 En esta cuarta prueba hallaremos \textit{S}, parámetro usado para la segmentación o ventaneamiento de una señal de voz, teniendo la siguiente configuración del algoritmo: \\
@@ -1058,7 +1058,7 @@ error &
 
 A partir de los resultados obtenidos y vistos en las Tablas \ref{table:tabla3.17} y \ref{table:tabla3.18} podemos concluir que se obtuvieron mejores resultados para $P = 1/2$ Simétrico con un error promedio de 1.58 donde $S = 17$ y $S = 18$ obtuvieron un $prom = 1$.
 \vskip 0.5cm
-Ahora pasaremos a decidir el valor de $S = 17$ o $S = 18$, ya que ambos tienen de error promedio 1.0, para ello realizaremos un calculo de la diferencia de ese error, estos resultados se muestran en la Tabla \ref{table:tabla3.19}.
+Ahora escogeremos el valor de $S = 17$ o $S = 18$, debido a que ambos tienen de error promedio 1.0, para ello realizaremos un calculo de la diferencia de ese error, estos resultados se muestran en la Tabla \ref{table:tabla3.19}.
 \vskip 0.5cm
 \begin{center}
 \begin{table}[H]
@@ -1161,7 +1161,7 @@ En esta quinta prueba hallaremos \textit{r}, parámetro usado por el algoritmo D
 \begin{center}
 \begin{table}[H]
 \centering
-\caption{\small{Resultados del testeo del sistema para P = 1/2 simétrico con S = 17 y 18.}}
+\caption{\small{Resultados del testeo del sistema para P = 1/2 simétrico con S = 17.}}
 \label{table:tabla3.20}
 \scalebox{0.53}{
 \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
@@ -1247,7 +1247,7 @@ error &
 \begin{center}
 \begin{table}[H]
 \centering
-\caption{\small{Resultados del testeo del sistema para P = 1 simétrico con S = 17 y 18.}}
+\caption{\small{Resultados del testeo del sistema para P = 1 simétrico con S = 17.}}
 \label{table:tabla3.21}
 \scalebox{0.53}{
 \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
@@ -1438,7 +1438,7 @@ error & 1 & 1 \\
 \end{table}
 \end{center}
 
-Como podemos ver en la Tabla \ref{table:tabla3.22} con $E = 3$ se obtuvo mejores resultados con un error promedio de $prom = 0.14$ teniendo como error mínimo para $T = 256$, el segundo lugar para $T = 240$ y en tercer lugar para $T = 192$, pero vemos que el valor de error para $T = 192$ tanto en $E = 1$ como para $E = 3$ ocupa el tercer lugar siendo este el más estable por lo que se escogerá a este como mejor valor para la longitud de trama para la eliminación de segmentos inútiles por energía.
+Como podemos ver en la Tabla \ref{table:tabla3.22} con $E = 3$ se obtuvo mejores resultados con un error promedio de $prom = 0.14$ teniendo como error mínimo para $T = 256$, el segundo lugar para $T = 240$ y en tercer lugar para $T = 192$, pero vemos que el valor de error para $T = 192$ tanto en $E = 1$ como para $E = 3$ ocupa el tercer lugar siendo este el más estable por lo que se escogió a este como mejor valor de la longitud de trama para la eliminación de segmentos inútiles por energía.
 
 \subsection{Hallar V y S}
 En esta septima prueba hallaremos \textit{V} y \textit{S}, parámetros usados para la etapa de segmentación o ventaneamiento de la señal de voz, teniendo la siguiente configuración del algoritmo:\\
@@ -1645,4 +1645,4 @@ error & 1 & 1 \\
 \end{center}
 
 \vskip -0.5cm
-Como podemos ver en la Tabla \ref{table:tabla3.36} con la Distancia de Error Cuadrático Medio se obtuvo mejores resultados con un error promedio de $prom = 0.016$ teniendo un error mínimo $min=0.011$ con $\alpha =0.96$, además vemos que conforme este valor va aumentando se obtiene mejores resultados, sin embargo vemos que cuando $\alpha = 0.97$ aumenta el error por lo que se escogerá $\alpha =0.95$, valor propuesto en la teoría en la Ecuación \eqref{eq:ecuacion33}.
+Como podemos ver en la Tabla \ref{table:tabla3.36} con la Distancia de Error Cuadrático Medio se obtuvo mejores resultados con un error promedio de $prom = 0.016$ teniendo un error mínimo $min=0.011$ con $\alpha =0.96$, además vemos que conforme este valor va aumentando se obtiene mejores resultados, sin embargo vemos que cuando $\alpha = 0.97$ aumenta el error por lo que se escogió $\alpha =0.95$, valor propuesto en la teoría, ver Ecuación \eqref{eq:ecuacion33}.

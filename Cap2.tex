@@ -19,75 +19,6 @@ En los años 2010’s, salió a la luz el asistente de voz Siri, realizando func
 \vskip 0.5cm
 En la actualidad, se espera que con el poder de cómputo actual de las máquinas y las diversas investigaciones en el tema, se logre aumentar el desempeño. Aplicaciones actuales van desde software para celulares, robótica hasta interfaces de voz para personas discapacitadas, desafortunadamente las comparaciones de error entre humanos y máquinas todavía dan un amplio margen de diferencia, por lo que se espera lograr que éste margen disminuya en los próximos años.
 
-\subsubsection{Fundamentos sobre sonidos y la señal de voz}
-Existen varias maneras para analizar y describir el habla, los enfoques más comúnmente usados son, la articulación que es el análisis de cómo el humano produce los sonidos del habla, la señal acustica que es el análisis de la señal de voz como una secuencia de sonidos y la percepción auditiva que es el análisis de cómo el humano procesa el habla, este último es el enfoque que usaremos para esta tesis. Los tres enfoques proveen ideas y herramientas para obtener mejores y más eficientes resultados en el reconocimiento.
-
-\begin{enumerate}
-\item[a)]Articulación
-\par
-La voz humana se produce por medio del aparato fonatorio, también llamado aparato bucal o articulatorio, el cual está formado por un conjunto de órganos. El aparato fonador consiste en tres grupos de órganos diferenciados, tal como se ve en la Figura \ref{fig:figura2.1}.
-\vskip 0.5cm
-Las voces del hombre y la mujer difieren debido a varios aspectos, que incluyen el tamaño de la laringe, el tono, el rango de tono, el espacio entre las cuerdas vocales y ocurrencia de problemas del habla. Antes de la pubertad, en promedio el tono y el tamaño de la laringe es el mismo tanto en hombres como en mujeres. La frecuencia fundamental de la voz (la cual está estrechamente relacionada con la percepción del tono) está alrededor de los 250 Hz y la longitud de las cuerdas vocales es de aproximadamente 10.4 mm.
-\newpage
-\begin{figure}[ht]
-\begin{center}
-\includegraphics[width=0.4\textwidth]{Imagenes/Cap2/image001}
-\end{center}
-\begin{center}
-\vskip -0.5cm
-\caption{\small{Órganos del cuerpo que intervienen en el aparato fonador.}}
-\label{fig:figura2.1}
-{\small{Fuente: \cite{luis}}}
-\end{center}
-\end{figure}
-
-En el habla los formantes se determinan por el proceso de filtrado que se produce en el tracto vocal por la configuración de los articuladores, es decir el sonido particular de la voz de cada persona está determinado por el tamaño y la forma de las cuerdas vocales, de la boca, etc. de tal manera que los sonidos se ven afectados por la forma del tracto vocal.
-\vskip 0.5cm
-Los formantes son elementos que sirven para distinguir componentes del habla humana, principalmente, las vocales y sonidos sonantes. El formante con la frecuencia más baja se llama \textit{F1}, el segundo \textit{F2}, el tercero \textit{F3}, etc. Normalmente sólo los dos primeros son necesarios para caracterizar una vocal, aunque la pueden caracterizar más formantes. Generalmente, los formantes posteriores determinan propiedades acústicas como el timbre. En la Tabla \ref{table:tabla2.2} se muestran algunos anchos de banda entre los cuales se localizan las vocales:
-
-\begin{center}
-\begin{table}[h!]
-\centering
-\caption{\small{Formantes vocálicos.}}
-\label{table:tabla2.2}
-\vskip 0.1cm
-\begin{tabular}{|c|c|c|}
-\hline
-{\small Vocal} & {\small Región principal formantica}\\ 
-\hline 
-{\small /u/} & {\small 200 a 400 Hz}\\ 
-\hline 
-{\small /o/} & {\small 400 a 600 Hz}\\ 
-\hline 
-{\small /a/} & {\small 800 a 1200 Hz}\\ 
-\hline 
-{\small /e/} & {\small 400 a 600 Hz y 2200 a 2600 Hz}\\ 
-\hline 
-{\small /i/} & {\small 200 a 400 Hz y 3000 a 3500 Hz}\\ 
-\hline 
-\end{tabular} 
-\begin{center}
-\vskip 0.2cm
-{\small{Fuente: \cite{wikipedia1}}}
-\end{center}
-\end{table}
-\end{center}
-
-\item[b)]Señal acústica
-\par
-Un reconocedor no puede analizar los movimientos en la boca. En su lugar, la fuente de información es la señal de voz misma. El habla es una señal analógica, es decir, un flujo continuo de ondas sonoras y silencios. El conocimiento de la ciencia de la acústica se utiliza para identificar y describir los atributos del habla que son necesarios para un reconocimiento de voz efectivo. Algunas características importantes del análisis acústico son, la frecuencia, la amplitud, la resonancia, la estructura armónica, el ruido y la coarticulación, \cite{luis}.
-\vskip 0.5cm
-La frecuencia es el número de vibraciones (ciclos) del tono por segundo y se mide en Hz (hertz), donde los tonos altos tienen mayor frecuencia y los tonos bajos tienen menor frecuencia. Por otro lado, el volumen de un sonido refleja la cantidad de aire que es forzada a moverse, esta describe y representa la amplitud de la onda y se mide en dBC (decibéles).
-\vskip 0.5cm
-La resonancia se define como la habilidad que tiene una fuente vibrante de sonido de causar que otro objeto vibre gracias a ella. La mayoría de los sonidos incluyendo el habla tienen una frecuencia dominante llamada frecuencia fundamental, también conocida como pitch (tono) que es la velocidad a la que vibran las cuerdas vocales al producir un fonema sonoro. Sumadas a la frecuencia fundamental hay otras frecuencias que contribuyen al timbre del sonido (permiten distinguir las voces de las personas) llamados formantes.
-
-\item[c)]Percepción auditiva
-\par
-La variabilidad del habla producida por coarticulación y otros factores hacen del análisis de la voz extremadamente difícil. La facilidad del humano en superar estas dificultades sugiere que un sistema basado en la percepción auditiva podría ser un buen enfoque desafortunadamente el conocimiento de la percepción humana es incompleto, lo que se sabe es que el sistema auditivo está adaptado a la percepción de la voz.
-\vskip 0.5cm
-El oído humano detecta frecuencias de 20 a 20000 Hz, pero es más sensible al rango entre 1000 y 6000 Hz, además de los pequeños cambios en la frecuencia en el ancho de banda, crítico para el habla. El patrón de sensibilidad a cambios en el tono no corresponde a la escala lineal de frecuencias de ciclos por segundo de la acústica. Para representar mejor al patrón de percepción acústica, se tiene una escala llamada \textit{Escala de Mel}, la cual es una escala logarítmica que representa los niveles de la señal, \cite{eyra}.
-\end{enumerate}
-
 \subsubsection{Funcionamiento de un sistema de reconocimiento de voz}
 El reconocimiento de voz generalmente es utilizado como una interfaz entre humano y computador para algún software, tal es el caso, por ejemplo, el de los sistemas biométricos. Todo sistema de reconocimiento de voz debe cumplir las 3 tareas siguientes:
 
@@ -107,7 +38,7 @@ En la Figura \ref{fig:figura2.4} se muestran los componentes de un sistema de re
 \vskip -0.5cm
 \caption{\small{Diagrama de bloques del proceso general del reconocimiento de voz.}}
 \label{fig:figura2.4}
-{\small{Fuente: \cite{rama}}}
+{\small{Fuente: \cite{eyra}}}
 \end{center}
 \end{figure}
 
@@ -256,7 +187,7 @@ Este proceso convierte una sucesión de muestras de amplitud continua en una suc
 \end{center}
 \end{figure}
 
-Existen diferentes técnicas de cuantificación: uniforme, no uniforme, logarítmica y vectorial, \cite{rama}. En los cuantificadores uniformes la distancia entre los niveles de reconstrucción es siempre la misma, la mayoría usan un número de niveles que es una potencia de 2. No hacen ninguna suposición acerca de la señal a cuantificar, de allí que no proporcionen los mejores resultados, pero su ventaja es que son más fáciles y económicos al implementarlos, por ello emplearemos esta técnica para nuestra investigación.
+Existen diferentes técnicas de cuantificación: uniforme, no uniforme, logarítmica y vectorial. En los cuantificadores uniformes la distancia entre los niveles de reconstrucción es siempre la misma, la mayoría usan un número de niveles que es una potencia de 2. No hacen ninguna suposición acerca de la señal a cuantificar, de allí que no proporcionen los mejores resultados, pero su ventaja es que son más fáciles y económicos al implementarlos, por ello emplearemos esta técnica para nuestra investigación.
 \vskip 0.5cm
 La cuantificación más usada, es de 8 bits, mínimo requerido para una calidad baja, puede mejorarse su SNR (Relacion Señal a Ruido) con una técnica no lineal de cuantificación, pero se obtienen excelentes resultados aumentando la cuantificación a 16 bits, \cite{kaifu}.
 \end{enumerate}

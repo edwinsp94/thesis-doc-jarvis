@@ -3,7 +3,7 @@ En este capítulo se mostrarán los resultados obtenidos al realizar las pruebas
 \vskip 0.5cm
 Las pruebas están divididas en 2 partes, la primera consiste en obtener los umbrales de decisión para las respuestas del sistema (Identificación Correcta, Falsa Identificación y No Identificación) y la segunda parte consiste en evaluar el algoritmo de construcción del patrón de referencia definida por la Ecuación \eqref{eq:ecuacion101} para la reducción del tiempo de ejecución en la respuesta del sistema.
 \vskip 0.5cm
-Para la realización de las pruebas se escogió un lugar con un nivel de ruido bajo de 69 a 78 dBC por lo que no fue necesario utilizar un algoritmo para la eliminación de ruido aditivo. Además, se utilizaron a 11 personas del sexo masculino con edades entre 22 a 24 años, esto porque es evidente que para el algoritmo le resultará más fácil diferenciar un hombre de una mujer y un niño de un adulto debido algunos aspectos físicos en el tracto vocal que se explicó en la teoría, por ello se escogió a personas del mismo sexo con edades parecidas, así al sistema le resultará más difícil realizar el reconocimiento de voz. A continuación, definiremos algunas abreviaturas que usaremos para la realización de las pruebas:
+Para la realización de las pruebas se escogió un lugar con un nivel de ruido bajo de 69 a 78 dBC. Además, se utilizaron a 11 personas del sexo masculino con edades entre 22 a 24 años, esto porque es evidente que para el algoritmo le resultará más fácil diferenciar un hombre de una mujer y un niño de un adulto debido algunos aspectos físicos en el tracto vocal que se explicó en la teoría, por ello se escogió a personas del mismo sexo con edades parecidas, así al sistema le resultará más difícil realizar el reconocimiento de voz. A continuación, definiremos algunas abreviaturas que usaremos para la realización de las pruebas:
 \begin{enumerate}
 \item[-]\textit{U1}: Umbral de decisión para reconocer la palabra
 \item[-]\textit{U2}: Umbral de decisión para reconocer al locutor
@@ -30,11 +30,11 @@ En la ejecución de las pruebas se presentarán 8 escenarios o casos distintos, 
 \section{Pruebas para obtener los umbrales de decisión}
 Esta parte consta de 2 etapas, la primera será en hallar $U2$ valor que nos permitirá decir si es o no el locutor ante una falsa identificación además $U1$ tendrá como valor a $U$, una vez obtenido el mejor valor para $U2$ pasaremos a la segunda etapa que consiste en hallar $U1$ valor que nos permitirá decir si es o no la palabra hablada.
 \vskip 0.5cm
-Los valores de $A$ y $D$ determinan que tan efectivo es nuestro algoritmo en la etapa de reconocimiento, por ejemplo para el caso 1 si se tiene que $A = 100$ y $D = 0$, esto quiere decir que el algoritmo de reconocimiento de voz obtuvo el patrón de referencia correcto (es el locutor y es la palabra) para cada audio de prueba, con esto podemos decir que el algoritmo alcanzó un 100\% de efectividad en la etapa de reconocimiento.
+Los valores de $A$ y $D$ determinan el grado de acierto de nuestro algoritmo en la etapa de reconocimiento, por ejemplo para el caso 1 si se tiene que $A = 100$ y $D = 0$, esto quiere decir que el algoritmo de reconocimiento de voz obtuvo el patrón de referencia correcto (es el locutor y es la palabra) para cada audio de prueba, con esto podemos decir que el algoritmo alcanzó un 100\% de tasa de acierto en la etapa de reconocimiento.
 
 \subsection{Prueba para obtener U2}
 \par
-De esta primera prueba se obtuvo que el mejor valor para $U2$ es 0.31. Esto porque, se observó que para los resultados de los casos 3, 4, 5, 7 y 8 cualquier valor que tome $U2$ entre 0.20 y 0.35 el valor de $E$ es el mismo, por lo que no se tomó en cuenta estos casos, entonces de los casos 1 y 2, ver las Tablas \ref{table:tabla4.1} y \ref{table:tabla4.2} respectivamente, se observó que el mejor valor para $U2$ es 0.35 dando $E = 0$ alcanzando el sistema un 100\% de efectividad en la respuesta del reconocimiento de voz, ver la Figura \ref{fig:figura4.1}, sin embargo, para el caso 6 el valor de $IC$ sería 5, ver Tabla \ref{table:tabla4.6}, esto quiere decir que de las 100 veces que el intruso intento acceder al sistema en 5 de ellas el sistema le permitió el acceso, y esto es grave ya que nosotros lo que buscamos es la seguridad, por lo que $U2$ tendrá que ser menor que 0.32 y mayor que 0.30 para que el número de $FI$ no sea grande para los casos 1 y 2, por lo que se escogió a 0.31 como valor intermedio, ver la Figura \ref{fig:figura4.2}.
+En esta primera prueba se obtuvo que el mejor valor para $U2$ es 0.31. Esto porque, se observó que para los casos 3, 4, 5, 7 y 8 cualquier valor que tome $U2$ entre 0.20 y 0.35 el valor de $E$ es el mismo, por lo que no se tomó en cuenta a estos casos, entonces de los casos 1 y 2, ver Tablas \ref{table:tabla4.1} y \ref{table:tabla4.2}, se observó que el mejor valor para $U2$ es 0.35 dando $E = 0$ alcanzando una tasa de acierto del 100\% en la respuesta del reconocimiento de voz, ver la Figura \ref{fig:figura4.1}, sin embargo, para el caso 6 el valor de $IC$ sería 5, ver Tabla \ref{table:tabla4.6}, esto quiere decir que de las 100 veces que el intruso intento acceder en 5 de ellas el sistema le permitió el acceso, y esto es grave porque que nosotros lo que buscamos es la seguridad, por lo que $U2$ tendrá que ser menor que 0.32 y mayor que 0.30 para que el número de $FI$ no sea grande para los casos 1 y 2, por lo que se escogió a 0.31, ver la Figura \ref{fig:figura4.2}.
 
 \begin{center}
 \begin{table}[H]
@@ -250,8 +250,6 @@ U & 0.35 & 5 & 41 & 54 & 100 & 0 & 56 \\
 \end{table}
 \end{center}
 
-\vskip -1.0cm
-
 \begin{figure}[H]
 \begin{center}
 \includegraphics[width=0.7\textwidth]{Imagenes/Cap4/image001}
@@ -279,7 +277,7 @@ U & 0.35 & 5 & 41 & 54 & 100 & 0 & 56 \\
 
 \subsection{Prueba para obtener U1}
 \par
-Para esta segunda prueba se obtuvo que el mejor valor para $U1$ es 0.51. Esto porque, se observó que para los resultados de los casos 1, 2 y 7, ver Tablas \ref{table:tabla4.9} y \ref{table:tabla4.10}, cualquier valor que tome $U1$ entre 0.40 y 0.55 el valor de $E$ es el mismo, por lo que no se tomó en cuenta estos casos, entonces para de los casos 3, 4 y 8 se observó que conforme $U1$ aumenta de valor $E$ también aumenta, por otro lado, para los casos 5 y 6 si $U1$ aumenta $E$ disminuye, por ello se escogió a 0.51 como mejor valor intermedio para los casos 3, 4, 5, 6 y 8, ver la Figura \ref{fig:figura4.3}. Además, el sistema no dejo pasar en ningún caso a intrusos por lo que alcanzó un 100\% en seguridad, ver la Figura \ref{fig:figura4.4}.
+En esta segunda prueba se obtuvo que el mejor valor para $U1$ es 0.51. Esto porque, se observó que para los casos 1, 2 y 7, ver Tablas \ref{table:tabla4.9} y \ref{table:tabla4.10}, cualquier valor que tome $U1$ entre 0.40 y 0.55 el valor de $E$ es el mismo, por lo que no se tomó en cuenta a estos casos, entonces para los casos 3, 4 y 8 se observó que conforme $U1$ aumenta de valor $E$ también aumenta, por otro lado, para los casos 5 y 6 si $U1$ aumenta $E$ disminuye, por ello se escogió a 0.51 como valor intermedio para los casos 3, 4, 5, 6 y 8, ver la Figura \ref{fig:figura4.3}. Además, el sistema no dejo pasar en ningún caso a intrusos por lo que se alcanzó un 100\% en seguridad, ver la Figura \ref{fig:figura4.4}.
 
 \begin{center}
 \begin{table}[H]
@@ -520,7 +518,7 @@ U1 & U2 & IC & FI & NI & A & D & E \\
 \end{center}
 \end{figure}
 
-De esta primera etapa se puede concluir que los valores para los umbrales $U1$ y $U2$ son, para $U2 = 0.31$ sin embargo todavía no hemos escogido cual es el mejor valor para $U1$ si $U$ o 0.51, para ello haremos una comparación del total de errores obtenidos para esto dos valores.
+De esta primera etapa se puede concluir que los valores para los umbrales $U1$ y $U2$ son, para $U2 = 0.31$ sin embargo todavía no hemos evaluado cual es el mejor valor para $U1$ si $U$ o 0.51, para ello haremos una comparación del total de errores obtenidos para esto dos valores.
 
 \begin{center}
 \begin{table}[H]
@@ -560,11 +558,11 @@ $N^\circ$ & U2 & U1=U & U1=0.51 \\
 \end{table}
 \end{center}
 
-En la Tabla \ref{table:tabla4.17} se puede ver que para $U1 = 0.51$ se obtuvo una menor cantidad de número de errores en la respuesta del sistema de reconocimiento de voz, debido a esto se escogerá este valor.
+Podemos ver en la Tabla \ref{table:tabla4.17} que para $U1 = 0.51$ se obtuvo una menor cantidad de número de errores en la respuesta del sistema de reconocimiento de voz, debido a esto se escogerá este valor.
 \vskip 0.5cm
 Ahora evaluaremos el tiempo de ejecución que toma el sistema para realizar el reconocimiento de voz y el reajuste de los umbrales, si bien este último no es necesario evaluar ya que el valor de $U1$ es 0.51 un valor estático y no dinámico (calculado por la Ecuación \eqref{eq:ecuacion105}), de todas maneras se realizará como información complementaria para la investigación.
 
-\vskip 0.5cm
+\newpage
 \begin{figure}[H]
 \captionsetup{justification=centering}
 \begin{center}
@@ -577,7 +575,7 @@ Ahora evaluaremos el tiempo de ejecución que toma el sistema para realizar el r
 {\small{Fuente: Elaboración propia}}
 \end{center}
 \end{figure}
-
+\vskip -0.5cm
 \begin{figure}[H]
 \captionsetup{justification=centering}
 \begin{center}
@@ -590,7 +588,7 @@ Ahora evaluaremos el tiempo de ejecución que toma el sistema para realizar el r
 {\small{Fuente: Elaboración propia}}
 \end{center}
 \end{figure}
-
+\vskip -0.5cm
 Como podemos ver en la Figura \ref{fig:figura4.5} el gráfico muestra una pendiente de función lineal, conforme aumentamos el número de audios en la base de datos el tiempo de ejecución para la respuesta del sistema aumenta, por lo que esta puede ser calculada por la siguiente fórmula:
 
 \begin{equation}
@@ -608,25 +606,24 @@ Donde:
 \vskip 0.5cm
 De la Ecuación \eqref{eq:ecuacion4.1} y los datos obtenidos que se ve en la Figura \ref{fig:figura4.5}, se tiene que el valor de $t$ es 0.08 segundos, este valor varía de acuerdo al hardware del dispositivo en donde se implemente el sistema, para nuestro proyecto hemos usado un dispositivo móvil Android Samsung J6+ con un procesador de 4 núcleos de 1.8 GHz.
 \vskip 0.5cm
-El tiempo de respuesta del sistema para el reconocimiento de voz no debe ser mayor a 5 segundos tal como se definió en las características generales del ciclo de negocio de la arquitectura del sistema en la Tabla \ref{table:tabla3.1}, sin embargo, si se utiliza un número mayor a 60 audios en la base de datos, entonces no se cumplirá con este requisito que se planteó.
+El tiempo de respuesta del sistema para el reconocimiento de voz no debe ser mayor a 5 segundos tal como se definió en las características generales del ciclo de negocio de la arquitectura del sistema en la Tabla \ref{table:tabla3.1}, sin embargo, si se utiliza un número mayor a 60 audios (patrones característicos) en la base de datos, entonces no se cumplirá con este requisito que se planteó.
 \vskip 0.5cm
-Por ello, se planteó utilizar la técnica para la construcción del patrón de referencia definida por la Ecuación \eqref{eq:ecuacion101} que consistía en agrupar un número de audios y dar como resultado un patrón promedio que los represente, así podremos disminuir el tiempo de respuesta del sistema al tener un número menor de patrones en la base de datos.
+Por ello, se planteó utilizar la técnica para la construcción del patrón de referencia definida por la Ecuación \eqref{eq:ecuacion101} que consiste en agrupar un número de audios y dar como resultado un patrón promedio que los represente, así podremos disminuir el tiempo de respuesta del sistema al tener un número menor de patrones en la base de datos.
 
 \section{Pruebas para la construcción del patrón de referencia}
-En esta segunda parte al igual que la primera consta de 2 etapas, en la primera el umbral $U1$ se considerará con valor dinámico es decir el valor definido por la Ecuación \eqref{eq:ecuacion105} y para la segunda etapa el umbral $U1$ tendrá un valor estático que será 0.51, valor que fue escogido como el mejor en la primera parte. De esta manera procederemos a evaluar el algoritmo de construcción del patrón de referencia en estos dos escenarios.
+En esta segunda parte al igual que la primera consta de 2 etapas, en la primera el umbral $U1$ se considerará con valor dinámico es decir el valor definido por la Ecuación \eqref{eq:ecuacion105} y para la segunda etapa el umbral $U1$ tendrá un valor estático que será 0.51. De esta manera procederemos a evaluar el algoritmo de construcción del patrón de referencia en estos dos escenarios.
 \vskip 0.5cm
 A continuación, veremos los resultados que se obtuvieron en la realización de las pruebas para los 8 escenarios o casos definidos anteriormente, donde $N$ representa el número de patrones o audios que se emplearán para la construcción del patrón de referencia.
 
 \subsection{Prueba con U1 dinámico}
 \par
-De esta primera prueba se obtuvo que el mejor valor para $N$ es 5. Esto porque, se observó que para los casos 3, 4, 7 y 8 cualquier valor que tome $N$ el valor de $E = 0$, por lo que no se tomó en cuenta estos casos, entonces para los casos 1, 2, 5 y 6, ver Tablas \ref{table:tabla4.18}, \ref{table:tabla4.19}, \ref{table:tabla4.22}, \ref{table:tabla4.23}, se observó que el mejor valor para $N$ es 5, ver la Figura \ref{fig:figura4.7}, si bien los valores de $E$ son grandes, por otro lado, $IC = 0$ por lo que en ningún caso se dejo pasar a intrusos, por lo tanto, se obtuvo un 100\% en seguridad del sistema, ver la Figura \ref{fig:figura4.8}.
+De esta primera prueba se obtuvo que el mejor valor para $N$ es 5. Esto porque, se observó que para los casos 3, 4, 7 y 8 cualquier valor que tome $N$ el valor de $E = 0$, por lo que no se tomó en cuenta a estos casos, entonces para los casos 1, 2, 5 y 6, ver Tablas \ref{table:tabla4.18}, \ref{table:tabla4.19}, \ref{table:tabla4.22}, \ref{table:tabla4.23}, se observó que el mejor valor para $N$ es 5, ver la Figura \ref{fig:figura4.7}, si bien los valores de $E$ son grandes, por otro lado, $IC = 0$ por lo que en ningún caso se dejo pasar a intrusos, por lo tanto, se obtuvo un 100\% en seguridad del sistema, ver la Figura \ref{fig:figura4.8}.
 
 \begin{center}
 \begin{table}[H]
 \centering
 \caption{\small{Resultados para el caso 1 con U1 dinámico.}}
 \label{table:tabla4.18}
-\vskip 0.2cm
 \scalebox{0.7}{
 \begin{tabular}{|c|c|c|c|c|c|c|c|c|}
 \hline 
@@ -653,14 +650,11 @@ $N^\circ$ & U1 & U2 & IC & FI & NI & A & D & E \\
 \end{table}
 \end{center}
 
-\vskip -1.0cm
-
 \begin{center}
 \begin{table}[H]
 \centering
 \caption{\small{Resultados para el caso 2 con U1 dinámico.}}
 \label{table:tabla4.19}
-\vskip 0.2cm
 \scalebox{0.7}{
 \begin{tabular}{|c|c|c|c|c|c|c|c|c|}
 \hline 
@@ -687,14 +681,11 @@ $N^\circ$ & U1 & U2 & IC & FI & NI & A & D & E \\
 \end{table}
 \end{center}
 
-\vskip -1.0cm
-
 \begin{center}
 \begin{table}[H]
 \centering
 \caption{\small{Resultados para el caso 5 con U1 dinámico.}}
 \label{table:tabla4.22}
-\vskip 0.2cm
 \scalebox{0.7}{
 \begin{tabular}{|c|c|c|c|c|c|c|c|c|}
 \hline 
@@ -721,14 +712,12 @@ $N^\circ$ & U1 & U2 & IC & FI & NI & A & D & E \\
 \end{table}
 \end{center}
 
-\vskip -1.0cm
 
 \begin{center}
 \begin{table}[H]
 \centering
 \caption{\small{Resultados para el caso 6 con U1 dinámico.}}
 \label{table:tabla4.23}
-\vskip 0.2cm
 \scalebox{0.7}{
 \begin{tabular}{|c|c|c|c|c|c|c|c|c|}
 \hline 
@@ -755,8 +744,6 @@ $N^\circ$ & U1 & U2 & IC & FI & NI & A & D & E \\
 \end{table}
 \end{center}
 
-\vskip -1.0cm
-
 \begin{figure}[H]
 \begin{center}
 \includegraphics[width=0.7\textwidth]{Imagenes/Cap4/image007}
@@ -769,6 +756,7 @@ $N^\circ$ & U1 & U2 & IC & FI & NI & A & D & E \\
 \end{center}
 \end{figure}
 
+\vskip -0.5cm
 
 \begin{figure}[H]
 \begin{center}
@@ -784,14 +772,13 @@ $N^\circ$ & U1 & U2 & IC & FI & NI & A & D & E \\
 
 \subsection{Prueba con U1 estático}
 \par
-De esta segunda prueba se obtuvo que el mejor valor para $N$ es 5. Esto porque, se observó que para los casos 3, 4 y 7 cualquier valor que tome $N$ el valor de $E = 0$, por lo que no se tomó en cuenta estos casos, entonces para los casos 1, 2, 5, 6 y 8, ver Tablas \ref{table:tabla4.26}, \ref{table:tabla4.27}, \ref{table:tabla4.30} y \ref{table:tabla4.31}, podemos ver que el mejor valor para $N$ es 5, ver la Figura \ref{fig:figura4.9}, si bien los valores de $E$ son grandes, por otro lado, $IC = 0$ por lo que en ningún caso se dejo pasar a intrusos, por lo tanto, se obtuvo un 100\% en seguridad del sistema, ver la Figura \ref{fig:figura4.10}.
+De esta segunda prueba se obtuvo que el mejor valor para $N$ es 5. Esto porque, se observó que para los casos 3, 4 y 7 cualquier valor que tome $N$ el valor de $E = 0$, por lo que no se tomó en cuenta a estos casos, entonces para los casos 1, 2, 5, 6 y 8, ver Tablas \ref{table:tabla4.26}, \ref{table:tabla4.27}, \ref{table:tabla4.30} y \ref{table:tabla4.31}, podemos ver que el mejor valor para $N$ es 5, ver la Figura \ref{fig:figura4.9}, si bien los valores de $E$ son grandes, por otro lado, $IC = 0$ por lo que en ningún caso se dejo pasar a intrusos, por lo tanto, se obtuvo un 100\% en seguridad del sistema, ver la Figura \ref{fig:figura4.10}.
 
 \begin{center}
 \begin{table}[H]
 \centering
 \caption{\small{Resultados para el caso 1 con U1 estático.}}
 \label{table:tabla4.26}
-\vskip 0.2cm
 \scalebox{0.7}{
 \begin{tabular}{|c|c|c|c|c|c|c|c|c|}
 \hline 
@@ -818,14 +805,11 @@ $N^\circ$ & U1 & U2 & IC & FI & NI & A & D & E \\
 \end{table}
 \end{center}
 
-\vskip -1.0cm
-
 \begin{center}
 \begin{table}[H]
 \centering
 \caption{\small{Resultados para el caso 2 con U1 estático.}}
 \label{table:tabla4.27}
-\vskip 0.2cm
 \scalebox{0.7}{
 \begin{tabular}{|c|c|c|c|c|c|c|c|c|}
 \hline 
@@ -852,14 +836,11 @@ $N^\circ$ & U1 & U2 & IC & FI & NI & A & D & E \\
 \end{table}
 \end{center}
 
-\vskip -1.0cm
-
 \begin{center}
 \begin{table}[H]
 \centering
 \caption{\small{Resultados para el caso 5 con U1 estático.}}
 \label{table:tabla4.30}
-\vskip 0.2cm
 \scalebox{0.7}{
 \begin{tabular}{|c|c|c|c|c|c|c|c|c|}
 \hline 
@@ -892,7 +873,6 @@ $N^\circ$ & U1 & U2 & IC & FI & NI & A & D & E \\
 \centering
 \caption{\small{Resultados para el caso 6 con U1 estático.}}
 \label{table:tabla4.31}
-\vskip 0.2cm
 \scalebox{0.7}{
 \begin{tabular}{|c|c|c|c|c|c|c|c|c|}
 \hline 
@@ -932,7 +912,7 @@ $N^\circ$ & U1 & U2 & IC & FI & NI & A & D & E \\
 \end{center}
 \end{figure}
 
-\vskip -1.0cm
+\vskip -0.5cm
 
 \begin{figure}[H]
 \begin{center}
@@ -988,9 +968,9 @@ $N^\circ$ & U1 & U2 & N=1 & N=5 \\
 \end{table}
 \end{center}
 
-De la Tabla \ref{table:tabla4.34} podemos ver que para $N = 1$ se tiene un \textit{total de error} de 84 de un total de 800 pruebas haciendo una tasa de error del 10.5\%, mientras que para $N = 5$ se tiene un \textit{total de error} de 100 haciendo una tasa de error del 12.5\%, por lo que se escogerá a $N = 1$ lo que quiere decir que no se aplicará el algoritmo de construcción de patrón de referencia definido por la Ecuación \eqref{eq:ecuacion101}. 
+De la Tabla \ref{table:tabla4.34} podemos ver que para $N = 1$ se tiene un \textit{total de error} de 84 de un total de 800 pruebas haciendo una tasa de error del 10.5\%, mientras que para $N = 5$ se tiene un \textit{total de error} de 100 haciendo una tasa de error del 12.5\%, por lo que se escogerá a $N = 1$, es decir que no se aplicará el algoritmo de construcción de patrón de referencia definido por la Ecuación \eqref{eq:ecuacion101}. 
 \vskip 0.5cm
-Si bien con $N = 5$ disminuiríamos el tiempo de respuesta del reconocimiento del locutor del sistema, este presenta un problema para el caso 1 debido a que se tiene $E = 8$ resultando un 92\% de efectividad en la respuesta del sistema incumpliendo con los requisitos definidos para la arquitectura del sistema en el ciclo de negocio, el cual se estableció como mínimo un 95\% en la tasa de acierto, requisito que si cumple para $N = 1$.
+Si bien con $N = 5$ disminuiríamos el tiempo de respuesta del reconocimiento del locutor del sistema, este presenta un problema para el caso 1 debido a que se tiene $E = 8$ resultando una tasa de error del 92\% en la respuesta del sistema incumpliendo con los requisitos definidos para la arquitectura del sistema en el ciclo de negocio, el cual se estableció como mínimo un 95\% en la tasa de acierto, requisito que si cumple para $N = 1$.
 
 \subsection{Prueba de hipótesis o de significación}
 Como se dijo anteriormente para efectuar el análisis estadístico de los datos se hará la prueba de independencia Chi- Cuadrado de Pearson para dos variables nominales, ver en Apéndice A.
