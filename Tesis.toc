@@ -1,11 +1,11 @@
 \contentsline {chapter}{Dedicatoria}{\es@scroman {i}}% 
 \contentsline {chapter}{Agradecimientos}{\es@scroman {ii}}% 
-\contentsline {chapter}{Resumen}{\es@scroman {iii}}% 
-\contentsline {chapter}{Abstract}{\es@scroman {iv}}% 
-\contentsline {chapter}{Lista de s\IeC {\'\i }mbolos}{\es@scroman {v}}% 
+\contentsline {chapter}{Resumen}{\es@scroman {iv}}% 
+\contentsline {chapter}{Abstract}{\es@scroman {v}}% 
+\contentsline {chapter}{Lista de s\IeC {\'\i }mbolos}{\es@scroman {vi}}% 
 \babel@toc {spanish}{}
-\contentsline {chapter}{\IeC {\'I}ndice de figuras}{\es@scroman {xiv}}% 
-\contentsline {chapter}{\IeC {\'I}ndice de tablas}{\es@scroman {xvii}}% 
+\contentsline {chapter}{\IeC {\'I}ndice de figuras}{\es@scroman {xv}}% 
+\contentsline {chapter}{\IeC {\'I}ndice de tablas}{\es@scroman {xviii}}% 
 \contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n}{1}% 
 \contentsline {section}{\numberline {1.1}Justificaci\IeC {\'o}n de la investigaci\IeC {\'o}n}{6}% 
 \contentsline {section}{\numberline {1.2}Formulaci\IeC {\'o}n del problema}{7}% 
